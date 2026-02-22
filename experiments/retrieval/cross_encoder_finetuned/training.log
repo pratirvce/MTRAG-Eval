@@ -1,0 +1,186 @@
+2025-12-18 20:25:26 - Using GPU 1 (CUDA_VISIBLE_DEVICES=1)
+2025-12-18 20:25:26 - Device: cuda (actual device: 0)
+2025-12-18 20:25:26 - Resuming from checkpoint: epoch=3, step=480
+2025-12-18 20:25:26 - Loading training data...
+2025-12-18 20:25:26 - Loading training data for domain: clapnq...
+2025-12-18 20:25:26 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  7%|▋         | 13561/183408 [00:00<00:01, 135603.02it/s] 16%|█▌        | 29567/183408 [00:00<00:01, 149980.42it/s] 26%|██▌       | 47267/183408 [00:00<00:00, 162314.31it/s] 35%|███▌      | 64545/183408 [00:00<00:00, 166442.19it/s] 44%|████▍     | 81190/183408 [00:00<00:00, 156598.67it/s] 53%|█████▎    | 96944/183408 [00:00<00:00, 92743.21it/s]  62%|██████▏   | 113529/183408 [00:00<00:00, 108539.70it/s] 69%|██████▉   | 127441/183408 [00:01<00:00, 115750.91it/s] 78%|███████▊  | 143825/183408 [00:01<00:00, 127869.24it/s] 87%|████████▋ | 160212/183408 [00:01<00:00, 137397.69it/s] 96%|█████████▌| 176150/183408 [00:01<00:00, 143428.21it/s]100%|██████████| 183408/183408 [00:01<00:00, 133949.94it/s]
+2025-12-18 20:25:27 - Loaded 183408 Documents.
+2025-12-18 20:25:27 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-18 20:25:27 - Loading Queries...
+2025-12-18 20:25:27 - Loaded 145 Queries.
+2025-12-18 20:25:27 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-18 20:25:28 - Created 691 training examples for clapnq
+2025-12-18 20:25:28 - Loading training data for domain: fiqa...
+2025-12-18 20:25:28 - Loading Corpus...
+  0%|          | 0/61022 [00:00<?, ?it/s] 33%|███▎      | 20261/61022 [00:00<00:00, 202587.01it/s] 66%|██████▋   | 40520/61022 [00:00<00:00, 186307.16it/s]100%|█████████▉| 60738/61022 [00:00<00:00, 193224.55it/s]100%|██████████| 61022/61022 [00:00<00:00, 192826.53it/s]
+2025-12-18 20:25:29 - Loaded 61022 Documents.
+2025-12-18 20:25:29 - Doc Example: {'text': '\n"To add to @keshlam\'s answer slightly a stock\'s price is made up of several components: the only one of these that is known even remotely accurately at any time is the book value on the day that the accounts are prepared. Even completed cashflows after the books have been prepared contain some slight unknowns as they may be reversed if stock is returned, for example, or reduced by unforeseen costs. Future cashflows are based on (amongst other things) how many sales you expect to make in the future for all time. Exercise for the reader: how many iPhone 22s will apple sell in 2029? Even known future cashflows have some risk attached to them; customers may not pay for goods, a supplier may go into liquidation and so need to change its invoicing strategy etc.. Estimating the risk on future cashflows is highly subjective and depends greatly on what the analyst expects the exact economic state of the world will be in the future. Investors have the choice of investing in a risk free instrument (this is usually taken as being modelled by the 10 year US treasury bond) that is guaranteed to give them a return. To invest in anything riskier than the risk free instrument they must be paid a premium over the risk free return that they would get from that. The risk premium is related to how likely they think it is that they will not receive a return higher than that rate. Calculation of that premium is highly subjective; if I know the management of the company well I will be inclined to think that the investment is far less risky (or perhaps riskier...) than someone who does not, for example. Since none of the factors that go into a share price are accurately measurable and many are subjective there is no ""right"" share price at any time, let alone at time of IPO. Each investor will estimate these values differently and so value the shares differently and their trading, based on their ever changing estimates, will move the share price to an indeterminable level. In comments to @keshlam\'s answer you ask if there is enough information to work out the share price if a company buys out the company before IPO.', 'title': ''}
+2025-12-18 20:25:29 - Loading Queries...
+2025-12-18 20:25:29 - Loaded 125 Queries.
+2025-12-18 20:25:29 - Query Example: |user|: Can capital expenses for volunteer purposes be deducted from income?
+|user|: In other words, charitable donations, capital expenses or my time could be make my taxesa lower, right?
+|user|: what kind of organizations could I do donate some money and help me to pay less taxes.
+|user|: assets
+|user|: By the way, if I do a donation in cash for a foreigner organization, could it be used as tax deduction?
+|user|: What the most i can donate and declare  as charitable contribution?
+|user|: Could I put in my will donations for my dearests organization after my death?
+|user|: Is it necessary to have a will?
+2025-12-18 20:25:29 - Created 623 training examples for fiqa
+2025-12-18 20:25:29 - Loading training data for domain: govt...
+2025-12-18 20:25:29 - Loading Corpus...
+  0%|          | 0/49607 [00:00<?, ?it/s] 15%|█▍        | 7203/49607 [00:00<00:00, 70355.51it/s] 29%|██▊       | 14239/49607 [00:00<00:00, 65931.10it/s] 43%|████▎     | 21254/49607 [00:00<00:00, 67777.85it/s] 57%|█████▋    | 28521/49607 [00:00<00:00, 69657.50it/s] 77%|███████▋  | 38013/49607 [00:00<00:00, 78618.45it/s] 94%|█████████▍| 46867/49607 [00:00<00:00, 81954.92it/s]100%|██████████| 49607/49607 [00:00<00:00, 75009.80it/s]
+2025-12-18 20:25:30 - Loaded 49607 Documents.
+2025-12-18 20:25:30 - Doc Example: {'text': 'FAQs • What type of seats can I book?\nFAQs • What type of seats can I book?\n\n \n\nSkip to Main Content\n\nCreate a Website Account - Manage notification subscriptions, save form progress and more. \xa0\xa0\n\nWebsite Sign In\n\nCommunityDoing BusinessParks & RecreationCity GovernmentSitio en Español\n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\nSearch\n\n \n \n \n\nCity Council\n\nCommissions & Boards\n\nAdopted City Council Ordinances\n\nAdopted City Council Resolutions\n\n \n\n \nHomeFAQs\n\nSearch\n\nAll categories\nMoGo Morgan Hill Quick Ride\nPlumbing Fixture FAQs\nPolice: Carry Concealed Weapon (CCW) License\nPrivate Sewer Lateral FAQs\n\nCategories\n\nAll Categories\n\nMoGo Morgan Hill Quick Ride\n\nPlumbing Fixture FAQs\n\nPolice: Carry Concealed Weapon (CCW) License\n\nPrivate Sewer Lateral FAQs\n\n \n\r\nWhat type of seats can I book?\t\n\nMoGo Morgan Hill Quick Ride offers Child, Youth, Regular, and ADA Accessible seating options, including:Regular\xa0Regular with Bike - Passenger seat plus a bike rack spaceAccessible - Passenger in a wheelchair or scooterYouth - Ages 8-18Child - Ages 0-7 (accompanied by a fare-paying parent, guardian, or responsible person age 16 or older; must bring and install an appropriate car seat or booster seat per California law)Discount Fare - For riders that meet the income eligibility of the VTA Clipper SMART program.\xa0Vehicles are equipped to carry strollers, bicycles, and baggage.\xa0If bringing a bike, select “General w/Bike” when booking your ride. Bike racks, when available, have the capacity for two bikes.\xa0Vehicles are ADA accessible and equipped to transport wheelchairs and scooters. If you require accessible seating, you can book a seat by selecting the Accessible option. You also have the option to add an additional companion traveling with you as a Regular seat.Please remember that all passengers in one booking need to travel at the same time and get picked up and dropped off at the same stops. \n\n▼\r\nMoGo Morgan Hill Quick Ride\t\n\nShow All Answers\n\n1.\nHow do I schedule a MoGo ride?\n\nBook trips with the MoGo mobile app (Apple App Store or Google Play), to get the most features including automatic alerts about the status of your ride.', 'title': 'FAQs • What type of seats can I book?'}
+2025-12-18 20:25:30 - Loading Queries...
+2025-12-18 20:25:30 - Loaded 140 Queries.
+2025-12-18 20:25:30 - Query Example: |user|: "What happens to people's bodies when there isn't enough atmospheric pressure?"
+|user|: Speaking about sea level, is it true that it is rising?
+|user|: danger of the rise of the sea level
+|user|: climage change is fake
+2025-12-18 20:25:30 - Created 632 training examples for govt
+2025-12-18 20:25:30 - Loading training data for domain: cloud...
+2025-12-18 20:25:30 - Loading Corpus...
+  0%|          | 0/72442 [00:00<?, ?it/s] 13%|█▎        | 9421/72442 [00:00<00:00, 94160.70it/s] 28%|██▊       | 20001/72442 [00:00<00:00, 101004.09it/s] 42%|████▏     | 30102/72442 [00:00<00:00, 100260.55it/s] 56%|█████▌    | 40411/72442 [00:00<00:00, 101369.78it/s] 72%|███████▏  | 51953/72442 [00:00<00:00, 106419.35it/s] 86%|████████▋ | 62598/72442 [00:00<00:00, 97907.97it/s] 100%|██████████| 72442/72442 [00:00<00:00, 100844.63it/s]
+2025-12-18 20:25:31 - Loaded 72442 Documents.
+2025-12-18 20:25:31 - Doc Example: {'text': "\n\n\n\n\n\n\n  Video - Setting up a web app with security groups, load balancer & CDN \n\nIBM Cloud® network services, including load balancer, security groups, and CDN make it easy to build cloud-native applications with greater security, performance, and resiliency. In this demo, you'll learn how you can use these services to create a simple three-tiered web app in a matter of clicks.\n\n\n\n\n\n\n", 'title': ''}
+2025-12-18 20:25:31 - Loading Queries...
+2025-12-18 20:25:31 - Loaded 131 Queries.
+2025-12-18 20:25:31 - Query Example: |user|: How does version 6.15.0 differ from 6.14.0?
+|user|: Tell me more about the new commands
+|user|: How do I use them?
+2025-12-18 20:25:31 - Created 601 training examples for cloud
+2025-12-18 20:25:31 - Total training examples: 2547
+2025-12-18 20:25:31 - Loading base model: models/tier1_cross_encoder_finetuned
+2025-12-18 20:25:31 - Use pytorch device: cuda:0
+2025-12-18 20:25:32 - Starting training: epochs=3, batch_size=16, lr=2e-05
+2025-12-18 20:25:32 - Total steps per epoch: 160
+2025-12-18 20:25:32 - Saving final model...
+2025-12-18 20:25:32 - Save model to models/tier1_cross_encoder_finetuned
+2025-12-18 20:25:32 - Checkpoint saved: epoch=3, step=0
+2025-12-18 20:25:32 - Final model saved to: models/tier1_cross_encoder_finetuned
+2025-12-19 08:02:35 - Using GPU 3 (CUDA_VISIBLE_DEVICES=3)
+2025-12-19 08:02:35 - Device: cuda (actual device: 0)
+2025-12-19 08:02:35 - Resuming from checkpoint: epoch=3, step=0
+2025-12-19 08:02:35 - Loading training data...
+2025-12-19 08:02:35 - Loading training data for domain: clapnq...
+2025-12-19 08:02:35 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  9%|▉         | 17316/183408 [00:00<00:00, 173122.60it/s] 19%|█▉        | 34629/183408 [00:00<00:00, 155593.96it/s] 29%|██▉       | 53165/183408 [00:00<00:00, 168397.69it/s] 39%|███▉      | 71257/183408 [00:00<00:00, 173161.57it/s] 48%|████▊     | 88677/183408 [00:00<00:00, 171931.59it/s] 58%|█████▊    | 105936/183408 [00:00<00:00, 104483.65it/s] 68%|██████▊   | 123825/183408 [00:00<00:00, 121140.05it/s] 77%|███████▋  | 141428/183408 [00:01<00:00, 134439.12it/s] 87%|████████▋ | 159192/183408 [00:01<00:00, 145547.57it/s] 96%|█████████▌| 175558/183408 [00:01<00:00, 139833.77it/s]100%|██████████| 183408/183408 [00:01<00:00, 142662.03it/s]
+2025-12-19 08:02:37 - Loaded 183408 Documents.
+2025-12-19 08:02:37 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-19 08:02:37 - Loading Queries...
+2025-12-19 08:02:37 - Loaded 145 Queries.
+2025-12-19 08:02:37 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-19 08:02:38 - Created 691 training examples for clapnq
+2025-12-19 08:02:38 - Loading training data for domain: fiqa...
+2025-12-19 08:02:38 - Loading Corpus...
+  0%|          | 0/61022 [00:00<?, ?it/s] 36%|███▌      | 21789/61022 [00:00<00:00, 217883.97it/s] 71%|███████▏  | 43578/61022 [00:00<00:00, 211512.08it/s]100%|██████████| 61022/61022 [00:00<00:00, 211614.89it/s]
+2025-12-19 08:02:38 - Loaded 61022 Documents.
+2025-12-19 08:02:38 - Doc Example: {'text': '\n"To add to @keshlam\'s answer slightly a stock\'s price is made up of several components: the only one of these that is known even remotely accurately at any time is the book value on the day that the accounts are prepared. Even completed cashflows after the books have been prepared contain some slight unknowns as they may be reversed if stock is returned, for example, or reduced by unforeseen costs. Future cashflows are based on (amongst other things) how many sales you expect to make in the future for all time. Exercise for the reader: how many iPhone 22s will apple sell in 2029? Even known future cashflows have some risk attached to them; customers may not pay for goods, a supplier may go into liquidation and so need to change its invoicing strategy etc.. Estimating the risk on future cashflows is highly subjective and depends greatly on what the analyst expects the exact economic state of the world will be in the future. Investors have the choice of investing in a risk free instrument (this is usually taken as being modelled by the 10 year US treasury bond) that is guaranteed to give them a return. To invest in anything riskier than the risk free instrument they must be paid a premium over the risk free return that they would get from that. The risk premium is related to how likely they think it is that they will not receive a return higher than that rate. Calculation of that premium is highly subjective; if I know the management of the company well I will be inclined to think that the investment is far less risky (or perhaps riskier...) than someone who does not, for example. Since none of the factors that go into a share price are accurately measurable and many are subjective there is no ""right"" share price at any time, let alone at time of IPO. Each investor will estimate these values differently and so value the shares differently and their trading, based on their ever changing estimates, will move the share price to an indeterminable level. In comments to @keshlam\'s answer you ask if there is enough information to work out the share price if a company buys out the company before IPO.', 'title': ''}
+2025-12-19 08:02:38 - Loading Queries...
+2025-12-19 08:02:38 - Loaded 125 Queries.
+2025-12-19 08:02:38 - Query Example: |user|: Can capital expenses for volunteer purposes be deducted from income?
+|user|: In other words, charitable donations, capital expenses or my time could be make my taxesa lower, right?
+|user|: what kind of organizations could I do donate some money and help me to pay less taxes.
+|user|: assets
+|user|: By the way, if I do a donation in cash for a foreigner organization, could it be used as tax deduction?
+|user|: What the most i can donate and declare  as charitable contribution?
+|user|: Could I put in my will donations for my dearests organization after my death?
+|user|: Is it necessary to have a will?
+2025-12-19 08:02:38 - Created 623 training examples for fiqa
+2025-12-19 08:02:38 - Loading training data for domain: govt...
+2025-12-19 08:02:38 - Loading Corpus...
+  0%|          | 0/49607 [00:00<?, ?it/s] 16%|█▋        | 8146/49607 [00:00<00:00, 81456.00it/s] 34%|███▎      | 16645/49607 [00:00<00:00, 83530.49it/s] 50%|█████     | 24999/49607 [00:00<00:00, 74785.01it/s] 69%|██████▊   | 34069/49607 [00:00<00:00, 80649.92it/s] 87%|████████▋ | 43258/49607 [00:00<00:00, 84523.67it/s]100%|██████████| 49607/49607 [00:00<00:00, 81926.85it/s]
+2025-12-19 08:02:39 - Loaded 49607 Documents.
+2025-12-19 08:02:39 - Doc Example: {'text': 'FAQs • What type of seats can I book?\nFAQs • What type of seats can I book?\n\n \n\nSkip to Main Content\n\nCreate a Website Account - Manage notification subscriptions, save form progress and more. \xa0\xa0\n\nWebsite Sign In\n\nCommunityDoing BusinessParks & RecreationCity GovernmentSitio en Español\n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\nSearch\n\n \n \n \n\nCity Council\n\nCommissions & Boards\n\nAdopted City Council Ordinances\n\nAdopted City Council Resolutions\n\n \n\n \nHomeFAQs\n\nSearch\n\nAll categories\nMoGo Morgan Hill Quick Ride\nPlumbing Fixture FAQs\nPolice: Carry Concealed Weapon (CCW) License\nPrivate Sewer Lateral FAQs\n\nCategories\n\nAll Categories\n\nMoGo Morgan Hill Quick Ride\n\nPlumbing Fixture FAQs\n\nPolice: Carry Concealed Weapon (CCW) License\n\nPrivate Sewer Lateral FAQs\n\n \n\r\nWhat type of seats can I book?\t\n\nMoGo Morgan Hill Quick Ride offers Child, Youth, Regular, and ADA Accessible seating options, including:Regular\xa0Regular with Bike - Passenger seat plus a bike rack spaceAccessible - Passenger in a wheelchair or scooterYouth - Ages 8-18Child - Ages 0-7 (accompanied by a fare-paying parent, guardian, or responsible person age 16 or older; must bring and install an appropriate car seat or booster seat per California law)Discount Fare - For riders that meet the income eligibility of the VTA Clipper SMART program.\xa0Vehicles are equipped to carry strollers, bicycles, and baggage.\xa0If bringing a bike, select “General w/Bike” when booking your ride. Bike racks, when available, have the capacity for two bikes.\xa0Vehicles are ADA accessible and equipped to transport wheelchairs and scooters. If you require accessible seating, you can book a seat by selecting the Accessible option. You also have the option to add an additional companion traveling with you as a Regular seat.Please remember that all passengers in one booking need to travel at the same time and get picked up and dropped off at the same stops. \n\n▼\r\nMoGo Morgan Hill Quick Ride\t\n\nShow All Answers\n\n1.\nHow do I schedule a MoGo ride?\n\nBook trips with the MoGo mobile app (Apple App Store or Google Play), to get the most features including automatic alerts about the status of your ride.', 'title': 'FAQs • What type of seats can I book?'}
+2025-12-19 08:02:39 - Loading Queries...
+2025-12-19 08:02:39 - Loaded 140 Queries.
+2025-12-19 08:02:39 - Query Example: |user|: "What happens to people's bodies when there isn't enough atmospheric pressure?"
+|user|: Speaking about sea level, is it true that it is rising?
+|user|: danger of the rise of the sea level
+|user|: climage change is fake
+2025-12-19 08:02:39 - Created 632 training examples for govt
+2025-12-19 08:02:39 - Loading training data for domain: cloud...
+2025-12-19 08:02:39 - Loading Corpus...
+  0%|          | 0/72442 [00:00<?, ?it/s] 15%|█▍        | 10766/72442 [00:00<00:00, 107649.07it/s] 30%|███       | 21846/72442 [00:00<00:00, 109458.02it/s] 46%|████▌     | 33143/72442 [00:00<00:00, 111056.25it/s] 61%|██████    | 44249/72442 [00:00<00:00, 102558.63it/s] 77%|███████▋  | 55757/72442 [00:00<00:00, 106844.16it/s] 92%|█████████▏| 66781/72442 [00:00<00:00, 107958.49it/s]100%|██████████| 72442/72442 [00:00<00:00, 107622.86it/s]
+2025-12-19 08:02:40 - Loaded 72442 Documents.
+2025-12-19 08:02:40 - Doc Example: {'text': "\n\n\n\n\n\n\n  Video - Setting up a web app with security groups, load balancer & CDN \n\nIBM Cloud® network services, including load balancer, security groups, and CDN make it easy to build cloud-native applications with greater security, performance, and resiliency. In this demo, you'll learn how you can use these services to create a simple three-tiered web app in a matter of clicks.\n\n\n\n\n\n\n", 'title': ''}
+2025-12-19 08:02:40 - Loading Queries...
+2025-12-19 08:02:40 - Loaded 131 Queries.
+2025-12-19 08:02:40 - Query Example: |user|: How does version 6.15.0 differ from 6.14.0?
+|user|: Tell me more about the new commands
+|user|: How do I use them?
+2025-12-19 08:02:40 - Created 601 training examples for cloud
+2025-12-19 08:02:40 - Total training examples: 2547
+2025-12-19 08:02:40 - Loading base model: models/tier1_cross_encoder_finetuned
+2025-12-19 08:02:40 - Use pytorch device: cuda:0
+2025-12-19 08:02:41 - Starting training: epochs=3, batch_size=16, lr=2e-05
+2025-12-19 08:02:41 - Total steps per epoch: 160
+2025-12-19 08:02:41 - Saving final model...
+2025-12-19 08:02:41 - Save model to models/tier1_cross_encoder_finetuned
+2025-12-19 08:02:41 - Checkpoint saved: epoch=3, step=0
+2025-12-19 08:02:41 - Final model saved to: models/tier1_cross_encoder_finetuned
+2025-12-19 08:19:18 - Using GPU 3 (CUDA_VISIBLE_DEVICES=3)
+2025-12-19 08:19:19 - Device: cuda (actual device: 0)
+2025-12-19 08:19:19 - Resuming from checkpoint: epoch=3, step=0
+2025-12-19 08:19:19 - Loading training data...
+2025-12-19 08:19:19 - Loading training data for domain: clapnq...
+2025-12-19 08:19:19 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s] 10%|▉         | 17679/183408 [00:00<00:00, 176765.72it/s] 20%|█▉        | 35909/183408 [00:00<00:00, 180000.40it/s] 30%|██▉       | 54539/183408 [00:00<00:00, 182873.76it/s] 40%|███▉      | 73158/183408 [00:00<00:00, 184178.79it/s] 50%|████▉     | 91576/183408 [00:00<00:00, 174341.03it/s] 59%|█████▉    | 109096/183408 [00:00<00:00, 104190.94it/s] 69%|██████▉   | 126948/183408 [00:00<00:00, 120420.90it/s] 79%|███████▉  | 144864/183408 [00:01<00:00, 134387.48it/s] 88%|████████▊ | 161609/183408 [00:01<00:00, 142768.57it/s] 97%|█████████▋| 177921/183408 [00:01<00:00, 148177.89it/s]100%|██████████| 183408/183408 [00:01<00:00, 146602.19it/s]
+2025-12-19 08:19:20 - Loaded 183408 Documents.
+2025-12-19 08:19:20 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-19 08:19:20 - Loading Queries...
+2025-12-19 08:19:20 - Loaded 145 Queries.
+2025-12-19 08:19:20 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-19 08:19:21 - Created 691 training examples for clapnq
+2025-12-19 08:19:21 - Loading training data for domain: fiqa...
+2025-12-19 08:19:21 - Loading Corpus...
+  0%|          | 0/61022 [00:00<?, ?it/s] 31%|███       | 18938/61022 [00:00<00:00, 189368.89it/s] 64%|██████▍   | 39198/61022 [00:00<00:00, 197144.08it/s] 97%|█████████▋| 59220/61022 [00:00<00:00, 198542.16it/s]100%|██████████| 61022/61022 [00:00<00:00, 197424.61it/s]
+2025-12-19 08:19:21 - Loaded 61022 Documents.
+2025-12-19 08:19:21 - Doc Example: {'text': '\n"To add to @keshlam\'s answer slightly a stock\'s price is made up of several components: the only one of these that is known even remotely accurately at any time is the book value on the day that the accounts are prepared. Even completed cashflows after the books have been prepared contain some slight unknowns as they may be reversed if stock is returned, for example, or reduced by unforeseen costs. Future cashflows are based on (amongst other things) how many sales you expect to make in the future for all time. Exercise for the reader: how many iPhone 22s will apple sell in 2029? Even known future cashflows have some risk attached to them; customers may not pay for goods, a supplier may go into liquidation and so need to change its invoicing strategy etc.. Estimating the risk on future cashflows is highly subjective and depends greatly on what the analyst expects the exact economic state of the world will be in the future. Investors have the choice of investing in a risk free instrument (this is usually taken as being modelled by the 10 year US treasury bond) that is guaranteed to give them a return. To invest in anything riskier than the risk free instrument they must be paid a premium over the risk free return that they would get from that. The risk premium is related to how likely they think it is that they will not receive a return higher than that rate. Calculation of that premium is highly subjective; if I know the management of the company well I will be inclined to think that the investment is far less risky (or perhaps riskier...) than someone who does not, for example. Since none of the factors that go into a share price are accurately measurable and many are subjective there is no ""right"" share price at any time, let alone at time of IPO. Each investor will estimate these values differently and so value the shares differently and their trading, based on their ever changing estimates, will move the share price to an indeterminable level. In comments to @keshlam\'s answer you ask if there is enough information to work out the share price if a company buys out the company before IPO.', 'title': ''}
+2025-12-19 08:19:21 - Loading Queries...
+2025-12-19 08:19:21 - Loaded 125 Queries.
+2025-12-19 08:19:21 - Query Example: |user|: Can capital expenses for volunteer purposes be deducted from income?
+|user|: In other words, charitable donations, capital expenses or my time could be make my taxesa lower, right?
+|user|: what kind of organizations could I do donate some money and help me to pay less taxes.
+|user|: assets
+|user|: By the way, if I do a donation in cash for a foreigner organization, could it be used as tax deduction?
+|user|: What the most i can donate and declare  as charitable contribution?
+|user|: Could I put in my will donations for my dearests organization after my death?
+|user|: Is it necessary to have a will?
+2025-12-19 08:19:22 - Created 623 training examples for fiqa
+2025-12-19 08:19:22 - Loading training data for domain: govt...
+2025-12-19 08:19:22 - Loading Corpus...
+  0%|          | 0/49607 [00:00<?, ?it/s] 15%|█▌        | 7627/49607 [00:00<00:00, 76265.35it/s] 32%|███▏      | 16028/49607 [00:00<00:00, 80819.03it/s] 49%|████▉     | 24249/49607 [00:00<00:00, 81451.80it/s] 67%|██████▋   | 33047/49607 [00:00<00:00, 84025.37it/s] 85%|████████▌ | 42363/49607 [00:00<00:00, 87316.92it/s]100%|██████████| 49607/49607 [00:00<00:00, 84390.17it/s]
+2025-12-19 08:19:22 - Loaded 49607 Documents.
+2025-12-19 08:19:22 - Doc Example: {'text': 'FAQs • What type of seats can I book?\nFAQs • What type of seats can I book?\n\n \n\nSkip to Main Content\n\nCreate a Website Account - Manage notification subscriptions, save form progress and more. \xa0\xa0\n\nWebsite Sign In\n\nCommunityDoing BusinessParks & RecreationCity GovernmentSitio en Español\n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\nSearch\n\n \n \n \n\nCity Council\n\nCommissions & Boards\n\nAdopted City Council Ordinances\n\nAdopted City Council Resolutions\n\n \n\n \nHomeFAQs\n\nSearch\n\nAll categories\nMoGo Morgan Hill Quick Ride\nPlumbing Fixture FAQs\nPolice: Carry Concealed Weapon (CCW) License\nPrivate Sewer Lateral FAQs\n\nCategories\n\nAll Categories\n\nMoGo Morgan Hill Quick Ride\n\nPlumbing Fixture FAQs\n\nPolice: Carry Concealed Weapon (CCW) License\n\nPrivate Sewer Lateral FAQs\n\n \n\r\nWhat type of seats can I book?\t\n\nMoGo Morgan Hill Quick Ride offers Child, Youth, Regular, and ADA Accessible seating options, including:Regular\xa0Regular with Bike - Passenger seat plus a bike rack spaceAccessible - Passenger in a wheelchair or scooterYouth - Ages 8-18Child - Ages 0-7 (accompanied by a fare-paying parent, guardian, or responsible person age 16 or older; must bring and install an appropriate car seat or booster seat per California law)Discount Fare - For riders that meet the income eligibility of the VTA Clipper SMART program.\xa0Vehicles are equipped to carry strollers, bicycles, and baggage.\xa0If bringing a bike, select “General w/Bike” when booking your ride. Bike racks, when available, have the capacity for two bikes.\xa0Vehicles are ADA accessible and equipped to transport wheelchairs and scooters. If you require accessible seating, you can book a seat by selecting the Accessible option. You also have the option to add an additional companion traveling with you as a Regular seat.Please remember that all passengers in one booking need to travel at the same time and get picked up and dropped off at the same stops. \n\n▼\r\nMoGo Morgan Hill Quick Ride\t\n\nShow All Answers\n\n1.\nHow do I schedule a MoGo ride?\n\nBook trips with the MoGo mobile app (Apple App Store or Google Play), to get the most features including automatic alerts about the status of your ride.', 'title': 'FAQs • What type of seats can I book?'}
+2025-12-19 08:19:22 - Loading Queries...
+2025-12-19 08:19:22 - Loaded 140 Queries.
+2025-12-19 08:19:22 - Query Example: |user|: "What happens to people's bodies when there isn't enough atmospheric pressure?"
+|user|: Speaking about sea level, is it true that it is rising?
+|user|: danger of the rise of the sea level
+|user|: climage change is fake
+2025-12-19 08:19:23 - Created 632 training examples for govt
+2025-12-19 08:19:23 - Loading training data for domain: cloud...
+2025-12-19 08:19:23 - Loading Corpus...
+  0%|          | 0/72442 [00:00<?, ?it/s] 15%|█▍        | 10561/72442 [00:00<00:00, 105592.48it/s] 30%|██▉       | 21559/72442 [00:00<00:00, 108162.34it/s] 45%|████▌     | 32849/72442 [00:00<00:00, 110321.30it/s] 61%|██████    | 43882/72442 [00:00<00:00, 106740.80it/s] 77%|███████▋  | 55524/72442 [00:00<00:00, 110154.45it/s] 92%|█████████▏| 66558/72442 [00:00<00:00, 110208.67it/s]100%|██████████| 72442/72442 [00:00<00:00, 109312.13it/s]
+2025-12-19 08:19:23 - Loaded 72442 Documents.
+2025-12-19 08:19:23 - Doc Example: {'text': "\n\n\n\n\n\n\n  Video - Setting up a web app with security groups, load balancer & CDN \n\nIBM Cloud® network services, including load balancer, security groups, and CDN make it easy to build cloud-native applications with greater security, performance, and resiliency. In this demo, you'll learn how you can use these services to create a simple three-tiered web app in a matter of clicks.\n\n\n\n\n\n\n", 'title': ''}
+2025-12-19 08:19:23 - Loading Queries...
+2025-12-19 08:19:23 - Loaded 131 Queries.
+2025-12-19 08:19:23 - Query Example: |user|: How does version 6.15.0 differ from 6.14.0?
+|user|: Tell me more about the new commands
+|user|: How do I use them?
+2025-12-19 08:19:24 - Created 601 training examples for cloud
+2025-12-19 08:19:24 - Total training examples: 2547
+2025-12-19 08:19:24 - Loading base model: models/tier1_cross_encoder_finetuned
+2025-12-19 08:19:24 - Use pytorch device: cuda:0
+2025-12-19 08:19:24 - Starting training: epochs=3, batch_size=16, lr=2e-05
+2025-12-19 08:19:24 - Total steps per epoch: 160
+2025-12-19 08:19:24 - Saving final model...
+2025-12-19 08:19:24 - Save model to models/tier1_cross_encoder_finetuned
+2025-12-19 08:19:25 - Checkpoint saved: epoch=3, step=0
+2025-12-19 08:19:25 - Final model saved to: models/tier1_cross_encoder_finetuned

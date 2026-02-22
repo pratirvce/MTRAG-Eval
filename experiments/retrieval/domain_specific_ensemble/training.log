@@ -1,0 +1,52 @@
+2025-12-20 12:34:57 - CUDA_VISIBLE_DEVICES=3
+2025-12-20 12:34:58 - Device: cuda, GPU: 0
+2025-12-20 12:34:58 - Training domain-specific model for clapnq...
+2025-12-20 12:34:58 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-12-20 12:35:00 - Query prompt: None, Passage prompt: None
+2025-12-20 12:35:00 - Query prompt name: None, Passage prompt name: None
+2025-12-20 12:35:00 - Training domain-specific model for fiqa...
+2025-12-20 12:35:00 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-12-20 12:35:02 - Query prompt: None, Passage prompt: None
+2025-12-20 12:35:02 - Query prompt name: None, Passage prompt name: None
+2025-12-20 12:35:02 - Training domain-specific model for govt...
+2025-12-20 12:35:02 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-12-20 12:35:03 - Query prompt: None, Passage prompt: None
+2025-12-20 12:35:03 - Query prompt name: None, Passage prompt name: None
+2025-12-20 12:35:03 - Training domain-specific model for cloud...
+2025-12-20 12:35:03 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-12-20 12:35:05 - Query prompt: None, Passage prompt: None
+2025-12-20 12:35:05 - Query prompt name: None, Passage prompt name: None
+2025-12-20 12:35:05 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10379/183408 [00:00<00:01, 103752.25it/s] 12%|█▏        | 21270/183408 [00:00<00:01, 106777.29it/s] 20%|██        | 37234/183408 [00:00<00:01, 130909.72it/s] 28%|██▊       | 51282/183408 [00:00<00:00, 134685.14it/s] 37%|███▋      | 68140/183408 [00:00<00:00, 146905.83it/s] 45%|████▌     | 82831/183408 [00:00<00:01, 73832.00it/s]  53%|█████▎    | 97732/183408 [00:00<00:00, 88579.57it/s] 61%|██████▏   | 112381/183408 [00:01<00:00, 101256.22it/s] 70%|███████   | 128826/183408 [00:01<00:00, 116309.70it/s] 79%|███████▉  | 145236/183408 [00:01<00:00, 128441.60it/s] 88%|████████▊ | 161839/183408 [00:01<00:00, 138442.83it/s] 97%|█████████▋| 177194/183408 [00:01<00:00, 135906.82it/s]100%|██████████| 183408/183408 [00:01<00:00, 118634.68it/s]
+2025-12-20 12:35:07 - Loaded 183408 Documents.
+2025-12-20 12:35:07 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-20 12:35:07 - Loading Queries...
+2025-12-20 12:35:07 - Loaded 208 Queries.
+2025-12-20 12:35:07 - Query Example: |user|: where do the arizona cardinals play this week
+|user|: Do the Arizona Cardinals play outside the US?
+2025-12-20 12:35:07 - Error evaluating clapnq: 'DenseRetrievalExactSearch' object has no attribute 'retrieve'
+2025-12-20 12:35:07 - Loading Corpus...
+  0%|          | 0/61022 [00:00<?, ?it/s] 27%|██▋       | 16328/61022 [00:00<00:00, 163271.20it/s] 57%|█████▋    | 34487/61022 [00:00<00:00, 174036.82it/s] 85%|████████▌ | 51964/61022 [00:00<00:00, 174359.90it/s]100%|██████████| 61022/61022 [00:00<00:00, 171696.80it/s]
+2025-12-20 12:35:07 - Loaded 61022 Documents.
+2025-12-20 12:35:07 - Doc Example: {'text': '\n"To add to @keshlam\'s answer slightly a stock\'s price is made up of several components: the only one of these that is known even remotely accurately at any time is the book value on the day that the accounts are prepared. Even completed cashflows after the books have been prepared contain some slight unknowns as they may be reversed if stock is returned, for example, or reduced by unforeseen costs. Future cashflows are based on (amongst other things) how many sales you expect to make in the future for all time. Exercise for the reader: how many iPhone 22s will apple sell in 2029? Even known future cashflows have some risk attached to them; customers may not pay for goods, a supplier may go into liquidation and so need to change its invoicing strategy etc.. Estimating the risk on future cashflows is highly subjective and depends greatly on what the analyst expects the exact economic state of the world will be in the future. Investors have the choice of investing in a risk free instrument (this is usually taken as being modelled by the 10 year US treasury bond) that is guaranteed to give them a return. To invest in anything riskier than the risk free instrument they must be paid a premium over the risk free return that they would get from that. The risk premium is related to how likely they think it is that they will not receive a return higher than that rate. Calculation of that premium is highly subjective; if I know the management of the company well I will be inclined to think that the investment is far less risky (or perhaps riskier...) than someone who does not, for example. Since none of the factors that go into a share price are accurately measurable and many are subjective there is no ""right"" share price at any time, let alone at time of IPO. Each investor will estimate these values differently and so value the shares differently and their trading, based on their ever changing estimates, will move the share price to an indeterminable level. In comments to @keshlam\'s answer you ask if there is enough information to work out the share price if a company buys out the company before IPO.', 'title': ''}
+2025-12-20 12:35:07 - Loading Queries...
+2025-12-20 12:35:07 - Loaded 180 Queries.
+2025-12-20 12:35:07 - Query Example: |user|:  What's the difference between Market Cap and NAV?
+2025-12-20 12:35:07 - Error evaluating fiqa: 'DenseRetrievalExactSearch' object has no attribute 'retrieve'
+2025-12-20 12:35:07 - Loading Corpus...
+  0%|          | 0/49607 [00:00<?, ?it/s] 16%|█▌        | 7748/49607 [00:00<00:00, 77469.18it/s] 32%|███▏      | 15954/49607 [00:00<00:00, 80165.73it/s] 48%|████▊     | 23971/49607 [00:00<00:00, 77104.69it/s] 65%|██████▍   | 32214/49607 [00:00<00:00, 79155.26it/s] 81%|████████  | 40143/49607 [00:00<00:00, 76928.79it/s] 96%|█████████▋| 47852/49607 [00:00<00:00, 74231.58it/s]100%|██████████| 49607/49607 [00:00<00:00, 76058.05it/s]
+2025-12-20 12:35:08 - Loaded 49607 Documents.
+2025-12-20 12:35:08 - Doc Example: {'text': 'FAQs • What type of seats can I book?\nFAQs • What type of seats can I book?\n\n \n\nSkip to Main Content\n\nCreate a Website Account - Manage notification subscriptions, save form progress and more. \xa0\xa0\n\nWebsite Sign In\n\nCommunityDoing BusinessParks & RecreationCity GovernmentSitio en Español\n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\nSearch\n\n \n \n \n\nCity Council\n\nCommissions & Boards\n\nAdopted City Council Ordinances\n\nAdopted City Council Resolutions\n\n \n\n \nHomeFAQs\n\nSearch\n\nAll categories\nMoGo Morgan Hill Quick Ride\nPlumbing Fixture FAQs\nPolice: Carry Concealed Weapon (CCW) License\nPrivate Sewer Lateral FAQs\n\nCategories\n\nAll Categories\n\nMoGo Morgan Hill Quick Ride\n\nPlumbing Fixture FAQs\n\nPolice: Carry Concealed Weapon (CCW) License\n\nPrivate Sewer Lateral FAQs\n\n \n\r\nWhat type of seats can I book?\t\n\nMoGo Morgan Hill Quick Ride offers Child, Youth, Regular, and ADA Accessible seating options, including:Regular\xa0Regular with Bike - Passenger seat plus a bike rack spaceAccessible - Passenger in a wheelchair or scooterYouth - Ages 8-18Child - Ages 0-7 (accompanied by a fare-paying parent, guardian, or responsible person age 16 or older; must bring and install an appropriate car seat or booster seat per California law)Discount Fare - For riders that meet the income eligibility of the VTA Clipper SMART program.\xa0Vehicles are equipped to carry strollers, bicycles, and baggage.\xa0If bringing a bike, select “General w/Bike” when booking your ride. Bike racks, when available, have the capacity for two bikes.\xa0Vehicles are ADA accessible and equipped to transport wheelchairs and scooters. If you require accessible seating, you can book a seat by selecting the Accessible option. You also have the option to add an additional companion traveling with you as a Regular seat.Please remember that all passengers in one booking need to travel at the same time and get picked up and dropped off at the same stops. \n\n▼\r\nMoGo Morgan Hill Quick Ride\t\n\nShow All Answers\n\n1.\nHow do I schedule a MoGo ride?\n\nBook trips with the MoGo mobile app (Apple App Store or Google Play), to get the most features including automatic alerts about the status of your ride.', 'title': 'FAQs • What type of seats can I book?'}
+2025-12-20 12:35:08 - Loading Queries...
+2025-12-20 12:35:08 - Loaded 201 Queries.
+2025-12-20 12:35:08 - Query Example: |user|: "What are the sheltered rooms designated for use?
+2025-12-20 12:35:08 - Error evaluating govt: 'DenseRetrievalExactSearch' object has no attribute 'retrieve'
+2025-12-20 12:35:08 - Loading Corpus...
+  0%|          | 0/72442 [00:00<?, ?it/s] 14%|█▍        | 9981/72442 [00:00<00:00, 99796.06it/s] 28%|██▊       | 20165/72442 [00:00<00:00, 100995.53it/s] 42%|████▏     | 30265/72442 [00:00<00:00, 80584.02it/s]  53%|█████▎    | 38720/72442 [00:00<00:00, 72733.40it/s] 66%|██████▌   | 47736/72442 [00:00<00:00, 78005.72it/s] 79%|███████▉  | 57552/72442 [00:00<00:00, 84088.00it/s] 91%|█████████▏| 66223/72442 [00:00<00:00, 80121.29it/s]100%|██████████| 72442/72442 [00:00<00:00, 82498.20it/s]
+2025-12-20 12:35:09 - Loaded 72442 Documents.
+2025-12-20 12:35:09 - Doc Example: {'text': "\n\n\n\n\n\n\n  Video - Setting up a web app with security groups, load balancer & CDN \n\nIBM Cloud® network services, including load balancer, security groups, and CDN make it easy to build cloud-native applications with greater security, performance, and resiliency. In this demo, you'll learn how you can use these services to create a simple three-tiered web app in a matter of clicks.\n\n\n\n\n\n\n", 'title': ''}
+2025-12-20 12:35:09 - Loading Queries...
+2025-12-20 12:35:09 - Loaded 188 Queries.
+2025-12-20 12:35:09 - Query Example: |user|: does IBM offer document databases?
+2025-12-20 12:35:09 - Error evaluating cloud: 'DenseRetrievalExactSearch' object has no attribute 'retrieve'
+❌ Experiment failed

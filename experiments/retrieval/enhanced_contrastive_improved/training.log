@@ -1,0 +1,1870 @@
+2025-12-30 15:20:39 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:20:43 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:20:44 - Device: cuda, GPU: 0
+2025-12-30 15:20:44 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:20:44 - Use pytorch device_name: cuda:0
+2025-12-30 15:20:44 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:20:45 - Mixed precision training (FP16) enabled
+2025-12-30 15:20:45 - 
+============================================================
+2025-12-30 15:20:45 - Training on domain: clapnq
+2025-12-30 15:20:45 - ============================================================
+2025-12-30 15:20:45 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 11105/183408 [00:00<00:01, 111023.11it/s] 12%|█▏        | 22208/183408 [00:00<00:01, 109390.74it/s] 18%|█▊        | 33296/183408 [00:00<00:01, 110055.19it/s] 26%|██▌       | 48042/183408 [00:00<00:01, 124745.61it/s] 36%|███▌      | 65699/183408 [00:00<00:00, 143372.37it/s] 45%|████▌     | 83158/183408 [00:00<00:00, 153961.38it/s] 54%|█████▎    | 98564/183408 [00:00<00:01, 80563.93it/s]  60%|██████    | 110900/183408 [00:01<00:00, 88956.18it/s] 70%|██████▉   | 127846/183408 [00:01<00:00, 106572.12it/s] 78%|███████▊  | 143637/183408 [00:01<00:00, 118795.04it/s] 88%|████████▊ | 160576/183408 [00:01<00:00, 131638.33it/s] 96%|█████████▌| 175857/183408 [00:01<00:00, 137271.87it/s]100%|██████████| 183408/183408 [00:01<00:00, 114857.09it/s]
+2025-12-30 15:20:47 - Loaded 183408 Documents.
+2025-12-30 15:20:47 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:20:47 - Loading Queries...
+2025-12-30 15:20:47 - Loaded 145 Queries.
+2025-12-30 15:20:47 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:20:47 - Created 401 positive pairs for clapnq
+2025-12-30 15:20:56 - BM25 index built for hard negative mining
+2025-12-30 15:21:29 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:21:40 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:21:44 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:21:44 - Device: cuda, GPU: 0
+2025-12-30 15:21:44 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:21:44 - Use pytorch device_name: cuda:0
+2025-12-30 15:21:44 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:21:46 - Mixed precision training (FP16) enabled
+2025-12-30 15:21:46 - 
+============================================================
+2025-12-30 15:21:46 - Training on domain: clapnq
+2025-12-30 15:21:46 - ============================================================
+2025-12-30 15:21:46 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s] 10%|▉         | 17443/183408 [00:00<00:00, 174408.54it/s] 19%|█▉        | 35408/183408 [00:00<00:00, 177483.73it/s] 29%|██▉       | 53438/183408 [00:00<00:00, 178763.87it/s] 39%|███▉      | 71315/183408 [00:00<00:00, 174136.10it/s] 48%|████▊     | 88747/183408 [00:00<00:00, 98237.00it/s]  58%|█████▊    | 106277/183408 [00:00<00:00, 115357.31it/s] 66%|██████▌   | 120898/183408 [00:00<00:00, 108790.24it/s] 75%|███████▌  | 137755/183408 [00:01<00:00, 122755.63it/s] 85%|████████▍ | 155380/183408 [00:01<00:00, 136142.28it/s] 94%|█████████▍| 172692/183408 [00:01<00:00, 145874.89it/s]100%|██████████| 183408/183408 [00:01<00:00, 136185.34it/s]
+2025-12-30 15:21:48 - Loaded 183408 Documents.
+2025-12-30 15:21:48 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:21:48 - Loading Queries...
+2025-12-30 15:21:48 - Loaded 145 Queries.
+2025-12-30 15:21:48 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:21:48 - Created 401 positive pairs for clapnq
+2025-12-30 15:21:55 - BM25 index built for hard negative mining
+2025-12-30 15:22:24 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:22:41 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:22:45 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:22:46 - Device: cuda, GPU: 0
+2025-12-30 15:22:46 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:22:46 - Use pytorch device_name: cuda:0
+2025-12-30 15:22:46 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:22:47 - Mixed precision training (FP16) enabled
+2025-12-30 15:22:47 - 
+============================================================
+2025-12-30 15:22:47 - Training on domain: clapnq
+2025-12-30 15:22:47 - ============================================================
+2025-12-30 15:22:47 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  5%|▍         | 8565/183408 [00:00<00:02, 85636.20it/s] 11%|█         | 20614/183408 [00:00<00:01, 106120.91it/s] 21%|██        | 38658/183408 [00:00<00:01, 140049.70it/s] 31%|███       | 56676/183408 [00:00<00:00, 155889.51it/s] 41%|████      | 74582/183408 [00:00<00:00, 164240.69it/s] 50%|████▉     | 91007/183408 [00:00<00:00, 95609.67it/s]  59%|█████▉    | 108570/183408 [00:00<00:00, 113245.96it/s] 69%|██████▊   | 126038/183408 [00:01<00:00, 127956.38it/s] 78%|███████▊  | 142612/183408 [00:01<00:00, 137584.07it/s] 87%|████████▋ | 160302/183408 [00:01<00:00, 148076.05it/s] 96%|█████████▋| 176601/183408 [00:01<00:00, 152167.75it/s]100%|██████████| 183408/183408 [00:01<00:00, 136057.87it/s]
+2025-12-30 15:22:49 - Loaded 183408 Documents.
+2025-12-30 15:22:49 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:22:49 - Loading Queries...
+2025-12-30 15:22:49 - Loaded 145 Queries.
+2025-12-30 15:22:49 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:22:49 - Created 401 positive pairs for clapnq
+2025-12-30 15:22:58 - BM25 index built for hard negative mining
+2025-12-30 15:23:29 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:23:42 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:23:46 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:23:47 - Device: cuda, GPU: 0
+2025-12-30 15:23:47 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:23:47 - Use pytorch device_name: cuda:0
+2025-12-30 15:23:47 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:23:48 - Mixed precision training (FP16) enabled
+2025-12-30 15:23:48 - 
+============================================================
+2025-12-30 15:23:48 - Training on domain: clapnq
+2025-12-30 15:23:48 - ============================================================
+2025-12-30 15:23:48 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s] 10%|▉         | 17841/183408 [00:00<00:00, 178394.86it/s] 19%|█▉        | 35681/183408 [00:00<00:00, 178017.26it/s] 29%|██▉       | 53573/183408 [00:00<00:00, 178424.99it/s] 39%|███▉      | 71416/183408 [00:00<00:00, 177660.04it/s] 49%|████▊     | 89183/183408 [00:00<00:00, 99698.76it/s]  58%|█████▊    | 106608/183408 [00:00<00:00, 116373.42it/s] 68%|██████▊   | 124186/183408 [00:00<00:00, 130757.57it/s] 77%|███████▋  | 141012/183408 [00:01<00:00, 140395.91it/s] 86%|████████▋ | 158344/183408 [00:01<00:00, 149234.09it/s] 95%|█████████▌| 174789/183408 [00:01<00:00, 132312.77it/s]100%|██████████| 183408/183408 [00:01<00:00, 137591.54it/s]
+2025-12-30 15:23:50 - Loaded 183408 Documents.
+2025-12-30 15:23:50 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:23:50 - Loading Queries...
+2025-12-30 15:23:50 - Loaded 145 Queries.
+2025-12-30 15:23:50 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:23:50 - Created 401 positive pairs for clapnq
+2025-12-30 15:23:58 - BM25 index built for hard negative mining
+2025-12-30 15:24:27 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:24:43 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:24:47 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:24:48 - Device: cuda, GPU: 0
+2025-12-30 15:24:48 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:24:48 - Use pytorch device_name: cuda:0
+2025-12-30 15:24:48 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:24:50 - Mixed precision training (FP16) enabled
+2025-12-30 15:24:50 - 
+============================================================
+2025-12-30 15:24:50 - Training on domain: clapnq
+2025-12-30 15:24:50 - ============================================================
+2025-12-30 15:24:50 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s] 10%|▉         | 17573/183408 [00:00<00:00, 175714.67it/s] 19%|█▉        | 35410/183408 [00:00<00:00, 177254.55it/s] 29%|██▉       | 53136/183408 [00:00<00:00, 173093.11it/s] 38%|███▊      | 70457/183408 [00:00<00:00, 130048.07it/s] 46%|████▌     | 84633/183408 [00:00<00:01, 78631.95it/s]  55%|█████▌    | 101513/183408 [00:00<00:00, 96540.00it/s] 65%|██████▍   | 119111/183408 [00:01<00:00, 114097.45it/s] 74%|███████▍  | 136228/183408 [00:01<00:00, 127792.64it/s] 84%|████████▍ | 153832/183408 [00:01<00:00, 140109.28it/s] 93%|█████████▎| 171080/183408 [00:01<00:00, 148759.32it/s]100%|██████████| 183408/183408 [00:01<00:00, 130672.53it/s]
+2025-12-30 15:24:51 - Loaded 183408 Documents.
+2025-12-30 15:24:51 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:24:51 - Loading Queries...
+2025-12-30 15:24:51 - Loaded 145 Queries.
+2025-12-30 15:24:51 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:24:51 - Created 401 positive pairs for clapnq
+2025-12-30 15:25:00 - BM25 index built for hard negative mining
+2025-12-30 15:25:34 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:25:44 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:25:49 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:25:49 - Device: cuda, GPU: 0
+2025-12-30 15:25:49 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:25:49 - Use pytorch device_name: cuda:0
+2025-12-30 15:25:49 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:25:51 - Mixed precision training (FP16) enabled
+2025-12-30 15:25:51 - 
+============================================================
+2025-12-30 15:25:51 - Training on domain: clapnq
+2025-12-30 15:25:51 - ============================================================
+2025-12-30 15:25:51 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s] 10%|▉         | 17622/183408 [00:00<00:00, 176209.25it/s] 19%|█▉        | 35716/183408 [00:00<00:00, 178986.55it/s] 29%|██▉       | 53615/183408 [00:00<00:00, 178826.23it/s] 39%|███▉      | 71498/183408 [00:00<00:00, 178005.93it/s] 49%|████▊     | 89300/183408 [00:00<00:01, 90820.03it/s]  58%|█████▊    | 106624/183408 [00:00<00:00, 107925.21it/s] 68%|██████▊   | 123993/183408 [00:00<00:00, 122965.92it/s] 77%|███████▋  | 141135/183408 [00:01<00:00, 134896.67it/s] 87%|████████▋ | 158741/183408 [00:01<00:00, 145607.62it/s] 96%|█████████▌| 175247/183408 [00:01<00:00, 149443.06it/s]100%|██████████| 183408/183408 [00:01<00:00, 139279.52it/s]
+2025-12-30 15:25:52 - Loaded 183408 Documents.
+2025-12-30 15:25:52 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:25:52 - Loading Queries...
+2025-12-30 15:25:52 - Loaded 145 Queries.
+2025-12-30 15:25:52 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:25:52 - Created 401 positive pairs for clapnq
+2025-12-30 15:26:01 - BM25 index built for hard negative mining
+2025-12-30 15:26:29 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:26:45 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:26:50 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:26:50 - Device: cuda, GPU: 0
+2025-12-30 15:26:50 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:26:50 - Use pytorch device_name: cuda:0
+2025-12-30 15:26:50 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:26:52 - Mixed precision training (FP16) enabled
+2025-12-30 15:26:52 - 
+============================================================
+2025-12-30 15:26:52 - Training on domain: clapnq
+2025-12-30 15:26:52 - ============================================================
+2025-12-30 15:26:52 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  9%|▉         | 16154/183408 [00:00<00:01, 161525.91it/s] 18%|█▊        | 33585/183408 [00:00<00:00, 169036.54it/s] 28%|██▊       | 50968/183408 [00:00<00:00, 171221.20it/s] 37%|███▋      | 68325/183408 [00:00<00:00, 172144.62it/s] 47%|████▋     | 85540/183408 [00:00<00:01, 91035.96it/s]  56%|█████▌    | 102241/183408 [00:00<00:00, 107300.00it/s] 65%|██████▌   | 119695/183408 [00:00<00:00, 123045.87it/s] 74%|███████▍  | 136581/183408 [00:01<00:00, 134530.27it/s] 84%|████████▍ | 153675/183408 [00:01<00:00, 144130.27it/s] 93%|█████████▎| 170849/183408 [00:01<00:00, 151680.93it/s]100%|██████████| 183408/183408 [00:01<00:00, 138357.64it/s]
+2025-12-30 15:26:53 - Loaded 183408 Documents.
+2025-12-30 15:26:53 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:26:53 - Loading Queries...
+2025-12-30 15:26:53 - Loaded 145 Queries.
+2025-12-30 15:26:53 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:26:53 - Created 401 positive pairs for clapnq
+2025-12-30 15:27:02 - BM25 index built for hard negative mining
+2025-12-30 15:27:33 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:27:46 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:27:51 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:27:51 - Device: cuda, GPU: 0
+2025-12-30 15:27:51 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:27:51 - Use pytorch device_name: cuda:0
+2025-12-30 15:27:51 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:27:53 - Mixed precision training (FP16) enabled
+2025-12-30 15:27:53 - 
+============================================================
+2025-12-30 15:27:53 - Training on domain: clapnq
+2025-12-30 15:27:53 - ============================================================
+2025-12-30 15:27:53 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s] 10%|▉         | 17436/183408 [00:00<00:00, 174327.75it/s] 19%|█▉        | 34869/183408 [00:00<00:00, 174244.38it/s] 29%|██▊       | 52294/183408 [00:00<00:00, 171969.09it/s] 38%|███▊      | 69495/183408 [00:00<00:00, 171753.31it/s] 47%|████▋     | 86673/183408 [00:00<00:01, 87225.78it/s]  57%|█████▋    | 103636/183408 [00:00<00:00, 104229.32it/s] 66%|██████▌   | 121217/183408 [00:00<00:00, 120525.40it/s] 75%|███████▌  | 138361/183408 [00:01<00:00, 133019.48it/s] 85%|████████▍ | 155486/183408 [00:01<00:00, 142942.39it/s] 94%|█████████▍| 172233/183408 [00:01<00:00, 149576.10it/s]100%|██████████| 183408/183408 [00:01<00:00, 136539.43it/s]
+2025-12-30 15:27:54 - Loaded 183408 Documents.
+2025-12-30 15:27:54 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:27:54 - Loading Queries...
+2025-12-30 15:27:54 - Loaded 145 Queries.
+2025-12-30 15:27:54 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:27:54 - Created 401 positive pairs for clapnq
+2025-12-30 15:28:02 - BM25 index built for hard negative mining
+2025-12-30 15:28:23 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:28:47 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:28:52 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:28:52 - Device: cuda, GPU: 0
+2025-12-30 15:28:52 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:28:52 - Use pytorch device_name: cuda:0
+2025-12-30 15:28:52 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:28:54 - Mixed precision training (FP16) enabled
+2025-12-30 15:28:54 - 
+============================================================
+2025-12-30 15:28:54 - Training on domain: clapnq
+2025-12-30 15:28:54 - ============================================================
+2025-12-30 15:28:54 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10405/183408 [00:00<00:01, 104029.76it/s] 12%|█▏        | 21453/183408 [00:00<00:01, 107815.31it/s] 18%|█▊        | 32357/183408 [00:00<00:01, 108369.10it/s] 26%|██▌       | 48106/183408 [00:00<00:01, 127756.45it/s] 36%|███▌      | 65687/183408 [00:00<00:00, 145079.89it/s] 45%|████▌     | 83060/183408 [00:00<00:00, 154818.50it/s] 54%|█████▎    | 98542/183408 [00:00<00:00, 89324.61it/s]  60%|██████    | 110524/183408 [00:01<00:00, 94166.12it/s] 68%|██████▊   | 124669/183408 [00:01<00:00, 105021.86it/s] 78%|███████▊  | 142196/183408 [00:01<00:00, 122371.83it/s] 87%|████████▋ | 160043/183408 [00:01<00:00, 137001.19it/s] 96%|█████████▌| 176447/183408 [00:01<00:00, 144338.68it/s]100%|██████████| 183408/183408 [00:01<00:00, 124744.75it/s]
+2025-12-30 15:28:55 - Loaded 183408 Documents.
+2025-12-30 15:28:55 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:28:55 - Loading Queries...
+2025-12-30 15:28:55 - Loaded 145 Queries.
+2025-12-30 15:28:55 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:28:55 - Created 401 positive pairs for clapnq
+2025-12-30 15:29:04 - BM25 index built for hard negative mining
+2025-12-30 15:29:20 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:29:48 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:29:53 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:29:53 - Device: cuda, GPU: 0
+2025-12-30 15:29:53 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:29:53 - Use pytorch device_name: cuda:0
+2025-12-30 15:29:53 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:29:55 - Mixed precision training (FP16) enabled
+2025-12-30 15:29:55 - 
+============================================================
+2025-12-30 15:29:55 - Training on domain: clapnq
+2025-12-30 15:29:55 - ============================================================
+2025-12-30 15:29:55 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10681/183408 [00:00<00:01, 106799.15it/s] 12%|█▏        | 21613/183408 [00:00<00:01, 108272.74it/s] 18%|█▊        | 32441/183408 [00:00<00:01, 107673.86it/s] 27%|██▋       | 48775/183408 [00:00<00:01, 129572.07it/s] 36%|███▌      | 66226/183408 [00:00<00:00, 145736.01it/s] 45%|████▍     | 82003/183408 [00:00<00:01, 87727.03it/s]  54%|█████▎    | 98450/183408 [00:00<00:00, 104699.75it/s] 63%|██████▎   | 115649/183408 [00:01<00:00, 120855.48it/s] 72%|███████▏  | 132463/183408 [00:01<00:00, 132928.21it/s] 82%|████████▏ | 149697/183408 [00:01<00:00, 143462.34it/s] 91%|█████████ | 167005/183408 [00:01<00:00, 151644.80it/s]100%|██████████| 183408/183408 [00:01<00:00, 130151.99it/s]
+2025-12-30 15:29:57 - Loaded 183408 Documents.
+2025-12-30 15:29:57 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:29:57 - Loading Queries...
+2025-12-30 15:29:57 - Loaded 145 Queries.
+2025-12-30 15:29:57 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:29:57 - Created 401 positive pairs for clapnq
+2025-12-30 15:30:05 - BM25 index built for hard negative mining
+2025-12-30 15:30:32 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:30:49 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:30:54 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:30:54 - Device: cuda, GPU: 0
+2025-12-30 15:30:54 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:30:54 - Use pytorch device_name: cuda:0
+2025-12-30 15:30:54 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:30:56 - Mixed precision training (FP16) enabled
+2025-12-30 15:30:56 - 
+============================================================
+2025-12-30 15:30:56 - Training on domain: clapnq
+2025-12-30 15:30:56 - ============================================================
+2025-12-30 15:30:56 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10540/183408 [00:00<00:01, 105370.21it/s] 12%|█▏        | 21576/183408 [00:00<00:01, 108301.00it/s] 18%|█▊        | 33260/183408 [00:00<00:01, 112196.51it/s] 28%|██▊       | 51024/183408 [00:00<00:00, 138029.34it/s] 38%|███▊      | 68878/183408 [00:00<00:00, 152632.61it/s] 46%|████▌     | 84142/183408 [00:00<00:01, 88786.22it/s]  55%|█████▌    | 101056/183408 [00:00<00:00, 106486.27it/s] 65%|██████▍   | 118755/183408 [00:01<00:00, 123359.76it/s] 74%|███████▍  | 135814/183408 [00:01<00:00, 135392.55it/s] 84%|████████▎ | 153261/183408 [00:01<00:00, 145819.82it/s] 93%|█████████▎| 170705/183408 [00:01<00:00, 153716.73it/s]100%|██████████| 183408/183408 [00:01<00:00, 131982.38it/s]
+2025-12-30 15:30:58 - Loaded 183408 Documents.
+2025-12-30 15:30:58 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:30:58 - Loading Queries...
+2025-12-30 15:30:58 - Loaded 145 Queries.
+2025-12-30 15:30:58 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:30:58 - Created 401 positive pairs for clapnq
+2025-12-30 15:31:07 - BM25 index built for hard negative mining
+2025-12-30 15:31:37 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:31:51 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:31:55 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:31:56 - Device: cuda, GPU: 0
+2025-12-30 15:31:56 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:31:56 - Use pytorch device_name: cuda:0
+2025-12-30 15:31:56 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:31:57 - Mixed precision training (FP16) enabled
+2025-12-30 15:31:57 - 
+============================================================
+2025-12-30 15:31:57 - Training on domain: clapnq
+2025-12-30 15:31:57 - ============================================================
+2025-12-30 15:31:57 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10236/183408 [00:00<00:01, 102340.09it/s] 12%|█▏        | 21247/183408 [00:00<00:01, 106904.77it/s] 18%|█▊        | 32134/183408 [00:00<00:01, 107797.43it/s] 26%|██▌       | 46886/183408 [00:00<00:01, 123474.00it/s] 35%|███▌      | 64721/183408 [00:00<00:00, 143257.22it/s] 45%|████▍     | 82003/183408 [00:00<00:01, 83626.73it/s]  54%|█████▍    | 98962/183408 [00:00<00:00, 101630.11it/s] 64%|██████▎   | 116581/183408 [00:01<00:00, 118799.54it/s] 73%|███████▎  | 133588/183408 [00:01<00:00, 131490.09it/s] 82%|████████▏ | 150836/183408 [00:01<00:00, 142197.60it/s] 92%|█████████▏| 168033/183408 [00:01<00:00, 150287.73it/s]100%|██████████| 183408/183408 [00:01<00:00, 127439.88it/s]
+2025-12-30 15:31:59 - Loaded 183408 Documents.
+2025-12-30 15:31:59 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:31:59 - Loading Queries...
+2025-12-30 15:31:59 - Loaded 145 Queries.
+2025-12-30 15:31:59 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:31:59 - Created 401 positive pairs for clapnq
+2025-12-30 15:32:08 - BM25 index built for hard negative mining
+2025-12-30 15:32:28 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:32:52 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:32:56 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:32:57 - Device: cuda, GPU: 0
+2025-12-30 15:32:57 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:32:57 - Use pytorch device_name: cuda:0
+2025-12-30 15:32:57 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:32:58 - Mixed precision training (FP16) enabled
+2025-12-30 15:32:58 - 
+============================================================
+2025-12-30 15:32:58 - Training on domain: clapnq
+2025-12-30 15:32:58 - ============================================================
+2025-12-30 15:32:58 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  8%|▊         | 15141/183408 [00:00<00:01, 151398.23it/s] 18%|█▊        | 32365/183408 [00:00<00:00, 163648.62it/s] 27%|██▋       | 48730/183408 [00:00<00:00, 163153.96it/s] 36%|███▌      | 66095/183408 [00:00<00:00, 167287.35it/s] 45%|████▌     | 82825/183408 [00:00<00:01, 79388.48it/s]  54%|█████▍    | 98972/183408 [00:00<00:00, 95496.26it/s] 63%|██████▎   | 116121/183408 [00:01<00:00, 112136.07it/s] 72%|███████▏  | 132653/183408 [00:01<00:00, 124807.62it/s] 81%|████████▏ | 149350/183408 [00:01<00:00, 135513.37it/s] 91%|█████████ | 166061/183408 [00:01<00:00, 143920.71it/s] 99%|█████████▉| 182094/183408 [00:01<00:00, 147877.53it/s]100%|██████████| 183408/183408 [00:01<00:00, 129360.86it/s]
+2025-12-30 15:33:00 - Loaded 183408 Documents.
+2025-12-30 15:33:00 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:33:00 - Loading Queries...
+2025-12-30 15:33:00 - Loaded 145 Queries.
+2025-12-30 15:33:00 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:33:00 - Created 401 positive pairs for clapnq
+2025-12-30 15:33:08 - BM25 index built for hard negative mining
+2025-12-30 15:33:34 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:33:53 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:33:57 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:33:58 - Device: cuda, GPU: 0
+2025-12-30 15:33:58 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:33:58 - Use pytorch device_name: cuda:0
+2025-12-30 15:33:58 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:33:59 - Mixed precision training (FP16) enabled
+2025-12-30 15:33:59 - 
+============================================================
+2025-12-30 15:33:59 - Training on domain: clapnq
+2025-12-30 15:33:59 - ============================================================
+2025-12-30 15:33:59 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s] 10%|▉         | 17592/183408 [00:00<00:00, 175897.52it/s] 19%|█▉        | 35600/183408 [00:00<00:00, 178348.27it/s] 29%|██▉       | 53718/183408 [00:00<00:00, 179639.15it/s] 39%|███▉      | 71682/183408 [00:00<00:00, 168177.13it/s] 48%|████▊     | 88602/183408 [00:00<00:00, 97232.64it/s]  58%|█████▊    | 106326/183408 [00:00<00:00, 114966.65it/s] 68%|██████▊   | 123906/183408 [00:00<00:00, 129593.87it/s] 77%|███████▋  | 141567/183408 [00:01<00:00, 141615.17it/s] 87%|████████▋ | 159818/183408 [00:01<00:00, 152554.54it/s] 96%|█████████▋| 176640/183408 [00:01<00:00, 154670.33it/s]100%|██████████| 183408/183408 [00:01<00:00, 144356.32it/s]
+2025-12-30 15:34:01 - Loaded 183408 Documents.
+2025-12-30 15:34:01 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:34:01 - Loading Queries...
+2025-12-30 15:34:01 - Loaded 145 Queries.
+2025-12-30 15:34:01 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:34:01 - Created 401 positive pairs for clapnq
+2025-12-30 15:34:09 - BM25 index built for hard negative mining
+2025-12-30 15:34:32 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:34:54 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:34:58 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:34:59 - Device: cuda, GPU: 0
+2025-12-30 15:34:59 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:34:59 - Use pytorch device_name: cuda:0
+2025-12-30 15:34:59 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:35:00 - Mixed precision training (FP16) enabled
+2025-12-30 15:35:00 - 
+============================================================
+2025-12-30 15:35:00 - Training on domain: clapnq
+2025-12-30 15:35:00 - ============================================================
+2025-12-30 15:35:00 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10801/183408 [00:00<00:01, 107985.39it/s] 12%|█▏        | 21600/183408 [00:00<00:01, 107863.67it/s] 18%|█▊        | 32387/183408 [00:00<00:01, 107142.17it/s] 26%|██▌       | 47923/183408 [00:00<00:01, 126089.04it/s] 36%|███▌      | 65182/183408 [00:00<00:00, 142807.49it/s] 45%|████▍     | 82003/183408 [00:00<00:01, 83844.55it/s]  53%|█████▎    | 97708/183408 [00:00<00:00, 99334.20it/s] 62%|██████▏   | 114258/183408 [00:01<00:00, 114689.20it/s] 71%|███████▏  | 130901/183408 [00:01<00:00, 127569.28it/s] 81%|████████  | 147824/183408 [00:01<00:00, 138498.70it/s] 90%|████████▉ | 164765/183408 [00:01<00:00, 146923.76it/s] 99%|█████████▊| 180745/183408 [00:01<00:00, 150526.09it/s]100%|██████████| 183408/183408 [00:01<00:00, 126009.86it/s]
+2025-12-30 15:35:02 - Loaded 183408 Documents.
+2025-12-30 15:35:02 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:35:02 - Loading Queries...
+2025-12-30 15:35:02 - Loaded 145 Queries.
+2025-12-30 15:35:02 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:35:02 - Created 401 positive pairs for clapnq
+2025-12-30 15:35:11 - BM25 index built for hard negative mining
+2025-12-30 15:35:41 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:35:55 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:35:59 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:36:00 - Device: cuda, GPU: 0
+2025-12-30 15:36:00 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:36:00 - Use pytorch device_name: cuda:0
+2025-12-30 15:36:00 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:36:02 - Mixed precision training (FP16) enabled
+2025-12-30 15:36:02 - 
+============================================================
+2025-12-30 15:36:02 - Training on domain: clapnq
+2025-12-30 15:36:02 - ============================================================
+2025-12-30 15:36:02 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10509/183408 [00:00<00:01, 105068.06it/s] 11%|█▏        | 21016/183408 [00:00<00:01, 104463.65it/s] 17%|█▋        | 31463/183408 [00:00<00:01, 103945.11it/s] 26%|██▌       | 46951/183408 [00:00<00:01, 123951.35it/s] 35%|███▍      | 63699/183408 [00:00<00:00, 139595.72it/s] 44%|████▎     | 80173/183408 [00:00<00:00, 148124.94it/s] 52%|█████▏    | 94995/183408 [00:00<00:01, 81674.79it/s]  61%|██████    | 111462/183408 [00:01<00:00, 98647.49it/s] 69%|██████▉   | 127206/183408 [00:01<00:00, 111939.40it/s] 78%|███████▊  | 143568/183408 [00:01<00:00, 124554.97it/s] 87%|████████▋ | 159979/183408 [00:01<00:00, 134779.29it/s] 95%|█████████▌| 175150/183408 [00:01<00:00, 138695.68it/s]100%|██████████| 183408/183408 [00:01<00:00, 122209.08it/s]
+2025-12-30 15:36:03 - Loaded 183408 Documents.
+2025-12-30 15:36:03 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:36:03 - Loading Queries...
+2025-12-30 15:36:03 - Loaded 145 Queries.
+2025-12-30 15:36:03 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:36:03 - Created 401 positive pairs for clapnq
+2025-12-30 15:36:12 - BM25 index built for hard negative mining
+2025-12-30 15:36:37 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:36:56 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:37:00 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:37:01 - Device: cuda, GPU: 0
+2025-12-30 15:37:01 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:37:01 - Use pytorch device_name: cuda:0
+2025-12-30 15:37:01 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:37:03 - Mixed precision training (FP16) enabled
+2025-12-30 15:37:03 - 
+============================================================
+2025-12-30 15:37:03 - Training on domain: clapnq
+2025-12-30 15:37:03 - ============================================================
+2025-12-30 15:37:03 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s] 10%|▉         | 17701/183408 [00:00<00:00, 176987.80it/s] 19%|█▉        | 35400/183408 [00:00<00:00, 176079.01it/s] 29%|██▉       | 53009/183408 [00:00<00:00, 175095.85it/s] 38%|███▊      | 70520/183408 [00:00<00:00, 173345.90it/s] 48%|████▊     | 87857/183408 [00:00<00:01, 87334.85it/s]  57%|█████▋    | 105225/183408 [00:00<00:00, 104988.72it/s] 67%|██████▋   | 122356/183408 [00:00<00:00, 119980.26it/s] 76%|███████▌  | 139017/183408 [00:01<00:00, 131361.05it/s] 85%|████████▌ | 156097/183408 [00:01<00:00, 141554.17it/s] 94%|█████████▍| 172947/183408 [00:01<00:00, 148820.37it/s]100%|██████████| 183408/183408 [00:01<00:00, 136037.76it/s]
+2025-12-30 15:37:04 - Loaded 183408 Documents.
+2025-12-30 15:37:04 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:37:04 - Loading Queries...
+2025-12-30 15:37:04 - Loaded 145 Queries.
+2025-12-30 15:37:04 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:37:04 - Created 401 positive pairs for clapnq
+2025-12-30 15:37:13 - BM25 index built for hard negative mining
+2025-12-30 15:37:44 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:37:57 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:38:01 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:38:02 - Device: cuda, GPU: 0
+2025-12-30 15:38:02 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:38:02 - Use pytorch device_name: cuda:0
+2025-12-30 15:38:02 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:38:04 - Mixed precision training (FP16) enabled
+2025-12-30 15:38:04 - 
+============================================================
+2025-12-30 15:38:04 - Training on domain: clapnq
+2025-12-30 15:38:04 - ============================================================
+2025-12-30 15:38:04 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10819/183408 [00:00<00:01, 108154.00it/s] 12%|█▏        | 21727/183408 [00:00<00:01, 108693.51it/s] 19%|█▊        | 34269/183408 [00:00<00:01, 116324.13it/s] 28%|██▊       | 51465/183408 [00:00<00:00, 138283.82it/s] 37%|███▋      | 68731/183408 [00:00<00:00, 150676.17it/s] 46%|████▌     | 83799/183408 [00:00<00:01, 77655.11it/s]  55%|█████▍    | 100152/183408 [00:00<00:00, 94845.93it/s] 64%|██████▍   | 117261/183408 [00:01<00:00, 111801.13it/s] 73%|███████▎  | 133920/183408 [00:01<00:00, 125008.61it/s] 82%|████████▏ | 151083/183408 [00:01<00:00, 136950.45it/s] 92%|█████████▏| 168123/183408 [00:01<00:00, 145909.04it/s]100%|██████████| 183408/183408 [00:01<00:00, 124625.91it/s]
+2025-12-30 15:38:05 - Loaded 183408 Documents.
+2025-12-30 15:38:05 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:38:05 - Loading Queries...
+2025-12-30 15:38:05 - Loaded 145 Queries.
+2025-12-30 15:38:05 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:38:05 - Created 401 positive pairs for clapnq
+2025-12-30 15:38:14 - BM25 index built for hard negative mining
+2025-12-30 15:38:52 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:38:58 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:39:03 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:39:03 - Device: cuda, GPU: 0
+2025-12-30 15:39:03 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:39:03 - Use pytorch device_name: cuda:0
+2025-12-30 15:39:03 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:39:05 - Mixed precision training (FP16) enabled
+2025-12-30 15:39:05 - 
+============================================================
+2025-12-30 15:39:05 - Training on domain: clapnq
+2025-12-30 15:39:05 - ============================================================
+2025-12-30 15:39:05 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10719/183408 [00:00<00:01, 107182.18it/s] 12%|█▏        | 21846/183408 [00:00<00:01, 109302.88it/s] 18%|█▊        | 32992/183408 [00:00<00:01, 110284.35it/s] 26%|██▌       | 47189/183408 [00:00<00:01, 122780.05it/s] 35%|███▍      | 63680/183408 [00:00<00:00, 137960.21it/s] 44%|████▍     | 81430/183408 [00:00<00:00, 151394.83it/s] 53%|█████▎    | 96571/183408 [00:00<00:01, 76715.83it/s]  62%|██████▏   | 114134/183408 [00:01<00:00, 95639.30it/s] 72%|███████▏  | 131359/183408 [00:01<00:00, 112082.83it/s] 81%|████████  | 148871/183408 [00:01<00:00, 126874.98it/s] 91%|█████████ | 166562/183408 [00:01<00:00, 139434.93it/s]100%|█████████▉| 183092/183408 [00:01<00:00, 146260.63it/s]100%|██████████| 183408/183408 [00:01<00:00, 122236.56it/s]
+2025-12-30 15:39:06 - Loaded 183408 Documents.
+2025-12-30 15:39:06 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:39:06 - Loading Queries...
+2025-12-30 15:39:06 - Loaded 145 Queries.
+2025-12-30 15:39:06 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:39:06 - Created 401 positive pairs for clapnq
+2025-12-30 15:39:15 - BM25 index built for hard negative mining
+2025-12-30 15:39:45 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:39:59 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:40:04 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:40:04 - Device: cuda, GPU: 0
+2025-12-30 15:40:04 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:40:04 - Use pytorch device_name: cuda:0
+2025-12-30 15:40:04 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:40:06 - Mixed precision training (FP16) enabled
+2025-12-30 15:40:06 - 
+============================================================
+2025-12-30 15:40:06 - Training on domain: clapnq
+2025-12-30 15:40:06 - ============================================================
+2025-12-30 15:40:06 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10988/183408 [00:00<00:01, 109868.58it/s] 12%|█▏        | 21975/183408 [00:00<00:01, 105023.78it/s] 18%|█▊        | 32816/183408 [00:00<00:01, 106524.95it/s] 24%|██▍       | 44433/183408 [00:00<00:01, 110271.44it/s] 34%|███▎      | 61791/183408 [00:00<00:00, 132877.81it/s] 43%|████▎     | 78884/183408 [00:00<00:00, 145723.26it/s] 51%|█████     | 93485/183408 [00:00<00:01, 79925.66it/s]  60%|██████    | 110628/183408 [00:01<00:00, 98510.17it/s] 70%|██████▉   | 127542/183408 [00:01<00:00, 114393.16it/s] 79%|███████▊  | 144258/183408 [00:01<00:00, 127222.03it/s] 87%|████████▋ | 160152/183408 [00:01<00:00, 135396.83it/s] 96%|█████████▌| 175630/183408 [00:01<00:00, 140612.09it/s]100%|██████████| 183408/183408 [00:01<00:00, 121895.68it/s]
+2025-12-30 15:40:08 - Loaded 183408 Documents.
+2025-12-30 15:40:08 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:40:08 - Loading Queries...
+2025-12-30 15:40:08 - Loaded 145 Queries.
+2025-12-30 15:40:08 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:40:08 - Created 401 positive pairs for clapnq
+2025-12-30 15:40:16 - BM25 index built for hard negative mining
+2025-12-30 15:40:42 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:41:00 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:41:05 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:41:05 - Device: cuda, GPU: 0
+2025-12-30 15:41:05 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:41:05 - Use pytorch device_name: cuda:0
+2025-12-30 15:41:05 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:41:07 - Mixed precision training (FP16) enabled
+2025-12-30 15:41:07 - 
+============================================================
+2025-12-30 15:41:07 - Training on domain: clapnq
+2025-12-30 15:41:07 - ============================================================
+2025-12-30 15:41:07 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10659/183408 [00:00<00:01, 106572.06it/s] 12%|█▏        | 21477/183408 [00:00<00:01, 107510.82it/s] 18%|█▊        | 32229/183408 [00:00<00:01, 106889.28it/s] 25%|██▍       | 45446/183408 [00:00<00:01, 116831.34it/s] 34%|███▍      | 62556/183408 [00:00<00:00, 136351.53it/s] 43%|████▎     | 79459/183408 [00:00<00:00, 147442.75it/s] 51%|█████▏    | 94210/183408 [00:00<00:01, 83971.77it/s]  61%|██████    | 111053/183408 [00:01<00:00, 101698.57it/s] 70%|██████▉   | 127675/183408 [00:01<00:00, 116581.75it/s] 79%|███████▊  | 144365/183408 [00:01<00:00, 129052.50it/s] 88%|████████▊ | 161250/183408 [00:01<00:00, 139458.27it/s] 96%|█████████▋| 176813/183408 [00:01<00:00, 143685.69it/s]100%|██████████| 183408/183408 [00:01<00:00, 124653.26it/s]
+2025-12-30 15:41:09 - Loaded 183408 Documents.
+2025-12-30 15:41:09 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:41:09 - Loading Queries...
+2025-12-30 15:41:09 - Loaded 145 Queries.
+2025-12-30 15:41:09 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:41:09 - Created 401 positive pairs for clapnq
+2025-12-30 15:41:18 - BM25 index built for hard negative mining
+2025-12-30 15:41:44 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:42:02 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:42:06 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:42:07 - Device: cuda, GPU: 0
+2025-12-30 15:42:07 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:42:07 - Use pytorch device_name: cuda:0
+2025-12-30 15:42:07 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:42:08 - Mixed precision training (FP16) enabled
+2025-12-30 15:42:08 - 
+============================================================
+2025-12-30 15:42:08 - Training on domain: clapnq
+2025-12-30 15:42:08 - ============================================================
+2025-12-30 15:42:08 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s] 10%|▉         | 17551/183408 [00:00<00:00, 175481.30it/s] 19%|█▉        | 35152/183408 [00:00<00:00, 175783.26it/s] 29%|██▉       | 52731/183408 [00:00<00:00, 171745.60it/s] 38%|███▊      | 69917/183408 [00:00<00:00, 170939.29it/s] 47%|████▋     | 87017/183408 [00:00<00:01, 90285.20it/s]  56%|█████▋    | 103379/183408 [00:00<00:00, 105816.85it/s] 66%|██████▌   | 120656/183408 [00:00<00:00, 121368.79it/s] 75%|███████▍  | 137333/183408 [00:01<00:00, 132675.72it/s] 84%|████████▍ | 154282/183408 [00:01<00:00, 142338.20it/s] 94%|█████████▎| 171555/183408 [00:01<00:00, 150622.96it/s]100%|██████████| 183408/183408 [00:01<00:00, 137602.02it/s]
+2025-12-30 15:42:10 - Loaded 183408 Documents.
+2025-12-30 15:42:10 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:42:10 - Loading Queries...
+2025-12-30 15:42:10 - Loaded 145 Queries.
+2025-12-30 15:42:10 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:42:10 - Created 401 positive pairs for clapnq
+2025-12-30 15:42:18 - BM25 index built for hard negative mining
+2025-12-30 15:42:45 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:43:03 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:43:07 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:43:07 - Device: cuda, GPU: 0
+2025-12-30 15:43:07 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:43:07 - Use pytorch device_name: cuda:0
+2025-12-30 15:43:07 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:43:09 - Mixed precision training (FP16) enabled
+2025-12-30 15:43:09 - 
+============================================================
+2025-12-30 15:43:09 - Training on domain: clapnq
+2025-12-30 15:43:09 - ============================================================
+2025-12-30 15:43:09 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  8%|▊         | 15420/183408 [00:00<00:01, 154167.80it/s] 18%|█▊        | 33169/183408 [00:00<00:00, 167879.54it/s] 28%|██▊       | 51179/183408 [00:00<00:00, 173447.47it/s] 37%|███▋      | 68524/183408 [00:00<00:00, 170987.76it/s] 47%|████▋     | 85629/183408 [00:00<00:00, 98582.07it/s]  56%|█████▌    | 102695/183408 [00:00<00:00, 114967.02it/s] 66%|██████▌   | 120826/183408 [00:00<00:00, 131230.86it/s] 75%|███████▌  | 138032/183408 [00:01<00:00, 141819.13it/s] 85%|████████▍ | 155815/183408 [00:01<00:00, 151552.65it/s] 95%|█████████▍| 173596/183408 [00:01<00:00, 158865.97it/s]100%|██████████| 183408/183408 [00:01<00:00, 144420.44it/s]
+2025-12-30 15:43:10 - Loaded 183408 Documents.
+2025-12-30 15:43:10 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:43:10 - Loading Queries...
+2025-12-30 15:43:10 - Loaded 145 Queries.
+2025-12-30 15:43:10 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:43:10 - Created 401 positive pairs for clapnq
+2025-12-30 15:43:18 - BM25 index built for hard negative mining
+2025-12-30 15:43:50 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:44:04 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:44:08 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:44:09 - Device: cuda, GPU: 0
+2025-12-30 15:44:09 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:44:09 - Use pytorch device_name: cuda:0
+2025-12-30 15:44:09 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:44:11 - Mixed precision training (FP16) enabled
+2025-12-30 15:44:11 - 
+============================================================
+2025-12-30 15:44:11 - Training on domain: clapnq
+2025-12-30 15:44:11 - ============================================================
+2025-12-30 15:44:11 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10923/183408 [00:00<00:01, 108735.98it/s] 12%|█▏        | 21797/183408 [00:00<00:01, 105563.80it/s] 18%|█▊        | 32504/183408 [00:00<00:01, 106236.90it/s] 24%|██▎       | 43467/183408 [00:00<00:01, 107559.12it/s] 32%|███▏      | 59203/183408 [00:00<00:00, 125394.25it/s] 42%|████▏     | 76384/183408 [00:00<00:00, 141099.10it/s] 49%|████▉     | 90511/183408 [00:00<00:01, 76277.33it/s]  58%|█████▊    | 107186/183408 [00:01<00:00, 94463.20it/s] 68%|██████▊   | 124105/183408 [00:01<00:00, 111133.97it/s] 77%|███████▋  | 140709/183408 [00:01<00:00, 124401.42it/s] 86%|████████▌ | 157771/183408 [00:01<00:00, 136261.00it/s] 95%|█████████▌| 174451/183408 [00:01<00:00, 144450.72it/s]100%|██████████| 183408/183408 [00:01<00:00, 120225.82it/s]
+2025-12-30 15:44:12 - Loaded 183408 Documents.
+2025-12-30 15:44:12 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:44:12 - Loading Queries...
+2025-12-30 15:44:12 - Loaded 145 Queries.
+2025-12-30 15:44:12 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:44:12 - Created 401 positive pairs for clapnq
+2025-12-30 15:44:21 - BM25 index built for hard negative mining
+2025-12-30 15:44:45 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:45:05 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:45:10 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:45:10 - Device: cuda, GPU: 0
+2025-12-30 15:45:10 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:45:10 - Use pytorch device_name: cuda:0
+2025-12-30 15:45:10 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:45:12 - Mixed precision training (FP16) enabled
+2025-12-30 15:45:12 - 
+============================================================
+2025-12-30 15:45:12 - Training on domain: clapnq
+2025-12-30 15:45:12 - ============================================================
+2025-12-30 15:45:12 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s] 10%|▉         | 17782/183408 [00:00<00:00, 177799.40it/s] 20%|█▉        | 35879/183408 [00:00<00:00, 179655.15it/s] 29%|██▉       | 53845/183408 [00:00<00:00, 174498.48it/s] 39%|███▉      | 71610/183408 [00:00<00:00, 175715.78it/s] 49%|████▊     | 89195/183408 [00:00<00:01, 92630.47it/s]  58%|█████▊    | 106876/183408 [00:00<00:00, 110441.39it/s] 68%|██████▊   | 124379/183408 [00:00<00:00, 125432.26it/s] 77%|███████▋  | 141643/183408 [00:01<00:00, 137187.12it/s] 87%|████████▋ | 159252/183408 [00:01<00:00, 147391.41it/s] 96%|█████████▌| 175827/183408 [00:01<00:00, 151261.39it/s]100%|██████████| 183408/183408 [00:01<00:00, 140799.94it/s]
+2025-12-30 15:45:13 - Loaded 183408 Documents.
+2025-12-30 15:45:13 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:45:13 - Loading Queries...
+2025-12-30 15:45:13 - Loaded 145 Queries.
+2025-12-30 15:45:13 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:45:13 - Created 401 positive pairs for clapnq
+2025-12-30 15:45:21 - BM25 index built for hard negative mining
+2025-12-30 15:45:47 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:46:06 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:46:11 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:46:11 - Device: cuda, GPU: 0
+2025-12-30 15:46:11 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:46:11 - Use pytorch device_name: cuda:0
+2025-12-30 15:46:11 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:46:13 - Mixed precision training (FP16) enabled
+2025-12-30 15:46:13 - 
+============================================================
+2025-12-30 15:46:13 - Training on domain: clapnq
+2025-12-30 15:46:13 - ============================================================
+2025-12-30 15:46:13 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  9%|▉         | 16642/183408 [00:00<00:01, 166410.24it/s] 19%|█▊        | 34356/183408 [00:00<00:00, 172710.67it/s] 28%|██▊       | 51878/183408 [00:00<00:00, 173849.69it/s] 38%|███▊      | 69263/183408 [00:00<00:00, 173674.64it/s] 47%|████▋     | 86631/183408 [00:00<00:01, 84946.26it/s]  56%|█████▌    | 103126/183408 [00:00<00:00, 101037.77it/s] 66%|██████▌   | 120428/183408 [00:00<00:00, 117103.83it/s] 75%|███████▍  | 136955/183408 [00:01<00:00, 128744.89it/s] 84%|████████▍ | 153901/183408 [00:01<00:00, 139194.33it/s] 93%|█████████▎| 170789/183408 [00:01<00:00, 147156.61it/s]100%|██████████| 183408/183408 [00:01<00:00, 133717.99it/s]
+2025-12-30 15:46:14 - Loaded 183408 Documents.
+2025-12-30 15:46:14 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:46:14 - Loading Queries...
+2025-12-30 15:46:14 - Loaded 145 Queries.
+2025-12-30 15:46:14 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:46:14 - Created 401 positive pairs for clapnq
+2025-12-30 15:46:23 - BM25 index built for hard negative mining
+2025-12-30 15:46:59 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:47:07 - Set CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:47:12 - CUDA_VISIBLE_DEVICES=3
+2025-12-30 15:47:12 - Device: cuda, GPU: 0
+2025-12-30 15:47:12 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:47:12 - Use pytorch device_name: cuda:0
+2025-12-30 15:47:12 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:47:14 - Mixed precision training (FP16) enabled
+2025-12-30 15:47:14 - 
+============================================================
+2025-12-30 15:47:14 - Training on domain: clapnq
+2025-12-30 15:47:14 - ============================================================
+2025-12-30 15:47:14 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  5%|▌         | 9330/183408 [00:00<00:01, 93283.19it/s] 12%|█▏        | 22131/183408 [00:00<00:01, 113703.53it/s] 22%|██▏       | 39743/183408 [00:00<00:01, 142191.97it/s] 31%|███       | 56939/183408 [00:00<00:00, 153940.07it/s] 40%|████      | 74248/183408 [00:00<00:00, 160840.29it/s] 49%|████▉     | 90333/183408 [00:00<00:01, 88543.10it/s]  59%|█████▉    | 108089/183408 [00:00<00:00, 107321.01it/s] 69%|██████▊   | 125941/183408 [00:01<00:00, 123808.08it/s] 78%|███████▊  | 143366/183408 [00:01<00:00, 136344.19it/s] 88%|████████▊ | 161318/183408 [00:01<00:00, 147654.80it/s] 97%|█████████▋| 177910/183408 [00:01<00:00, 152627.35it/s]100%|██████████| 183408/183408 [00:01<00:00, 133866.73it/s]
+2025-12-30 15:47:15 - Loaded 183408 Documents.
+2025-12-30 15:47:15 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:47:15 - Loading Queries...
+2025-12-30 15:47:15 - Loaded 145 Queries.
+2025-12-30 15:47:15 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:47:15 - Created 401 positive pairs for clapnq
+2025-12-30 15:47:24 - BM25 index built for hard negative mining
+2025-12-30 15:48:09 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:49:10 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:49:14 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:49:15 - Device: cuda, GPU: 0
+2025-12-30 15:49:15 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:49:15 - Use pytorch device_name: cuda:0
+2025-12-30 15:49:15 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:49:17 - Mixed precision training (FP16) enabled
+2025-12-30 15:49:17 - 
+============================================================
+2025-12-30 15:49:17 - Training on domain: clapnq
+2025-12-30 15:49:17 - ============================================================
+2025-12-30 15:49:17 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10889/183408 [00:00<00:01, 108874.27it/s] 15%|█▌        | 27943/183408 [00:00<00:01, 145140.45it/s] 25%|██▍       | 45641/183408 [00:00<00:00, 159674.18it/s] 34%|███▍      | 62842/183408 [00:00<00:00, 164534.61it/s] 44%|████▍     | 80564/183408 [00:00<00:00, 169106.91it/s] 53%|█████▎    | 97475/183408 [00:00<00:00, 100820.15it/s] 63%|██████▎   | 115724/183408 [00:00<00:00, 119157.64it/s] 73%|███████▎  | 133357/183408 [00:00<00:00, 133038.78it/s] 82%|████████▏ | 151029/183408 [00:01<00:00, 144289.09it/s] 92%|█████████▏| 168998/183408 [00:01<00:00, 153809.47it/s]100%|██████████| 183408/183408 [00:01<00:00, 142794.86it/s]
+2025-12-30 15:49:18 - Loaded 183408 Documents.
+2025-12-30 15:49:18 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:49:18 - Loading Queries...
+2025-12-30 15:49:18 - Loaded 145 Queries.
+2025-12-30 15:49:18 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:49:18 - Created 401 positive pairs for clapnq
+2025-12-30 15:49:26 - BM25 index built for hard negative mining
+2025-12-30 15:49:52 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:50:12 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:50:16 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:50:17 - Device: cuda, GPU: 0
+2025-12-30 15:50:17 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:50:17 - Use pytorch device_name: cuda:0
+2025-12-30 15:50:17 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:50:19 - Mixed precision training (FP16) enabled
+2025-12-30 15:50:19 - 
+============================================================
+2025-12-30 15:50:19 - Training on domain: clapnq
+2025-12-30 15:50:19 - ============================================================
+2025-12-30 15:50:19 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10561/183408 [00:00<00:01, 105579.14it/s] 12%|█▏        | 21713/183408 [00:00<00:01, 109067.29it/s] 18%|█▊        | 32683/183408 [00:00<00:01, 109353.36it/s] 25%|██▌       | 46716/183408 [00:00<00:01, 121577.05it/s] 35%|███▌      | 64543/183408 [00:00<00:00, 142016.48it/s] 45%|████▍     | 82003/183408 [00:00<00:01, 78076.17it/s]  54%|█████▍    | 98862/183408 [00:00<00:00, 96044.48it/s] 63%|██████▎   | 116396/183408 [00:01<00:00, 113562.64it/s] 72%|███████▏  | 131777/183408 [00:01<00:00, 123215.91it/s] 80%|███████▉  | 146450/183408 [00:01<00:00, 116564.88it/s] 88%|████████▊ | 162075/183408 [00:01<00:00, 126384.94it/s] 97%|█████████▋| 177254/183408 [00:01<00:00, 133019.20it/s]100%|██████████| 183408/183408 [00:01<00:00, 117624.37it/s]
+2025-12-30 15:50:20 - Loaded 183408 Documents.
+2025-12-30 15:50:20 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:50:20 - Loading Queries...
+2025-12-30 15:50:20 - Loaded 145 Queries.
+2025-12-30 15:50:20 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:50:20 - Created 401 positive pairs for clapnq
+2025-12-30 15:50:30 - BM25 index built for hard negative mining
+2025-12-30 15:50:55 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:51:13 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:51:18 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:51:18 - Device: cuda, GPU: 0
+2025-12-30 15:51:18 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:51:18 - Use pytorch device_name: cuda:0
+2025-12-30 15:51:18 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:51:20 - Mixed precision training (FP16) enabled
+2025-12-30 15:51:20 - 
+============================================================
+2025-12-30 15:51:20 - Training on domain: clapnq
+2025-12-30 15:51:20 - ============================================================
+2025-12-30 15:51:20 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 11111/183408 [00:00<00:01, 111099.25it/s] 12%|█▏        | 22221/183408 [00:00<00:01, 111057.39it/s] 22%|██▏       | 40056/183408 [00:00<00:01, 141773.79it/s] 31%|███▏      | 57771/183408 [00:00<00:00, 155734.60it/s] 41%|████      | 75416/183408 [00:00<00:00, 163200.57it/s] 50%|█████     | 91737/183408 [00:00<00:01, 88034.30it/s]  60%|█████▉    | 109474/183408 [00:00<00:00, 106578.45it/s] 69%|██████▉   | 126920/183408 [00:01<00:00, 122103.05it/s] 78%|███████▊  | 143633/183408 [00:01<00:00, 133190.57it/s] 88%|████████▊ | 160752/183408 [00:01<00:00, 143074.55it/s] 96%|█████████▋| 176858/183408 [00:01<00:00, 147400.22it/s]100%|██████████| 183408/183408 [00:01<00:00, 131991.84it/s]
+2025-12-30 15:51:21 - Loaded 183408 Documents.
+2025-12-30 15:51:21 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:51:21 - Loading Queries...
+2025-12-30 15:51:21 - Loaded 145 Queries.
+2025-12-30 15:51:21 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:51:21 - Created 401 positive pairs for clapnq
+2025-12-30 15:51:30 - BM25 index built for hard negative mining
+2025-12-30 15:52:07 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:52:15 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:52:19 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:52:19 - Device: cuda, GPU: 0
+2025-12-30 15:52:19 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:52:19 - Use pytorch device_name: cuda:0
+2025-12-30 15:52:19 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:52:21 - Mixed precision training (FP16) enabled
+2025-12-30 15:52:21 - 
+============================================================
+2025-12-30 15:52:21 - Training on domain: clapnq
+2025-12-30 15:52:21 - ============================================================
+2025-12-30 15:52:21 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  8%|▊         | 15530/183408 [00:00<00:01, 154935.55it/s] 17%|█▋        | 31448/183408 [00:00<00:00, 157421.14it/s] 26%|██▋       | 48511/183408 [00:00<00:00, 163442.54it/s] 36%|███▌      | 66103/183408 [00:00<00:00, 168354.90it/s] 45%|████▌     | 82939/183408 [00:00<00:00, 162871.53it/s] 54%|█████▍    | 99257/183408 [00:00<00:00, 92292.20it/s]  64%|██████▍   | 117144/183408 [00:00<00:00, 110644.91it/s] 73%|███████▎  | 134344/183408 [00:01<00:00, 124905.59it/s] 83%|████████▎ | 151916/183408 [00:01<00:00, 137571.75it/s] 92%|█████████▏| 169123/183408 [00:01<00:00, 146630.05it/s]100%|██████████| 183408/183408 [00:01<00:00, 138192.41it/s]
+2025-12-30 15:52:23 - Loaded 183408 Documents.
+2025-12-30 15:52:23 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:52:23 - Loading Queries...
+2025-12-30 15:52:23 - Loaded 145 Queries.
+2025-12-30 15:52:23 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:52:23 - Created 401 positive pairs for clapnq
+2025-12-30 15:52:30 - BM25 index built for hard negative mining
+2025-12-30 15:52:58 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:53:16 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:53:21 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:53:21 - Device: cuda, GPU: 0
+2025-12-30 15:53:21 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:53:21 - Use pytorch device_name: cuda:0
+2025-12-30 15:53:21 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:53:23 - Mixed precision training (FP16) enabled
+2025-12-30 15:53:23 - 
+============================================================
+2025-12-30 15:53:23 - Training on domain: clapnq
+2025-12-30 15:53:23 - ============================================================
+2025-12-30 15:53:23 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  8%|▊         | 14367/183408 [00:00<00:01, 143656.44it/s] 16%|█▌        | 28733/183408 [00:00<00:01, 143069.73it/s] 25%|██▌       | 46077/183408 [00:00<00:00, 156900.47it/s] 34%|███▍      | 62861/183408 [00:00<00:00, 161211.68it/s] 43%|████▎     | 79155/183408 [00:00<00:00, 161830.53it/s] 52%|█████▏    | 95340/183408 [00:00<00:00, 89250.51it/s]  61%|██████▏   | 112700/183408 [00:00<00:00, 107062.00it/s] 71%|███████   | 129897/183408 [00:01<00:00, 122103.20it/s] 80%|████████  | 147296/183408 [00:01<00:00, 135007.03it/s] 90%|████████▉ | 164887/183408 [00:01<00:00, 145727.31it/s] 99%|█████████▉| 181338/183408 [00:01<00:00, 150844.12it/s]100%|██████████| 183408/183408 [00:01<00:00, 135619.11it/s]
+2025-12-30 15:53:24 - Loaded 183408 Documents.
+2025-12-30 15:53:24 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:53:24 - Loading Queries...
+2025-12-30 15:53:24 - Loaded 145 Queries.
+2025-12-30 15:53:24 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:53:24 - Created 401 positive pairs for clapnq
+2025-12-30 15:53:32 - BM25 index built for hard negative mining
+2025-12-30 15:53:54 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:54:18 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:54:22 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:54:22 - Device: cuda, GPU: 0
+2025-12-30 15:54:22 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:54:22 - Use pytorch device_name: cuda:0
+2025-12-30 15:54:22 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:54:24 - Mixed precision training (FP16) enabled
+2025-12-30 15:54:24 - 
+============================================================
+2025-12-30 15:54:24 - Training on domain: clapnq
+2025-12-30 15:54:24 - ============================================================
+2025-12-30 15:54:24 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10917/183408 [00:00<00:01, 109156.31it/s] 12%|█▏        | 21958/183408 [00:00<00:01, 109885.94it/s] 22%|██▏       | 39808/183408 [00:00<00:01, 141211.31it/s] 32%|███▏      | 58013/183408 [00:00<00:00, 157331.08it/s] 41%|████      | 75517/183408 [00:00<00:00, 163712.89it/s] 50%|█████     | 91889/183408 [00:00<00:01, 85451.18it/s]  60%|█████▉    | 109623/183408 [00:00<00:00, 104034.14it/s] 69%|██████▉   | 127001/183408 [00:01<00:00, 119666.64it/s] 79%|███████▊  | 144159/183408 [00:01<00:00, 132256.39it/s] 88%|████████▊ | 161787/183408 [00:01<00:00, 143583.38it/s] 97%|█████████▋| 178213/183408 [00:01<00:00, 149138.83it/s]100%|██████████| 183408/183408 [00:01<00:00, 131197.23it/s]
+2025-12-30 15:54:26 - Loaded 183408 Documents.
+2025-12-30 15:54:26 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:54:26 - Loading Queries...
+2025-12-30 15:54:26 - Loaded 145 Queries.
+2025-12-30 15:54:26 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:54:26 - Created 401 positive pairs for clapnq
+2025-12-30 15:54:34 - BM25 index built for hard negative mining
+2025-12-30 15:55:12 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:55:19 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:55:24 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:55:24 - Device: cuda, GPU: 0
+2025-12-30 15:55:24 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:55:24 - Use pytorch device_name: cuda:0
+2025-12-30 15:55:24 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:55:26 - Mixed precision training (FP16) enabled
+2025-12-30 15:55:26 - 
+============================================================
+2025-12-30 15:55:26 - Training on domain: clapnq
+2025-12-30 15:55:26 - ============================================================
+2025-12-30 15:55:26 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  5%|▌         | 9697/183408 [00:00<00:01, 96946.05it/s] 11%|█         | 20493/183408 [00:00<00:01, 103415.11it/s] 17%|█▋        | 30835/183408 [00:00<00:01, 101578.32it/s] 26%|██▌       | 48043/183408 [00:00<00:01, 129106.93it/s] 36%|███▌      | 65335/183408 [00:00<00:00, 144788.35it/s] 45%|████▌     | 83285/183408 [00:00<00:00, 156533.80it/s] 54%|█████▍    | 98965/183408 [00:00<00:00, 86530.47it/s]  64%|██████▍   | 117139/183408 [00:01<00:00, 106008.16it/s] 73%|███████▎  | 134606/183408 [00:01<00:00, 121536.24it/s] 83%|████████▎ | 152526/183408 [00:01<00:00, 135616.81it/s] 93%|█████████▎| 170324/183408 [00:01<00:00, 146571.78it/s]100%|██████████| 183408/183408 [00:01<00:00, 128158.73it/s]
+2025-12-30 15:55:27 - Loaded 183408 Documents.
+2025-12-30 15:55:27 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:55:27 - Loading Queries...
+2025-12-30 15:55:27 - Loaded 145 Queries.
+2025-12-30 15:55:27 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:55:27 - Created 401 positive pairs for clapnq
+2025-12-30 15:55:36 - BM25 index built for hard negative mining
+2025-12-30 15:55:54 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:56:21 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:56:25 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:56:25 - Device: cuda, GPU: 0
+2025-12-30 15:56:25 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:56:25 - Use pytorch device_name: cuda:0
+2025-12-30 15:56:25 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:56:27 - Mixed precision training (FP16) enabled
+2025-12-30 15:56:27 - 
+============================================================
+2025-12-30 15:56:27 - Training on domain: clapnq
+2025-12-30 15:56:27 - ============================================================
+2025-12-30 15:56:27 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s] 10%|▉         | 18184/183408 [00:00<00:00, 181818.93it/s] 20%|█▉        | 36544/183408 [00:00<00:00, 182855.39it/s] 30%|██▉       | 54830/183408 [00:00<00:00, 177027.61it/s] 40%|███▉      | 72555/183408 [00:00<00:00, 166076.20it/s] 49%|████▊     | 89254/183408 [00:00<00:01, 93305.79it/s]  58%|█████▊    | 106884/183408 [00:00<00:00, 111131.09it/s] 67%|██████▋   | 123766/183408 [00:00<00:00, 124673.39it/s] 77%|███████▋  | 140994/183408 [00:01<00:00, 136628.70it/s] 87%|████████▋ | 158716/183408 [00:01<00:00, 147345.73it/s] 95%|█████████▌| 175105/183408 [00:01<00:00, 151290.60it/s]100%|██████████| 183408/183408 [00:01<00:00, 141045.19it/s]
+2025-12-30 15:56:29 - Loaded 183408 Documents.
+2025-12-30 15:56:29 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:56:29 - Loading Queries...
+2025-12-30 15:56:29 - Loaded 145 Queries.
+2025-12-30 15:56:29 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:56:29 - Created 401 positive pairs for clapnq
+2025-12-30 15:56:37 - BM25 index built for hard negative mining
+2025-12-30 15:57:06 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:57:22 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:57:27 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:57:27 - Device: cuda, GPU: 0
+2025-12-30 15:57:27 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:57:27 - Use pytorch device_name: cuda:0
+2025-12-30 15:57:27 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:57:29 - Mixed precision training (FP16) enabled
+2025-12-30 15:57:29 - 
+============================================================
+2025-12-30 15:57:29 - Training on domain: clapnq
+2025-12-30 15:57:29 - ============================================================
+2025-12-30 15:57:29 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10923/183408 [00:00<00:01, 109164.26it/s] 12%|█▏        | 22179/183408 [00:00<00:01, 111150.57it/s] 18%|█▊        | 33448/183408 [00:00<00:01, 111849.16it/s] 26%|██▌       | 47772/183408 [00:00<00:01, 124238.05it/s] 36%|███▌      | 66088/183408 [00:00<00:00, 145481.57it/s] 46%|████▌     | 84002/183408 [00:00<00:01, 84666.38it/s]  55%|█████▌    | 101386/183408 [00:00<00:00, 103179.68it/s] 65%|██████▌   | 119525/183408 [00:01<00:00, 121069.80it/s] 75%|███████▍  | 137031/183408 [00:01<00:00, 134365.50it/s] 85%|████████▍ | 155007/183408 [00:01<00:00, 146179.69it/s] 93%|█████████▎| 171396/183408 [00:01<00:00, 147018.52it/s]100%|██████████| 183408/183408 [00:01<00:00, 127885.02it/s]
+2025-12-30 15:57:30 - Loaded 183408 Documents.
+2025-12-30 15:57:30 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:57:30 - Loading Queries...
+2025-12-30 15:57:30 - Loaded 145 Queries.
+2025-12-30 15:57:30 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:57:30 - Created 401 positive pairs for clapnq
+2025-12-30 15:57:39 - BM25 index built for hard negative mining
+2025-12-30 15:58:22 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 15:59:25 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:59:30 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 15:59:30 - Device: cuda, GPU: 0
+2025-12-30 15:59:30 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 15:59:30 - Use pytorch device_name: cuda:0
+2025-12-30 15:59:30 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 15:59:32 - Mixed precision training (FP16) enabled
+2025-12-30 15:59:32 - 
+============================================================
+2025-12-30 15:59:32 - Training on domain: clapnq
+2025-12-30 15:59:32 - ============================================================
+2025-12-30 15:59:32 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10447/183408 [00:00<00:01, 104449.93it/s] 12%|█▏        | 21315/183408 [00:00<00:01, 106929.52it/s] 17%|█▋        | 32071/183408 [00:00<00:01, 107204.01it/s] 25%|██▌       | 46340/183408 [00:00<00:01, 121210.14it/s] 35%|███▍      | 64134/183408 [00:00<00:00, 141662.87it/s] 45%|████▍     | 81702/183408 [00:00<00:00, 153225.21it/s] 53%|█████▎    | 97025/183408 [00:00<00:01, 82870.57it/s]  62%|██████▏   | 114540/183408 [00:01<00:00, 101477.18it/s] 72%|███████▏  | 131680/183408 [00:01<00:00, 117113.64it/s] 81%|████████  | 148992/183408 [00:01<00:00, 130671.63it/s] 91%|█████████ | 166437/183408 [00:01<00:00, 141921.05it/s]100%|█████████▉| 182953/183408 [00:01<00:00, 148160.03it/s]100%|██████████| 183408/183408 [00:01<00:00, 125390.00it/s]
+2025-12-30 15:59:33 - Loaded 183408 Documents.
+2025-12-30 15:59:33 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 15:59:33 - Loading Queries...
+2025-12-30 15:59:33 - Loaded 145 Queries.
+2025-12-30 15:59:33 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 15:59:33 - Created 401 positive pairs for clapnq
+2025-12-30 15:59:42 - BM25 index built for hard negative mining
+2025-12-30 16:00:11 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 16:00:26 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 16:00:31 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 16:00:31 - Device: cuda, GPU: 0
+2025-12-30 16:00:31 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 16:00:31 - Use pytorch device_name: cuda:0
+2025-12-30 16:00:31 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 16:00:33 - Mixed precision training (FP16) enabled
+2025-12-30 16:00:33 - 
+============================================================
+2025-12-30 16:00:33 - Training on domain: clapnq
+2025-12-30 16:00:33 - ============================================================
+2025-12-30 16:00:33 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10923/183408 [00:00<00:01, 108973.67it/s] 12%|█▏        | 22151/183408 [00:00<00:01, 110912.40it/s] 18%|█▊        | 33243/183408 [00:00<00:01, 104305.88it/s] 27%|██▋       | 48911/183408 [00:00<00:01, 124211.38it/s] 37%|███▋      | 67253/183408 [00:00<00:00, 145044.95it/s] 45%|████▍     | 82003/183408 [00:00<00:01, 87403.38it/s]  54%|█████▍    | 99196/183408 [00:00<00:00, 106218.48it/s] 64%|██████▍   | 116971/183408 [00:01<00:00, 123476.98it/s] 73%|███████▎  | 134221/183408 [00:01<00:00, 136042.14it/s] 83%|████████▎ | 151836/183408 [00:01<00:00, 146790.55it/s] 92%|█████████▏| 169321/183408 [00:01<00:00, 154558.36it/s]100%|██████████| 183408/183408 [00:01<00:00, 131044.67it/s]
+2025-12-30 16:00:34 - Loaded 183408 Documents.
+2025-12-30 16:00:34 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 16:00:34 - Loading Queries...
+2025-12-30 16:00:34 - Loaded 145 Queries.
+2025-12-30 16:00:34 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 16:00:34 - Created 401 positive pairs for clapnq
+2025-12-30 16:00:43 - BM25 index built for hard negative mining
+2025-12-30 16:01:01 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 16:01:28 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 16:01:32 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 16:01:32 - Device: cuda, GPU: 0
+2025-12-30 16:01:32 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 16:01:32 - Use pytorch device_name: cuda:0
+2025-12-30 16:01:32 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 16:01:34 - Mixed precision training (FP16) enabled
+2025-12-30 16:01:34 - 
+============================================================
+2025-12-30 16:01:34 - Training on domain: clapnq
+2025-12-30 16:01:34 - ============================================================
+2025-12-30 16:01:34 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 11105/183408 [00:00<00:01, 111019.67it/s] 12%|█▏        | 22207/183408 [00:00<00:01, 101971.35it/s] 20%|█▉        | 36347/183408 [00:00<00:01, 119141.63it/s] 30%|██▉       | 54609/183408 [00:00<00:00, 143486.87it/s] 39%|███▉      | 72275/183408 [00:00<00:00, 155227.28it/s] 48%|████▊     | 87908/183408 [00:00<00:01, 85799.52it/s]  58%|█████▊    | 105973/183408 [00:00<00:00, 105641.62it/s] 68%|██████▊   | 123909/183408 [00:01<00:00, 122601.49it/s] 77%|███████▋  | 141337/183408 [00:01<00:00, 135385.16it/s] 87%|████████▋ | 159189/183408 [00:01<00:00, 146647.34it/s] 96%|█████████▌| 175680/183408 [00:01<00:00, 151231.05it/s]100%|██████████| 183408/183408 [00:01<00:00, 129753.72it/s]
+2025-12-30 16:01:36 - Loaded 183408 Documents.
+2025-12-30 16:01:36 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 16:01:36 - Loading Queries...
+2025-12-30 16:01:36 - Loaded 145 Queries.
+2025-12-30 16:01:36 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 16:01:36 - Created 401 positive pairs for clapnq
+2025-12-30 16:01:44 - BM25 index built for hard negative mining
+2025-12-30 16:02:16 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 16:02:29 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 16:02:33 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 16:02:34 - Device: cuda, GPU: 0
+2025-12-30 16:02:34 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 16:02:34 - Use pytorch device_name: cuda:0
+2025-12-30 16:02:34 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 16:02:35 - Mixed precision training (FP16) enabled
+2025-12-30 16:02:35 - 
+============================================================
+2025-12-30 16:02:35 - Training on domain: clapnq
+2025-12-30 16:02:35 - ============================================================
+2025-12-30 16:02:35 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10826/183408 [00:00<00:01, 108250.55it/s] 12%|█▏        | 21936/183408 [00:00<00:01, 109921.61it/s] 18%|█▊        | 33339/183408 [00:00<00:01, 111795.61it/s] 28%|██▊       | 51556/183408 [00:00<00:00, 139575.28it/s] 38%|███▊      | 69670/183408 [00:00<00:00, 154562.17it/s] 46%|████▋     | 85127/183408 [00:00<00:01, 87547.12it/s]  56%|█████▌    | 102199/183408 [00:00<00:00, 105491.19it/s] 65%|██████▌   | 119960/183408 [00:01<00:00, 122480.19it/s] 75%|███████▍  | 137143/183408 [00:01<00:00, 134906.44it/s] 84%|████████▍ | 154929/183408 [00:01<00:00, 146268.27it/s] 94%|█████████▍| 172409/183408 [00:01<00:00, 154092.94it/s]100%|██████████| 183408/183408 [00:01<00:00, 130302.43it/s]
+2025-12-30 16:02:37 - Loaded 183408 Documents.
+2025-12-30 16:02:37 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 16:02:37 - Loading Queries...
+2025-12-30 16:02:37 - Loaded 145 Queries.
+2025-12-30 16:02:37 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 16:02:37 - Created 401 positive pairs for clapnq
+2025-12-30 16:02:46 - BM25 index built for hard negative mining
+2025-12-30 16:03:15 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 16:03:30 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 16:03:35 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 16:03:35 - Device: cuda, GPU: 0
+2025-12-30 16:03:35 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 16:03:35 - Use pytorch device_name: cuda:0
+2025-12-30 16:03:35 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 16:03:37 - Mixed precision training (FP16) enabled
+2025-12-30 16:03:37 - 
+============================================================
+2025-12-30 16:03:37 - Training on domain: clapnq
+2025-12-30 16:03:37 - ============================================================
+2025-12-30 16:03:37 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10502/183408 [00:00<00:01, 105003.08it/s] 12%|█▏        | 21345/183408 [00:00<00:01, 107010.44it/s] 17%|█▋        | 32047/183408 [00:00<00:01, 106384.39it/s] 26%|██▌       | 47510/183408 [00:00<00:01, 125359.00it/s] 35%|███▌      | 64840/183408 [00:00<00:00, 142603.50it/s] 43%|████▎     | 79109/183408 [00:00<00:00, 142414.02it/s] 51%|█████     | 93357/183408 [00:00<00:01, 80753.24it/s]  60%|██████    | 110129/183408 [00:01<00:00, 98929.33it/s] 69%|██████▉   | 126868/183408 [00:01<00:00, 114667.56it/s] 78%|███████▊  | 143486/183408 [00:01<00:00, 127401.85it/s] 87%|████████▋ | 160332/183408 [00:01<00:00, 138114.87it/s] 96%|█████████▌| 175787/183408 [00:01<00:00, 142545.79it/s]100%|██████████| 183408/183408 [00:01<00:00, 124011.12it/s]
+2025-12-30 16:03:39 - Loaded 183408 Documents.
+2025-12-30 16:03:39 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 16:03:39 - Loading Queries...
+2025-12-30 16:03:39 - Loaded 145 Queries.
+2025-12-30 16:03:39 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 16:03:39 - Created 401 positive pairs for clapnq
+2025-12-30 16:03:47 - BM25 index built for hard negative mining
+2025-12-30 16:04:28 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 16:04:32 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 16:04:36 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 16:04:36 - Device: cuda, GPU: 0
+2025-12-30 16:04:36 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 16:04:36 - Use pytorch device_name: cuda:0
+2025-12-30 16:04:36 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 16:04:38 - Mixed precision training (FP16) enabled
+2025-12-30 16:04:38 - 
+============================================================
+2025-12-30 16:04:38 - Training on domain: clapnq
+2025-12-30 16:04:38 - ============================================================
+2025-12-30 16:04:38 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10684/183408 [00:00<00:01, 106829.66it/s] 12%|█▏        | 21846/183408 [00:00<00:01, 109025.01it/s] 18%|█▊        | 33034/183408 [00:00<00:01, 110321.17it/s] 27%|██▋       | 48873/183408 [00:00<00:01, 129260.51it/s] 37%|███▋      | 66964/183408 [00:00<00:00, 147860.35it/s] 45%|████▍     | 82003/183408 [00:00<00:01, 83847.12it/s]  54%|█████▍    | 99268/183408 [00:00<00:00, 102924.28it/s] 64%|██████▍   | 117138/183408 [00:01<00:00, 120717.70it/s] 73%|███████▎  | 134379/183408 [00:01<00:00, 133696.75it/s] 83%|████████▎ | 152011/183408 [00:01<00:00, 144951.63it/s] 92%|█████████▏| 169617/183408 [00:01<00:00, 153467.98it/s]100%|██████████| 183408/183408 [00:01<00:00, 128502.71it/s]
+2025-12-30 16:04:40 - Loaded 183408 Documents.
+2025-12-30 16:04:40 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 16:04:40 - Loading Queries...
+2025-12-30 16:04:40 - Loaded 145 Queries.
+2025-12-30 16:04:40 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 16:04:40 - Created 401 positive pairs for clapnq
+2025-12-30 16:04:48 - BM25 index built for hard negative mining
+2025-12-30 16:05:21 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 16:05:33 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 16:05:38 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 16:05:38 - Device: cuda, GPU: 0
+2025-12-30 16:05:38 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 16:05:38 - Use pytorch device_name: cuda:0
+2025-12-30 16:05:38 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 16:05:40 - Mixed precision training (FP16) enabled
+2025-12-30 16:05:40 - 
+============================================================
+2025-12-30 16:05:40 - Training on domain: clapnq
+2025-12-30 16:05:40 - ============================================================
+2025-12-30 16:05:40 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 11085/183408 [00:00<00:01, 110832.93it/s] 12%|█▏        | 22283/183408 [00:00<00:01, 111498.94it/s] 19%|█▊        | 34315/183408 [00:00<00:01, 115517.76it/s] 29%|██▊       | 52364/183408 [00:00<00:00, 141158.05it/s] 36%|███▌      | 66480/183408 [00:00<00:00, 138769.06it/s] 45%|████▍     | 82003/183408 [00:00<00:01, 80868.65it/s]  54%|█████▍    | 99435/183408 [00:00<00:00, 100684.63it/s] 64%|██████▍   | 117248/183408 [00:01<00:00, 118689.34it/s] 73%|███████▎  | 134710/183408 [00:01<00:00, 132631.71it/s] 83%|████████▎ | 152481/183408 [00:01<00:00, 144468.78it/s] 92%|█████████▏| 169355/183408 [00:01<00:00, 151086.87it/s]100%|██████████| 183408/183408 [00:01<00:00, 128908.19it/s]
+2025-12-30 16:05:41 - Loaded 183408 Documents.
+2025-12-30 16:05:41 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 16:05:41 - Loading Queries...
+2025-12-30 16:05:41 - Loaded 145 Queries.
+2025-12-30 16:05:41 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 16:05:41 - Created 401 positive pairs for clapnq
+2025-12-30 16:05:50 - BM25 index built for hard negative mining
+2025-12-30 16:06:19 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 16:06:35 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 16:06:39 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 16:06:39 - Device: cuda, GPU: 0
+2025-12-30 16:06:39 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 16:06:39 - Use pytorch device_name: cuda:0
+2025-12-30 16:06:39 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 16:06:41 - Mixed precision training (FP16) enabled
+2025-12-30 16:06:41 - 
+============================================================
+2025-12-30 16:06:41 - Training on domain: clapnq
+2025-12-30 16:06:41 - ============================================================
+2025-12-30 16:06:41 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 11266/183408 [00:00<00:01, 112649.63it/s] 12%|█▏        | 22531/183408 [00:00<00:01, 112621.48it/s] 18%|█▊        | 33794/183408 [00:00<00:01, 111082.81it/s] 27%|██▋       | 48834/183408 [00:00<00:01, 126472.70it/s] 36%|███▋      | 66904/183408 [00:00<00:00, 145919.80it/s] 45%|████▍     | 82003/183408 [00:00<00:01, 78956.94it/s]  53%|█████▎    | 98003/183408 [00:00<00:00, 95618.72it/s] 63%|██████▎   | 115975/183408 [00:01<00:00, 114711.88it/s] 73%|███████▎  | 133355/183408 [00:01<00:00, 129181.12it/s] 82%|████████▏ | 150952/183408 [00:01<00:00, 141306.89it/s] 92%|█████████▏| 168611/183408 [00:01<00:00, 150840.02it/s]100%|██████████| 183408/183408 [00:01<00:00, 126586.43it/s]
+2025-12-30 16:06:42 - Loaded 183408 Documents.
+2025-12-30 16:06:42 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 16:06:43 - Loading Queries...
+2025-12-30 16:06:43 - Loaded 145 Queries.
+2025-12-30 16:06:43 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 16:06:43 - Created 401 positive pairs for clapnq
+2025-12-30 16:06:51 - BM25 index built for hard negative mining
+2025-12-30 16:07:19 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 16:07:36 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 16:07:40 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 16:07:41 - Device: cuda, GPU: 0
+2025-12-30 16:07:41 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 16:07:41 - Use pytorch device_name: cuda:0
+2025-12-30 16:07:41 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 16:07:42 - Mixed precision training (FP16) enabled
+2025-12-30 16:07:42 - 
+============================================================
+2025-12-30 16:07:42 - Training on domain: clapnq
+2025-12-30 16:07:42 - ============================================================
+2025-12-30 16:07:42 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  9%|▊         | 15816/183408 [00:00<00:01, 158080.25it/s] 17%|█▋        | 31625/183408 [00:00<00:01, 125260.60it/s] 24%|██▍       | 44568/183408 [00:00<00:01, 117905.86it/s] 33%|███▎      | 61150/183408 [00:00<00:00, 134509.15it/s] 43%|████▎     | 78765/183408 [00:00<00:00, 148295.95it/s] 51%|█████     | 93944/183408 [00:00<00:01, 86664.22it/s]  61%|██████    | 111632/183408 [00:00<00:00, 105623.80it/s] 69%|██████▉   | 126860/183408 [00:01<00:00, 116396.11it/s] 79%|███████▊  | 144290/183408 [00:01<00:00, 130757.19it/s] 88%|████████▊ | 161970/183408 [00:01<00:00, 142801.44it/s] 97%|█████████▋| 178149/183408 [00:01<00:00, 147964.16it/s]100%|██████████| 183408/183408 [00:01<00:00, 129288.54it/s]
+2025-12-30 16:07:44 - Loaded 183408 Documents.
+2025-12-30 16:07:44 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 16:07:44 - Loading Queries...
+2025-12-30 16:07:44 - Loaded 145 Queries.
+2025-12-30 16:07:44 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 16:07:44 - Created 401 positive pairs for clapnq
+2025-12-30 16:07:52 - BM25 index built for hard negative mining
+2025-12-30 16:08:21 - Failed: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive_improved(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py", line 356, in train_enhanced_contrastive_improved
+    query_embeddings = query_outputs.get('token_embeddings') or query_outputs.get('last_hidden_state')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+2025-12-30 16:08:37 - Set CUDA_VISIBLE_DEVICES=4
+2025-12-30 16:08:42 - CUDA_VISIBLE_DEVICES=4
+2025-12-30 16:08:42 - Device: cuda, GPU: 0
+2025-12-30 16:08:42 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-30 16:08:42 - Use pytorch device_name: cuda:0
+2025-12-30 16:08:42 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_improved.py:264: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-30 16:08:44 - Mixed precision training (FP16) enabled
+2025-12-30 16:08:44 - 
+============================================================
+2025-12-30 16:08:44 - Training on domain: clapnq
+2025-12-30 16:08:44 - ============================================================
+2025-12-30 16:08:44 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10771/183408 [00:00<00:01, 107694.95it/s] 12%|█▏        | 21827/183408 [00:00<00:01, 109374.10it/s] 18%|█▊        | 32765/183408 [00:00<00:01, 103857.72it/s] 27%|██▋       | 50417/183408 [00:00<00:01, 131645.88it/s] 37%|███▋      | 68272/183408 [00:00<00:00, 148217.30it/s] 45%|████▌     | 83198/183408 [00:00<00:01, 85485.96it/s]  55%|█████▍    | 100487/183408 [00:00<00:00, 104375.67it/s] 65%|██████▍   | 118334/183408 [00:01<00:00, 121854.70it/s] 74%|███████▎  | 135027/183408 [00:01<00:00, 133213.17it/s] 83%|████████▎ | 152686/183408 [00:01<00:00, 144693.31it/s] 93%|█████████▎| 170173/183408 [00:01<00:00, 152972.17it/s]100%|██████████| 183408/183408 [00:01<00:00, 129877.14it/s]
+2025-12-30 16:08:45 - Loaded 183408 Documents.
+2025-12-30 16:08:45 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-30 16:08:45 - Loading Queries...
+2025-12-30 16:08:45 - Loaded 145 Queries.
+2025-12-30 16:08:45 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-30 16:08:45 - Created 401 positive pairs for clapnq
+2025-12-30 16:08:54 - BM25 index built for hard negative mining
+2025-12-30 16:16:17 - 
+⚠️  Shutdown signal received. Saving checkpoint...

@@ -1,0 +1,7 @@
+usage: train_domain_specific_bge.py [-h] [--domain {clapnq,fiqa,govt,cloud}]
+                                    [--config CONFIG] [--epochs EPOCHS]
+                                    [--batch_size BATCH_SIZE]
+                                    [--learning_rate LEARNING_RATE]
+                                    [--use_pretrained_multi_domain]
+                                    [--pretrained_multi_domain_path PRETRAINED_MULTI_DOMAIN_PATH]
+train_domain_specific_bge.py: error: argument --domain: invalid choice: 'all' (choose from clapnq, fiqa, govt, cloud)

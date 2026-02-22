@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_hybrid_learned.py", line 17, in <module>
+    from beir.retrieval.search.lexical import BM25Search
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/beir/retrieval/search/lexical/__init__.py", line 3, in <module>
+    from .bm25_search import BM25Search
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/beir/retrieval/search/lexical/bm25_search.py", line 8, in <module>
+    from .elastic_search import ElasticSearch
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/beir/retrieval/search/lexical/elastic_search.py", line 5, in <module>
+    from elasticsearch import Elasticsearch
+ModuleNotFoundError: No module named 'elasticsearch'

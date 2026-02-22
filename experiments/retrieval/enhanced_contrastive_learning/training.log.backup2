@@ -1,0 +1,40 @@
+2025-12-19 22:01:45 - Set CUDA_VISIBLE_DEVICES=1 (overriding any existing value)
+2025-12-19 22:01:49 - CUDA_VISIBLE_DEVICES=1 (set before torch import)
+2025-12-19 22:01:50 - Device: cuda, Using GPU 0 (NVIDIA GeForce RTX 3090)
+2025-12-19 22:01:50 - CUDA_VISIBLE_DEVICES=1, GPU will appear as device 0 to PyTorch
+2025-12-19 22:01:50 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-19 22:01:50 - Use pytorch device_name: cuda:0
+2025-12-19 22:01:50 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py:248: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-19 22:01:52 - Mixed precision training (FP16) enabled
+2025-12-19 22:01:52 - 
+============================================================
+2025-12-19 22:01:52 - Training on domain: clapnq
+2025-12-19 22:01:52 - ============================================================
+2025-12-19 22:01:52 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10621/183408 [00:00<00:01, 106193.39it/s] 12%|█▏        | 21439/183408 [00:00<00:01, 107353.84it/s] 21%|██        | 38956/183408 [00:00<00:01, 138315.88it/s] 31%|███       | 56725/183408 [00:00<00:00, 153857.96it/s] 41%|████      | 74684/183408 [00:00<00:00, 163135.39it/s] 50%|████▉     | 90998/183408 [00:00<00:00, 95146.46it/s]  59%|█████▉    | 108646/183408 [00:00<00:00, 113098.15it/s] 68%|██████▊   | 125180/183408 [00:01<00:00, 125621.07it/s] 77%|███████▋  | 142028/183408 [00:01<00:00, 136552.68it/s] 87%|████████▋ | 159680/183408 [00:01<00:00, 147225.39it/s] 96%|█████████▌| 176063/183408 [00:01<00:00, 151810.03it/s]100%|██████████| 183408/183408 [00:01<00:00, 135894.05it/s]
+2025-12-19 22:01:53 - Loaded 183408 Documents.
+2025-12-19 22:01:53 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-19 22:01:53 - Loading Queries...
+2025-12-19 22:01:53 - Loaded 145 Queries.
+2025-12-19 22:01:53 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-19 22:01:53 - Created 401 positive pairs for clapnq
+2025-12-19 22:02:18 - Embedding dimension mismatch: query 135 vs pos 295
+2025-12-19 22:02:18 - Failed: Query embedding dim 135 doesn't match pos embedding dim 295
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 60, in main
+    results_path = train_enhanced_contrastive(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 446, in train_enhanced_contrastive
+    raise ValueError(f"Query embedding dim {query_embs.size(1)} doesn't match pos embedding dim {pos_embs.size(1)}")
+ValueError: Query embedding dim 135 doesn't match pos embedding dim 295
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 76, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 60, in main
+    results_path = train_enhanced_contrastive(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 446, in train_enhanced_contrastive
+    raise ValueError(f"Query embedding dim {query_embs.size(1)} doesn't match pos embedding dim {pos_embs.size(1)}")
+ValueError: Query embedding dim 135 doesn't match pos embedding dim 295

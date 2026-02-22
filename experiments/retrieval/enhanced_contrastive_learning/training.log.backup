@@ -1,0 +1,794 @@
+2025-12-19 08:19:18 - Using GPU 4
+2025-12-19 08:19:18 - Device: cuda
+2025-12-19 08:19:18 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-19 08:19:18 - Use pytorch device_name: cuda:0
+2025-12-19 08:19:18 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-12-19 08:19:21 - 
+============================================================
+2025-12-19 08:19:21 - Training on domain: clapnq
+2025-12-19 08:19:21 - ============================================================
+2025-12-19 08:19:21 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10417/183408 [00:00<00:01, 104158.68it/s] 14%|█▍        | 25736/183408 [00:00<00:01, 132993.82it/s] 24%|██▎       | 43206/183408 [00:00<00:00, 152032.11it/s] 33%|███▎      | 60692/183408 [00:00<00:00, 161041.52it/s] 42%|████▏     | 76797/183408 [00:00<00:00, 160326.37it/s] 51%|█████     | 92831/183408 [00:00<00:01, 88004.49it/s]  60%|█████▉    | 109174/183408 [00:00<00:00, 103841.31it/s] 68%|██████▊   | 124235/183408 [00:01<00:00, 114633.01it/s] 77%|███████▋  | 140450/183408 [00:01<00:00, 126411.77it/s] 86%|████████▌ | 157822/183408 [00:01<00:00, 138783.28it/s] 95%|█████████▌| 174763/183408 [00:01<00:00, 144388.44it/s]100%|██████████| 183408/183408 [00:01<00:00, 131140.60it/s]
+2025-12-19 08:19:22 - Loaded 183408 Documents.
+2025-12-19 08:19:22 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-19 08:19:22 - Loading Queries...
+2025-12-19 08:19:22 - Loaded 145 Queries.
+2025-12-19 08:19:22 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-19 08:19:22 - Created 401 positive pairs for clapnq
+2025-12-19 08:20:40 - Failed: The size of tensor a (125) must match the size of tensor b (424) at non-singleton dimension 1
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 49, in main
+    results_path = train_enhanced_contrastive(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 455, in train_enhanced_contrastive
+    loss = loss_fn(query_embs, pos_embs, neg_embs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 127, in forward
+    pos_sim = torch.sum(query_emb * pos_emb, dim=1) / self.temperature
+                        ~~~~~~~~~~^~~~~~~~~
+RuntimeError: The size of tensor a (125) must match the size of tensor b (424) at non-singleton dimension 1
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 65, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 49, in main
+    results_path = train_enhanced_contrastive(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 455, in train_enhanced_contrastive
+    loss = loss_fn(query_embs, pos_embs, neg_embs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 127, in forward
+    pos_sim = torch.sum(query_emb * pos_emb, dim=1) / self.temperature
+                        ~~~~~~~~~~^~~~~~~~~
+RuntimeError: The size of tensor a (125) must match the size of tensor b (424) at non-singleton dimension 1
+2025-12-19 18:04:54 - Using GPU 3
+2025-12-19 18:04:55 - Device: cuda
+2025-12-19 18:04:55 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-19 18:04:55 - Use pytorch device_name: cuda:0
+2025-12-19 18:04:55 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-12-19 18:04:57 - 
+============================================================
+2025-12-19 18:04:57 - Training on domain: clapnq
+2025-12-19 18:04:57 - ============================================================
+2025-12-19 18:04:57 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10758/183408 [00:00<00:01, 107565.23it/s] 12%|█▏        | 21835/183408 [00:00<00:01, 109442.52it/s] 19%|█▉        | 35639/183408 [00:00<00:01, 122497.61it/s] 29%|██▉       | 53246/183408 [00:00<00:00, 143642.27it/s] 39%|███▊      | 70887/183408 [00:00<00:00, 155455.05it/s] 47%|████▋     | 86433/183408 [00:00<00:01, 91321.37it/s]  56%|█████▋    | 103434/183408 [00:00<00:00, 108787.88it/s] 66%|██████▌   | 120981/183408 [00:01<00:00, 124841.31it/s] 75%|███████▌  | 138041/183408 [00:01<00:00, 136548.07it/s] 85%|████████▍ | 155833/183408 [00:01<00:00, 147622.76it/s] 94%|█████████▍| 173298/183408 [00:01<00:00, 155098.55it/s]100%|██████████| 183408/183408 [00:01<00:00, 134013.77it/s]
+2025-12-19 18:04:59 - Loaded 183408 Documents.
+2025-12-19 18:04:59 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-19 18:04:59 - Loading Queries...
+2025-12-19 18:04:59 - Loaded 145 Queries.
+2025-12-19 18:04:59 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-19 18:04:59 - Created 401 positive pairs for clapnq
+2025-12-19 18:06:02 - Embedding dimension mismatch: query 182 vs pos 348
+2025-12-19 18:06:02 - Failed: Query embedding dim 182 doesn't match pos embedding dim 348
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 49, in main
+    results_path = train_enhanced_contrastive(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 409, in train_enhanced_contrastive
+    raise ValueError(f"Query embedding dim {query_embs.size(1)} doesn't match pos embedding dim {pos_embs.size(1)}")
+ValueError: Query embedding dim 182 doesn't match pos embedding dim 348
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 65, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 49, in main
+    results_path = train_enhanced_contrastive(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 409, in train_enhanced_contrastive
+    raise ValueError(f"Query embedding dim {query_embs.size(1)} doesn't match pos embedding dim {pos_embs.size(1)}")
+ValueError: Query embedding dim 182 doesn't match pos embedding dim 348
+
+================================================================================
+Restarted at: Fri Dec 19 06:20:18 PM PST 2025
+Command: venv/bin/python3 train_enhanced_contrastive_tier1.py --experiment_name tier1_enhanced_contrastive --gpu 2 --output_dir experiments/retrieval/tier1_enhanced_contrastive --no-resume
+================================================================================
+
+2025-12-19 18:20:23 - Using GPU 2
+2025-12-19 18:20:23 - Device: cuda
+2025-12-19 18:20:23 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-19 18:20:23 - Use pytorch device_name: cuda:0
+2025-12-19 18:20:23 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-12-19 18:20:25 - 
+============================================================
+2025-12-19 18:20:25 - Training on domain: clapnq
+2025-12-19 18:20:25 - ============================================================
+2025-12-19 18:20:25 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10784/183408 [00:00<00:01, 107821.08it/s] 15%|█▍        | 26847/183408 [00:00<00:01, 138877.14it/s] 24%|██▍       | 44173/183408 [00:00<00:00, 154573.14it/s] 34%|███▎      | 61849/183408 [00:00<00:00, 163330.05it/s] 43%|████▎     | 79310/183408 [00:00<00:00, 167394.28it/s] 52%|█████▏    | 96050/183408 [00:00<00:00, 97547.63it/s]  62%|██████▏   | 113253/183408 [00:00<00:00, 113976.89it/s] 71%|███████   | 129976/183408 [00:01<00:00, 126735.55it/s] 80%|████████  | 146990/183408 [00:01<00:00, 137802.74it/s] 90%|████████▉ | 164163/183408 [00:01<00:00, 146860.92it/s] 98%|█████████▊| 180301/183408 [00:01<00:00, 147846.24it/s]100%|██████████| 183408/183408 [00:01<00:00, 137220.17it/s]
+2025-12-19 18:20:27 - Loaded 183408 Documents.
+2025-12-19 18:20:27 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-19 18:20:27 - Loading Queries...
+2025-12-19 18:20:27 - Loaded 145 Queries.
+2025-12-19 18:20:27 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-19 18:20:27 - Created 401 positive pairs for clapnq
+2025-12-19 18:21:37 - Failed: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 2.44 MiB is free. Process 434367 has 254.00 MiB memory in use. Process 3192434 has 21.62 GiB memory in use. Including non-PyTorch memory, this process has 1.68 GiB memory in use. Of the allocated memory 1.33 GiB is allocated by PyTorch, and 54.89 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 49, in main
+    results_path = train_enhanced_contrastive(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 280, in train_enhanced_contrastive
+    query_outputs = model._modules['0'](query_features)  # Transformer module
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/sentence_transformers/models/Transformer.py", line 261, in forward
+    outputs = self.auto_model(**trans_features, **kwargs, return_dict=True)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 1000, in forward
+    encoder_outputs = self.encoder(
+        embedding_output,
+    ...<9 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 650, in forward
+    layer_outputs = layer_module(
+        hidden_states,
+    ...<6 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 558, in forward
+    self_attention_outputs = self.attention(
+        hidden_states,
+    ...<4 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 488, in forward
+    self_outputs = self.self(
+        hidden_states,
+    ...<5 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 413, in forward
+    attn_output = torch.nn.functional.scaled_dot_product_attention(
+        query_layer,
+    ...<4 lines>...
+        is_causal=is_causal,
+    )
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 2.44 MiB is free. Process 434367 has 254.00 MiB memory in use. Process 3192434 has 21.62 GiB memory in use. Including non-PyTorch memory, this process has 1.68 GiB memory in use. Of the allocated memory 1.33 GiB is allocated by PyTorch, and 54.89 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 65, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 49, in main
+    results_path = train_enhanced_contrastive(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 280, in train_enhanced_contrastive
+    query_outputs = model._modules['0'](query_features)  # Transformer module
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/sentence_transformers/models/Transformer.py", line 261, in forward
+    outputs = self.auto_model(**trans_features, **kwargs, return_dict=True)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 1000, in forward
+    encoder_outputs = self.encoder(
+        embedding_output,
+    ...<9 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 650, in forward
+    layer_outputs = layer_module(
+        hidden_states,
+    ...<6 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 558, in forward
+    self_attention_outputs = self.attention(
+        hidden_states,
+    ...<4 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 488, in forward
+    self_outputs = self.self(
+        hidden_states,
+    ...<5 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 413, in forward
+    attn_output = torch.nn.functional.scaled_dot_product_attention(
+        query_layer,
+    ...<4 lines>...
+        is_causal=is_causal,
+    )
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 2.44 MiB is free. Process 434367 has 254.00 MiB memory in use. Process 3192434 has 21.62 GiB memory in use. Including non-PyTorch memory, this process has 1.68 GiB memory in use. Of the allocated memory 1.33 GiB is allocated by PyTorch, and 54.89 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+================================================================================
+Restarted with GPU fix at: Fri Dec 19 06:34:54 PM PST 2025
+Command: venv/bin/python3 train_enhanced_contrastive_tier1.py --experiment_name tier1_enhanced_contrastive --gpu 2 --output_dir experiments/retrieval/tier1_enhanced_contrastive --no-resume
+GPU Fix: CUDA_VISIBLE_DEVICES set before torch import
+================================================================================
+
+
+================================================================================
+Restarted with GPU fix at: Fri Dec 19 06:35:02 PM PST 2025
+Command: venv/bin/python3 train_enhanced_contrastive_tier1.py --experiment_name tier1_enhanced_contrastive --gpu 2 --output_dir experiments/retrieval/tier1_enhanced_contrastive --no-resume
+GPU Fix: CUDA_VISIBLE_DEVICES set before torch import
+================================================================================
+
+2025-12-19 18:35:02 - Set CUDA_VISIBLE_DEVICES=2
+2025-12-19 18:35:07 - CUDA_VISIBLE_DEVICES already set to 2
+2025-12-19 18:35:07 - Device: cuda, GPU: 0 (visible as GPU 0)
+2025-12-19 18:35:07 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-19 18:35:07 - Use pytorch device_name: cuda:0
+2025-12-19 18:35:07 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-12-19 18:35:09 - 
+============================================================
+2025-12-19 18:35:09 - Training on domain: clapnq
+2025-12-19 18:35:09 - ============================================================
+2025-12-19 18:35:09 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s] 10%|▉         | 17946/183408 [00:00<00:00, 179449.90it/s] 20%|█▉        | 35891/183408 [00:00<00:00, 163307.73it/s] 29%|██▉       | 53966/183408 [00:00<00:00, 170861.82it/s] 39%|███▉      | 71145/183408 [00:00<00:00, 170995.27it/s] 48%|████▊     | 88301/183408 [00:00<00:01, 93135.90it/s]  58%|█████▊    | 105542/183408 [00:00<00:00, 110198.25it/s] 67%|██████▋   | 122862/183408 [00:00<00:00, 125014.34it/s] 76%|███████▋  | 139875/183408 [00:01<00:00, 136358.41it/s] 85%|████████▌ | 156172/183408 [00:01<00:00, 143370.23it/s] 94%|█████████▍| 172381/183408 [00:01<00:00, 148496.84it/s]100%|██████████| 183408/183408 [00:01<00:00, 138909.46it/s]
+2025-12-19 18:35:10 - Loaded 183408 Documents.
+2025-12-19 18:35:10 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-19 18:35:10 - Loading Queries...
+2025-12-19 18:35:11 - Loaded 145 Queries.
+2025-12-19 18:35:11 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-19 18:35:11 - Created 401 positive pairs for clapnq
+2025-12-19 18:36:10 - Failed: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 6.44 MiB is free. Process 434367 has 254.00 MiB memory in use. Process 3192434 has 21.62 GiB memory in use. Including non-PyTorch memory, this process has 1.69 GiB memory in use. Of the allocated memory 1.35 GiB is allocated by PyTorch, and 38.70 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 55, in main
+    results_path = train_enhanced_contrastive(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 293, in train_enhanced_contrastive
+    query_outputs = model._modules['0'](query_features)  # Transformer module
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/sentence_transformers/models/Transformer.py", line 261, in forward
+    outputs = self.auto_model(**trans_features, **kwargs, return_dict=True)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 1000, in forward
+    encoder_outputs = self.encoder(
+        embedding_output,
+    ...<9 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 650, in forward
+    layer_outputs = layer_module(
+        hidden_states,
+    ...<6 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 588, in forward
+    layer_output = apply_chunking_to_forward(
+        self.feed_forward_chunk, self.chunk_size_feed_forward, self.seq_len_dim, attention_output
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/pytorch_utils.py", line 257, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 597, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 526, in forward
+    hidden_states = self.dropout(hidden_states)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/dropout.py", line 70, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/functional.py", line 1422, in dropout
+    _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+                                                     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 6.44 MiB is free. Process 434367 has 254.00 MiB memory in use. Process 3192434 has 21.62 GiB memory in use. Including non-PyTorch memory, this process has 1.69 GiB memory in use. Of the allocated memory 1.35 GiB is allocated by PyTorch, and 38.70 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 71, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 55, in main
+    results_path = train_enhanced_contrastive(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 293, in train_enhanced_contrastive
+    query_outputs = model._modules['0'](query_features)  # Transformer module
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/sentence_transformers/models/Transformer.py", line 261, in forward
+    outputs = self.auto_model(**trans_features, **kwargs, return_dict=True)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 1000, in forward
+    encoder_outputs = self.encoder(
+        embedding_output,
+    ...<9 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 650, in forward
+    layer_outputs = layer_module(
+        hidden_states,
+    ...<6 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 588, in forward
+    layer_output = apply_chunking_to_forward(
+        self.feed_forward_chunk, self.chunk_size_feed_forward, self.seq_len_dim, attention_output
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/pytorch_utils.py", line 257, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 597, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 526, in forward
+    hidden_states = self.dropout(hidden_states)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/dropout.py", line 70, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/functional.py", line 1422, in dropout
+    _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+                                                     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 6.44 MiB is free. Process 434367 has 254.00 MiB memory in use. Process 3192434 has 21.62 GiB memory in use. Including non-PyTorch memory, this process has 1.69 GiB memory in use. Of the allocated memory 1.35 GiB is allocated by PyTorch, and 38.70 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+================================================================================
+Restarted with fixes at: Fri Dec 19 07:17:26 PM PST 2025
+Command: venv/bin/python3 train_enhanced_contrastive_tier1.py --experiment_name tier1_enhanced_contrastive --gpu 2 --output_dir experiments/retrieval/tier1_enhanced_contrastive --no-resume
+GPU: 2, CUDA_VISIBLE_DEVICES will be set in environment
+Batch size reduced to 8 to prevent OOM
+================================================================================
+
+2025-12-19 19:17:26 - CUDA_VISIBLE_DEVICES already set to 2
+2025-12-19 19:17:30 - CUDA_VISIBLE_DEVICES=2 (set before torch import)
+2025-12-19 19:17:31 - Device: cuda, Using GPU 0 (NVIDIA GeForce RTX 3090)
+2025-12-19 19:17:31 - CUDA_VISIBLE_DEVICES=2, GPU will appear as device 0 to PyTorch
+2025-12-19 19:17:31 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-19 19:17:31 - Use pytorch device_name: cuda:0
+2025-12-19 19:17:31 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-12-19 19:17:33 - 
+============================================================
+2025-12-19 19:17:33 - Training on domain: clapnq
+2025-12-19 19:17:33 - ============================================================
+2025-12-19 19:17:33 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10647/183408 [00:00<00:01, 106462.49it/s] 12%|█▏        | 21294/183408 [00:00<00:01, 105050.44it/s] 17%|█▋        | 31801/183408 [00:00<00:01, 104878.79it/s] 26%|██▌       | 46827/183408 [00:00<00:01, 122688.11it/s] 35%|███▍      | 63729/183408 [00:00<00:00, 139332.11it/s] 44%|████▍     | 80594/183408 [00:00<00:00, 149275.37it/s] 52%|█████▏    | 95532/183408 [00:00<00:00, 89271.81it/s]  61%|██████    | 112171/183408 [00:01<00:00, 106083.15it/s] 70%|███████   | 128649/183408 [00:01<00:00, 120021.24it/s] 79%|███████▉  | 145109/183408 [00:01<00:00, 131311.47it/s] 88%|████████▊ | 161151/183408 [00:01<00:00, 139043.86it/s] 96%|█████████▌| 176423/183408 [00:01<00:00, 142162.99it/s]100%|██████████| 183408/183408 [00:01<00:00, 126361.16it/s]
+2025-12-19 19:17:34 - Loaded 183408 Documents.
+2025-12-19 19:17:34 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-19 19:17:34 - Loading Queries...
+2025-12-19 19:17:34 - Loaded 145 Queries.
+2025-12-19 19:17:34 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-19 19:17:34 - Created 401 positive pairs for clapnq
+2025-12-19 19:18:18 - Failed: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 14.44 MiB is free. Process 434367 has 254.00 MiB memory in use. Process 3192434 has 21.62 GiB memory in use. Including non-PyTorch memory, this process has 1.68 GiB memory in use. Of the allocated memory 1.24 GiB is allocated by PyTorch, and 144.74 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 60, in main
+    results_path = train_enhanced_contrastive(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 370, in train_enhanced_contrastive
+    pos_outputs = model._modules['0'](pos_features)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/sentence_transformers/models/Transformer.py", line 261, in forward
+    outputs = self.auto_model(**trans_features, **kwargs, return_dict=True)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 1000, in forward
+    encoder_outputs = self.encoder(
+        embedding_output,
+    ...<9 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 650, in forward
+    layer_outputs = layer_module(
+        hidden_states,
+    ...<6 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 588, in forward
+    layer_output = apply_chunking_to_forward(
+        self.feed_forward_chunk, self.chunk_size_feed_forward, self.seq_len_dim, attention_output
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/pytorch_utils.py", line 257, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 596, in feed_forward_chunk
+    intermediate_output = self.intermediate(attention_output)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 512, in forward
+    hidden_states = self.dense(hidden_states)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 14.44 MiB is free. Process 434367 has 254.00 MiB memory in use. Process 3192434 has 21.62 GiB memory in use. Including non-PyTorch memory, this process has 1.68 GiB memory in use. Of the allocated memory 1.24 GiB is allocated by PyTorch, and 144.74 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 76, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 60, in main
+    results_path = train_enhanced_contrastive(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 370, in train_enhanced_contrastive
+    pos_outputs = model._modules['0'](pos_features)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/sentence_transformers/models/Transformer.py", line 261, in forward
+    outputs = self.auto_model(**trans_features, **kwargs, return_dict=True)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 1000, in forward
+    encoder_outputs = self.encoder(
+        embedding_output,
+    ...<9 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 650, in forward
+    layer_outputs = layer_module(
+        hidden_states,
+    ...<6 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 588, in forward
+    layer_output = apply_chunking_to_forward(
+        self.feed_forward_chunk, self.chunk_size_feed_forward, self.seq_len_dim, attention_output
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/pytorch_utils.py", line 257, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 596, in feed_forward_chunk
+    intermediate_output = self.intermediate(attention_output)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 512, in forward
+    hidden_states = self.dense(hidden_states)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 14.44 MiB is free. Process 434367 has 254.00 MiB memory in use. Process 3192434 has 21.62 GiB memory in use. Including non-PyTorch memory, this process has 1.68 GiB memory in use. Of the allocated memory 1.24 GiB is allocated by PyTorch, and 144.74 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+================================================================================
+Restarted with final GPU fix at: Fri Dec 19 07:19:14 PM PST 2025
+CUDA_VISIBLE_DEVICES will be set to 2 in script
+================================================================================
+
+2025-12-19 19:19:14 - Set CUDA_VISIBLE_DEVICES=2 (overriding any existing value)
+2025-12-19 19:19:18 - CUDA_VISIBLE_DEVICES=2 (set before torch import)
+2025-12-19 19:19:19 - Device: cuda, Using GPU 0 (NVIDIA GeForce RTX 3090)
+2025-12-19 19:19:19 - CUDA_VISIBLE_DEVICES=2, GPU will appear as device 0 to PyTorch
+2025-12-19 19:19:19 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-19 19:19:19 - Use pytorch device_name: cuda:0
+2025-12-19 19:19:19 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-12-19 19:19:21 - 
+============================================================
+2025-12-19 19:19:21 - Training on domain: clapnq
+2025-12-19 19:19:21 - ============================================================
+2025-12-19 19:19:21 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s] 10%|▉         | 17636/183408 [00:00<00:00, 176338.31it/s] 19%|█▉        | 35270/183408 [00:00<00:00, 171938.15it/s] 29%|██▊       | 52472/183408 [00:00<00:00, 171527.37it/s] 38%|███▊      | 70171/183408 [00:00<00:00, 173659.84it/s] 48%|████▊     | 87542/183408 [00:00<00:00, 98821.21it/s]  57%|█████▋    | 104285/183408 [00:00<00:00, 114293.84it/s] 66%|██████▋   | 121513/183408 [00:00<00:00, 128423.17it/s] 75%|███████▌  | 138347/183408 [00:01<00:00, 138729.16it/s] 85%|████████▍ | 155146/183408 [00:01<00:00, 146612.57it/s] 94%|█████████▍| 172173/183408 [00:01<00:00, 153187.11it/s]100%|██████████| 183408/183408 [00:01<00:00, 142431.46it/s]
+2025-12-19 19:19:22 - Loaded 183408 Documents.
+2025-12-19 19:19:22 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-19 19:19:22 - Loading Queries...
+2025-12-19 19:19:22 - Loaded 145 Queries.
+2025-12-19 19:19:22 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-19 19:19:22 - Created 401 positive pairs for clapnq
+2025-12-19 19:20:11 - Failed: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 14.44 MiB is free. Process 434367 has 254.00 MiB memory in use. Process 3192434 has 21.62 GiB memory in use. Including non-PyTorch memory, this process has 1.68 GiB memory in use. Of the allocated memory 1.28 GiB is allocated by PyTorch, and 112.01 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 370, in train_enhanced_contrastive
+    pos_outputs = model._modules['0'](pos_features)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/sentence_transformers/models/Transformer.py", line 261, in forward
+    outputs = self.auto_model(**trans_features, **kwargs, return_dict=True)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 1000, in forward
+    encoder_outputs = self.encoder(
+        embedding_output,
+    ...<9 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 650, in forward
+    layer_outputs = layer_module(
+        hidden_states,
+    ...<6 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 558, in forward
+    self_attention_outputs = self.attention(
+        hidden_states,
+    ...<4 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 497, in forward
+    attention_output = self.output(self_outputs[0], hidden_states)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 436, in forward
+    hidden_states = self.dense(hidden_states)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 14.44 MiB is free. Process 434367 has 254.00 MiB memory in use. Process 3192434 has 21.62 GiB memory in use. Including non-PyTorch memory, this process has 1.68 GiB memory in use. Of the allocated memory 1.28 GiB is allocated by PyTorch, and 112.01 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 74, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 58, in main
+    results_path = train_enhanced_contrastive(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 370, in train_enhanced_contrastive
+    pos_outputs = model._modules['0'](pos_features)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/sentence_transformers/models/Transformer.py", line 261, in forward
+    outputs = self.auto_model(**trans_features, **kwargs, return_dict=True)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 1000, in forward
+    encoder_outputs = self.encoder(
+        embedding_output,
+    ...<9 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 650, in forward
+    layer_outputs = layer_module(
+        hidden_states,
+    ...<6 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 558, in forward
+    self_attention_outputs = self.attention(
+        hidden_states,
+    ...<4 lines>...
+        cache_position=cache_position,
+    )
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 497, in forward
+    attention_output = self.output(self_outputs[0], hidden_states)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/transformers/models/bert/modeling_bert.py", line 436, in forward
+    hidden_states = self.dense(hidden_states)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/lib/python3.13/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 14.44 MiB is free. Process 434367 has 254.00 MiB memory in use. Process 3192434 has 21.62 GiB memory in use. Including non-PyTorch memory, this process has 1.68 GiB memory in use. Of the allocated memory 1.28 GiB is allocated by PyTorch, and 112.01 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

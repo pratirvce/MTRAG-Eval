@@ -1,0 +1,7 @@
+2025-12-16 22:51:01 - Using GPU 1
+2025-12-16 22:51:01 - Device: cuda
+2025-12-16 22:51:01 - Resuming: Completed domains: {'fiqa', 'clapnq', 'cloud', 'govt'}
+2025-12-16 22:51:01 - Skipping clapnq (already completed)
+2025-12-16 22:51:01 - Skipping fiqa (already completed)
+2025-12-16 22:51:01 - Skipping govt (already completed)
+2025-12-16 22:51:01 - Skipping cloud (already completed)

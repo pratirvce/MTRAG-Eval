@@ -1,0 +1,287 @@
+2025-12-19 02:35:01 - Using GPU 1
+2025-12-19 02:35:01 - Device: cuda
+2025-12-19 02:35:01 - Loading model: BAAI/bge-base-en-v1.5
+2025-12-19 02:35:02 - 
+============================================================
+2025-12-19 02:35:02 - Processing domain: clapnq
+2025-12-19 02:35:02 - ============================================================
+2025-12-19 02:35:02 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  9%|▉         | 16650/183408 [00:00<00:01, 166488.65it/s] 18%|█▊        | 33299/183408 [00:00<00:01, 142805.38it/s] 26%|██▌       | 47794/183408 [00:00<00:01, 116619.54it/s] 33%|███▎      | 59929/183408 [00:00<00:01, 116724.92it/s] 42%|████▏     | 77567/183408 [00:00<00:00, 135554.28it/s] 50%|████▉     | 91575/183408 [00:00<00:01, 77095.84it/s]  59%|█████▉    | 109101/183408 [00:01<00:00, 96723.02it/s] 69%|██████▉   | 126317/183408 [00:01<00:00, 113481.82it/s] 78%|███████▊  | 142315/183408 [00:01<00:00, 124681.41it/s] 86%|████████▌ | 157113/183408 [00:01<00:00, 127232.03it/s] 95%|█████████▍| 174064/183408 [00:01<00:00, 138335.78it/s]100%|██████████| 183408/183408 [00:01<00:00, 121676.62it/s]
+2025-12-19 02:35:03 - Loaded 183408 Documents.
+2025-12-19 02:35:03 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-19 02:35:03 - Loading Queries...
+2025-12-19 02:35:03 - Loaded 208 Queries.
+2025-12-19 02:35:03 - Query Example: |user|: where do the arizona cardinals play this week
+|user|: Do the Arizona Cardinals play outside the US?
+2025-12-19 02:35:03 - Loaded 183408 documents, 208 queries
+2025-12-19 02:35:03 - Step 1: Initial retrieval...
+2025-12-19 03:11:35 - Step 2: Reranking with cross-encoder head...
+2025-12-19 03:19:25 - Step 3: Evaluating results...
+2025-12-19 03:19:25 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2025-12-19 03:19:25 - 
+
+2025-12-19 03:19:25 - NDCG@1: 0.0144
+2025-12-19 03:19:25 - NDCG@3: 0.0159
+2025-12-19 03:19:25 - NDCG@5: 0.0203
+2025-12-19 03:19:25 - NDCG@10: 0.0285
+2025-12-19 03:19:25 - 
+
+2025-12-19 03:19:25 - MAP@1: 0.0064
+2025-12-19 03:19:25 - MAP@3: 0.0100
+2025-12-19 03:19:25 - MAP@5: 0.0119
+2025-12-19 03:19:25 - MAP@10: 0.0153
+2025-12-19 03:19:25 - 
+
+2025-12-19 03:19:25 - Recall@1: 0.0064
+2025-12-19 03:19:25 - Recall@3: 0.0167
+2025-12-19 03:19:25 - Recall@5: 0.0255
+2025-12-19 03:19:25 - Recall@10: 0.0456
+2025-12-19 03:19:25 - 
+
+2025-12-19 03:19:25 - P@1: 0.0144
+2025-12-19 03:19:25 - P@3: 0.0144
+2025-12-19 03:19:25 - P@5: 0.0135
+2025-12-19 03:19:25 - P@10: 0.0115
+2025-12-19 03:19:25 - 
+============================================================
+2025-12-19 03:19:25 - Domain clapnq Results:
+2025-12-19 03:19:25 -   Recall@10: 0.0456
+2025-12-19 03:19:25 -   nDCG@10: 0.0285
+2025-12-19 03:19:25 - ============================================================
+
+2025-12-19 03:19:25 - 
+============================================================
+2025-12-19 03:19:25 - Processing domain: fiqa
+2025-12-19 03:19:25 - ============================================================
+2025-12-19 03:19:25 - Loading Corpus...
+  0%|          | 0/61022 [00:00<?, ?it/s] 20%|█▉        | 12049/61022 [00:00<00:00, 120464.84it/s] 43%|████▎     | 26008/61022 [00:00<00:00, 131709.61it/s] 74%|███████▍  | 45229/61022 [00:00<00:00, 159329.82it/s]100%|██████████| 61022/61022 [00:00<00:00, 159545.31it/s]
+2025-12-19 03:19:25 - Loaded 61022 Documents.
+2025-12-19 03:19:25 - Doc Example: {'text': '\n"To add to @keshlam\'s answer slightly a stock\'s price is made up of several components: the only one of these that is known even remotely accurately at any time is the book value on the day that the accounts are prepared. Even completed cashflows after the books have been prepared contain some slight unknowns as they may be reversed if stock is returned, for example, or reduced by unforeseen costs. Future cashflows are based on (amongst other things) how many sales you expect to make in the future for all time. Exercise for the reader: how many iPhone 22s will apple sell in 2029? Even known future cashflows have some risk attached to them; customers may not pay for goods, a supplier may go into liquidation and so need to change its invoicing strategy etc.. Estimating the risk on future cashflows is highly subjective and depends greatly on what the analyst expects the exact economic state of the world will be in the future. Investors have the choice of investing in a risk free instrument (this is usually taken as being modelled by the 10 year US treasury bond) that is guaranteed to give them a return. To invest in anything riskier than the risk free instrument they must be paid a premium over the risk free return that they would get from that. The risk premium is related to how likely they think it is that they will not receive a return higher than that rate. Calculation of that premium is highly subjective; if I know the management of the company well I will be inclined to think that the investment is far less risky (or perhaps riskier...) than someone who does not, for example. Since none of the factors that go into a share price are accurately measurable and many are subjective there is no ""right"" share price at any time, let alone at time of IPO. Each investor will estimate these values differently and so value the shares differently and their trading, based on their ever changing estimates, will move the share price to an indeterminable level. In comments to @keshlam\'s answer you ask if there is enough information to work out the share price if a company buys out the company before IPO.', 'title': ''}
+2025-12-19 03:19:25 - Loading Queries...
+2025-12-19 03:19:25 - Loaded 180 Queries.
+2025-12-19 03:19:25 - Query Example: |user|:  What's the difference between Market Cap and NAV?
+2025-12-19 03:19:25 - Loaded 61022 documents, 180 queries
+2025-12-19 03:19:25 - Step 1: Initial retrieval...
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval_tier1.py", line 62, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval_tier1.py", line 28, in main
+    from train_multitask_retrieval import run_multitask_retrieval_evaluation
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval.py", line 14, in <module>
+    from beir.datasets.data_loader import GenericDataLoader
+ModuleNotFoundError: No module named 'beir'
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval_tier1.py", line 62, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval_tier1.py", line 28, in main
+    from train_multitask_retrieval import run_multitask_retrieval_evaluation
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval.py", line 14, in <module>
+    from beir.datasets.data_loader import GenericDataLoader
+ModuleNotFoundError: No module named 'beir'
+2025-12-19 03:28:29 - Step 2: Reranking with cross-encoder head...
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval_tier1.py", line 62, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval_tier1.py", line 28, in main
+    from train_multitask_retrieval import run_multitask_retrieval_evaluation
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval.py", line 14, in <module>
+    from beir.datasets.data_loader import GenericDataLoader
+ModuleNotFoundError: No module named 'beir'
+2025-12-19 03:33:30 - Step 3: Evaluating results...
+2025-12-19 03:33:30 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2025-12-19 03:33:30 - 
+
+2025-12-19 03:33:30 - NDCG@1: 0.0167
+2025-12-19 03:33:30 - NDCG@3: 0.0142
+2025-12-19 03:33:30 - NDCG@5: 0.0131
+2025-12-19 03:33:30 - NDCG@10: 0.0153
+2025-12-19 03:33:30 - 
+
+2025-12-19 03:33:30 - MAP@1: 0.0056
+2025-12-19 03:33:30 - MAP@3: 0.0082
+2025-12-19 03:33:30 - MAP@5: 0.0082
+2025-12-19 03:33:30 - MAP@10: 0.0089
+2025-12-19 03:33:30 - 
+
+2025-12-19 03:33:30 - Recall@1: 0.0056
+2025-12-19 03:33:30 - Recall@3: 0.0134
+2025-12-19 03:33:30 - Recall@5: 0.0134
+2025-12-19 03:33:30 - Recall@10: 0.0178
+2025-12-19 03:33:30 - 
+
+2025-12-19 03:33:30 - P@1: 0.0167
+2025-12-19 03:33:30 - P@3: 0.0130
+2025-12-19 03:33:30 - P@5: 0.0078
+2025-12-19 03:33:30 - P@10: 0.0056
+2025-12-19 03:33:30 - 
+============================================================
+2025-12-19 03:33:30 - Domain fiqa Results:
+2025-12-19 03:33:30 -   Recall@10: 0.0178
+2025-12-19 03:33:30 -   nDCG@10: 0.0153
+2025-12-19 03:33:30 - ============================================================
+
+2025-12-19 03:33:30 - 
+============================================================
+2025-12-19 03:33:30 - Processing domain: govt
+2025-12-19 03:33:30 - ============================================================
+2025-12-19 03:33:30 - Loading Corpus...
+  0%|          | 0/49607 [00:00<?, ?it/s] 12%|█▏        | 5998/49607 [00:00<00:00, 59967.76it/s] 25%|██▍       | 12268/49607 [00:00<00:00, 61569.16it/s] 39%|███▉      | 19356/49607 [00:00<00:00, 65812.50it/s] 52%|█████▏    | 26040/49607 [00:00<00:00, 66215.94it/s] 67%|██████▋   | 33156/49607 [00:00<00:00, 67996.19it/s] 83%|████████▎ | 41033/49607 [00:00<00:00, 71655.26it/s] 97%|█████████▋| 48199/49607 [00:00<00:00, 65304.73it/s]100%|██████████| 49607/49607 [00:00<00:00, 66031.39it/s]
+2025-12-19 03:33:31 - Loaded 49607 Documents.
+2025-12-19 03:33:31 - Doc Example: {'text': 'FAQs • What type of seats can I book?\nFAQs • What type of seats can I book?\n\n \n\nSkip to Main Content\n\nCreate a Website Account - Manage notification subscriptions, save form progress and more. \xa0\xa0\n\nWebsite Sign In\n\nCommunityDoing BusinessParks & RecreationCity GovernmentSitio en Español\n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\nSearch\n\n \n \n \n\nCity Council\n\nCommissions & Boards\n\nAdopted City Council Ordinances\n\nAdopted City Council Resolutions\n\n \n\n \nHomeFAQs\n\nSearch\n\nAll categories\nMoGo Morgan Hill Quick Ride\nPlumbing Fixture FAQs\nPolice: Carry Concealed Weapon (CCW) License\nPrivate Sewer Lateral FAQs\n\nCategories\n\nAll Categories\n\nMoGo Morgan Hill Quick Ride\n\nPlumbing Fixture FAQs\n\nPolice: Carry Concealed Weapon (CCW) License\n\nPrivate Sewer Lateral FAQs\n\n \n\r\nWhat type of seats can I book?\t\n\nMoGo Morgan Hill Quick Ride offers Child, Youth, Regular, and ADA Accessible seating options, including:Regular\xa0Regular with Bike - Passenger seat plus a bike rack spaceAccessible - Passenger in a wheelchair or scooterYouth - Ages 8-18Child - Ages 0-7 (accompanied by a fare-paying parent, guardian, or responsible person age 16 or older; must bring and install an appropriate car seat or booster seat per California law)Discount Fare - For riders that meet the income eligibility of the VTA Clipper SMART program.\xa0Vehicles are equipped to carry strollers, bicycles, and baggage.\xa0If bringing a bike, select “General w/Bike” when booking your ride. Bike racks, when available, have the capacity for two bikes.\xa0Vehicles are ADA accessible and equipped to transport wheelchairs and scooters. If you require accessible seating, you can book a seat by selecting the Accessible option. You also have the option to add an additional companion traveling with you as a Regular seat.Please remember that all passengers in one booking need to travel at the same time and get picked up and dropped off at the same stops. \n\n▼\r\nMoGo Morgan Hill Quick Ride\t\n\nShow All Answers\n\n1.\nHow do I schedule a MoGo ride?\n\nBook trips with the MoGo mobile app (Apple App Store or Google Play), to get the most features including automatic alerts about the status of your ride.', 'title': 'FAQs • What type of seats can I book?'}
+2025-12-19 03:33:31 - Loading Queries...
+2025-12-19 03:33:31 - Loaded 201 Queries.
+2025-12-19 03:33:31 - Query Example: |user|: "What are the sheltered rooms designated for use?
+2025-12-19 03:33:31 - Loaded 49607 documents, 201 queries
+2025-12-19 03:33:31 - Step 1: Initial retrieval...
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval_tier1.py", line 62, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval_tier1.py", line 28, in main
+    from train_multitask_retrieval import run_multitask_retrieval_evaluation
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval.py", line 14, in <module>
+    from beir.datasets.data_loader import GenericDataLoader
+ModuleNotFoundError: No module named 'beir'
+2025-12-19 03:41:11 - Step 2: Reranking with cross-encoder head...
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval_tier1.py", line 62, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval_tier1.py", line 28, in main
+    from train_multitask_retrieval import run_multitask_retrieval_evaluation
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval.py", line 14, in <module>
+    from beir.datasets.data_loader import GenericDataLoader
+ModuleNotFoundError: No module named 'beir'
+2025-12-19 03:46:57 - Step 3: Evaluating results...
+2025-12-19 03:46:57 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2025-12-19 03:46:57 - 
+
+2025-12-19 03:46:57 - NDCG@1: 0.0249
+2025-12-19 03:46:57 - NDCG@3: 0.0216
+2025-12-19 03:46:57 - NDCG@5: 0.0224
+2025-12-19 03:46:57 - NDCG@10: 0.0259
+2025-12-19 03:46:57 - 
+
+2025-12-19 03:46:57 - MAP@1: 0.0116
+2025-12-19 03:46:57 - MAP@3: 0.0151
+2025-12-19 03:46:57 - MAP@5: 0.0158
+2025-12-19 03:46:57 - MAP@10: 0.0169
+2025-12-19 03:46:57 - 
+
+2025-12-19 03:46:57 - Recall@1: 0.0116
+2025-12-19 03:46:57 - Recall@3: 0.0207
+2025-12-19 03:46:57 - Recall@5: 0.0236
+2025-12-19 03:46:57 - Recall@10: 0.0319
+2025-12-19 03:46:57 - 
+
+2025-12-19 03:46:57 - P@1: 0.0249
+2025-12-19 03:46:57 - P@3: 0.0149
+2025-12-19 03:46:57 - P@5: 0.0109
+2025-12-19 03:46:57 - P@10: 0.0085
+2025-12-19 03:46:57 - 
+============================================================
+2025-12-19 03:46:57 - Domain govt Results:
+2025-12-19 03:46:57 -   Recall@10: 0.0319
+2025-12-19 03:46:57 -   nDCG@10: 0.0259
+2025-12-19 03:46:57 - ============================================================
+
+2025-12-19 03:46:57 - 
+============================================================
+2025-12-19 03:46:57 - Processing domain: cloud
+2025-12-19 03:46:57 - ============================================================
+2025-12-19 03:46:57 - Loading Corpus...
+  0%|          | 0/72442 [00:00<?, ?it/s]  7%|▋         | 5074/72442 [00:00<00:01, 50734.61it/s] 17%|█▋        | 12382/72442 [00:00<00:00, 63876.18it/s] 30%|███       | 21846/72442 [00:00<00:00, 77667.09it/s] 44%|████▍     | 31782/72442 [00:00<00:00, 86211.95it/s] 58%|█████▊    | 41864/72442 [00:00<00:00, 91471.54it/s] 72%|███████▏  | 52222/72442 [00:00<00:00, 95581.47it/s] 86%|████████▌ | 62162/72442 [00:00<00:00, 96827.75it/s]100%|█████████▉| 72278/72442 [00:00<00:00, 98203.99it/s]100%|██████████| 72442/72442 [00:00<00:00, 90225.91it/s]
+2025-12-19 03:46:58 - Loaded 72442 Documents.
+2025-12-19 03:46:58 - Doc Example: {'text': "\n\n\n\n\n\n\n  Video - Setting up a web app with security groups, load balancer & CDN \n\nIBM Cloud® network services, including load balancer, security groups, and CDN make it easy to build cloud-native applications with greater security, performance, and resiliency. In this demo, you'll learn how you can use these services to create a simple three-tiered web app in a matter of clicks.\n\n\n\n\n\n\n", 'title': ''}
+2025-12-19 03:46:58 - Loading Queries...
+2025-12-19 03:46:58 - Loaded 188 Queries.
+2025-12-19 03:46:58 - Query Example: |user|: does IBM offer document databases?
+2025-12-19 03:46:58 - Loaded 72442 documents, 188 queries
+2025-12-19 03:46:58 - Step 1: Initial retrieval...
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval_tier1.py", line 62, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval_tier1.py", line 28, in main
+    from train_multitask_retrieval import run_multitask_retrieval_evaluation
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval.py", line 14, in <module>
+    from beir.datasets.data_loader import GenericDataLoader
+ModuleNotFoundError: No module named 'beir'
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval_tier1.py", line 62, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval_tier1.py", line 28, in main
+    from train_multitask_retrieval import run_multitask_retrieval_evaluation
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval.py", line 14, in <module>
+    from beir.datasets.data_loader import GenericDataLoader
+ModuleNotFoundError: No module named 'beir'
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval_tier1.py", line 62, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval_tier1.py", line 28, in main
+    from train_multitask_retrieval import run_multitask_retrieval_evaluation
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval.py", line 14, in <module>
+    from beir.datasets.data_loader import GenericDataLoader
+ModuleNotFoundError: No module named 'beir'
+2025-12-19 03:58:10 - Step 2: Reranking with cross-encoder head...
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval_tier1.py", line 62, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval_tier1.py", line 28, in main
+    from train_multitask_retrieval import run_multitask_retrieval_evaluation
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_multitask_retrieval.py", line 14, in <module>
+    from beir.datasets.data_loader import GenericDataLoader
+ModuleNotFoundError: No module named 'beir'
+2025-12-19 04:03:35 - Step 3: Evaluating results...
+2025-12-19 04:03:35 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2025-12-19 04:03:35 - 
+
+2025-12-19 04:03:35 - NDCG@1: 0.0000
+2025-12-19 04:03:35 - NDCG@3: 0.0000
+2025-12-19 04:03:35 - NDCG@5: 0.0019
+2025-12-19 04:03:35 - NDCG@10: 0.0043
+2025-12-19 04:03:35 - 
+
+2025-12-19 04:03:35 - MAP@1: 0.0000
+2025-12-19 04:03:35 - MAP@3: 0.0000
+2025-12-19 04:03:35 - MAP@5: 0.0007
+2025-12-19 04:03:35 - MAP@10: 0.0015
+2025-12-19 04:03:35 - 
+
+2025-12-19 04:03:35 - Recall@1: 0.0000
+2025-12-19 04:03:35 - Recall@3: 0.0000
+2025-12-19 04:03:35 - Recall@5: 0.0036
+2025-12-19 04:03:35 - Recall@10: 0.0093
+2025-12-19 04:03:35 - 
+
+2025-12-19 04:03:35 - P@1: 0.0000
+2025-12-19 04:03:35 - P@3: 0.0000
+2025-12-19 04:03:35 - P@5: 0.0021
+2025-12-19 04:03:35 - P@10: 0.0027
+2025-12-19 04:03:35 - 
+============================================================
+2025-12-19 04:03:35 - Domain cloud Results:
+2025-12-19 04:03:35 -   Recall@10: 0.0093
+2025-12-19 04:03:35 -   nDCG@10: 0.0043
+2025-12-19 04:03:35 - ============================================================
+
+2025-12-19 04:03:35 - 
+============================================================
+2025-12-19 04:03:35 - Average Results:
+2025-12-19 04:03:35 -   Recall@1: 0.0059
+2025-12-19 04:03:35 -   Recall@3: 0.0127
+2025-12-19 04:03:35 -   Recall@5: 0.0165
+2025-12-19 04:03:35 -   Recall@10: 0.0261
+2025-12-19 04:03:35 -   nDCG@1: 0.0140
+2025-12-19 04:03:35 -   nDCG@3: 0.0129
+2025-12-19 04:03:35 -   nDCG@5: 0.0145
+2025-12-19 04:03:35 -   nDCG@10: 0.0185
+2025-12-19 04:03:35 - ============================================================
+
+2025-12-19 04:03:35 - ✅ Multi-Task Retrieval completed: experiments/retrieval/tier1_multitask_retrieval

@@ -1,0 +1,10 @@
+Stop Record - Sat Nov 29 10:55:39 PM PST 2025
+Original PID: 1311837
+Parallel PID: 1850801
+Original Process Info:
+1311837  2-05:17:08 /home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/bin/python train_advanced_bge.py --config experiments/retrieval/phase4_hard_negatives_cosine/config.json
+
+Parallel Process Info:
+1850801  1-05:01:47 /home/prevanka/prati/su-mt-rag/mt-rag-benchmark/venv/bin/python train_advanced_bge.py --config experiments/retrieval/phase4_hard_negatives_cosine/config.json
+
+Checkpoints found: 0

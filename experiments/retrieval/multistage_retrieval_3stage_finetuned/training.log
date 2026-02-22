@@ -1,0 +1,7 @@
+
+================================================================================
+Started: 2025-12-17 22:17:38
+GPU: 5
+Command: cd /home/prevanka/prati/su-mt-rag/mt-rag-benchmark && source venv/bin/activate && python3 train_multistage_3stage_finetuned_tier1.py --experiment_name tier1_multistage_3stage_finetuned --gpu 5 --output_dir experiments/retrieval/tier1_multistage_3stage_finetuned --resume
+================================================================================
+/bin/sh: 1: source: not found

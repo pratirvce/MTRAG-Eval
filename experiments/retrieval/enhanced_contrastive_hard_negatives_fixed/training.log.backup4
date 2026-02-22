@@ -1,0 +1,40 @@
+2025-12-19 22:12:12 - Set CUDA_VISIBLE_DEVICES=3 (overriding any existing value)
+2025-12-19 22:12:16 - CUDA_VISIBLE_DEVICES=3 (set before torch import)
+2025-12-19 22:12:17 - Device: cuda, Using GPU 0 (NVIDIA GeForce RTX 3090)
+2025-12-19 22:12:17 - CUDA_VISIBLE_DEVICES=3, GPU will appear as device 0 to PyTorch
+2025-12-19 22:12:17 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-19 22:12:17 - Use pytorch device_name: cuda:0
+2025-12-19 22:12:17 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py:248: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-19 22:12:19 - Mixed precision training (FP16) enabled
+2025-12-19 22:12:19 - 
+============================================================
+2025-12-19 22:12:19 - Training on domain: clapnq
+2025-12-19 22:12:19 - ============================================================
+2025-12-19 22:12:19 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10675/183408 [00:00<00:01, 106741.96it/s] 12%|█▏        | 21415/183408 [00:00<00:01, 107123.23it/s] 18%|█▊        | 32128/183408 [00:00<00:01, 107017.67it/s] 25%|██▌       | 45890/183408 [00:00<00:01, 119088.39it/s] 35%|███▍      | 63956/183408 [00:00<00:00, 141279.59it/s] 45%|████▍     | 81653/183408 [00:00<00:00, 153408.98it/s] 53%|█████▎    | 96996/183408 [00:00<00:00, 91755.03it/s]  63%|██████▎   | 114684/183408 [00:01<00:00, 110335.70it/s] 72%|███████▏  | 131788/183408 [00:01<00:00, 124764.15it/s] 81%|████████▏ | 149241/183408 [00:01<00:00, 137376.42it/s] 91%|█████████ | 166696/183408 [00:01<00:00, 147254.06it/s]100%|█████████▉| 183199/183408 [00:01<00:00, 152145.25it/s]100%|██████████| 183408/183408 [00:01<00:00, 130327.70it/s]
+2025-12-19 22:12:20 - Loaded 183408 Documents.
+2025-12-19 22:12:20 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-19 22:12:20 - Loading Queries...
+2025-12-19 22:12:20 - Loaded 145 Queries.
+2025-12-19 22:12:20 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-19 22:12:20 - Created 401 positive pairs for clapnq
+2025-12-19 22:12:48 - Neg batch size 2 doesn't match query batch size 4
+2025-12-19 22:12:48 - Failed: Neg batch size 2 doesn't match query batch size 4
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 60, in main
+    results_path = train_enhanced_contrastive(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 696, in train_enhanced_contrastive
+    raise ValueError(f"Neg batch size {neg_embs.size(0)} doesn't match query batch size {query_embs.size(0)}")
+ValueError: Neg batch size 2 doesn't match query batch size 4
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 76, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 60, in main
+    results_path = train_enhanced_contrastive(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 696, in train_enhanced_contrastive
+    raise ValueError(f"Neg batch size {neg_embs.size(0)} doesn't match query batch size {query_embs.size(0)}")
+ValueError: Neg batch size 2 doesn't match query batch size 4

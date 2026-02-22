@@ -1,0 +1,206 @@
+2025-12-17 23:35:22 - Using GPU 2
+2025-12-17 23:35:22 - Device: cuda
+2025-12-17 23:35:22 - Loading model: BAAI/bge-base-en-v1.5
+2025-12-17 23:35:23 - 
+============================================================
+2025-12-17 23:35:23 - Processing domain: clapnq
+2025-12-17 23:35:23 - ============================================================
+2025-12-17 23:35:23 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  8%|▊         | 13777/183408 [00:00<00:01, 137759.95it/s] 17%|█▋        | 31466/183408 [00:00<00:00, 160771.84it/s] 26%|██▌       | 47544/183408 [00:00<00:00, 148040.77it/s] 34%|███▍      | 62458/183408 [00:00<00:00, 128788.22it/s] 42%|████▏     | 76794/183408 [00:00<00:00, 133409.66it/s] 49%|████▉     | 90411/183408 [00:00<00:01, 80436.90it/s]  59%|█████▊    | 107349/183408 [00:00<00:00, 99179.30it/s] 67%|██████▋   | 122222/183408 [00:01<00:00, 110641.25it/s] 74%|███████▍  | 135530/183408 [00:01<00:00, 114660.80it/s] 82%|████████▏ | 150712/183408 [00:01<00:00, 124296.48it/s] 91%|█████████▏| 167752/183408 [00:01<00:00, 136757.75it/s]100%|██████████| 183408/183408 [00:01<00:00, 124143.85it/s]
+2025-12-17 23:35:24 - Loaded 183408 Documents.
+2025-12-17 23:35:24 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-17 23:35:24 - Loading Queries...
+2025-12-17 23:35:24 - Loaded 208 Queries.
+2025-12-17 23:35:24 - Query Example: |user|: where do the arizona cardinals play this week
+|user|: Do the Arizona Cardinals play outside the US?
+2025-12-17 23:35:24 - Loaded 183408 documents, 208 queries
+2025-12-17 23:35:24 - Step 1: Initial retrieval...
+2025-12-17 23:57:02 - Step 2: Reranking with cross-encoder head...
+2025-12-18 00:01:47 - Step 3: Evaluating results...
+2025-12-18 00:01:47 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2025-12-18 00:01:47 - 
+
+2025-12-18 00:01:47 - NDCG@1: 0.0144
+2025-12-18 00:01:47 - NDCG@3: 0.0214
+2025-12-18 00:01:47 - NDCG@5: 0.0302
+2025-12-18 00:01:47 - NDCG@10: 0.0379
+2025-12-18 00:01:47 - 
+
+2025-12-18 00:01:47 - MAP@1: 0.0048
+2025-12-18 00:01:47 - MAP@3: 0.0121
+2025-12-18 00:01:47 - MAP@5: 0.0171
+2025-12-18 00:01:47 - MAP@10: 0.0199
+2025-12-18 00:01:47 - 
+
+2025-12-18 00:01:47 - Recall@1: 0.0048
+2025-12-18 00:01:47 - Recall@3: 0.0232
+2025-12-18 00:01:47 - Recall@5: 0.0421
+2025-12-18 00:01:47 - Recall@10: 0.0597
+2025-12-18 00:01:47 - 
+
+2025-12-18 00:01:47 - P@1: 0.0144
+2025-12-18 00:01:47 - P@3: 0.0208
+2025-12-18 00:01:47 - P@5: 0.0211
+2025-12-18 00:01:47 - P@10: 0.0159
+2025-12-18 00:01:47 - 
+============================================================
+2025-12-18 00:01:47 - Domain clapnq Results:
+2025-12-18 00:01:47 -   Recall@10: 0.0597
+2025-12-18 00:01:47 -   nDCG@10: 0.0379
+2025-12-18 00:01:47 - ============================================================
+
+2025-12-18 00:01:47 - 
+============================================================
+2025-12-18 00:01:47 - Processing domain: fiqa
+2025-12-18 00:01:47 - ============================================================
+2025-12-18 00:01:47 - Loading Corpus...
+  0%|          | 0/61022 [00:00<?, ?it/s] 30%|███       | 18358/61022 [00:00<00:00, 183575.36it/s] 60%|██████    | 36716/61022 [00:00<00:00, 169965.04it/s] 90%|████████▉ | 54917/61022 [00:00<00:00, 175230.93it/s]100%|██████████| 61022/61022 [00:00<00:00, 176838.93it/s]
+2025-12-18 00:01:47 - Loaded 61022 Documents.
+2025-12-18 00:01:47 - Doc Example: {'text': '\n"To add to @keshlam\'s answer slightly a stock\'s price is made up of several components: the only one of these that is known even remotely accurately at any time is the book value on the day that the accounts are prepared. Even completed cashflows after the books have been prepared contain some slight unknowns as they may be reversed if stock is returned, for example, or reduced by unforeseen costs. Future cashflows are based on (amongst other things) how many sales you expect to make in the future for all time. Exercise for the reader: how many iPhone 22s will apple sell in 2029? Even known future cashflows have some risk attached to them; customers may not pay for goods, a supplier may go into liquidation and so need to change its invoicing strategy etc.. Estimating the risk on future cashflows is highly subjective and depends greatly on what the analyst expects the exact economic state of the world will be in the future. Investors have the choice of investing in a risk free instrument (this is usually taken as being modelled by the 10 year US treasury bond) that is guaranteed to give them a return. To invest in anything riskier than the risk free instrument they must be paid a premium over the risk free return that they would get from that. The risk premium is related to how likely they think it is that they will not receive a return higher than that rate. Calculation of that premium is highly subjective; if I know the management of the company well I will be inclined to think that the investment is far less risky (or perhaps riskier...) than someone who does not, for example. Since none of the factors that go into a share price are accurately measurable and many are subjective there is no ""right"" share price at any time, let alone at time of IPO. Each investor will estimate these values differently and so value the shares differently and their trading, based on their ever changing estimates, will move the share price to an indeterminable level. In comments to @keshlam\'s answer you ask if there is enough information to work out the share price if a company buys out the company before IPO.', 'title': ''}
+2025-12-18 00:01:47 - Loading Queries...
+2025-12-18 00:01:47 - Loaded 180 Queries.
+2025-12-18 00:01:47 - Query Example: |user|:  What's the difference between Market Cap and NAV?
+2025-12-18 00:01:47 - Loaded 61022 documents, 180 queries
+2025-12-18 00:01:47 - Step 1: Initial retrieval...
+2025-12-18 00:10:49 - Step 2: Reranking with cross-encoder head...
+2025-12-18 00:15:47 - Step 3: Evaluating results...
+2025-12-18 00:15:47 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2025-12-18 00:15:47 - 
+
+2025-12-18 00:15:47 - NDCG@1: 0.0056
+2025-12-18 00:15:47 - NDCG@3: 0.0064
+2025-12-18 00:15:47 - NDCG@5: 0.0125
+2025-12-18 00:15:47 - NDCG@10: 0.0186
+2025-12-18 00:15:47 - 
+
+2025-12-18 00:15:47 - MAP@1: 0.0011
+2025-12-18 00:15:47 - MAP@3: 0.0034
+2025-12-18 00:15:47 - MAP@5: 0.0069
+2025-12-18 00:15:47 - MAP@10: 0.0090
+2025-12-18 00:15:47 - 
+
+2025-12-18 00:15:47 - Recall@1: 0.0011
+2025-12-18 00:15:47 - Recall@3: 0.0057
+2025-12-18 00:15:47 - Recall@5: 0.0187
+2025-12-18 00:15:47 - Recall@10: 0.0346
+2025-12-18 00:15:47 - 
+
+2025-12-18 00:15:47 - P@1: 0.0056
+2025-12-18 00:15:47 - P@3: 0.0056
+2025-12-18 00:15:47 - P@5: 0.0100
+2025-12-18 00:15:47 - P@10: 0.0083
+2025-12-18 00:15:47 - 
+============================================================
+2025-12-18 00:15:47 - Domain fiqa Results:
+2025-12-18 00:15:47 -   Recall@10: 0.0346
+2025-12-18 00:15:47 -   nDCG@10: 0.0186
+2025-12-18 00:15:47 - ============================================================
+
+2025-12-18 00:15:47 - 
+============================================================
+2025-12-18 00:15:47 - Processing domain: govt
+2025-12-18 00:15:47 - ============================================================
+2025-12-18 00:15:47 - Loading Corpus...
+  0%|          | 0/49607 [00:00<?, ?it/s] 14%|█▎        | 6803/49607 [00:00<00:00, 68017.25it/s] 28%|██▊       | 14033/49607 [00:00<00:00, 70533.30it/s] 44%|████▎     | 21655/49607 [00:00<00:00, 73125.61it/s] 59%|█████▉    | 29189/49607 [00:00<00:00, 73996.10it/s] 74%|███████▍  | 36589/49607 [00:00<00:00, 70914.97it/s] 90%|█████████ | 44853/49607 [00:00<00:00, 74788.89it/s]100%|██████████| 49607/49607 [00:00<00:00, 73673.70it/s]
+2025-12-18 00:15:47 - Loaded 49607 Documents.
+2025-12-18 00:15:47 - Doc Example: {'text': 'FAQs • What type of seats can I book?\nFAQs • What type of seats can I book?\n\n \n\nSkip to Main Content\n\nCreate a Website Account - Manage notification subscriptions, save form progress and more. \xa0\xa0\n\nWebsite Sign In\n\nCommunityDoing BusinessParks & RecreationCity GovernmentSitio en Español\n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\nSearch\n\n \n \n \n\nCity Council\n\nCommissions & Boards\n\nAdopted City Council Ordinances\n\nAdopted City Council Resolutions\n\n \n\n \nHomeFAQs\n\nSearch\n\nAll categories\nMoGo Morgan Hill Quick Ride\nPlumbing Fixture FAQs\nPolice: Carry Concealed Weapon (CCW) License\nPrivate Sewer Lateral FAQs\n\nCategories\n\nAll Categories\n\nMoGo Morgan Hill Quick Ride\n\nPlumbing Fixture FAQs\n\nPolice: Carry Concealed Weapon (CCW) License\n\nPrivate Sewer Lateral FAQs\n\n \n\r\nWhat type of seats can I book?\t\n\nMoGo Morgan Hill Quick Ride offers Child, Youth, Regular, and ADA Accessible seating options, including:Regular\xa0Regular with Bike - Passenger seat plus a bike rack spaceAccessible - Passenger in a wheelchair or scooterYouth - Ages 8-18Child - Ages 0-7 (accompanied by a fare-paying parent, guardian, or responsible person age 16 or older; must bring and install an appropriate car seat or booster seat per California law)Discount Fare - For riders that meet the income eligibility of the VTA Clipper SMART program.\xa0Vehicles are equipped to carry strollers, bicycles, and baggage.\xa0If bringing a bike, select “General w/Bike” when booking your ride. Bike racks, when available, have the capacity for two bikes.\xa0Vehicles are ADA accessible and equipped to transport wheelchairs and scooters. If you require accessible seating, you can book a seat by selecting the Accessible option. You also have the option to add an additional companion traveling with you as a Regular seat.Please remember that all passengers in one booking need to travel at the same time and get picked up and dropped off at the same stops. \n\n▼\r\nMoGo Morgan Hill Quick Ride\t\n\nShow All Answers\n\n1.\nHow do I schedule a MoGo ride?\n\nBook trips with the MoGo mobile app (Apple App Store or Google Play), to get the most features including automatic alerts about the status of your ride.', 'title': 'FAQs • What type of seats can I book?'}
+2025-12-18 00:15:47 - Loading Queries...
+2025-12-18 00:15:47 - Loaded 201 Queries.
+2025-12-18 00:15:47 - Query Example: |user|: "What are the sheltered rooms designated for use?
+2025-12-18 00:15:47 - Loaded 49607 documents, 201 queries
+2025-12-18 00:15:47 - Step 1: Initial retrieval...
+2025-12-18 00:23:22 - Step 2: Reranking with cross-encoder head...
+2025-12-18 00:28:58 - Step 3: Evaluating results...
+2025-12-18 00:28:58 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2025-12-18 00:28:58 - 
+
+2025-12-18 00:28:58 - NDCG@1: 0.0199
+2025-12-18 00:28:58 - NDCG@3: 0.0164
+2025-12-18 00:28:58 - NDCG@5: 0.0181
+2025-12-18 00:28:58 - NDCG@10: 0.0312
+2025-12-18 00:28:58 - 
+
+2025-12-18 00:28:58 - MAP@1: 0.0112
+2025-12-18 00:28:58 - MAP@3: 0.0124
+2025-12-18 00:28:58 - MAP@5: 0.0137
+2025-12-18 00:28:58 - MAP@10: 0.0187
+2025-12-18 00:28:58 - 
+
+2025-12-18 00:28:58 - Recall@1: 0.0112
+2025-12-18 00:28:58 - Recall@3: 0.0137
+2025-12-18 00:28:58 - Recall@5: 0.0187
+2025-12-18 00:28:58 - Recall@10: 0.0506
+2025-12-18 00:28:58 - 
+
+2025-12-18 00:28:58 - P@1: 0.0199
+2025-12-18 00:28:58 - P@3: 0.0100
+2025-12-18 00:28:58 - P@5: 0.0080
+2025-12-18 00:28:58 - P@10: 0.0114
+2025-12-18 00:28:58 - 
+============================================================
+2025-12-18 00:28:58 - Domain govt Results:
+2025-12-18 00:28:58 -   Recall@10: 0.0506
+2025-12-18 00:28:58 -   nDCG@10: 0.0312
+2025-12-18 00:28:58 - ============================================================
+
+2025-12-18 00:28:58 - 
+============================================================
+2025-12-18 00:28:58 - Processing domain: cloud
+2025-12-18 00:28:58 - ============================================================
+2025-12-18 00:28:58 - Loading Corpus...
+  0%|          | 0/72442 [00:00<?, ?it/s] 13%|█▎        | 9466/72442 [00:00<00:00, 94657.38it/s] 28%|██▊       | 20032/72442 [00:00<00:00, 101126.23it/s] 43%|████▎     | 31127/72442 [00:00<00:00, 105609.27it/s] 59%|█████▊    | 42390/72442 [00:00<00:00, 108379.30it/s] 73%|███████▎  | 53228/72442 [00:00<00:00, 107271.51it/s] 88%|████████▊ | 64002/72442 [00:00<00:00, 107427.33it/s]100%|██████████| 72442/72442 [00:00<00:00, 106252.38it/s]
+2025-12-18 00:28:59 - Loaded 72442 Documents.
+2025-12-18 00:28:59 - Doc Example: {'text': "\n\n\n\n\n\n\n  Video - Setting up a web app with security groups, load balancer & CDN \n\nIBM Cloud® network services, including load balancer, security groups, and CDN make it easy to build cloud-native applications with greater security, performance, and resiliency. In this demo, you'll learn how you can use these services to create a simple three-tiered web app in a matter of clicks.\n\n\n\n\n\n\n", 'title': ''}
+2025-12-18 00:28:59 - Loading Queries...
+2025-12-18 00:28:59 - Loaded 188 Queries.
+2025-12-18 00:28:59 - Query Example: |user|: does IBM offer document databases?
+2025-12-18 00:28:59 - Loaded 72442 documents, 188 queries
+2025-12-18 00:28:59 - Step 1: Initial retrieval...
+2025-12-18 00:40:43 - Step 2: Reranking with cross-encoder head...
+2025-12-18 00:46:01 - Step 3: Evaluating results...
+2025-12-18 00:46:01 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2025-12-18 00:46:01 - 
+
+2025-12-18 00:46:01 - NDCG@1: 0.0053
+2025-12-18 00:46:01 - NDCG@3: 0.0061
+2025-12-18 00:46:01 - NDCG@5: 0.0070
+2025-12-18 00:46:01 - NDCG@10: 0.0166
+2025-12-18 00:46:01 - 
+
+2025-12-18 00:46:01 - MAP@1: 0.0013
+2025-12-18 00:46:01 - MAP@3: 0.0033
+2025-12-18 00:46:01 - MAP@5: 0.0039
+2025-12-18 00:46:01 - MAP@10: 0.0075
+2025-12-18 00:46:01 - 
+
+2025-12-18 00:46:01 - Recall@1: 0.0013
+2025-12-18 00:46:01 - Recall@3: 0.0053
+2025-12-18 00:46:01 - Recall@5: 0.0080
+2025-12-18 00:46:01 - Recall@10: 0.0311
+2025-12-18 00:46:01 - 
+
+2025-12-18 00:46:01 - P@1: 0.0053
+2025-12-18 00:46:01 - P@3: 0.0053
+2025-12-18 00:46:01 - P@5: 0.0053
+2025-12-18 00:46:01 - P@10: 0.0085
+2025-12-18 00:46:01 - 
+============================================================
+2025-12-18 00:46:01 - Domain cloud Results:
+2025-12-18 00:46:01 -   Recall@10: 0.0311
+2025-12-18 00:46:01 -   nDCG@10: 0.0166
+2025-12-18 00:46:01 - ============================================================
+
+2025-12-18 00:46:01 - 
+============================================================
+2025-12-18 00:46:01 - Average Results:
+2025-12-18 00:46:01 -   Recall@1: 0.0046
+2025-12-18 00:46:01 -   Recall@3: 0.0120
+2025-12-18 00:46:01 -   Recall@5: 0.0219
+2025-12-18 00:46:01 -   Recall@10: 0.0440
+2025-12-18 00:46:01 -   nDCG@1: 0.0113
+2025-12-18 00:46:01 -   nDCG@3: 0.0126
+2025-12-18 00:46:01 -   nDCG@5: 0.0170
+2025-12-18 00:46:01 -   nDCG@10: 0.0261
+2025-12-18 00:46:01 - ============================================================
+
+2025-12-18 00:46:01 - ✅ Multi-Task Retrieval completed: experiments/retrieval/best_paper_multitask_retrieval

@@ -1,0 +1,18 @@
+2025-12-18 20:26:08 - Using device: cuda
+2025-12-18 20:26:08 - Resuming: Completed domains: {'cloud', 'govt', 'fiqa', 'clapnq'}
+2025-12-18 20:26:08 - Loading model: BAAI/bge-base-en-v1.5
+2025-12-18 20:26:08 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-12-18 20:26:10 - Query prompt: None, Passage prompt: None
+2025-12-18 20:26:10 - Query prompt name: None, Passage prompt name: None
+2025-12-18 20:26:10 - Skipping clapnq (already completed)
+2025-12-18 20:26:10 - Skipping fiqa (already completed)
+2025-12-18 20:26:10 - Skipping govt (already completed)
+2025-12-18 20:26:10 - Skipping cloud (already completed)
+2025-12-18 20:26:10 - 
+============================================================
+2025-12-18 20:26:10 - Average Results:
+2025-12-18 20:26:10 - Recall@10: 0.3054
+2025-12-18 20:26:10 - nDCG@10: 0.2289
+2025-12-18 20:26:10 - ============================================================
+2025-12-18 20:26:10 - ✅ Results saved to: experiments/retrieval/tier1_hierarchical_multigranularity/results.json
+2025-12-18 20:26:10 - ✅ Hierarchical multi-granularity experiment completed

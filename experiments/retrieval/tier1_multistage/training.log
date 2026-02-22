@@ -1,0 +1,8 @@
+2025-12-19 08:09:17 - Using GPU 1
+2025-12-19 08:09:17 - Device: cuda
+2025-12-19 08:09:17 - Resuming: Completed domains: {'cloud', 'fiqa', 'clapnq', 'govt'}
+2025-12-19 08:09:17 - Skipping clapnq (already completed)
+2025-12-19 08:09:17 - Skipping fiqa (already completed)
+2025-12-19 08:09:17 - Skipping govt (already completed)
+2025-12-19 08:09:17 - Skipping cloud (already completed)
+2025-12-19 08:09:17 - ✅ Multi-stage retrieval completed successfully

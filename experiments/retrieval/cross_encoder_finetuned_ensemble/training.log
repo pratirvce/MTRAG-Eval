@@ -1,0 +1,63 @@
+2025-12-16 23:17:14 - Using GPU 3
+2025-12-16 23:17:14 - Device: cuda
+2025-12-16 23:17:14 - Resuming from checkpoint: epoch=3, step=0
+2025-12-16 23:17:14 - Loading training data...
+2025-12-16 23:17:14 - Loading training data for domain: clapnq...
+2025-12-16 23:17:14 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s] 10%|▉         | 17795/183408 [00:00<00:00, 177941.26it/s] 19%|█▉        | 35700/183408 [00:00<00:00, 178585.78it/s] 29%|██▉       | 53648/183408 [00:00<00:00, 178983.25it/s] 39%|███▉      | 71606/183408 [00:00<00:00, 179215.02it/s] 49%|████▉     | 89528/183408 [00:00<00:00, 177118.13it/s] 58%|█████▊    | 107245/183408 [00:00<00:00, 100270.10it/s] 68%|██████▊   | 125560/183408 [00:00<00:00, 118032.61it/s] 78%|███████▊  | 143546/183408 [00:01<00:00, 132524.77it/s] 88%|████████▊ | 161933/183408 [00:01<00:00, 145404.82it/s] 98%|█████████▊| 178999/183408 [00:01<00:00, 152066.61it/s]100%|██████████| 183408/183408 [00:01<00:00, 146245.51it/s]
+2025-12-16 23:17:16 - Loaded 183408 Documents.
+2025-12-16 23:17:16 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-16 23:17:16 - Loading Queries...
+2025-12-16 23:17:16 - Loaded 145 Queries.
+2025-12-16 23:17:16 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-16 23:17:17 - Created 691 training examples for clapnq
+2025-12-16 23:17:17 - Loading training data for domain: fiqa...
+2025-12-16 23:17:17 - Loading Corpus...
+  0%|          | 0/61022 [00:00<?, ?it/s] 35%|███▍      | 21166/61022 [00:00<00:00, 211653.64it/s] 69%|██████▉   | 42332/61022 [00:00<00:00, 206063.75it/s]100%|██████████| 61022/61022 [00:00<00:00, 200498.55it/s]
+2025-12-16 23:17:17 - Loaded 61022 Documents.
+2025-12-16 23:17:17 - Doc Example: {'text': '\n"To add to @keshlam\'s answer slightly a stock\'s price is made up of several components: the only one of these that is known even remotely accurately at any time is the book value on the day that the accounts are prepared. Even completed cashflows after the books have been prepared contain some slight unknowns as they may be reversed if stock is returned, for example, or reduced by unforeseen costs. Future cashflows are based on (amongst other things) how many sales you expect to make in the future for all time. Exercise for the reader: how many iPhone 22s will apple sell in 2029? Even known future cashflows have some risk attached to them; customers may not pay for goods, a supplier may go into liquidation and so need to change its invoicing strategy etc.. Estimating the risk on future cashflows is highly subjective and depends greatly on what the analyst expects the exact economic state of the world will be in the future. Investors have the choice of investing in a risk free instrument (this is usually taken as being modelled by the 10 year US treasury bond) that is guaranteed to give them a return. To invest in anything riskier than the risk free instrument they must be paid a premium over the risk free return that they would get from that. The risk premium is related to how likely they think it is that they will not receive a return higher than that rate. Calculation of that premium is highly subjective; if I know the management of the company well I will be inclined to think that the investment is far less risky (or perhaps riskier...) than someone who does not, for example. Since none of the factors that go into a share price are accurately measurable and many are subjective there is no ""right"" share price at any time, let alone at time of IPO. Each investor will estimate these values differently and so value the shares differently and their trading, based on their ever changing estimates, will move the share price to an indeterminable level. In comments to @keshlam\'s answer you ask if there is enough information to work out the share price if a company buys out the company before IPO.', 'title': ''}
+2025-12-16 23:17:17 - Loading Queries...
+2025-12-16 23:17:17 - Loaded 125 Queries.
+2025-12-16 23:17:17 - Query Example: |user|: Can capital expenses for volunteer purposes be deducted from income?
+|user|: In other words, charitable donations, capital expenses or my time could be make my taxesa lower, right?
+|user|: what kind of organizations could I do donate some money and help me to pay less taxes.
+|user|: assets
+|user|: By the way, if I do a donation in cash for a foreigner organization, could it be used as tax deduction?
+|user|: What the most i can donate and declare  as charitable contribution?
+|user|: Could I put in my will donations for my dearests organization after my death?
+|user|: Is it necessary to have a will?
+2025-12-16 23:17:17 - Created 623 training examples for fiqa
+2025-12-16 23:17:17 - Loading training data for domain: govt...
+2025-12-16 23:17:17 - Loading Corpus...
+  0%|          | 0/49607 [00:00<?, ?it/s] 16%|█▋        | 8156/49607 [00:00<00:00, 81558.52it/s] 33%|███▎      | 16459/49607 [00:00<00:00, 82421.02it/s] 50%|█████     | 24868/49607 [00:00<00:00, 83180.41it/s] 69%|██████▉   | 34113/49607 [00:00<00:00, 86837.80it/s] 86%|████████▋ | 42797/49607 [00:00<00:00, 84769.47it/s]100%|██████████| 49607/49607 [00:00<00:00, 84080.22it/s]
+2025-12-16 23:17:18 - Loaded 49607 Documents.
+2025-12-16 23:17:18 - Doc Example: {'text': 'FAQs • What type of seats can I book?\nFAQs • What type of seats can I book?\n\n \n\nSkip to Main Content\n\nCreate a Website Account - Manage notification subscriptions, save form progress and more. \xa0\xa0\n\nWebsite Sign In\n\nCommunityDoing BusinessParks & RecreationCity GovernmentSitio en Español\n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\nSearch\n\n \n \n \n\nCity Council\n\nCommissions & Boards\n\nAdopted City Council Ordinances\n\nAdopted City Council Resolutions\n\n \n\n \nHomeFAQs\n\nSearch\n\nAll categories\nMoGo Morgan Hill Quick Ride\nPlumbing Fixture FAQs\nPolice: Carry Concealed Weapon (CCW) License\nPrivate Sewer Lateral FAQs\n\nCategories\n\nAll Categories\n\nMoGo Morgan Hill Quick Ride\n\nPlumbing Fixture FAQs\n\nPolice: Carry Concealed Weapon (CCW) License\n\nPrivate Sewer Lateral FAQs\n\n \n\r\nWhat type of seats can I book?\t\n\nMoGo Morgan Hill Quick Ride offers Child, Youth, Regular, and ADA Accessible seating options, including:Regular\xa0Regular with Bike - Passenger seat plus a bike rack spaceAccessible - Passenger in a wheelchair or scooterYouth - Ages 8-18Child - Ages 0-7 (accompanied by a fare-paying parent, guardian, or responsible person age 16 or older; must bring and install an appropriate car seat or booster seat per California law)Discount Fare - For riders that meet the income eligibility of the VTA Clipper SMART program.\xa0Vehicles are equipped to carry strollers, bicycles, and baggage.\xa0If bringing a bike, select “General w/Bike” when booking your ride. Bike racks, when available, have the capacity for two bikes.\xa0Vehicles are ADA accessible and equipped to transport wheelchairs and scooters. If you require accessible seating, you can book a seat by selecting the Accessible option. You also have the option to add an additional companion traveling with you as a Regular seat.Please remember that all passengers in one booking need to travel at the same time and get picked up and dropped off at the same stops. \n\n▼\r\nMoGo Morgan Hill Quick Ride\t\n\nShow All Answers\n\n1.\nHow do I schedule a MoGo ride?\n\nBook trips with the MoGo mobile app (Apple App Store or Google Play), to get the most features including automatic alerts about the status of your ride.', 'title': 'FAQs • What type of seats can I book?'}
+2025-12-16 23:17:18 - Loading Queries...
+2025-12-16 23:17:18 - Loaded 140 Queries.
+2025-12-16 23:17:18 - Query Example: |user|: "What happens to people's bodies when there isn't enough atmospheric pressure?"
+|user|: Speaking about sea level, is it true that it is rising?
+|user|: danger of the rise of the sea level
+|user|: climage change is fake
+2025-12-16 23:17:18 - Created 632 training examples for govt
+2025-12-16 23:17:18 - Loading training data for domain: cloud...
+2025-12-16 23:17:18 - Loading Corpus...
+  0%|          | 0/72442 [00:00<?, ?it/s] 15%|█▍        | 10663/72442 [00:00<00:00, 106626.29it/s] 30%|███       | 21751/72442 [00:00<00:00, 109123.29it/s] 45%|████▌     | 32664/72442 [00:00<00:00, 105831.69it/s] 61%|██████    | 43925/72442 [00:00<00:00, 108456.69it/s] 77%|███████▋  | 55579/72442 [00:00<00:00, 111334.69it/s] 92%|█████████▏| 66724/72442 [00:00<00:00, 110378.10it/s]100%|██████████| 72442/72442 [00:00<00:00, 109389.38it/s]
+2025-12-16 23:17:19 - Loaded 72442 Documents.
+2025-12-16 23:17:19 - Doc Example: {'text': "\n\n\n\n\n\n\n  Video - Setting up a web app with security groups, load balancer & CDN \n\nIBM Cloud® network services, including load balancer, security groups, and CDN make it easy to build cloud-native applications with greater security, performance, and resiliency. In this demo, you'll learn how you can use these services to create a simple three-tiered web app in a matter of clicks.\n\n\n\n\n\n\n", 'title': ''}
+2025-12-16 23:17:19 - Loading Queries...
+2025-12-16 23:17:19 - Loaded 131 Queries.
+2025-12-16 23:17:19 - Query Example: |user|: How does version 6.15.0 differ from 6.14.0?
+|user|: Tell me more about the new commands
+|user|: How do I use them?
+2025-12-16 23:17:19 - Created 601 training examples for cloud
+2025-12-16 23:17:19 - Total training examples: 2547
+2025-12-16 23:17:19 - Loading base model: models/phase6_cross_encoder_finetuned_ensemble
+2025-12-16 23:17:19 - Use pytorch device: cuda:0
+2025-12-16 23:17:20 - Starting training: epochs=3, batch_size=16, lr=2e-05
+2025-12-16 23:17:20 - Total steps per epoch: 160
+2025-12-16 23:17:20 - Saving final model...
+2025-12-16 23:17:20 - Save model to models/phase6_cross_encoder_finetuned_ensemble
+2025-12-16 23:17:20 - Checkpoint saved: epoch=3, step=0
+2025-12-16 23:17:20 - Final model saved to: models/phase6_cross_encoder_finetuned_ensemble
+2025-12-16 23:17:20 - ✅ Training completed. Model saved to: models/phase6_cross_encoder_finetuned_ensemble

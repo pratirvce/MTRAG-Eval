@@ -1,0 +1,52 @@
+{
+  "last_domain": "cloud",
+  "completed_domains": [
+    "clapnq",
+    "govt",
+    "cloud",
+    "fiqa"
+  ],
+  "results": {
+    "clapnq": {
+      "Recall@1": 0.05745,
+      "Recall@3": 0.14468,
+      "Recall@5": 0.20442,
+      "Recall@10": 0.2785,
+      "nDCG@1": 0.15385,
+      "nDCG@3": 0.15382,
+      "nDCG@5": 0.17772,
+      "nDCG@10": 0.20907
+    },
+    "fiqa": {
+      "Recall@1": 0.0412,
+      "Recall@3": 0.07639,
+      "Recall@5": 0.08657,
+      "Recall@10": 0.115,
+      "nDCG@1": 0.08333,
+      "nDCG@3": 0.08023,
+      "nDCG@5": 0.08295,
+      "nDCG@10": 0.09444
+    },
+    "govt": {
+      "Recall@1": 0.05025,
+      "Recall@3": 0.12977,
+      "Recall@5": 0.15332,
+      "Recall@10": 0.22537,
+      "nDCG@1": 0.10945,
+      "nDCG@3": 0.12403,
+      "nDCG@5": 0.13376,
+      "nDCG@10": 0.16444
+    },
+    "cloud": {
+      "Recall@1": 0.02837,
+      "Recall@3": 0.09858,
+      "Recall@5": 0.1289,
+      "Recall@10": 0.18502,
+      "nDCG@1": 0.06383,
+      "nDCG@3": 0.08854,
+      "nDCG@5": 0.10264,
+      "nDCG@10": 0.12553
+    }
+  },
+  "timestamp": "2025-12-18T23:57:58.847587"
+}

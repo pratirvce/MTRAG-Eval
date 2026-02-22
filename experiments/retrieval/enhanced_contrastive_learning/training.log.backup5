@@ -1,0 +1,41 @@
+2025-12-19 22:13:18 - Set CUDA_VISIBLE_DEVICES=1 (overriding any existing value)
+2025-12-19 22:13:22 - CUDA_VISIBLE_DEVICES=1 (set before torch import)
+2025-12-19 22:13:23 - Device: cuda, Using GPU 0 (NVIDIA GeForce RTX 3090)
+2025-12-19 22:13:23 - CUDA_VISIBLE_DEVICES=1, GPU will appear as device 0 to PyTorch
+2025-12-19 22:13:23 - Loading base model: BAAI/bge-base-en-v1.5
+2025-12-19 22:13:23 - Use pytorch device_name: cuda:0
+2025-12-19 22:13:23 - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py:248: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+2025-12-19 22:13:25 - Mixed precision training (FP16) enabled
+2025-12-19 22:13:25 - 
+============================================================
+2025-12-19 22:13:25 - Training on domain: clapnq
+2025-12-19 22:13:25 - ============================================================
+2025-12-19 22:13:25 - Loading Corpus...
+  0%|          | 0/183408 [00:00<?, ?it/s]  6%|▌         | 10853/183408 [00:00<00:01, 108523.12it/s] 12%|█▏        | 21780/183408 [00:00<00:01, 108953.80it/s] 18%|█▊        | 32676/183408 [00:00<00:01, 108511.70it/s] 24%|██▎       | 43528/183408 [00:00<00:01, 107089.68it/s] 30%|██▉       | 54240/183408 [00:00<00:01, 106070.01it/s] 38%|███▊      | 69019/183408 [00:00<00:00, 120068.48it/s] 46%|████▌     | 84002/183408 [00:00<00:01, 73105.46it/s]  55%|█████▍    | 100293/183408 [00:01<00:00, 91686.72it/s] 64%|██████▍   | 117245/183408 [00:01<00:00, 109443.03it/s] 73%|███████▎  | 133559/183408 [00:01<00:00, 122640.15it/s] 82%|████████▏ | 150325/183408 [00:01<00:00, 134338.69it/s] 90%|█████████ | 165348/183408 [00:01<00:00, 136547.77it/s] 98%|█████████▊| 180126/183408 [00:01<00:00, 129275.60it/s]100%|██████████| 183408/183408 [00:01<00:00, 114642.00it/s]
+2025-12-19 22:13:26 - Loaded 183408 Documents.
+2025-12-19 22:13:26 - Doc Example: {'text': 'French Revolution\nAfter the Thermidorian Reaction , an executive council known as the Directory assumed control of the French state in 1795 . They suspended elections , repudiated debt - resulting in financial instability , persecuted the Catholic clergy , and made significant military conquests abroad . Dogged by charges of corruption , the Directory collapsed in a coup led by Napoleon Bonaparte in 1799 . Napoleon , who became the hero of the Revolution through his popular military campaigns , established the Consulate and later the First Empire , setting the stage for a wider array of global conflicts in the Napoleonic Wars .', 'title': 'French Revolution'}
+2025-12-19 22:13:26 - Loading Queries...
+2025-12-19 22:13:26 - Loaded 145 Queries.
+2025-12-19 22:13:26 - Query Example: |user|: Where do guinea pigs sleep in the wild?
+|user|: What do guinea pigs eat?
+2025-12-19 22:13:26 - Created 401 positive pairs for clapnq
+2025-12-19 22:13:43 - Processed 2 negative embeddings but have 4 queries
+2025-12-19 22:13:43 - Neg counts: [4, 4], total: 8
+2025-12-19 22:13:43 - Failed: Processed 2 negative embeddings but expected 4
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 60, in main
+    results_path = train_enhanced_contrastive(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 720, in train_enhanced_contrastive
+    raise ValueError(f"Processed {len(neg_embs_list)} negative embeddings but expected {len(queries_batch)}")
+ValueError: Processed 2 negative embeddings but expected 4
+Traceback (most recent call last):
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 76, in <module>
+    main()
+    ~~~~^^
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_tier1.py", line 60, in main
+    results_path = train_enhanced_contrastive(config, gpu_id=args.gpu)
+  File "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_enhanced_contrastive_hardnegatives.py", line 720, in train_enhanced_contrastive
+    raise ValueError(f"Processed {len(neg_embs_list)} negative embeddings but expected {len(queries_batch)}")
+ValueError: Processed 2 negative embeddings but expected 4
