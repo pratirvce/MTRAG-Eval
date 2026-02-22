@@ -1,0 +1,52 @@
+========================================
+EXPERIMENT STATUS REPORT
+========================================
+Generated: $(date)
+
+CURRENT STATUS:
+✅ Experiments are RUNNING in background
+
+ACTIVE PROCESSES:
+- Main runner: PID 225152 (python run_experiments.py)
+- Current evaluation: PID 226721 (evaluate_improved_bge.py)
+  - Running for: ~91 minutes
+  - CPU usage: 334%
+  - Memory: ~1.5GB
+
+CURRENT PHASE: Phase 1 - Quick Wins
+CURRENT EXPERIMENT: phase1_baseline
+
+PROGRESS:
+- Training: ✅ Completed (~1 minute)
+- Evaluation: 🔄 In Progress (~91 minutes)
+  - Processing all 4 domains (clapnq, fiqa, govt, cloud)
+  - This is normal - evaluation takes time for large corpora
+
+EXPERIMENTS STATUS:
+1. 🔄 phase1_baseline - Training done, evaluating...
+2. ⏳ phase1_epochs3 - Pending
+3. ⏳ phase1_epochs5 - Pending
+4. ⏳ phase2_lr1e5 - Pending
+5. ⏳ phase2_lr5e5 - Pending
+6. ⏳ phase2_cosine_loss - Pending
+7. ⏳ phase2_augmentation - Pending
+8. ⏳ phase3_hybrid - Pending
+9. ⏳ phase3_reranking - Pending
+10. ⏳ phase3_hybrid_reranking - Pending
+
+EXPECTED TIMELINE:
+- Phase 1: ~2-4 hours (currently in progress)
+- Phase 2: ~4-6 hours
+- Phase 3: ~6-8 hours
+- Total: ~12-18 hours
+
+MONITOR COMMANDS:
+  tail -f experiments/logs/experiments_*.log
+  tail -f experiments/retrieval/phase1_baseline/evaluation.log
+  ./check_experiment_status.sh
+
+RESULTS LOCATION:
+  experiments/retrieval/{experiment_name}/results.json
+  experiments/retrieval/experiment_summary.json (final)
+
+========================================

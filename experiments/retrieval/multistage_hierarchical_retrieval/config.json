@@ -1,0 +1,21 @@
+{
+  "output_dir": "experiments/retrieval/multistage_hierarchical_retrieval",
+  "model_path": "BAAI/bge-base-en-v1.5",
+  "epochs": 3,
+  "batch_size": 4,
+  "gradient_accumulation_steps": 2,
+  "use_fp16": true,
+  "use_data_splits": true,
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "resume": true,
+  "stage1_top_k": 100,
+  "stage2_top_k": 100,
+  "stage3_top_k": 50,
+  "stage4_top_k": 20,
+  "final_top_k": 10
+}

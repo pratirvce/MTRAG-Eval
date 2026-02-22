@@ -1,0 +1,77 @@
+{
+  "experiment_name": "phase4_hard_negatives_cosine",
+  "model_path": "models/phase4_hard_negatives_cosine",
+  "config": {
+    "experiment_name": "phase4_hard_negatives_cosine",
+    "base_model": "BAAI/bge-base-en-v1.5",
+    "epochs": 5,
+    "batch_size": 32,
+    "learning_rate": 2e-05,
+    "loss_function": "CosineSimilarityLoss",
+    "num_hard_negatives": 3,
+    "use_hard_negatives": true,
+    "use_validation": true,
+    "use_data_splits": true,
+    "warmup_steps": 100,
+    "evaluation_steps": 500,
+    "save_best_model": true,
+    "save_checkpoints": true,
+    "checkpoint_steps": 1000,
+    "seed": 42,
+    "gpu_id": 4
+  },
+  "domain_results": {
+    "clapnq": {
+      "Recall@5": 0.11749,
+      "Recall@10": 0.13237,
+      "nDCG@5": 0.11798,
+      "nDCG@10": 0.12435
+    },
+    "fiqa": {
+      "Recall@5": 0.08036,
+      "Recall@10": 0.1131,
+      "nDCG@5": 0.08744,
+      "nDCG@10": 0.09883
+    },
+    "govt": {
+      "Recall@5": 0.18907,
+      "Recall@10": 0.25179,
+      "nDCG@5": 0.18743,
+      "nDCG@10": 0.21217
+    },
+    "cloud": {
+      "Recall@5": 0.11322,
+      "Recall@10": 0.15345,
+      "nDCG@5": 0.12538,
+      "nDCG@10": 0.1424
+    }
+  },
+  "averages": {
+    "Recall@5": 0.125035,
+    "Recall@10": 0.1626775,
+    "nDCG@5": 0.1295575,
+    "nDCG@10": 0.1444375
+  },
+  "baseline_comparison": {
+    "Recall@5": {
+      "ours": 0.125035,
+      "baseline": 0.2944,
+      "improvement": -0.169365
+    },
+    "Recall@10": {
+      "ours": 0.1626775,
+      "baseline": 0.3591,
+      "improvement": -0.19642249999999997
+    },
+    "nDCG@5": {
+      "ours": 0.1295575,
+      "baseline": 0.2509,
+      "improvement": -0.12134250000000002
+    },
+    "nDCG@10": {
+      "ours": 0.1444375,
+      "baseline": 0.281,
+      "improvement": -0.13656250000000003
+    }
+  }
+}

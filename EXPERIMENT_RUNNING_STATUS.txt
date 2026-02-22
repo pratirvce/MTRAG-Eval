@@ -1,0 +1,25 @@
+========================================
+EXPERIMENTS RUNNING STATUS
+========================================
+
+✅ Status: RUNNING IN BACKGROUND
+
+Process IDs:
+- Main runner: 225152 (python run_experiments.py)
+- Current training: 225155 (python train_improved_bge.py)
+
+Current Phase: Phase 1 - Quick Wins
+Current Experiment: phase1_baseline (Training...)
+
+Monitor Commands:
+  tail -f experiments/logs/experiments_*.log
+  ./check_experiment_status.sh
+  ps aux | grep run_experiments
+
+Expected Completion: ~12-18 hours
+
+Results will be saved to:
+  experiments/retrieval/{experiment_name}/results.json
+  experiments/retrieval/experiment_summary.json
+
+========================================

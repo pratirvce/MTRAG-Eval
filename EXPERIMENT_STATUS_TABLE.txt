@@ -1,0 +1,109 @@
+========================================================================================================================
+COMPREHENSIVE EXPERIMENT STATUS TABLE
+Generated: 2025-12-18 19:51:12
+========================================================================================================================
+
+Experiment Name                                    Category        Status                    Results                                 
+----------------------------------------------------------------------------------------------------------------------------------
+best_paper_adversarial_curriculum                  Best Paper      ✅ Complete                R@10: 0.5569, nDCG@10: 0.4464           
+best_paper_graph_aware_retrieval                   Best Paper      ✅ Complete                R@10: 0.2485, nDCG@10: 0.1830           
+best_paper_hierarchical_routing                    Best Paper      🔄 Running                 N/A                                     
+best_paper_large_model_finetuning                  Best Paper      ✅ Complete                R@10: 0.6221, nDCG@10: 0.5101           
+best_paper_learned_rrf                             Best Paper      ✅ Complete                R@10: 0.2420, nDCG@10: 0.1799           
+best_paper_llm_distillation                        Best Paper      ✅ Complete                R@10: 0.2668, nDCG@10: 0.2027           
+best_paper_meta_learning                           Best Paper      🔄 Running                 N/A                                     
+best_paper_multitask_retrieval                     Best Paper      ✅ Complete                R@10: 0.0440, nDCG@10: 0.0261           
+best_paper_rl_adaptive_retrieval                   Best Paper      🔄 Running                 N/A                                     
+best_paper_temporal_memory                         Best Paper      ✅ Complete                R@10: 0.0006, nDCG@10: 0.0005           
+logs                                               Other           ⏳ Started (no results yet) N/A                                     
+multistage_retrieval                               Other           ✅ Complete                R@10: 0.3077, nDCG@10: 0.2480           
+test                                               Other           ⏳ Started (no results yet) N/A                                     
+tier2_ensemble_advanced                            Other           ✅ Complete                R@10: 0.2743, nDCG@10: 0.2192           
+tier2_multistage_3stage                            Other           ✅ Complete                R@10: 0.3077, nDCG@10: 0.2480           
+phase1_baseline                                    Phase 1         ✅ Complete                Results available (check file)          
+phase1_epochs3                                     Phase 1         ✅ Complete                Results available (check file)          
+phase1_epochs5                                     Phase 1         ✅ Complete                Results available (check file)          
+phase2_augmentation                                Phase 2         ✅ Complete                Results available (check file)          
+phase2_cosine_loss                                 Phase 2         ⏳ Started (no results yet) N/A                                     
+phase2_lr1e5                                       Phase 2         ✅ Complete                Results available (check file)          
+phase2_lr5e5                                       Phase 2         ✅ Complete                Results available (check file)          
+phase3_hybrid                                      Phase 3         ✅ Complete                Results available (check file)          
+phase3_hybrid_reranking                            Phase 3         ✅ Complete                R@10: 0.3388, nDCG@10: 0.2709           
+phase3_reranking                                   Phase 3         ✅ Complete                R@10: 0.3388, nDCG@10: 0.2709           
+phase4_bge_large                                   Phase 4         ⏳ Started (no results yet) N/A                                     
+phase4_domain_specific_all                         Phase 4         ⏳ Started (no results yet) N/A                                     
+phase4_domain_specific_clapnq                      Phase 4         ✅ Complete                Results available (check file)          
+phase4_domain_specific_cloud                       Phase 4         ✅ Complete                Results available (check file)          
+phase4_domain_specific_fiqa                        Phase 4         ✅ Complete                Results available (check file)          
+phase4_domain_specific_govt                        Phase 4         ✅ Complete                Results available (check file)          
+phase4_hard_negatives_5neg                         Phase 4         ✅ Complete                R@10: 0.1713, nDCG@10: 0.1456           
+phase4_hard_negatives_cosine                       Phase 4         ✅ Complete                Results available (check file)          
+phase4_hard_negatives_triplet                      Phase 4         ⏳ Started (no results yet) N/A                                     
+phase5_domain_specific_clapnq_hard_negatives       Phase 5         ⏳ Started (no results yet) N/A                                     
+phase5_domain_specific_govt_hard_negatives         Phase 5         ⏳ Started (no results yet) N/A                                     
+phase5_ensemble_domain_specific                    Phase 5         ✅ Complete                R@10: 0.5355, nDCG@10: 0.4434           
+phase5_ensemble_weighted                           Phase 5         ✅ Complete                R@10: 0.5284, nDCG@10: 0.4370           
+phase5_hybrid_clapnq_alpha0.3                      Phase 5         ⏳ Started (no results yet) N/A                                     
+phase5_hybrid_clapnq_alpha0.5                      Phase 5         ⏳ Started (no results yet) N/A                                     
+phase5_hybrid_clapnq_alpha0.7                      Phase 5         ⏳ Started (no results yet) N/A                                     
+phase5_hybrid_govt_alpha0.3                        Phase 5         ⏳ Started (no results yet) N/A                                     
+phase5_hybrid_govt_alpha0.5                        Phase 5         ⏳ Started (no results yet) N/A                                     
+phase5_hybrid_govt_alpha0.7                        Phase 5         ⏳ Started (no results yet) N/A                                     
+phase5_hybrid_multi_alpha0.3                       Phase 5         ⏳ Started (no results yet) N/A                                     
+phase5_hybrid_multi_alpha0.5                       Phase 5         ⏳ Started (no results yet) N/A                                     
+phase5_hybrid_multi_alpha0.7                       Phase 5         ⏳ Started (no results yet) N/A                                     
+phase5_query_expansion_clapnq                      Phase 5         ✅ Complete                R@10: 0.4999, nDCG@10: 0.4186           
+phase5_query_expansion_govt                        Phase 5         ✅ Complete                R@10: 0.5317, nDCG@10: 0.4515           
+phase5_query_expansion_multi                       Phase 5         ✅ Complete                R@10: 0.5099, nDCG@10: 0.4098           
+phase5_reranking_clapnq                            Phase 5         ✅ Complete                R@10: 0.4319, nDCG@10: 0.3250           
+phase5_reranking_cloud                             Phase 5         ✅ Complete                R@10: 0.2776, nDCG@10: 0.2028           
+phase5_reranking_govt                              Phase 5         ✅ Complete                R@10: 0.3539, nDCG@10: 0.2896           
+phase5_reranking_multi_domain                      Phase 5         ✅ Complete                R@10: 0.3365, nDCG@10: 0.2619           
+phase6_cross_encoder_evaluation                    Phase 6         ✅ Complete                R@10: 0.3639, nDCG@10: 0.2978           
+phase6_cross_encoder_finetuned_ensemble            Phase 6         ⏳ Started (no results yet) N/A                                     
+phase6_llm_query_expansion_gpt4_multi              Phase 6         ✅ Complete                R@10: 0.4879, nDCG@10: 0.3787           
+phase6_multistage_2stage                           Phase 6         ✅ Complete                R@10: 0.3365, nDCG@10: 0.2612           
+phase6_multistage_2stage_finetuned                 Phase 6         ✅ Complete                R@10: 0.4223, nDCG@10: 0.3339           
+phase7_conversation_aware_attention                Phase 7         ✅ Complete                R@10: 0.4642, nDCG@10: 0.3657           
+phase7_iterative_refinement                        Phase 7         ✅ Complete                R@10: 0.2867, nDCG@10: 0.2231           
+phase8_cross_attention_query_document              Phase 8         🔄 Running                 N/A                                     
+phase8_cross_attention_query_document_fixed        Phase 8         🔄 Running                 N/A                                     
+tier1_contrastive_learning                         Tier 1          ✅ Complete                R@10: 0.5331, nDCG@10: 0.4576           
+tier1_cross_attention_query_document               Tier 1          ✅ Complete                R@10: 0.0029, nDCG@10: 0.0014           
+tier1_cross_attention_rerun                        Tier 1          🔄 Running                 N/A                                     
+tier1_cross_attention_rerun_fixed                  Tier 1          🔄 Running                 N/A                                     
+tier1_cross_encoder_domain_specific                Tier 1          ✅ Complete                R@10: 0.3269, nDCG@10: 0.2559           
+tier1_cross_encoder_evaluation                     Tier 1          ✅ Complete                R@10: 0.3413, nDCG@10: 0.2716           
+tier1_cross_encoder_finetuned                      Tier 1          ✅ Complete                Results available (check file)          
+tier1_cross_encoder_large                          Tier 1          ✅ Complete                R@10: 0.3413, nDCG@10: 0.2716           
+tier1_enhanced_contrastive_hardnegatives           Tier 1          ✅ Complete                Results available (check file)          
+tier1_ensemble_best_methods                        Tier 1          ✅ Complete                R@10: 0.5331, nDCG@10: 0.4576           
+tier1_hierarchical_multigranularity                Tier 1          ✅ Complete                R@10: 0.3054, nDCG@10: 0.2289           
+tier1_iterative_refinement_improved                Tier 1          ✅ Complete                R@10: 0.2867, nDCG@10: 0.2231           
+tier1_learning_to_rank_listwise                    Tier 1          🔄 Running                 Results available (check file)          
+tier1_llm_query_expansion                          Tier 1          ⏳ Started (no results yet) N/A                                     
+tier1_multistage_2stage                            Tier 1          ⏳ Started (no results yet) N/A                                     
+tier1_multistage_3stage_finetuned                  Tier 1          ⏳ Started (no results yet) N/A                                     
+tier1_pseudo_relevance_feedback                    Tier 1          ✅ Complete                R@10: 0.2229, nDCG@10: 0.1674           
+tier1_qdit_transformer                             Tier 1          ✅ Complete                R@10: 0.0497, nDCG@10: 0.0301           
+----------------------------------------------------------------------------------------------------------------------------------
+
+SUMMARY:
+  ✅ Completed: 52
+  🔄 Running: 8
+  ⏳ Pending: 21
+  ❌ Failed: 0
+  📊 Total: 81
+
+CURRENTLY RUNNING EXPERIMENTS:
+----------------------------------------------------------------------------------------------------------------------------------
+  • best_paper_rl_adaptive_retrieval                   🔄 Running
+  • best_paper_rl_adaptive_retrieval                   🔄 Running
+  • phase8_cross_attention_query_document_fixed        🔄 Running
+  • tier1_cross_attention_rerun_fixed                  🔄 Running
+  • tier1_learning_to_rank_listwise                    ✅ Complete
+  • best_paper_hierarchical_routing                    🔄 Running
+  • best_paper_hierarchical_routing                    🔄 Running
+  • best_paper_meta_learning                           🔄 Running
+  • best_paper_meta_learning                           🔄 Running
+

@@ -1,0 +1,23 @@
+{
+  "experiment_name": "ensemble_weighted_fusion",
+  "model_paths": [
+    "./models/domain_specific_clapnq",
+    "./models/domain_specific_govt",
+    "./models/domain_specific_cloud",
+    "./models/data_augmentation_retrieval"
+  ],
+  "ensemble_method": "weighted",
+  "weights": [
+    0.4,
+    0.3,
+    0.2,
+    0.1
+  ],
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true
+}

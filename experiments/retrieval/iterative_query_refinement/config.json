@@ -1,0 +1,15 @@
+{
+  "experiment_name": "iterative_query_refinement",
+  "model_path": "BAAI/bge-base-en-v1.5",
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true,
+  "round1_top_k": 100,
+  "round2_top_k": 100,
+  "final_top_k": 100,
+  "resume": true
+}

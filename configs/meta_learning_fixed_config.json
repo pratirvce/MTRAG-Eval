@@ -1,0 +1,12 @@
+{
+  "experiment_name": "best_paper_meta_learning_fixed",
+  "model_path": "BAAI/bge-base-en-v1.5",
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true,
+  "resume": false
+}

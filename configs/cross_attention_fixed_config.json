@@ -1,0 +1,13 @@
+{
+  "experiment_name": "tier1_cross_attention_fixed_v3",
+  "model_path": "BAAI/bge-base-en-v1.5",
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true,
+  "use_attention": false,
+  "resume": false
+}

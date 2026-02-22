@@ -1,0 +1,56 @@
+{
+  "experiment_name": "phase4_domain_specific_clapnq",
+  "model_path": "models/domain_specific_clapnq",
+  "config": {
+    "domain": "clapnq",
+    "base_model": "BAAI/bge-base-en-v1.5",
+    "epochs": 7,
+    "batch_size": 32,
+    "learning_rate": 1e-05,
+    "use_pretrained_multi_domain": true,
+    "pretrained_multi_domain_path": "./models/phase1_epochs5",
+    "use_validation": true,
+    "use_data_splits": true,
+    "warmup_steps": 50,
+    "evaluation_steps": 200,
+    "save_best_model": true,
+    "seed": 42,
+    "gpu_id": 3
+  },
+  "domain_results": {
+    "clapnq": {
+      "Recall@5": 0.4529,
+      "Recall@10": 0.60164,
+      "nDCG@5": 0.4399,
+      "nDCG@10": 0.49808
+    }
+  },
+  "averages": {
+    "Recall@5": 0.4529,
+    "Recall@10": 0.60164,
+    "nDCG@5": 0.4399,
+    "nDCG@10": 0.49808
+  },
+  "baseline_comparison": {
+    "Recall@5": {
+      "ours": 0.4529,
+      "baseline": 0.2944,
+      "improvement": 0.15850000000000003
+    },
+    "Recall@10": {
+      "ours": 0.60164,
+      "baseline": 0.3591,
+      "improvement": 0.24253999999999998
+    },
+    "nDCG@5": {
+      "ours": 0.4399,
+      "baseline": 0.2509,
+      "improvement": 0.189
+    },
+    "nDCG@10": {
+      "ours": 0.49808,
+      "baseline": 0.281,
+      "improvement": 0.21708
+    }
+  }
+}

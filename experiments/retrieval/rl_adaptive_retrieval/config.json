@@ -1,0 +1,12 @@
+{
+  "model_path": "BAAI/bge-base-en-v1.5",
+  "output_dir": "experiments/retrieval/rl_adaptive_retrieval",
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "top_k": 100,
+  "resume": true
+}

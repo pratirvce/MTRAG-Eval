@@ -1,0 +1,11 @@
+{
+  "experiment_name": "reranking_cloud",
+  "base_model_path": "./models/domain_specific_cloud",
+  "cross_encoder_model": "cross-encoder/ms-marco-MiniLM-L-12-v2",
+  "top_k": 100,
+  "rerank_top_k": 20,
+  "domains": [
+    "cloud"
+  ],
+  "use_data_splits": true
+}

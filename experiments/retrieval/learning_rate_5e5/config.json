@@ -1,0 +1,15 @@
+{
+  "experiment_name": "learning_rate_5e5",
+  "base_model": "BAAI/bge-base-en-v1.5",
+  "epochs": 3,
+  "batch_size": 32,
+  "learning_rate": 5e-05,
+  "loss_function": "MultipleNegativesRankingLoss",
+  "use_augmentation": false,
+  "use_validation": true,
+  "use_data_splits": true,
+  "warmup_steps": 100,
+  "evaluation_steps": 500,
+  "save_best_model": true,
+  "output_path": "./models/learning_rate_5e5"
+}

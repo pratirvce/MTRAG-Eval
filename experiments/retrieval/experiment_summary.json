@@ -1,0 +1,544 @@
+{
+  "timestamp": "2025-11-24T11:17:54.943094",
+  "results": {
+    "phase1": [
+      {
+        "experiment": "phase1_baseline",
+        "results": {
+          "experiment_name": "phase1_baseline",
+          "model_path": "./models/phase1_baseline",
+          "config": {
+            "experiment_name": "phase1_baseline",
+            "base_model": "BAAI/bge-base-en-v1.5",
+            "epochs": 1,
+            "batch_size": 16,
+            "learning_rate": 2e-05,
+            "loss_function": "MultipleNegativesRankingLoss",
+            "use_augmentation": false,
+            "use_validation": false,
+            "use_data_splits": false,
+            "warmup_steps": 100,
+            "output_path": "./models/phase1_baseline"
+          },
+          "domain_results": {
+            "clapnq": {
+              "Recall@5": 0.2791,
+              "Recall@10": 0.39726,
+              "nDCG@5": 0.23935,
+              "nDCG@10": 0.28896
+            },
+            "fiqa": {
+              "Recall@5": 0.13861,
+              "Recall@10": 0.19556,
+              "nDCG@5": 0.12418,
+              "nDCG@10": 0.14779
+            },
+            "govt": {
+              "Recall@5": 0.27749,
+              "Recall@10": 0.35423,
+              "nDCG@5": 0.23555,
+              "nDCG@10": 0.26815
+            },
+            "cloud": {
+              "Recall@5": 0.20771,
+              "Recall@10": 0.28349,
+              "nDCG@5": 0.1853,
+              "nDCG@10": 0.2164
+            }
+          },
+          "averages": {
+            "Recall@5": 0.22572750000000003,
+            "Recall@10": 0.307635,
+            "nDCG@5": 0.19609500000000002,
+            "nDCG@10": 0.230325
+          },
+          "baseline_comparison": {
+            "Recall@5": {
+              "ours": 0.22572750000000003,
+              "baseline": 0.3,
+              "improvement": -0.07427249999999996
+            },
+            "Recall@10": {
+              "ours": 0.307635,
+              "baseline": 0.38,
+              "improvement": -0.07236500000000001
+            },
+            "nDCG@5": {
+              "ours": 0.19609500000000002,
+              "baseline": 0.27,
+              "improvement": -0.073905
+            },
+            "nDCG@10": {
+              "ours": 0.230325,
+              "baseline": 0.3,
+              "improvement": -0.06967499999999999
+            }
+          }
+        }
+      },
+      {
+        "experiment": "phase1_epochs3",
+        "results": {
+          "experiment_name": "phase1_epochs3",
+          "model_path": "./models/phase1_epochs3",
+          "config": {
+            "experiment_name": "phase1_epochs3",
+            "base_model": "BAAI/bge-base-en-v1.5",
+            "epochs": 3,
+            "batch_size": 32,
+            "learning_rate": 2e-05,
+            "loss_function": "MultipleNegativesRankingLoss",
+            "use_augmentation": false,
+            "use_validation": true,
+            "use_data_splits": true,
+            "warmup_steps": 100,
+            "evaluation_steps": 500,
+            "save_best_model": true,
+            "output_path": "./models/phase1_epochs3"
+          },
+          "domain_results": {
+            "clapnq": {
+              "Recall@5": 0.35938,
+              "Recall@10": 0.45424,
+              "nDCG@5": 0.28008,
+              "nDCG@10": 0.32411
+            },
+            "fiqa": {
+              "Recall@5": 0.26786,
+              "Recall@10": 0.29762,
+              "nDCG@5": 0.24476,
+              "nDCG@10": 0.25954
+            },
+            "govt": {
+              "Recall@5": 0.26613,
+              "Recall@10": 0.30376,
+              "nDCG@5": 0.23286,
+              "nDCG@10": 0.25147
+            },
+            "cloud": {
+              "Recall@5": 0.24483,
+              "Recall@10": 0.29943,
+              "nDCG@5": 0.22705,
+              "nDCG@10": 0.24849
+            }
+          },
+          "averages": {
+            "Recall@5": 0.28454999999999997,
+            "Recall@10": 0.33876249999999997,
+            "nDCG@5": 0.2461875,
+            "nDCG@10": 0.27090250000000005
+          },
+          "baseline_comparison": {
+            "Recall@5": {
+              "ours": 0.28454999999999997,
+              "baseline": 0.3,
+              "improvement": -0.01545000000000002
+            },
+            "Recall@10": {
+              "ours": 0.33876249999999997,
+              "baseline": 0.38,
+              "improvement": -0.04123750000000004
+            },
+            "nDCG@5": {
+              "ours": 0.2461875,
+              "baseline": 0.27,
+              "improvement": -0.023812500000000014
+            },
+            "nDCG@10": {
+              "ours": 0.27090250000000005,
+              "baseline": 0.3,
+              "improvement": -0.029097499999999943
+            }
+          }
+        }
+      },
+      {
+        "experiment": "phase1_epochs5",
+        "results": {
+          "experiment_name": "phase1_epochs5",
+          "model_path": "./models/phase1_epochs5",
+          "config": {
+            "experiment_name": "phase1_epochs5",
+            "base_model": "BAAI/bge-base-en-v1.5",
+            "epochs": 5,
+            "batch_size": 32,
+            "learning_rate": 2e-05,
+            "loss_function": "MultipleNegativesRankingLoss",
+            "use_augmentation": false,
+            "use_validation": true,
+            "use_data_splits": true,
+            "warmup_steps": 100,
+            "evaluation_steps": 500,
+            "save_best_model": true,
+            "output_path": "./models/phase1_epochs5"
+          },
+          "domain_results": {
+            "clapnq": {
+              "Recall@5": 0.39249,
+              "Recall@10": 0.5529,
+              "nDCG@5": 0.35878,
+              "nDCG@10": 0.42895
+            },
+            "fiqa": {
+              "Recall@5": 0.36012,
+              "Recall@10": 0.42857,
+              "nDCG@5": 0.32599,
+              "nDCG@10": 0.3555
+            },
+            "govt": {
+              "Recall@5": 0.32348,
+              "Recall@10": 0.51075,
+              "nDCG@5": 0.30344,
+              "nDCG@10": 0.37471
+            },
+            "cloud": {
+              "Recall@5": 0.33276,
+              "Recall@10": 0.38506,
+              "nDCG@5": 0.2822,
+              "nDCG@10": 0.30932
+            }
+          },
+          "averages": {
+            "Recall@5": 0.3522125,
+            "Recall@10": 0.46932,
+            "nDCG@5": 0.3176025,
+            "nDCG@10": 0.36712
+          },
+          "baseline_comparison": {
+            "Recall@5": {
+              "ours": 0.3522125,
+              "baseline": 0.3,
+              "improvement": 0.052212499999999995
+            },
+            "Recall@10": {
+              "ours": 0.46932,
+              "baseline": 0.38,
+              "improvement": 0.08932000000000001
+            },
+            "nDCG@5": {
+              "ours": 0.3176025,
+              "baseline": 0.27,
+              "improvement": 0.04760249999999999
+            },
+            "nDCG@10": {
+              "ours": 0.36712,
+              "baseline": 0.3,
+              "improvement": 0.06712000000000001
+            }
+          }
+        }
+      }
+    ],
+    "phase2": [
+      {
+        "experiment": "phase2_lr1e5",
+        "results": {
+          "experiment_name": "phase2_lr1e5",
+          "model_path": "./models/phase2_lr1e5",
+          "config": {
+            "experiment_name": "phase2_lr1e5",
+            "base_model": "BAAI/bge-base-en-v1.5",
+            "epochs": 3,
+            "batch_size": 32,
+            "learning_rate": 1e-05,
+            "loss_function": "MultipleNegativesRankingLoss",
+            "use_augmentation": false,
+            "use_validation": true,
+            "use_data_splits": true,
+            "warmup_steps": 100,
+            "evaluation_steps": 500,
+            "save_best_model": true,
+            "output_path": "./models/phase2_lr1e5"
+          },
+          "domain_results": {
+            "clapnq": {
+              "Recall@5": 0.34896,
+              "Recall@10": 0.45424,
+              "nDCG@5": 0.27449,
+              "nDCG@10": 0.32324
+            },
+            "fiqa": {
+              "Recall@5": 0.25,
+              "Recall@10": 0.28571,
+              "nDCG@5": 0.23471,
+              "nDCG@10": 0.25123
+            },
+            "govt": {
+              "Recall@5": 0.23387,
+              "Recall@10": 0.2957,
+              "nDCG@5": 0.20665,
+              "nDCG@10": 0.23418
+            },
+            "cloud": {
+              "Recall@5": 0.24483,
+              "Recall@10": 0.28793,
+              "nDCG@5": 0.21903,
+              "nDCG@10": 0.2333
+            }
+          },
+          "averages": {
+            "Recall@5": 0.26941499999999996,
+            "Recall@10": 0.330895,
+            "nDCG@5": 0.23371999999999998,
+            "nDCG@10": 0.26048750000000004
+          },
+          "baseline_comparison": {
+            "Recall@5": {
+              "ours": 0.26941499999999996,
+              "baseline": 0.3,
+              "improvement": -0.03058500000000003
+            },
+            "Recall@10": {
+              "ours": 0.330895,
+              "baseline": 0.38,
+              "improvement": -0.04910500000000001
+            },
+            "nDCG@5": {
+              "ours": 0.23371999999999998,
+              "baseline": 0.27,
+              "improvement": -0.036280000000000034
+            },
+            "nDCG@10": {
+              "ours": 0.26048750000000004,
+              "baseline": 0.3,
+              "improvement": -0.03951249999999995
+            }
+          }
+        }
+      },
+      {
+        "experiment": "phase2_lr5e5",
+        "results": {
+          "experiment_name": "phase2_lr5e5",
+          "model_path": "./models/phase2_lr5e5",
+          "config": {
+            "experiment_name": "phase2_lr5e5",
+            "base_model": "BAAI/bge-base-en-v1.5",
+            "epochs": 3,
+            "batch_size": 32,
+            "learning_rate": 5e-05,
+            "loss_function": "MultipleNegativesRankingLoss",
+            "use_augmentation": false,
+            "use_validation": true,
+            "use_data_splits": true,
+            "warmup_steps": 100,
+            "evaluation_steps": 500,
+            "save_best_model": true,
+            "output_path": "./models/phase2_lr5e5"
+          },
+          "domain_results": {
+            "clapnq": {
+              "Recall@5": 0.40551,
+              "Recall@10": 0.50446,
+              "nDCG@5": 0.3497,
+              "nDCG@10": 0.39314
+            },
+            "fiqa": {
+              "Recall@5": 0.27381,
+              "Recall@10": 0.39286,
+              "nDCG@5": 0.2774,
+              "nDCG@10": 0.32715
+            },
+            "govt": {
+              "Recall@5": 0.28047,
+              "Recall@10": 0.41219,
+              "nDCG@5": 0.26194,
+              "nDCG@10": 0.31347
+            },
+            "cloud": {
+              "Recall@5": 0.26954,
+              "Recall@10": 0.37356,
+              "nDCG@5": 0.25276,
+              "nDCG@10": 0.29855
+            }
+          },
+          "averages": {
+            "Recall@5": 0.3073325,
+            "Recall@10": 0.42076749999999996,
+            "nDCG@5": 0.28545,
+            "nDCG@10": 0.3330775
+          },
+          "baseline_comparison": {
+            "Recall@5": {
+              "ours": 0.3073325,
+              "baseline": 0.3,
+              "improvement": 0.0073325000000000196
+            },
+            "Recall@10": {
+              "ours": 0.42076749999999996,
+              "baseline": 0.38,
+              "improvement": 0.04076749999999996
+            },
+            "nDCG@5": {
+              "ours": 0.28545,
+              "baseline": 0.27,
+              "improvement": 0.015449999999999964
+            },
+            "nDCG@10": {
+              "ours": 0.3330775,
+              "baseline": 0.3,
+              "improvement": 0.03307750000000004
+            }
+          }
+        }
+      },
+      {
+        "experiment": "phase2_augmentation",
+        "results": {
+          "experiment_name": "phase2_augmentation",
+          "model_path": "./models/phase2_augmentation",
+          "config": {
+            "experiment_name": "phase2_augmentation",
+            "base_model": "BAAI/bge-base-en-v1.5",
+            "epochs": 3,
+            "batch_size": 32,
+            "learning_rate": 2e-05,
+            "loss_function": "MultipleNegativesRankingLoss",
+            "use_augmentation": true,
+            "use_validation": true,
+            "use_data_splits": true,
+            "warmup_steps": 100,
+            "evaluation_steps": 500,
+            "save_best_model": true,
+            "output_path": "./models/phase2_augmentation"
+          },
+          "domain_results": {
+            "clapnq": {
+              "Recall@5": 0.47113,
+              "Recall@10": 0.58155,
+              "nDCG@5": 0.43259,
+              "nDCG@10": 0.47861
+            },
+            "fiqa": {
+              "Recall@5": 0.40179,
+              "Recall@10": 0.49107,
+              "nDCG@5": 0.36216,
+              "nDCG@10": 0.40239
+            },
+            "govt": {
+              "Recall@5": 0.3647,
+              "Recall@10": 0.50717,
+              "nDCG@5": 0.35361,
+              "nDCG@10": 0.4041
+            },
+            "cloud": {
+              "Recall@5": 0.30977,
+              "Recall@10": 0.45977,
+              "nDCG@5": 0.28691,
+              "nDCG@10": 0.3543
+            }
+          },
+          "averages": {
+            "Recall@5": 0.3868475,
+            "Recall@10": 0.50989,
+            "nDCG@5": 0.35881749999999996,
+            "nDCG@10": 0.40985
+          },
+          "baseline_comparison": {
+            "Recall@5": {
+              "ours": 0.3868475,
+              "baseline": 0.3,
+              "improvement": 0.08684750000000002
+            },
+            "Recall@10": {
+              "ours": 0.50989,
+              "baseline": 0.38,
+              "improvement": 0.12988999999999995
+            },
+            "nDCG@5": {
+              "ours": 0.35881749999999996,
+              "baseline": 0.27,
+              "improvement": 0.08881749999999994
+            },
+            "nDCG@10": {
+              "ours": 0.40985,
+              "baseline": 0.3,
+              "improvement": 0.10985
+            }
+          }
+        }
+      }
+    ],
+    "phase3": [
+      {
+        "experiment": "phase3_hybrid",
+        "results": {
+          "experiment_name": "phase3_hybrid",
+          "model_path": "./models/phase3_hybrid",
+          "config": {
+            "experiment_name": "phase3_hybrid",
+            "base_model": "BAAI/bge-base-en-v1.5",
+            "epochs": 3,
+            "batch_size": 32,
+            "learning_rate": 2e-05,
+            "loss_function": "MultipleNegativesRankingLoss",
+            "use_augmentation": false,
+            "use_validation": true,
+            "use_data_splits": true,
+            "warmup_steps": 100,
+            "evaluation_steps": 500,
+            "save_best_model": true,
+            "output_path": "./models/phase3_hybrid",
+            "retriever_type": "hybrid",
+            "hybrid_alpha": 0.5,
+            "use_reranking": false
+          },
+          "domain_results": {
+            "clapnq": {
+              "Recall@5": 0.35938,
+              "Recall@10": 0.45424,
+              "nDCG@5": 0.28008,
+              "nDCG@10": 0.32411
+            },
+            "fiqa": {
+              "Recall@5": 0.26786,
+              "Recall@10": 0.29762,
+              "nDCG@5": 0.24476,
+              "nDCG@10": 0.25954
+            },
+            "govt": {
+              "Recall@5": 0.26613,
+              "Recall@10": 0.30376,
+              "nDCG@5": 0.23286,
+              "nDCG@10": 0.25147
+            },
+            "cloud": {
+              "Recall@5": 0.24483,
+              "Recall@10": 0.29943,
+              "nDCG@5": 0.22705,
+              "nDCG@10": 0.24849
+            }
+          },
+          "averages": {
+            "Recall@5": 0.28454999999999997,
+            "Recall@10": 0.33876249999999997,
+            "nDCG@5": 0.2461875,
+            "nDCG@10": 0.27090250000000005
+          },
+          "baseline_comparison": {
+            "Recall@5": {
+              "ours": 0.28454999999999997,
+              "baseline": 0.3,
+              "improvement": -0.01545000000000002
+            },
+            "Recall@10": {
+              "ours": 0.33876249999999997,
+              "baseline": 0.38,
+              "improvement": -0.04123750000000004
+            },
+            "nDCG@5": {
+              "ours": 0.2461875,
+              "baseline": 0.27,
+              "improvement": -0.023812500000000014
+            },
+            "nDCG@10": {
+              "ours": 0.27090250000000005,
+              "baseline": 0.3,
+              "improvement": -0.029097499999999943
+            }
+          }
+        }
+      }
+    ]
+  }
+}

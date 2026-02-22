@@ -1,0 +1,13 @@
+{
+  "model_path": "BAAI/bge-base-en-v1.5",
+  "output_dir": "experiments/retrieval/best_paper_learned_rrf",
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "top_k": 100,
+  "method_results_paths": [],
+  "resume": true
+}

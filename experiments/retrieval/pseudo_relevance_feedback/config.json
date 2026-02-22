@@ -1,0 +1,14 @@
+{
+  "output_dir": "experiments/retrieval/pseudo_relevance_feedback",
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true,
+  "model_path": "BAAI/bge-base-en-v1.5",
+  "llm_provider": "openai",
+  "top_k_feedback": 10,
+  "resume": false
+}

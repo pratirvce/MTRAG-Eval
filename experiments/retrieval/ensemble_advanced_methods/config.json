@@ -1,0 +1,21 @@
+{
+  "experiment_name": "ensemble_advanced_methods",
+  "model_paths": [
+    "BAAI/bge-base-en-v1.5",
+    "BAAI/bge-base-en-v1.5"
+  ],
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true,
+  "ensemble_method": "weighted",
+  "weights": [
+    0.6,
+    0.4
+  ],
+  "top_k": 100,
+  "resume": true
+}

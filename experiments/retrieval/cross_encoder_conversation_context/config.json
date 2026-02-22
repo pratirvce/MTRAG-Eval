@@ -1,0 +1,15 @@
+{
+  "output_dir": "experiments/retrieval/cross_encoder_conversation_context",
+  "model_path": "BAAI/bge-base-en-v1.5",
+  "cross_encoder_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "use_data_splits": true,
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "resume": true,
+  "first_stage_top_k": 100,
+  "rerank_top_k": 10
+}

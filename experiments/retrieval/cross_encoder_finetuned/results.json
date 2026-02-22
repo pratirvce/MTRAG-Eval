@@ -1,0 +1,5 @@
+{
+  "experiment": "tier1_cross_encoder_finetuned",
+  "status": "training_completed",
+  "model_path": "models/tier1_cross_encoder_finetuned"
+}

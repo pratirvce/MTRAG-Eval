@@ -1,0 +1,23 @@
+{
+  "experiment_name": "multistage_retrieval_2stage",
+  "stage1_model": "./models/domain_specific_clapnq",
+  "stage1_ensemble": true,
+  "stage1_ensemble_models": [
+    "./models/domain_specific_clapnq",
+    "./models/domain_specific_govt",
+    "./models/domain_specific_cloud"
+  ],
+  "stage2_model": "./models/cross_encoder_finetuned_ensemble",
+  "stage3_model": null,
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true,
+  "stage1_top_k": 100,
+  "stage2_top_k": 50,
+  "stage3_top_k": 20,
+  "resume": true
+}

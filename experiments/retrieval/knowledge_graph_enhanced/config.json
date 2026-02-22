@@ -1,0 +1,16 @@
+{
+  "model_path": "BAAI/bge-base-en-v1.5",
+  "output_dir": "experiments/retrieval/knowledge_graph_enhanced",
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true,
+  "epochs": 3,
+  "batch_size": 4,
+  "gradient_accumulation_steps": 2,
+  "use_fp16": true,
+  "resume": false
+}

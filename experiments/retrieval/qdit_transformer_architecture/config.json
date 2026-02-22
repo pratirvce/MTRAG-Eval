@@ -1,0 +1,13 @@
+{
+  "model_path": "BAAI/bge-base-en-v1.5",
+  "output_dir": "experiments/retrieval/qdit_transformer_architecture",
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true,
+  "top_k": 100,
+  "resume": true
+}
