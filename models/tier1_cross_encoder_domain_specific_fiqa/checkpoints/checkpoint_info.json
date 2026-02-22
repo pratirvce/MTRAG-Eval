@@ -1,0 +1,6 @@
+{
+  "epoch": 3,
+  "step": 117,
+  "model_path": "models/tier1_cross_encoder_domain_specific_fiqa",
+  "timestamp": "2025-12-18T22:19:52.494610"
+}
