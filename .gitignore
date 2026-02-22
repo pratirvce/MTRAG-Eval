@@ -1,31 +1,3 @@
-# Model weights and checkpoints
-models/
-*-checkpoints/
-checkpoints/
-*.safetensors
-*.bin
-*.pt
-*.pth
-*.onnx
-optimizer.pt
-
-# Datasets and corpora
-corpora/
-human/
-synthetic/
-data_splits/
-
-# Backup directories
-backup-retrieval-1126/
-
-# Pre-trained model directories
-bge-finetuned-all-domains/
-bge-finetuned-all-domains-checkpoints/
-
-# Submissions and reports
-submission/
-report_figures/
-
 # Virtual environment
 venv/
 .venv/
@@ -34,18 +6,6 @@ venv/
 __pycache__/
 *.pyc
 *.pyo
-
-# Logs
-*.log
-evaluation.log
-
-# Experiment model artifacts (keep only config.json and results.json)
-experiments/retrieval/*/checkpoints/
-experiments/retrieval/*/checkpoint_epoch_*/
-experiments/retrieval/*/model/
-experiments/retrieval/*/*.safetensors
-experiments/retrieval/*/*.bin
-experiments/retrieval/*/*.pt
 
 # OS files
 .DS_Store

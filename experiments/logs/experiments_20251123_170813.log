@@ -1,0 +1,107 @@
+2025-11-23 17:08:13,798 - INFO - PID saved to: experiments/retrieval/logs/current_experiment.pid
+2025-11-23 17:08:13,798 - INFO - 
+============================================================
+2025-11-23 17:08:13,798 - INFO - Starting Phase: Phase 1: Quick Wins
+2025-11-23 17:08:13,798 - INFO - ============================================================
+
+2025-11-23 17:08:13,798 - INFO - 
+--- Experiment: phase1_baseline ---
+2025-11-23 17:08:13,799 - INFO - Training model: phase1_baseline
+2025-11-23 17:08:13,799 - INFO - Running training: python train_improved_bge.py --config experiments/retrieval/phase1_baseline/config.json
+2025-11-23 17:09:15,105 - INFO - Evaluating model: phase1_baseline
+2025-11-23 17:09:15,106 - INFO - Running evaluation: python evaluate_improved_bge.py --model_path ./models/phase1_baseline --config experiments/retrieval/phase1_baseline/config.json --output experiments/retrieval/phase1_baseline/results.json
+2025-11-23 17:43:53,484 - INFO - ✅ phase1_baseline completed. Recall@10: 0.3076
+2025-11-23 17:43:53,484 - INFO - 
+--- Experiment: phase1_epochs3 ---
+2025-11-23 17:43:53,485 - INFO - Training model: phase1_epochs3
+2025-11-23 17:43:53,485 - INFO - Running training: python train_improved_bge.py --config experiments/retrieval/phase1_epochs3/config.json
+2025-11-23 19:19:45,952 - INFO - Evaluating model: phase1_epochs3
+2025-11-23 19:19:45,953 - INFO - Running evaluation: python evaluate_improved_bge.py --model_path ./models/phase1_epochs3 --config experiments/retrieval/phase1_epochs3/config.json --output experiments/retrieval/phase1_epochs3/results.json
+2025-11-23 19:54:20,842 - INFO - ✅ phase1_epochs3 completed. Recall@10: 0.3388
+2025-11-23 19:54:20,842 - INFO - 
+--- Experiment: phase1_epochs5 ---
+2025-11-23 19:54:20,843 - INFO - Training model: phase1_epochs5
+2025-11-23 19:54:20,843 - INFO - Running training: python train_improved_bge.py --config experiments/retrieval/phase1_epochs5/config.json
+2025-11-23 22:32:25,487 - INFO - Evaluating model: phase1_epochs5
+2025-11-23 22:32:25,488 - INFO - Running evaluation: python evaluate_improved_bge.py --model_path ./models/phase1_epochs5 --config experiments/retrieval/phase1_epochs5/config.json --output experiments/retrieval/phase1_epochs5/results.json
+2025-11-23 23:06:28,350 - INFO - ✅ phase1_epochs5 completed. Recall@10: 0.4693
+2025-11-23 23:06:28,350 - INFO - 
+============================================================
+2025-11-23 23:06:28,351 - INFO - Starting Phase: Phase 2: Training Improvements
+2025-11-23 23:06:28,351 - INFO - ============================================================
+
+2025-11-23 23:06:28,351 - INFO - 
+--- Experiment: phase2_lr1e5 ---
+2025-11-23 23:06:28,352 - INFO - Training model: phase2_lr1e5
+2025-11-23 23:06:28,352 - INFO - Running training: python train_improved_bge.py --config experiments/retrieval/phase2_lr1e5/config.json
+2025-11-24 00:42:43,035 - INFO - Evaluating model: phase2_lr1e5
+2025-11-24 00:42:43,035 - INFO - Running evaluation: python evaluate_improved_bge.py --model_path ./models/phase2_lr1e5 --config experiments/retrieval/phase2_lr1e5/config.json --output experiments/retrieval/phase2_lr1e5/results.json
+2025-11-24 01:16:57,467 - INFO - ✅ phase2_lr1e5 completed. Recall@10: 0.3309
+2025-11-24 01:16:57,468 - INFO - 
+--- Experiment: phase2_lr5e5 ---
+2025-11-24 01:16:57,469 - INFO - Training model: phase2_lr5e5
+2025-11-24 01:16:57,469 - INFO - Running training: python train_improved_bge.py --config experiments/retrieval/phase2_lr5e5/config.json
+2025-11-24 02:51:18,317 - INFO - Evaluating model: phase2_lr5e5
+2025-11-24 02:51:18,318 - INFO - Running evaluation: python evaluate_improved_bge.py --model_path ./models/phase2_lr5e5 --config experiments/retrieval/phase2_lr5e5/config.json --output experiments/retrieval/phase2_lr5e5/results.json
+2025-11-24 03:25:41,377 - INFO - ✅ phase2_lr5e5 completed. Recall@10: 0.4208
+2025-11-24 03:25:41,377 - INFO - 
+--- Experiment: phase2_cosine_loss ---
+2025-11-24 03:25:41,378 - INFO - Training model: phase2_cosine_loss
+2025-11-24 03:25:41,378 - INFO - Running training: python train_improved_bge.py --config experiments/retrieval/phase2_cosine_loss/config.json
+2025-11-24 03:26:00,767 - ERROR - Training failed for phase2_cosine_loss. Check experiments/retrieval/phase2_cosine_loss/training.log
+2025-11-24 03:26:00,768 - INFO - 
+--- Experiment: phase2_augmentation ---
+2025-11-24 03:26:00,769 - INFO - Training model: phase2_augmentation
+2025-11-24 03:26:00,769 - INFO - Running training: python train_improved_bge.py --config experiments/retrieval/phase2_augmentation/config.json
+2025-11-24 05:01:06,515 - INFO - Evaluating model: phase2_augmentation
+2025-11-24 05:01:06,515 - INFO - Running evaluation: python evaluate_improved_bge.py --model_path ./models/phase2_augmentation --config experiments/retrieval/phase2_augmentation/config.json --output experiments/retrieval/phase2_augmentation/results.json
+2025-11-24 05:34:57,071 - INFO - ✅ phase2_augmentation completed. Recall@10: 0.5099
+2025-11-24 05:34:57,072 - INFO - 
+============================================================
+2025-11-24 05:34:57,072 - INFO - Starting Phase: Phase 3: Retrieval Strategy
+2025-11-24 05:34:57,072 - INFO - ============================================================
+
+2025-11-24 05:34:57,072 - INFO - 
+--- Experiment: phase3_hybrid ---
+2025-11-24 05:34:57,073 - INFO - Training model: phase3_hybrid
+2025-11-24 05:34:57,073 - INFO - Running training: python train_improved_bge.py --config experiments/retrieval/phase3_hybrid/config.json
+2025-11-24 07:09:01,626 - INFO - Evaluating model: phase3_hybrid
+2025-11-24 07:09:01,627 - INFO - Running evaluation: python evaluate_improved_bge.py --model_path ./models/phase3_hybrid --config experiments/retrieval/phase3_hybrid/config.json --output experiments/retrieval/phase3_hybrid/results.json
+2025-11-24 07:43:11,277 - INFO - ✅ phase3_hybrid completed. Recall@10: 0.3388
+2025-11-24 07:43:11,278 - INFO - 
+--- Experiment: phase3_reranking ---
+2025-11-24 07:43:11,279 - INFO - Training model: phase3_reranking
+2025-11-24 07:43:11,279 - INFO - Running training: python train_improved_bge.py --config experiments/retrieval/phase3_reranking/config.json
+2025-11-24 09:17:06,930 - INFO - Evaluating model: phase3_reranking
+2025-11-24 09:17:06,931 - INFO - Running evaluation: python evaluate_improved_bge.py --model_path ./models/phase3_reranking --config experiments/retrieval/phase3_reranking/config.json --output experiments/retrieval/phase3_reranking/results.json
+2025-11-24 09:29:39,951 - ERROR - Evaluation failed for phase3_reranking. Check experiments/retrieval/phase3_reranking/evaluation.log
+2025-11-24 09:29:39,952 - INFO - 
+--- Experiment: phase3_hybrid_reranking ---
+2025-11-24 09:29:39,952 - INFO - Training model: phase3_hybrid_reranking
+2025-11-24 09:29:39,953 - INFO - Running training: python train_improved_bge.py --config experiments/retrieval/phase3_hybrid_reranking/config.json
+2025-11-24 11:04:51,864 - INFO - Evaluating model: phase3_hybrid_reranking
+2025-11-24 11:04:51,864 - INFO - Running evaluation: python evaluate_improved_bge.py --model_path ./models/phase3_hybrid_reranking --config experiments/retrieval/phase3_hybrid_reranking/config.json --output experiments/retrieval/phase3_hybrid_reranking/results.json
+2025-11-24 11:17:54,942 - ERROR - Evaluation failed for phase3_hybrid_reranking. Check experiments/retrieval/phase3_hybrid_reranking/evaluation.log
+2025-11-24 11:17:54,945 - INFO - 
+============================================================
+2025-11-24 11:17:54,945 - INFO - All experiments completed!
+2025-11-24 11:17:54,945 - INFO - Results saved to: experiments/retrieval/experiment_summary.json
+2025-11-24 11:17:54,946 - INFO - ============================================================
+
+
+============================================================
+EXPERIMENT SUMMARY
+============================================================
+
+PHASE1:
+  phase1_baseline: R@10=0.3076, nDCG@10=0.2303
+  phase1_epochs3: R@10=0.3388, nDCG@10=0.2709
+  phase1_epochs5: R@10=0.4693, nDCG@10=0.3671
+
+PHASE2:
+  phase2_lr1e5: R@10=0.3309, nDCG@10=0.2605
+  phase2_lr5e5: R@10=0.4208, nDCG@10=0.3331
+  phase2_augmentation: R@10=0.5099, nDCG@10=0.4098
+
+PHASE3:
+  phase3_hybrid: R@10=0.3388, nDCG@10=0.2709

@@ -1,0 +1,60 @@
+2025-11-27 17:38:31,018 - INFO - 
+============================================================
+2025-11-27 17:38:31,018 - INFO - Starting 7 Phase 4 experiments
+2025-11-27 17:38:31,018 - INFO - ============================================================
+
+2025-11-27 17:38:31,018 - INFO - 
+[1/7] Processing: phase4_hard_negatives_cosine
+2025-11-27 17:38:31,018 - INFO - Description: Hard negative mining with CosineSimilarityLoss
+2025-11-27 17:38:31,018 - INFO - Starting experiment: phase4_hard_negatives_cosine
+2025-11-27 17:38:31,020 - INFO - Experiment phase4_hard_negatives_cosine started (PID: 1311837)
+2025-11-29 22:56:39,889 - ERROR - ❌ Experiment phase4_hard_negatives_cosine failed (return code: -15)
+2025-11-29 22:56:39,890 - INFO - Progress: 1/7 completed (0 successful, 1 failed)
+2025-11-29 22:56:39,890 - INFO - 
+[2/7] Processing: phase4_hard_negatives_triplet
+2025-11-29 22:56:39,890 - INFO - Description: Hard negative mining with TripletLoss
+2025-11-29 22:56:39,890 - INFO - Starting experiment: phase4_hard_negatives_triplet
+2025-11-29 22:56:39,892 - INFO - Experiment phase4_hard_negatives_triplet started (PID: 2523660)
+2025-12-03 03:39:01,273 - ERROR - ❌ Experiment phase4_hard_negatives_triplet failed (return code: 1)
+2025-12-03 03:39:01,274 - INFO - Progress: 2/7 completed (0 successful, 2 failed)
+2025-12-03 03:39:01,274 - INFO - 
+[3/7] Processing: phase4_hard_negatives_5neg
+2025-12-03 03:39:01,274 - INFO - Description: Hard negatives with 5 negatives per positive
+2025-12-03 03:39:01,274 - INFO - Starting experiment: phase4_hard_negatives_5neg
+2025-12-03 03:39:01,276 - INFO - Experiment phase4_hard_negatives_5neg started (PID: 3831941)
+2025-12-06 14:25:06,763 - ERROR - ❌ Experiment phase4_hard_negatives_5neg failed (return code: 1)
+2025-12-06 14:25:06,764 - INFO - Progress: 3/7 completed (0 successful, 3 failed)
+2025-12-06 14:25:06,764 - INFO - 
+[4/7] Processing: phase4_bge_large
+2025-12-06 14:25:06,765 - INFO - Description: Larger BGE model (bge-large-en-v1.5)
+2025-12-06 14:25:06,765 - INFO - Starting experiment: phase4_bge_large
+2025-12-06 14:25:06,768 - INFO - Experiment phase4_bge_large started (PID: 822431)
+2025-12-16 15:50:26,638 - ERROR - ❌ Experiment phase4_bge_large failed (return code: -11)
+2025-12-16 15:50:26,649 - INFO - Progress: 4/7 completed (0 successful, 4 failed)
+2025-12-16 15:50:26,649 - INFO - 
+[5/7] Processing: phase4_domain_specific_clapnq
+2025-12-16 15:50:26,649 - INFO - Description: Domain-specific model for ClapNQ
+2025-12-16 15:50:26,649 - INFO - Starting experiment: phase4_domain_specific_clapnq
+2025-12-16 15:50:26,653 - INFO - Experiment phase4_domain_specific_clapnq started (PID: 2682526)
+2025-12-16 17:02:15,446 - INFO - ✅ Experiment phase4_domain_specific_clapnq completed successfully
+2025-12-16 17:02:15,447 - INFO - Progress: 5/7 completed (1 successful, 4 failed)
+2025-12-16 17:02:15,448 - INFO - 
+[6/7] Processing: phase4_domain_specific_fiqa
+2025-12-16 17:02:15,448 - INFO - Description: Domain-specific model for FiQA (worst performing)
+2025-12-16 17:02:15,448 - INFO - Starting experiment: phase4_domain_specific_fiqa
+2025-12-16 17:02:15,451 - INFO - Experiment phase4_domain_specific_fiqa started (PID: 2683743)
+2025-12-16 17:30:48,682 - INFO - ✅ Experiment phase4_domain_specific_fiqa completed successfully
+2025-12-16 17:30:48,683 - INFO - Progress: 6/7 completed (2 successful, 4 failed)
+2025-12-16 17:30:48,683 - INFO - 
+[7/7] Processing: phase4_domain_specific_all
+2025-12-16 17:30:48,683 - INFO - Description: Train domain-specific models for all domains
+2025-12-16 17:30:48,683 - INFO - Starting experiment: phase4_domain_specific_all
+2025-12-16 17:30:48,686 - INFO - Experiment phase4_domain_specific_all started (PID: 2684515)
+2025-12-16 17:30:53,486 - ERROR - ❌ Experiment phase4_domain_specific_all failed (return code: 2)
+2025-12-16 17:30:53,487 - INFO - Progress: 7/7 completed (2 successful, 5 failed)
+2025-12-16 17:30:53,488 - INFO - 
+============================================================
+2025-12-16 17:30:53,488 - INFO - All experiments completed!
+2025-12-16 17:30:53,488 - INFO - Successful: 2/7
+2025-12-16 17:30:53,488 - INFO - Failed: 5/7
+2025-12-16 17:30:53,488 - INFO - ============================================================

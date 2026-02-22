@@ -1,0 +1,57 @@
+2025-11-28 17:53:42,316 - INFO - Available GPUs: [1, 2, 3, 4, 5]
+2025-11-28 17:53:42,318 - INFO - 
+============================================================
+2025-11-28 17:53:42,318 - INFO - Starting 7 Phase 4 experiments in parallel
+2025-11-28 17:53:42,318 - INFO - Available GPUs: [1, 2, 3, 4, 5]
+2025-11-28 17:53:42,318 - INFO - Max parallel: 5
+2025-11-28 17:53:42,318 - INFO - ============================================================
+
+2025-11-28 17:53:42,319 - INFO - Acquired GPU 1
+2025-11-28 17:53:42,319 - INFO - Starting experiment phase4_domain_specific_all on GPU 1
+2025-11-28 17:53:42,322 - INFO - Experiment phase4_domain_specific_all started on GPU 1 (PID: 1849625)
+2025-11-28 17:53:42,323 - INFO - Running experiments: ['phase4_domain_specific_all']
+2025-11-28 17:53:42,323 - INFO - Acquired GPU 2
+2025-11-28 17:53:42,323 - INFO - Starting experiment phase4_domain_specific_fiqa on GPU 2
+2025-11-28 17:53:42,328 - INFO - Experiment phase4_domain_specific_fiqa started on GPU 2 (PID: 1849627)
+2025-11-28 17:53:42,329 - INFO - Running experiments: ['phase4_domain_specific_all', 'phase4_domain_specific_fiqa']
+2025-11-28 17:53:42,329 - INFO - Acquired GPU 3
+2025-11-28 17:53:42,329 - INFO - Starting experiment phase4_domain_specific_clapnq on GPU 3
+2025-11-28 17:53:42,332 - INFO - Experiment phase4_domain_specific_clapnq started on GPU 3 (PID: 1849629)
+2025-11-28 17:53:42,333 - INFO - Running experiments: ['phase4_domain_specific_all', 'phase4_domain_specific_fiqa', 'phase4_domain_specific_clapnq']
+2025-11-28 17:53:42,333 - INFO - Acquired GPU 4
+2025-11-28 17:53:42,334 - INFO - Starting experiment phase4_bge_large on GPU 4
+2025-11-28 17:53:42,337 - INFO - Experiment phase4_bge_large started on GPU 4 (PID: 1849631)
+2025-11-28 17:53:42,338 - INFO - Running experiments: ['phase4_domain_specific_all', 'phase4_domain_specific_fiqa', 'phase4_domain_specific_clapnq', 'phase4_bge_large']
+2025-11-28 17:53:42,338 - INFO - Acquired GPU 5
+2025-11-28 17:53:42,338 - INFO - Starting experiment phase4_hard_negatives_5neg on GPU 5
+2025-11-28 17:53:42,341 - INFO - Experiment phase4_hard_negatives_5neg started on GPU 5 (PID: 1849633)
+2025-11-28 17:53:42,342 - INFO - Running experiments: ['phase4_domain_specific_all', 'phase4_domain_specific_fiqa', 'phase4_domain_specific_clapnq', 'phase4_bge_large', 'phase4_hard_negatives_5neg']
+2025-11-28 17:53:47,789 - INFO - Released GPU 1
+2025-11-28 17:53:47,789 - ERROR - ❌ Experiment phase4_domain_specific_all failed on GPU 1 (return code: 2)
+2025-11-28 17:53:49,040 - INFO - Released GPU 4
+2025-11-28 17:53:49,040 - ERROR - ❌ Experiment phase4_bge_large failed on GPU 4 (return code: 1)
+2025-11-28 17:53:52,343 - INFO - Acquired GPU 1
+2025-11-28 17:53:52,343 - INFO - Starting experiment phase4_hard_negatives_triplet on GPU 1
+2025-11-28 17:53:52,347 - INFO - Experiment phase4_hard_negatives_triplet started on GPU 1 (PID: 1850799)
+2025-11-28 17:53:52,348 - INFO - Running experiments: ['phase4_domain_specific_fiqa', 'phase4_domain_specific_clapnq', 'phase4_hard_negatives_5neg', 'phase4_hard_negatives_triplet']
+2025-11-28 17:53:52,348 - INFO - Acquired GPU 4
+2025-11-28 17:53:52,348 - INFO - Starting experiment phase4_hard_negatives_cosine on GPU 4
+2025-11-28 17:53:52,352 - INFO - Experiment phase4_hard_negatives_cosine started on GPU 4 (PID: 1850801)
+2025-11-28 17:53:52,352 - INFO - Running experiments: ['phase4_domain_specific_fiqa', 'phase4_domain_specific_clapnq', 'phase4_hard_negatives_5neg', 'phase4_hard_negatives_triplet', 'phase4_hard_negatives_cosine']
+2025-11-28 18:24:28,330 - INFO - Released GPU 2
+2025-11-28 18:24:28,330 - INFO - ✅ Experiment phase4_domain_specific_fiqa completed successfully on GPU 2
+2025-11-28 19:25:12,703 - INFO - Released GPU 3
+2025-11-28 19:25:12,703 - INFO - ✅ Experiment phase4_domain_specific_clapnq completed successfully on GPU 3
+2025-12-01 20:35:40,546 - INFO - Released GPU 1
+2025-12-01 20:35:40,547 - ERROR - ❌ Experiment phase4_hard_negatives_triplet failed on GPU 1 (return code: 1)
+2025-12-01 21:38:24,233 - INFO - Released GPU 5
+2025-12-01 21:38:24,233 - INFO - ✅ Experiment phase4_hard_negatives_5neg completed successfully on GPU 5
+2025-12-02 02:07:27,193 - INFO - Released GPU 4
+2025-12-02 02:07:27,194 - INFO - ✅ Experiment phase4_hard_negatives_cosine completed successfully on GPU 4
+2025-12-02 02:07:30,329 - INFO - Waiting for all experiments to complete...
+2025-12-02 02:07:30,330 - INFO - 
+============================================================
+2025-12-02 02:07:30,330 - INFO - All experiments completed!
+2025-12-02 02:07:30,330 - INFO - Successful: 4/7
+2025-12-02 02:07:30,330 - INFO - Failed: 3/7
+2025-12-02 02:07:30,330 - INFO - ============================================================
