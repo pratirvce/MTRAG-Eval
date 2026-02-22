@@ -1,0 +1,30 @@
+2025-12-17 08:37:46 - INFO - Loaded status for 5 experiments
+2025-12-17 08:37:46 - INFO - Starting Tier 1 experiments...
+2025-12-17 08:37:48 - INFO - Available GPUs: [0, 1, 2, 3, 4, 5]
+2025-12-17 08:37:48 - INFO - Experiment tier1_cross_encoder_finetuned already completed, skipping
+2025-12-17 08:37:48 - INFO - Starting tier1_cross_attention_query_document on GPU 0 (Priority 2)
+2025-12-17 08:37:48 - INFO - Started tier1_cross_attention_query_document on GPU 0 (PID: 2753930)
+2025-12-17 08:37:48 - WARNING - EMAIL_PASSWORD not set. Skipping email notification.
+2025-12-17 08:37:48 - INFO - Starting tier1_hierarchical_multigranularity on GPU 1 (Priority 3)
+2025-12-17 08:37:48 - INFO - Started tier1_hierarchical_multigranularity on GPU 1 (PID: 2753994)
+2025-12-17 08:37:48 - WARNING - EMAIL_PASSWORD not set. Skipping email notification.
+2025-12-17 08:37:48 - INFO - Starting tier1_iterative_refinement_improved on GPU 2 (Priority 4)
+2025-12-17 08:37:48 - INFO - Started tier1_iterative_refinement_improved on GPU 2 (PID: 2754058)
+2025-12-17 08:37:48 - WARNING - EMAIL_PASSWORD not set. Skipping email notification.
+2025-12-17 09:14:38 - INFO - GPU 0 freed by tier1_cross_attention_query_document
+2025-12-17 09:14:38 - INFO - Starting tier1_contrastive_learning on GPU 3 (Priority 5)
+2025-12-17 09:14:38 - INFO - Started tier1_contrastive_learning on GPU 3 (PID: 2760704)
+2025-12-17 09:14:38 - WARNING - EMAIL_PASSWORD not set. Skipping email notification.
+2025-12-17 09:14:38 - INFO - Started 3 experiments. Monitoring...
+2025-12-17 09:14:38 - INFO - Experiment tier1_cross_encoder_finetuned completed successfully
+2025-12-17 09:14:38 - WARNING - EMAIL_PASSWORD not set. Skipping email notification.
+2025-12-17 09:14:38 - INFO - Experiment tier1_cross_attention_query_document completed successfully
+2025-12-17 09:14:38 - WARNING - EMAIL_PASSWORD not set. Skipping email notification.
+2025-12-17 09:15:38 - INFO - Experiment tier1_contrastive_learning finished (exit code: 1)
+2025-12-17 09:15:38 - INFO - Experiment tier1_contrastive_learning completed successfully
+2025-12-17 09:15:38 - WARNING - EMAIL_PASSWORD not set. Skipping email notification.
+2025-12-17 09:40:38 - INFO - Experiment tier1_iterative_refinement_improved finished (exit code: 0)
+2025-12-17 09:40:38 - INFO - Experiment tier1_iterative_refinement_improved completed successfully
+2025-12-17 09:40:38 - WARNING - EMAIL_PASSWORD not set. Skipping email notification.
+2025-12-17 11:37:38 - INFO - Experiment tier1_hierarchical_multigranularity finished (exit code: 0)
+2025-12-17 11:37:38 - INFO - All experiments completed!

@@ -1,0 +1,1496 @@
+{
+  "timestamp": "2025-12-30T16:24:49.356307",
+  "stopped_experiments": [
+    {
+      "experiment_name": "synthetic_data_augmentation",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/synthetic_data_augmentation",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.027507",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cross_domain_transfer_learning",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/cross_domain_transfer_learning",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.027667",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "semantic_drift_adaptation",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/semantic_drift_adaptation",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.027813",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "temporal_memory_retrieval",
+      "gpu": "3",
+      "script_path": "train_catr_temporal_retrieval_tier1.py",
+      "output_dir": "experiments/retrieval/temporal_memory_retrieval",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.028023",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "graph_aware_retrieval",
+      "gpu": "3",
+      "script_path": "train_graph_neural_retrieval_tier1.py",
+      "output_dir": "experiments/retrieval/graph_aware_retrieval",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.028169",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "llm_distillation",
+      "gpu": "4",
+      "script_path": "train_llm_powered_retrieval_tier1.py",
+      "output_dir": "experiments/retrieval/llm_distillation",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.028422",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "differentiable_end_to_end",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/differentiable_end_to_end",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.028552",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "contrastive_learning_finetuning",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/contrastive_learning_finetuning",
+      "checkpoint_dir": "experiments/retrieval/contrastive_learning_finetuning/checkpoint_epoch_3",
+      "stopped_at": "2025-12-30T16:23:08.028781",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "graph_enhanced_reranking_fixed",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/graph_enhanced_reranking_fixed",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.028931",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cross_attention_rerun",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/cross_attention_rerun",
+      "checkpoint_dir": "experiments/retrieval/cross_attention_rerun/checkpoints",
+      "stopped_at": "2025-12-30T16:23:08.029123",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "causal_inference_retrieval",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/causal_inference_retrieval",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.029266",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cross_attention_rerun_fixed",
+      "gpu": "2",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/cross_attention_rerun_fixed",
+      "checkpoint_dir": "experiments/retrieval/cross_attention_rerun_fixed/checkpoints",
+      "stopped_at": "2025-12-30T16:23:08.029418",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "ensemble_domain_specific_models",
+      "gpu": "unknown",
+      "script_path": "train_ensemble_meta_learner_tier1.py",
+      "output_dir": "experiments/retrieval/ensemble_domain_specific_models",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.029606",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "explainable_retrieval",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/explainable_retrieval",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.029733",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "counterfactual_data_augmentation",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/counterfactual_data_augmentation",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.029870",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cross_encoder_domain_specific",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/cross_encoder_domain_specific",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.030035",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "memory_augmented_retrieval",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/memory_augmented_retrieval",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.030167",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cross_encoder_finetuned",
+      "gpu": "1",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/cross_encoder_finetuned",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.030300",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "learned_index_structures",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/learned_index_structures",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.030422",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cosine_similarity_loss",
+      "gpu": "4",
+      "script_path": "train_phase2_cosine_loss_tier1.py",
+      "output_dir": "experiments/retrieval/cosine_similarity_loss",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.030584",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "ensemble_weighted_fusion",
+      "gpu": "unknown",
+      "script_path": "train_ensemble_meta_learner_tier1.py",
+      "output_dir": "experiments/retrieval/ensemble_weighted_fusion",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.030688",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cross_attention_mechanism_v3",
+      "gpu": "4",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/cross_attention_mechanism_v3",
+      "checkpoint_dir": "experiments/retrieval/cross_attention_mechanism_v3/checkpoints",
+      "stopped_at": "2025-12-30T16:23:08.030841",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "learned_index_structures_fixed",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/learned_index_structures_fixed",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.030968",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hybrid_govt_alpha_0.7",
+      "gpu": "unknown",
+      "script_path": "train_hybrid_dynamic_fusion_ndcg_tier1.py",
+      "output_dir": "experiments/retrieval/hybrid_govt_alpha_0.7",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.031153",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hybrid_clapnq_alpha_0.3",
+      "gpu": "unknown",
+      "script_path": "train_hybrid_dynamic_fusion_ndcg_tier1.py",
+      "output_dir": "experiments/retrieval/hybrid_clapnq_alpha_0.3",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.031256",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "data_augmentation_retrieval",
+      "gpu": "unknown",
+      "script_path": "train_rl_query_augmentation_tier1.py",
+      "output_dir": "experiments/retrieval/data_augmentation_retrieval",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.031514",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hierarchical_routing",
+      "gpu": "4",
+      "script_path": "train_hierarchical_multigranularity_tier1.py",
+      "output_dir": "experiments/retrieval/hierarchical_routing",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.031687",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "learning_rate_1e5",
+      "gpu": "unknown",
+      "script_path": "train_phase2_cosine_loss_tier1.py",
+      "output_dir": "experiments/retrieval/learning_rate_1e5",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.031898",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "reinforcement_learning_adaptive_short",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/reinforcement_learning_adaptive_short",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.031955",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "multistage_retrieval_base",
+      "gpu": "unknown",
+      "script_path": "train_nas_retrieval_tier1.py",
+      "output_dir": "experiments/retrieval/multistage_retrieval_base",
+      "checkpoint_dir": "experiments/retrieval/multistage_retrieval_base/checkpoints",
+      "stopped_at": "2025-12-30T16:23:08.032030",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cross_encoder_finetuned_ensemble",
+      "gpu": "3",
+      "script_path": "train_cross_encoder_finetuned_tier1.py",
+      "output_dir": "experiments/retrieval/cross_encoder_finetuned_ensemble",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.032198",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "ensemble_best_performing",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/ensemble_best_performing",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.032370",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hybrid_multi_alpha_0.7",
+      "gpu": "unknown",
+      "script_path": "train_hybrid_dynamic_fusion_ndcg_tier1.py",
+      "output_dir": "experiments/retrieval/hybrid_multi_alpha_0.7",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.032548",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "domain_specific_finetuning_cloud",
+      "gpu": "unknown",
+      "script_path": "train_cross_domain_transfer_tier1.py",
+      "output_dir": "experiments/retrieval/domain_specific_finetuning_cloud",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.032669",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "iterative_query_refinement",
+      "gpu": "3",
+      "script_path": "train_iterative_query_expansion_tier1.py",
+      "output_dir": "experiments/retrieval/iterative_query_refinement",
+      "checkpoint_dir": "experiments/retrieval/iterative_query_refinement/checkpoints",
+      "stopped_at": "2025-12-30T16:23:08.032818",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "baseline_3_epochs",
+      "gpu": "unknown",
+      "script_path": "unknown",
+      "output_dir": "experiments/retrieval/baseline_3_epochs",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.033182",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "ensemble_best_performing_short",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/ensemble_best_performing_short",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.033243",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "neural_ndcg_optimization",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/neural_ndcg_optimization",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.033400",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "tier1_temporal_memory",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/tier1_temporal_memory",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.033448",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "momentum_contrastive_learning",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/momentum_contrastive_learning",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.033583",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "adversarial_curriculum_learning",
+      "gpu": "2",
+      "script_path": "train_adversarial_curriculum_tier1.py",
+      "output_dir": "experiments/retrieval/adversarial_curriculum_learning",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.033753",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "learned_reciprocal_rank_fusion",
+      "gpu": "3",
+      "script_path": "train_learned_rrf_tier1.py",
+      "output_dir": "experiments/retrieval/learned_reciprocal_rank_fusion",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.033932",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "meta_learning_adaptation",
+      "gpu": "3",
+      "script_path": "train_ensemble_meta_learner_tier1.py",
+      "output_dir": "experiments/retrieval/meta_learning_adaptation",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.034064",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "reinforcement_learning_human_feedback",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/reinforcement_learning_human_feedback",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.034191",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "learning_to_rank",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/learning_to_rank",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.034259",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "meta_learning_adaptation",
+      "gpu": "2",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/meta_learning_adaptation",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.034392",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hard_negatives_triplet_loss",
+      "gpu": "unknown",
+      "script_path": "unknown",
+      "output_dir": "experiments/retrieval/hard_negatives_triplet_loss",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.034570",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "graph_aware_retrieval_short",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/graph_aware_retrieval_short",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.034616",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cross_encoder_conversation_context",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/cross_encoder_conversation_context",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.034753",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "temporal_attention_mechanism",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/temporal_attention_mechanism",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.034885",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "domain_specific_finetuning_govt",
+      "gpu": "unknown",
+      "script_path": "train_cross_domain_transfer_tier1.py",
+      "output_dir": "experiments/retrieval/domain_specific_finetuning_govt",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.034999",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cross_encoder_reranking_evaluation",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/cross_encoder_reranking_evaluation",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.035165",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "rl_adaptive_retrieval_fixed",
+      "gpu": "2",
+      "script_path": "train_rl_query_augmentation_tier1.py",
+      "output_dir": "experiments/retrieval/rl_adaptive_retrieval_fixed",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.035318",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "domain_specific_clapnq_hard_negatives",
+      "gpu": "unknown",
+      "script_path": "train_cross_domain_transfer_tier1.py",
+      "output_dir": "experiments/retrieval/domain_specific_clapnq_hard_negatives",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.035445",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "multistage_hierarchical_retrieval",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/multistage_hierarchical_retrieval",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.035580",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hybrid_multi_alpha_0.3",
+      "gpu": "unknown",
+      "script_path": "train_hybrid_dynamic_fusion_ndcg_tier1.py",
+      "output_dir": "experiments/retrieval/hybrid_multi_alpha_0.3",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.035748",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "uncertainty_aware_retrieval_fixed",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/uncertainty_aware_retrieval_fixed",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.035891",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "reranking_clapnq",
+      "gpu": "unknown",
+      "script_path": "train_optimized_hybrid_reranking_tier1.py",
+      "output_dir": "experiments/retrieval/reranking_clapnq",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.036038",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "llm_query_expansion_constrained",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/llm_query_expansion_constrained",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.036240",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "domain_specific_finetuning_fiqa",
+      "gpu": "unknown",
+      "script_path": "train_cross_domain_transfer_tier1.py",
+      "output_dir": "experiments/retrieval/domain_specific_finetuning_fiqa",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.036363",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "adversarial_robustness_training",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/adversarial_robustness_training",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.036489",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cross_attention_mechanism",
+      "gpu": "2",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/cross_attention_mechanism",
+      "checkpoint_dir": "experiments/retrieval/cross_attention_mechanism/checkpoints",
+      "stopped_at": "2025-12-30T16:23:08.036638",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "prompt_based_retrieval",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/prompt_based_retrieval",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.036760",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hard_negatives_cosine_similarity",
+      "gpu": "unknown",
+      "script_path": "unknown",
+      "output_dir": "experiments/retrieval/hard_negatives_cosine_similarity",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.036956",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hybrid_govt_alpha_0.3",
+      "gpu": "unknown",
+      "script_path": "train_hybrid_dynamic_fusion_ndcg_tier1.py",
+      "output_dir": "experiments/retrieval/hybrid_govt_alpha_0.3",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.037131",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "reranking_govt",
+      "gpu": "unknown",
+      "script_path": "train_optimized_hybrid_reranking_tier1.py",
+      "output_dir": "experiments/retrieval/reranking_govt",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.037286",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "multistage_retrieval_2stage",
+      "gpu": "1",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/multistage_retrieval_2stage",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.037380",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "reranking_multi_domain",
+      "gpu": "unknown",
+      "script_path": "train_multitask_retrieval_tier1.py",
+      "output_dir": "experiments/retrieval/reranking_multi_domain",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.037489",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hybrid_clapnq_alpha_0.7",
+      "gpu": "unknown",
+      "script_path": "train_hybrid_dynamic_fusion_ndcg_tier1.py",
+      "output_dir": "experiments/retrieval/hybrid_clapnq_alpha_0.7",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.037674",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "domain_specific_finetuning_clapnq",
+      "gpu": "unknown",
+      "script_path": "train_cross_domain_transfer_tier1.py",
+      "output_dir": "experiments/retrieval/domain_specific_finetuning_clapnq",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.037796",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "temporal_memory_retrieval_fixed",
+      "gpu": "5",
+      "script_path": "train_catr_temporal_retrieval_tier1.py",
+      "output_dir": "experiments/retrieval/temporal_memory_retrieval_fixed",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.037953",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "enhanced_contrastive_learning",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/enhanced_contrastive_learning",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.038113",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "foundation_model_distillation_fixed",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/foundation_model_distillation_fixed",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.038241",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "llm_query_expansion",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/llm_query_expansion",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.038334",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cross_attention_query_document",
+      "gpu": "unknown",
+      "script_path": "train_cross_encoder_finetuned_tier1.py",
+      "output_dir": "experiments/retrieval/cross_attention_query_document",
+      "checkpoint_dir": "experiments/retrieval/cross_attention_query_document/checkpoints",
+      "stopped_at": "2025-12-30T16:23:08.038521",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hierarchical_routing",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/hierarchical_routing",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.038568",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "baseline_bge_finetuned",
+      "gpu": "unknown",
+      "script_path": "unknown",
+      "output_dir": "experiments/retrieval/baseline_bge_finetuned",
+      "checkpoint_dir": "experiments/retrieval/baseline_bge_finetuned/checkpoint_epoch_3",
+      "stopped_at": "2025-12-30T16:23:08.038880",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "conversation_aware_attention",
+      "gpu": "1",
+      "script_path": "train_graph_aware_tier1.py",
+      "output_dir": "experiments/retrieval/conversation_aware_attention",
+      "checkpoint_dir": "experiments/retrieval/conversation_aware_attention/checkpoints",
+      "stopped_at": "2025-12-30T16:23:08.039063",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "differentiable_retrieval",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/differentiable_retrieval",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.039192",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "adversarial_curriculum_learning",
+      "gpu": "3",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/adversarial_curriculum_learning",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.039341",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "knowledge_distillation_llm",
+      "gpu": "3",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/knowledge_distillation_llm",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.039476",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "multitask_learning_retrieval",
+      "gpu": "1",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/multitask_learning_retrieval",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.039608",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "reinforcement_learning_adaptive",
+      "gpu": "4",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/reinforcement_learning_adaptive",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.039734",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cross_encoder_large_model",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/cross_encoder_large_model",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.039864",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "neural_architecture_search",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/neural_architecture_search",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.039983",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "graph_enhanced_reranking",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/graph_enhanced_reranking",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.040108",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "learned_reciprocal_rank_fusion",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/learned_reciprocal_rank_fusion",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.040156",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cross_encoder_reranking",
+      "gpu": "unknown",
+      "script_path": "train_optimized_hybrid_reranking_tier1.py",
+      "output_dir": "experiments/retrieval/cross_encoder_reranking",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.040415",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "specialized_ensemble_meta_learner",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/specialized_ensemble_meta_learner",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.040584",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "multistage_retrieval_2stage",
+      "gpu": "1",
+      "script_path": "train_multistage_llm_scoring_tier1.py",
+      "output_dir": "experiments/retrieval/multistage_retrieval_2stage",
+      "checkpoint_dir": "experiments/retrieval/multistage_retrieval_2stage/checkpoints",
+      "stopped_at": "2025-12-30T16:23:08.040751",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "iterative_refinement_improved",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/iterative_refinement_improved",
+      "checkpoint_dir": "experiments/retrieval/iterative_refinement_improved/checkpoints",
+      "stopped_at": "2025-12-30T16:23:08.040849",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "logs",
+      "gpu": "unknown",
+      "script_path": "unknown",
+      "output_dir": "experiments/retrieval/logs",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.041120",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hard_negatives_mining_5",
+      "gpu": "unknown",
+      "script_path": "unknown",
+      "output_dir": "experiments/retrieval/hard_negatives_mining_5",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.041308",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "graph_aware_retrieval",
+      "gpu": "1",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/graph_aware_retrieval",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.041437",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "query_expansion_clapnq",
+      "gpu": "unknown",
+      "script_path": "train_iterative_query_expansion_tier1.py",
+      "output_dir": "experiments/retrieval/query_expansion_clapnq",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.041525",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hybrid_clapnq_alpha_0.5",
+      "gpu": "unknown",
+      "script_path": "train_hybrid_dynamic_fusion_ndcg_tier1.py",
+      "output_dir": "experiments/retrieval/hybrid_clapnq_alpha_0.5",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.041617",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hybrid_lexical_semantic_reranking",
+      "gpu": "unknown",
+      "script_path": "train_hybrid_dynamic_fusion_ndcg_tier1.py",
+      "output_dir": "experiments/retrieval/hybrid_lexical_semantic_reranking",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.041779",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "multi_granularity_encoding",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/multi_granularity_encoding",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.041909",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "enhanced_contrastive_hard_negatives_fixed",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/enhanced_contrastive_hard_negatives_fixed",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.042040",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cross_attention_query_document_fixed",
+      "gpu": "1",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/cross_attention_query_document_fixed",
+      "checkpoint_dir": "experiments/retrieval/cross_attention_query_document_fixed/checkpoints",
+      "stopped_at": "2025-12-30T16:23:08.042186",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hybrid_lexical_semantic_fusion",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/hybrid_lexical_semantic_fusion",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.042331",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "trained_model_clapnq",
+      "gpu": "unknown",
+      "script_path": "train_rlhf_retrieval_constrained_tier1.py",
+      "output_dir": "experiments/retrieval/trained_model_clapnq",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.042532",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "query_expansion_multi_domain",
+      "gpu": "unknown",
+      "script_path": "train_iterative_query_expansion_tier1.py",
+      "output_dir": "experiments/retrieval/query_expansion_multi_domain",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.042620",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "enhanced_contrastive_improved",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/enhanced_contrastive_improved",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.042738",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "llm_query_expansion_gpt4",
+      "gpu": "2",
+      "script_path": "train_iterative_query_expansion_tier1.py",
+      "output_dir": "experiments/retrieval/llm_query_expansion_gpt4",
+      "checkpoint_dir": "experiments/retrieval/llm_query_expansion_gpt4/checkpoints",
+      "stopped_at": "2025-12-30T16:23:08.042880",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "trained_model_cloud",
+      "gpu": "unknown",
+      "script_path": "train_rlhf_retrieval_constrained_tier1.py",
+      "output_dir": "experiments/retrieval/trained_model_cloud",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.043071",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "learning_to_rank_listwise_fixed",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/learning_to_rank_listwise_fixed",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.043214",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "large_model_finetuning",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/large_model_finetuning",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.043271",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "uncertainty_aware_retrieval",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/uncertainty_aware_retrieval",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.043406",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "ensemble_advanced_methods",
+      "gpu": "unknown",
+      "script_path": "train_ensemble_meta_learner_tier1.py",
+      "output_dir": "experiments/retrieval/ensemble_advanced_methods",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.043596",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "multistage_retrieval_3stage_finetuned",
+      "gpu": "5",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/multistage_retrieval_3stage_finetuned",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.043679",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "query_expansion_govt",
+      "gpu": "unknown",
+      "script_path": "train_iterative_query_expansion_tier1.py",
+      "output_dir": "experiments/retrieval/query_expansion_govt",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.043767",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "pseudo_relevance_feedback",
+      "gpu": "5",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/pseudo_relevance_feedback",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.043900",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "multi_turn_state_tracking_fixed",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/multi_turn_state_tracking_fixed",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.044024",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "foundation_model_distillation",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/foundation_model_distillation",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.044162",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "query_decomposition_retrieval",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/query_decomposition_retrieval",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.044299",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "baseline_5_epochs",
+      "gpu": "unknown",
+      "script_path": "unknown",
+      "output_dir": "experiments/retrieval/baseline_5_epochs",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.044560",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "knowledge_graph_enhanced",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/knowledge_graph_enhanced",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.044685",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "advanced_contrastive_hierarchical",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/advanced_contrastive_hierarchical",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.044850",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "enhanced_contrastive_hard_negatives",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/enhanced_contrastive_hard_negatives",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.044984",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "learning_to_rank_listwise",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/learning_to_rank_listwise",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.045108",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "model_scaling_bge_v2",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/model_scaling_bge_v2",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.045319",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hierarchical_multigranularity_retrieval",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/hierarchical_multigranularity_retrieval",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.045431",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "multitask_learning",
+      "gpu": "2",
+      "script_path": "train_multitask_retrieval_tier1.py",
+      "output_dir": "experiments/retrieval/multitask_learning",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.045583",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "curriculum_contrastive_learning",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/curriculum_contrastive_learning",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.045721",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "mixture_of_experts_fixed",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/mixture_of_experts_fixed",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.045862",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "large_model_finetuning",
+      "gpu": "5",
+      "script_path": "train_bge_v2_large_asymmetric_tier1.py",
+      "output_dir": "experiments/retrieval/large_model_finetuning",
+      "checkpoint_dir": "experiments/retrieval/large_model_finetuning/checkpoints",
+      "stopped_at": "2025-12-30T16:23:08.046051",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "multistage_retrieval_base",
+      "gpu": "1",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/multistage_retrieval_base",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.046170",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "meta_learning_adaptation_fixed",
+      "gpu": "3",
+      "script_path": "train_ensemble_meta_learner_tier1.py",
+      "output_dir": "experiments/retrieval/meta_learning_adaptation_fixed",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.046338",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "multistage_retrieval_2stage_finetuned",
+      "gpu": "5",
+      "script_path": "train_multistage_llm_scoring_tier1.py",
+      "output_dir": "experiments/retrieval/multistage_retrieval_2stage_finetuned",
+      "checkpoint_dir": "experiments/retrieval/multistage_retrieval_2stage_finetuned/checkpoints",
+      "stopped_at": "2025-12-30T16:23:08.046544",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "trained_model_fiqa",
+      "gpu": "unknown",
+      "script_path": "train_rlhf_retrieval_constrained_tier1.py",
+      "output_dir": "experiments/retrieval/trained_model_fiqa",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.046755",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cross_encoder_evaluation",
+      "gpu": "unknown",
+      "script_path": "train_cross_encoder_finetuned_tier1.py",
+      "output_dir": "experiments/retrieval/cross_encoder_evaluation",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.046945",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hybrid_reranking_fusion",
+      "gpu": "unknown",
+      "script_path": "train_hybrid_dynamic_fusion_ndcg_tier1.py",
+      "output_dir": "experiments/retrieval/hybrid_reranking_fusion",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.047139",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "bge_large_model_finetuning",
+      "gpu": "unknown",
+      "script_path": "train_model_scaling_bge_v2_tier1.py",
+      "output_dir": "experiments/retrieval/bge_large_model_finetuning",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.047307",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cross_attention_query_document",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/cross_attention_query_document",
+      "checkpoint_dir": "experiments/retrieval/cross_attention_query_document/checkpoints",
+      "stopped_at": "2025-12-30T16:23:08.047511",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "curriculum_contrastive_learning_fixed",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/curriculum_contrastive_learning_fixed",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.047669",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "multistage_retrieval_3stage",
+      "gpu": "4",
+      "script_path": "train_multistage_llm_scoring_tier1.py",
+      "output_dir": "experiments/retrieval/multistage_retrieval_3stage",
+      "checkpoint_dir": "experiments/retrieval/multistage_retrieval_3stage/checkpoints",
+      "stopped_at": "2025-12-30T16:23:08.047892",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hierarchical_routing_fixed",
+      "gpu": "5",
+      "script_path": "train_hierarchical_multigranularity_tier1.py",
+      "output_dir": "experiments/retrieval/hierarchical_routing_fixed",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.048087",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "mixture_of_experts",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/mixture_of_experts",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.048245",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "continual_learning_adaptation",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/continual_learning_adaptation",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.048406",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hybrid_multi_alpha_0.5",
+      "gpu": "unknown",
+      "script_path": "train_hybrid_dynamic_fusion_ndcg_tier1.py",
+      "output_dir": "experiments/retrieval/hybrid_multi_alpha_0.5",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.048610",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "learning_rate_5e5",
+      "gpu": "unknown",
+      "script_path": "train_phase2_cosine_loss_tier1.py",
+      "output_dir": "experiments/retrieval/learning_rate_5e5",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.048850",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "trained_model_govt",
+      "gpu": "unknown",
+      "script_path": "train_rlhf_retrieval_constrained_tier1.py",
+      "output_dir": "experiments/retrieval/trained_model_govt",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.049071",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cross_attention_rerun_fixed_v2",
+      "gpu": "2",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/cross_attention_rerun_fixed_v2",
+      "checkpoint_dir": "experiments/retrieval/cross_attention_rerun_fixed_v2/checkpoints",
+      "stopped_at": "2025-12-30T16:23:08.049264",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "retrieval_as_generation",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/retrieval_as_generation",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.049410",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "test",
+      "gpu": "unknown",
+      "script_path": "train_test_time_scaling_tier1.py",
+      "output_dir": "experiments/retrieval/test",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.049561",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "reranking_cloud",
+      "gpu": "unknown",
+      "script_path": "train_optimized_hybrid_reranking_tier1.py",
+      "output_dir": "experiments/retrieval/reranking_cloud",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.049838",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "domain_specific_ensemble",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/domain_specific_ensemble",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.050001",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "qdit_transformer_architecture",
+      "gpu": "3",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/qdit_transformer_architecture",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.050162",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "rl_adaptive_retrieval",
+      "gpu": "5",
+      "script_path": "train_rl_query_augmentation_tier1.py",
+      "output_dir": "experiments/retrieval/rl_adaptive_retrieval",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.050337",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hybrid_govt_alpha_0.5",
+      "gpu": "unknown",
+      "script_path": "train_hybrid_dynamic_fusion_ndcg_tier1.py",
+      "output_dir": "experiments/retrieval/hybrid_govt_alpha_0.5",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.050552",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "cross_attention_query_document_fixed",
+      "gpu": "1",
+      "script_path": "train_cross_encoder_finetuned_tier1.py",
+      "output_dir": "experiments/retrieval/cross_attention_query_document_fixed",
+      "checkpoint_dir": "experiments/retrieval/cross_attention_query_document_fixed/checkpoints",
+      "stopped_at": "2025-12-30T16:23:08.050736",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "enhanced_multistage_llm_scoring",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/enhanced_multistage_llm_scoring",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.050947",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "domain_specific_govt_hard_negatives",
+      "gpu": "unknown",
+      "script_path": "train_cross_domain_transfer_tier1.py",
+      "output_dir": "experiments/retrieval/domain_specific_govt_hard_negatives",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.051114",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "domain_specific_finetuning_all_domains",
+      "gpu": "unknown",
+      "script_path": "train_cross_domain_transfer_tier1.py",
+      "output_dir": "experiments/retrieval/domain_specific_finetuning_all_domains",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.051261",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "causal_inference_retrieval_fixed",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/causal_inference_retrieval_fixed",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.051417",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "multi_turn_state_tracking",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/multi_turn_state_tracking",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.051552",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "differentiable_retrieval_fixed",
+      "gpu": "unknown",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/differentiable_retrieval_fixed",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.051680",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "hybrid_dynamic_fusion",
+      "gpu": "0",
+      "script_path": "train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval/hybrid_dynamic_fusion",
+      "checkpoint_dir": null,
+      "stopped_at": "2025-12-30T16:23:08.051818",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "curriculum_contrastive_learning_fixed",
+      "pid": "1350625",
+      "gpu": "1",
+      "script_path": "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_curriculum_contrastive_tier1.py",
+      "output_dir": "experiments/retrieval",
+      "command_template": "/home/prevanka/miniconda3/bin/python3 /home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_curriculum_contrastive_tier1.py --experiment_name curriculum_contrastive_learning_fixed --gpu 1 --output_dir experiments/retrieval --no-resume",
+      "stopped_at": "2025-12-30T16:24:49.357477",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "causal_inference_retrieval_fixed",
+      "pid": "1350626",
+      "gpu": "2",
+      "script_path": "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_causal_inference_tier1.py",
+      "output_dir": "experiments/retrieval",
+      "command_template": "/home/prevanka/miniconda3/bin/python3 /home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_causal_inference_tier1.py --experiment_name causal_inference_retrieval_fixed --gpu 2 --output_dir experiments/retrieval --no-resume",
+      "stopped_at": "2025-12-30T16:24:49.357495",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "uncertainty_aware_retrieval_fixed",
+      "pid": "1350627",
+      "gpu": "3",
+      "script_path": "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_uncertainty_aware_tier1.py",
+      "output_dir": "experiments/retrieval",
+      "command_template": "/home/prevanka/miniconda3/bin/python3 /home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_uncertainty_aware_tier1.py --experiment_name uncertainty_aware_retrieval_fixed --gpu 3 --output_dir experiments/retrieval --no-resume",
+      "stopped_at": "2025-12-30T16:24:49.357504",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "mixture_of_experts_fixed",
+      "pid": "1350628",
+      "gpu": "4",
+      "script_path": "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_mixture_experts_tier1.py",
+      "output_dir": "experiments/retrieval",
+      "command_template": "/home/prevanka/miniconda3/bin/python3 /home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_mixture_experts_tier1.py --experiment_name mixture_of_experts_fixed --gpu 4 --output_dir experiments/retrieval --no-resume",
+      "stopped_at": "2025-12-30T16:24:49.357510",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "multi_turn_state_tracking_fixed",
+      "pid": "1350629",
+      "gpu": "5",
+      "script_path": "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_state_tracking_tier1.py",
+      "output_dir": "experiments/retrieval",
+      "command_template": "/home/prevanka/miniconda3/bin/python3 /home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_state_tracking_tier1.py --experiment_name multi_turn_state_tracking_fixed --gpu 5 --output_dir experiments/retrieval --no-resume",
+      "stopped_at": "2025-12-30T16:24:49.357517",
+      "status": "stopped"
+    },
+    {
+      "experiment_name": "learned_index_structures_fixed",
+      "pid": "1352757",
+      "gpu": "1",
+      "script_path": "/home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_learned_indices_tier1.py",
+      "output_dir": "experiments/retrieval",
+      "command_template": "/home/prevanka/miniconda3/bin/python3 /home/prevanka/prati/su-mt-rag/mt-rag-benchmark/train_learned_indices_tier1.py --experiment_name learned_index_structures_fixed --gpu 1 --output_dir experiments/retrieval --no-resume",
+      "stopped_at": "2025-12-30T16:24:49.357522",
+      "status": "stopped"
+    }
+  ]
+}

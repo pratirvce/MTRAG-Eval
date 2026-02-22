@@ -1,0 +1,80 @@
+{
+  "experiments": {
+    "phase4_domain_specific_all": {
+      "status": "failed",
+      "started_at": "2025-11-28T17:53:42.319367",
+      "completed_at": "2025-11-28T17:53:47.789958",
+      "gpu_id": 1,
+      "log_file": "experiments/retrieval/phase4_domain_specific_all/training.log",
+      "error": "Process exited with code 2",
+      "last_updated": "2025-11-28T17:53:47.789940",
+      "config_file": "experiments/retrieval/phase4_domain_specific_all/config.json",
+      "return_code": 2
+    },
+    "phase4_domain_specific_fiqa": {
+      "status": "completed",
+      "started_at": "2025-11-28T17:53:42.324070",
+      "completed_at": "2025-11-28T18:24:28.330997",
+      "gpu_id": 2,
+      "log_file": "experiments/retrieval/phase4_domain_specific_fiqa/training.log",
+      "error": null,
+      "last_updated": "2025-11-28T18:24:28.330981",
+      "config_file": "experiments/retrieval/phase4_domain_specific_fiqa/config.json"
+    },
+    "phase4_domain_specific_clapnq": {
+      "status": "completed",
+      "started_at": "2025-11-28T17:53:42.329751",
+      "completed_at": "2025-11-28T19:25:12.703782",
+      "gpu_id": 3,
+      "log_file": "experiments/retrieval/phase4_domain_specific_clapnq/training.log",
+      "error": null,
+      "last_updated": "2025-11-28T19:25:12.703767",
+      "config_file": "experiments/retrieval/phase4_domain_specific_clapnq/config.json"
+    },
+    "phase4_bge_large": {
+      "status": "failed",
+      "started_at": "2025-11-28T17:53:42.334193",
+      "completed_at": "2025-11-28T17:53:49.040548",
+      "gpu_id": 4,
+      "log_file": "experiments/retrieval/phase4_bge_large/training.log",
+      "error": "Process exited with code 1",
+      "last_updated": "2025-11-28T17:53:49.040531",
+      "config_file": "experiments/retrieval/phase4_bge_large/config.json",
+      "return_code": 1
+    },
+    "phase4_hard_negatives_5neg": {
+      "status": "completed",
+      "started_at": "2025-11-28T17:53:42.338652",
+      "completed_at": "2025-12-01T21:38:24.233908",
+      "gpu_id": 5,
+      "log_file": "experiments/retrieval/phase4_hard_negatives_5neg/training.log",
+      "error": null,
+      "last_updated": "2025-12-01T21:38:24.233895",
+      "config_file": "experiments/retrieval/phase4_hard_negatives_5neg/config.json"
+    },
+    "phase4_hard_negatives_triplet": {
+      "status": "failed",
+      "started_at": "2025-11-28T17:53:52.343651",
+      "completed_at": "2025-12-01T20:35:40.547245",
+      "gpu_id": 1,
+      "log_file": "experiments/retrieval/phase4_hard_negatives_triplet/training.log",
+      "error": "Process exited with code 1",
+      "last_updated": "2025-12-01T20:35:40.547197",
+      "config_file": "experiments/retrieval/phase4_hard_negatives_triplet/config.json",
+      "return_code": 1
+    },
+    "phase4_hard_negatives_cosine": {
+      "status": "completed",
+      "started_at": "2025-11-28T17:53:52.348746",
+      "completed_at": "2025-12-02T02:07:27.194398",
+      "gpu_id": 4,
+      "log_file": "experiments/retrieval/phase4_hard_negatives_cosine/training.log",
+      "error": null,
+      "last_updated": "2025-12-02T02:07:27.194378",
+      "config_file": "experiments/retrieval/phase4_hard_negatives_cosine/config.json"
+    }
+  },
+  "started_at": "2025-11-28T17:53:42.317612",
+  "last_updated": "2025-12-02T02:07:30.331038",
+  "completed_at": "2025-12-02T02:07:30.331015"
+}

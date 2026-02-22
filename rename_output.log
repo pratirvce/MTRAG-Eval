@@ -1,0 +1,183 @@
+================================================================================
+EXPERIMENT RENAMING TOOL
+================================================================================
+Mode: LIVE
+Experiments to rename: 152
+
+Found 152 existing experiments to rename
+
+Step 1: Renaming experiment directories...
+✅ Renamed: phase1_baseline → baseline_bge_finetuned
+✅ Renamed: phase1_epochs3 → baseline_3_epochs
+✅ Renamed: phase1_epochs5 → baseline_5_epochs
+✅ Renamed: phase2_augmentation → data_augmentation_retrieval
+✅ Renamed: phase2_lr1e5 → learning_rate_1e5
+✅ Renamed: phase2_lr5e5 → learning_rate_5e5
+✅ Renamed: phase2_cosine_loss → cosine_similarity_loss
+✅ Renamed: phase3_reranking → cross_encoder_reranking
+✅ Renamed: phase3_hybrid → hybrid_lexical_semantic_reranking
+✅ Renamed: phase3_hybrid_reranking → hybrid_reranking_fusion
+✅ Renamed: phase4_domain_specific_clapnq → domain_specific_finetuning_clapnq
+✅ Renamed: phase4_domain_specific_fiqa → domain_specific_finetuning_fiqa
+✅ Renamed: phase4_domain_specific_govt → domain_specific_finetuning_govt
+✅ Renamed: phase4_domain_specific_cloud → domain_specific_finetuning_cloud
+✅ Renamed: phase4_domain_specific_all → domain_specific_finetuning_all_domains
+✅ Renamed: phase4_hard_negatives_5neg → hard_negatives_mining_5
+✅ Renamed: phase4_hard_negatives_cosine → hard_negatives_cosine_similarity
+✅ Renamed: phase4_hard_negatives_triplet → hard_negatives_triplet_loss
+✅ Renamed: phase4_bge_large → bge_large_model_finetuning
+✅ Renamed: phase5_query_expansion_clapnq → query_expansion_clapnq
+✅ Renamed: phase5_query_expansion_govt → query_expansion_govt
+✅ Renamed: phase5_query_expansion_multi → query_expansion_multi_domain
+✅ Renamed: phase5_ensemble_domain_specific → ensemble_domain_specific_models
+✅ Renamed: phase5_ensemble_weighted → ensemble_weighted_fusion
+✅ Renamed: phase5_reranking_clapnq → reranking_clapnq
+✅ Renamed: phase5_reranking_govt → reranking_govt
+✅ Renamed: phase5_reranking_cloud → reranking_cloud
+✅ Renamed: phase5_reranking_multi_domain → reranking_multi_domain
+✅ Renamed: phase5_domain_specific_clapnq_hard_negatives → domain_specific_clapnq_hard_negatives
+✅ Renamed: phase5_domain_specific_govt_hard_negatives → domain_specific_govt_hard_negatives
+✅ Renamed: phase5_hybrid_clapnq_alpha0.3 → hybrid_clapnq_alpha_0.3
+✅ Renamed: phase5_hybrid_clapnq_alpha0.5 → hybrid_clapnq_alpha_0.5
+✅ Renamed: phase5_hybrid_clapnq_alpha0.7 → hybrid_clapnq_alpha_0.7
+✅ Renamed: phase5_hybrid_govt_alpha0.3 → hybrid_govt_alpha_0.3
+✅ Renamed: phase5_hybrid_govt_alpha0.5 → hybrid_govt_alpha_0.5
+✅ Renamed: phase5_hybrid_govt_alpha0.7 → hybrid_govt_alpha_0.7
+✅ Renamed: phase5_hybrid_multi_alpha0.3 → hybrid_multi_alpha_0.3
+✅ Renamed: phase5_hybrid_multi_alpha0.5 → hybrid_multi_alpha_0.5
+✅ Renamed: phase5_hybrid_multi_alpha0.7 → hybrid_multi_alpha_0.7
+✅ Renamed: phase6_llm_query_expansion_gpt4_multi → llm_query_expansion_gpt4
+✅ Renamed: phase6_multistage_2stage → multistage_retrieval_2stage
+✅ Renamed: phase6_multistage_2stage_finetuned → multistage_retrieval_2stage_finetuned
+✅ Renamed: phase6_cross_encoder_evaluation → cross_encoder_evaluation
+✅ Renamed: phase6_cross_encoder_finetuned_ensemble → cross_encoder_finetuned_ensemble
+✅ Renamed: phase7_conversation_aware_attention → conversation_aware_attention
+✅ Renamed: phase7_iterative_refinement → iterative_query_refinement
+✅ Renamed: phase8_cross_attention_query_document → cross_attention_query_document
+✅ Renamed: phase8_cross_attention_query_document_fixed → cross_attention_query_document_fixed
+✅ Renamed: tier1_contrastive_learning → contrastive_learning_finetuning
+✅ Renamed: tier1_meta_learning → meta_learning_adaptation
+✅ Renamed: tier1_adversarial_curriculum → adversarial_curriculum_learning
+✅ Renamed: tier1_cross_encoder_evaluation → cross_encoder_reranking_evaluation
+✅ Renamed: tier1_cross_encoder_large → cross_encoder_large_model
+✅ Renamed: tier1_cross_encoder_domain_specific → cross_encoder_domain_specific
+✅ Renamed: tier1_cross_encoder_finetuned → cross_encoder_finetuned
+✅ Renamed: tier1_hierarchical_multigranularity → hierarchical_multigranularity_retrieval
+✅ Renamed: tier1_iterative_refinement_improved → iterative_refinement_improved
+✅ Renamed: tier1_cross_attention → cross_attention_mechanism
+✅ Renamed: tier1_cross_attention_fixed_v3 → cross_attention_mechanism_v3
+⚠️  Warning: experiments/retrieval/cross_attention_query_document already exists, skipping tier1_cross_attention_query_document
+⚠️  Warning: experiments/retrieval/cross_attention_query_document_fixed already exists, skipping tier1_cross_attention_query_document_fixed
+✅ Renamed: tier1_cross_attention_rerun → cross_attention_rerun
+✅ Renamed: tier1_cross_attention_rerun_fixed → cross_attention_rerun_fixed
+✅ Renamed: tier1_cross_attention_rerun_fixed_v2 → cross_attention_rerun_fixed_v2
+✅ Renamed: tier1_llm_distillation → knowledge_distillation_llm
+✅ Renamed: tier1_learning_to_rank_listwise → learning_to_rank_listwise
+✅ Renamed: tier1_learning_to_rank_listwise_fixed → learning_to_rank_listwise_fixed
+✅ Renamed: tier1_synthetic_data → synthetic_data_augmentation
+✅ Renamed: tier1_cross_domain_transfer → cross_domain_transfer_learning
+✅ Renamed: tier1_semantic_drift → semantic_drift_adaptation
+✅ Renamed: tier1_causal_inference → causal_inference_retrieval
+✅ Renamed: tier1_causal_inference_fixed → causal_inference_retrieval_fixed
+✅ Renamed: tier1_explainable_retrieval → explainable_retrieval
+✅ Renamed: tier1_counterfactual_augmentation → counterfactual_data_augmentation
+✅ Renamed: tier1_memory_augmented → memory_augmented_retrieval
+✅ Renamed: tier1_learned_indices → learned_index_structures
+✅ Renamed: tier1_learned_indices_fixed → learned_index_structures_fixed
+✅ Renamed: tier1_momentum_contrastive → momentum_contrastive_learning
+✅ Renamed: tier1_rlhf_retrieval → reinforcement_learning_human_feedback
+✅ Renamed: tier1_temporal_attention → temporal_attention_mechanism
+✅ Renamed: tier1_adversarial_robustness → adversarial_robustness_training
+✅ Renamed: tier1_prompt_based_retrieval → prompt_based_retrieval
+✅ Renamed: tier1_enhanced_contrastive → enhanced_contrastive_learning
+✅ Renamed: tier1_enhanced_contrastive_hardnegatives → enhanced_contrastive_hard_negatives
+✅ Renamed: tier1_enhanced_contrastive_hardnegatives_fixed → enhanced_contrastive_hard_negatives_fixed
+✅ Renamed: tier1_enhanced_contrastive_improved → enhanced_contrastive_improved
+✅ Renamed: tier1_differentiable_retrieval → differentiable_retrieval
+✅ Renamed: tier1_differentiable_retrieval_fixed → differentiable_retrieval_fixed
+✅ Renamed: tier1_rl_adaptive_retrieval → reinforcement_learning_adaptive
+✅ Renamed: tier1_rl_adaptive → reinforcement_learning_adaptive_short
+✅ Renamed: tier1_nas_retrieval → neural_architecture_search
+✅ Renamed: tier1_graph_enhanced_reranking → graph_enhanced_reranking
+✅ Renamed: tier1_graph_enhanced_reranking_fixed → graph_enhanced_reranking_fixed
+✅ Renamed: tier1_multi_granularity → multi_granularity_encoding
+✅ Renamed: tier1_hybrid_lexical_semantic → hybrid_lexical_semantic_fusion
+✅ Renamed: tier1_uncertainty_aware → uncertainty_aware_retrieval
+✅ Renamed: tier1_uncertainty_aware_fixed → uncertainty_aware_retrieval_fixed
+✅ Renamed: tier1_foundation_distillation → foundation_model_distillation
+✅ Renamed: tier1_foundation_distillation_fixed → foundation_model_distillation_fixed
+✅ Renamed: tier1_query_decomposition → query_decomposition_retrieval
+✅ Renamed: tier1_knowledge_graph → knowledge_graph_enhanced
+✅ Renamed: tier1_curriculum_contrastive → curriculum_contrastive_learning
+✅ Renamed: tier1_curriculum_contrastive_fixed → curriculum_contrastive_learning_fixed
+✅ Renamed: tier1_mixture_experts → mixture_of_experts
+✅ Renamed: tier1_mixture_experts_fixed → mixture_of_experts_fixed
+✅ Renamed: tier1_continual_learning → continual_learning_adaptation
+✅ Renamed: tier1_retrieval_as_generation → retrieval_as_generation
+✅ Renamed: tier1_multi_turn_state_tracking → multi_turn_state_tracking
+✅ Renamed: tier1_multi_turn_state_tracking_fixed → multi_turn_state_tracking_fixed
+✅ Renamed: tier1_graph_aware_retrieval → graph_aware_retrieval
+✅ Renamed: tier1_graph_aware → graph_aware_retrieval_short
+✅ Renamed: tier1_pseudo_relevance_feedback → pseudo_relevance_feedback
+✅ Renamed: tier1_qdit_transformer → qdit_transformer_architecture
+✅ Renamed: tier1_multitask_retrieval → multitask_learning_retrieval
+✅ Renamed: tier1_ensemble_best_methods → ensemble_best_performing
+✅ Renamed: tier1_ensemble_best → ensemble_best_performing_short
+✅ Renamed: tier1_hierarchical_routing → hierarchical_routing
+✅ Renamed: tier1_learned_rrf → learned_reciprocal_rank_fusion
+✅ Renamed: tier1_neural_ndcg → neural_ndcg_optimization
+⚠️  Warning: experiments/retrieval/multistage_retrieval already exists, skipping tier1_multistage
+⚠️  Warning: experiments/retrieval/multistage_retrieval_2stage already exists, skipping tier1_multistage_2stage
+✅ Renamed: tier1_multistage_3stage_finetuned → multistage_retrieval_3stage_finetuned
+✅ Renamed: tier1_large_model → large_model_finetuning
+✅ Renamed: tier1_learning_to_rank → learning_to_rank
+✅ Renamed: tier1_llm_query_expansion → llm_query_expansion
+⚠️  Warning: experiments/retrieval/large_model_finetuning already exists, skipping best_paper_large_model_finetuning
+⚠️  Warning: experiments/retrieval/adversarial_curriculum_learning already exists, skipping best_paper_adversarial_curriculum
+⚠️  Warning: experiments/retrieval/meta_learning_adaptation already exists, skipping best_paper_meta_learning
+✅ Renamed: best_paper_meta_learning_fixed → meta_learning_adaptation_fixed
+⚠️  Warning: experiments/retrieval/hierarchical_routing already exists, skipping best_paper_hierarchical_routing
+✅ Renamed: best_paper_hierarchical_routing_fixed → hierarchical_routing_fixed
+✅ Renamed: best_paper_llm_distillation → llm_distillation
+⚠️  Warning: experiments/retrieval/graph_aware_retrieval already exists, skipping best_paper_graph_aware_retrieval
+⚠️  Warning: experiments/retrieval/learned_reciprocal_rank_fusion already exists, skipping best_paper_learned_rrf
+✅ Renamed: best_paper_rl_adaptive_retrieval → rl_adaptive_retrieval
+✅ Renamed: best_paper_rl_adaptive_retrieval_fixed → rl_adaptive_retrieval_fixed
+✅ Renamed: best_paper_temporal_memory → temporal_memory_retrieval
+✅ Renamed: best_paper_temporal_memory_fixed → temporal_memory_retrieval_fixed
+✅ Renamed: best_paper_multitask_retrieval → multitask_learning
+✅ Renamed: task_a_hybrid_dynamic_fusion → hybrid_dynamic_fusion
+✅ Renamed: task_a_multistage_hierarchical_retrieval → multistage_hierarchical_retrieval
+✅ Renamed: task_a_cross_encoder_conversation_context → cross_encoder_conversation_context
+✅ Renamed: task_a_differentiable_end_to_end → differentiable_end_to_end
+✅ Renamed: task_a_advanced_contrastive_hierarchical → advanced_contrastive_hierarchical
+✅ Renamed: task_a_domain_specific_ensemble → domain_specific_ensemble
+✅ Renamed: task_a_enhanced_multistage_llm_scoring → enhanced_multistage_llm_scoring
+✅ Renamed: task_a_llm_query_expansion_constrained → llm_query_expansion_constrained
+✅ Renamed: task_a_model_scaling_bge_v2 → model_scaling_bge_v2
+✅ Renamed: task_a_specialized_ensemble_meta_learner → specialized_ensemble_meta_learner
+✅ Renamed: multistage_retrieval → multistage_retrieval_base
+✅ Renamed: tier2_multistage_3stage → multistage_retrieval_3stage
+✅ Renamed: tier2_ensemble_advanced → ensemble_advanced_methods
+Renamed 142 directories
+
+Step 2: Updating JSON status files...
+  ✅ Updated experiment_status.json
+  ✅ Updated tier1_experiments_status.json
+Error updating auto_fixed_experiments_status.json: Extra data: line 365 column 2 (char 11570)
+Updated 2 status files
+
+Step 3: Updating config.json files...
+Updated 107 config files
+
+✅ Saved mapping to experiment_name_mapping.json
+
+================================================================================
+RENAMING COMPLETE!
+================================================================================
+
+⚠️  IMPORTANT NOTES:
+1. Results files (results.json) are NOT affected - they don't contain experiment names
+2. Resume functionality will work with new names
+3. Check experiment_status.json and resume files to verify updates
+4. You may need to restart any running experiments with new names

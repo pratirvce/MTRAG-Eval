@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-12-16T23:59:10.419428",
+  "failed_experiments": [
+    {
+      "name": "unknown",
+      "type": "llm_expansion",
+      "pid": 2732609,
+      "gpu_id": null,
+      "config": null,
+      "cmd": "grep --color=auto -E python.*train_llm_query_expansion.py",
+      "status": "stopped",
+      "exit_code": null,
+      "errors": [],
+      "detected_at": "2025-12-16T23:59:10.418966",
+      "log_file": "experiments/retrieval/unknown/training.log"
+    }
+  ],
+  "total_failed": 1
+}

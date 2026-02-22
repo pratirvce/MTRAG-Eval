@@ -1,0 +1,523 @@
+{
+  "experiment_statuses": {
+    "tier1_enhanced_contrastive_hardnegatives_fixed": {
+      "name": "tier1_enhanced_contrastive_hardnegatives_fixed",
+      "status": "failed",
+      "gpu": 0,
+      "pid": 3839905,
+      "start_time": "2025-12-20T14:11:01.147601",
+      "error": "CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 2.44 MiB is free. Process 434367 has 254.00 MiB memory in use. Process 3842571 has 22.55 GiB memory in use. Including non-PyTorch memory, this process has 782.00 MiB memory in use. Of the allocated memory 431.49 MiB is allocated by PyTorch, and 44.51 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+      "retry_count": 1
+    },
+    "tier1_learning_to_rank_listwise_fixed": {
+      "name": "tier1_learning_to_rank_listwise_fixed",
+      "status": "failed",
+      "gpu": 3,
+      "pid": 3060702,
+      "start_time": "2025-12-19T01:24:54.509388",
+      "error": "Evaluator retriever is not set!",
+      "retry_count": 1
+    },
+    "best_paper_hierarchical_routing_fixed": {
+      "name": "best_paper_hierarchical_routing_fixed",
+      "status": "completed",
+      "gpu": 4,
+      "pid": 3062518,
+      "start_time": "2025-12-19T01:34:54.810133",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_cross_attention_query_document_fixed": {
+      "name": "tier1_cross_attention_query_document_fixed",
+      "status": "completed",
+      "gpu": 1,
+      "pid": 3064425,
+      "start_time": "2025-12-19T01:44:55.125767",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_adversarial_curriculum": {
+      "name": "tier1_adversarial_curriculum",
+      "status": "completed",
+      "gpu": 3,
+      "pid": 3069256,
+      "start_time": "2025-12-19T02:14:55.926746",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_graph_aware_retrieval": {
+      "name": "tier1_graph_aware_retrieval",
+      "status": "completed",
+      "gpu": 1,
+      "pid": 3070106,
+      "start_time": "2025-12-19T02:19:56.080944",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_llm_distillation": {
+      "name": "tier1_llm_distillation",
+      "status": "completed",
+      "gpu": 3,
+      "pid": 3070107,
+      "start_time": "2025-12-19T02:19:56.083768",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_multitask_retrieval": {
+      "name": "tier1_multitask_retrieval",
+      "status": "completed",
+      "gpu": 1,
+      "pid": 3072618,
+      "start_time": "2025-12-19T02:34:56.510017",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_enhanced_contrastive": {
+      "name": "tier1_enhanced_contrastive",
+      "status": "failed",
+      "gpu": 2,
+      "pid": 3843868,
+      "start_time": "2025-12-20T15:06:57.631714",
+      "error": "Processed 2 negative embeddings but expected 1",
+      "retry_count": 1
+    },
+    "tier1_neural_ndcg": {
+      "name": "tier1_neural_ndcg",
+      "status": "running",
+      "gpu": 0,
+      "pid": 1352756,
+      "start_time": "2025-12-30T16:23:54.459141",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_curriculum_contrastive_fixed": {
+      "name": "tier1_curriculum_contrastive_fixed",
+      "status": "running",
+      "gpu": 1,
+      "pid": 1350625,
+      "start_time": "2025-12-30T16:22:53.496495",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_causal_inference_fixed": {
+      "name": "tier1_causal_inference_fixed",
+      "status": "running",
+      "gpu": 2,
+      "pid": 1350626,
+      "start_time": "2025-12-30T16:22:53.499795",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_uncertainty_aware_fixed": {
+      "name": "tier1_uncertainty_aware_fixed",
+      "status": "running",
+      "gpu": 3,
+      "pid": 1350627,
+      "start_time": "2025-12-30T16:22:53.503405",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_counterfactual_augmentation": {
+      "name": "tier1_counterfactual_augmentation",
+      "status": "failed",
+      "gpu": 5,
+      "pid": 3961369,
+      "start_time": "2025-12-20T16:22:35.055032",
+      "error": "element 0 of tensors does not require grad and does not have a grad_fn",
+      "retry_count": 1
+    },
+    "tier1_mixture_experts_fixed": {
+      "name": "tier1_mixture_experts_fixed",
+      "status": "running",
+      "gpu": 4,
+      "pid": 1350628,
+      "start_time": "2025-12-30T16:22:53.507055",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_semantic_drift": {
+      "name": "tier1_semantic_drift",
+      "status": "failed",
+      "gpu": 5,
+      "pid": 3996091,
+      "start_time": "2025-12-20T16:57:57.390773",
+      "error": "element 0 of tensors does not require grad and does not have a grad_fn",
+      "retry_count": 1
+    },
+    "tier1_multi_granularity": {
+      "name": "tier1_multi_granularity",
+      "status": "failed",
+      "gpu": 2,
+      "pid": 4041669,
+      "start_time": "2025-12-20T17:53:37.061537",
+      "error": "element 0 of tensors does not require grad and does not have a grad_fn",
+      "retry_count": 1
+    },
+    "tier1_hybrid_lexical_semantic": {
+      "name": "tier1_hybrid_lexical_semantic",
+      "status": "completed",
+      "gpu": 2,
+      "pid": 4072703,
+      "start_time": "2025-12-20T18:29:01.292205",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_momentum_contrastive": {
+      "name": "tier1_momentum_contrastive",
+      "status": "completed",
+      "gpu": 5,
+      "pid": 4093386,
+      "start_time": "2025-12-20T18:45:15.166858",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_memory_augmented": {
+      "name": "tier1_memory_augmented",
+      "status": "failed",
+      "gpu": 4,
+      "pid": 4099728,
+      "start_time": "2025-12-20T18:50:20.106411",
+      "error": "Process died without completing",
+      "retry_count": 1
+    },
+    "tier1_nas_retrieval": {
+      "name": "tier1_nas_retrieval",
+      "status": "completed",
+      "gpu": 2,
+      "pid": 4118022,
+      "start_time": "2025-12-20T19:05:37.719628",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_continual_learning": {
+      "name": "tier1_continual_learning",
+      "status": "completed",
+      "gpu": 5,
+      "pid": 4133027,
+      "start_time": "2025-12-20T19:19:52.951096",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_explainable_retrieval": {
+      "name": "tier1_explainable_retrieval",
+      "status": "completed",
+      "gpu": 5,
+      "pid": 4163228,
+      "start_time": "2025-12-20T19:55:29.192365",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_adversarial_robustness": {
+      "name": "tier1_adversarial_robustness",
+      "status": "completed",
+      "gpu": 4,
+      "pid": 4164271,
+      "start_time": "2025-12-20T19:56:30.419344",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_temporal_attention": {
+      "name": "tier1_temporal_attention",
+      "status": "completed",
+      "gpu": 5,
+      "pid": 4763,
+      "start_time": "2025-12-20T20:32:05.950719",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_rl_adaptive_retrieval": {
+      "name": "tier1_rl_adaptive_retrieval",
+      "status": "completed",
+      "gpu": 4,
+      "pid": 10664,
+      "start_time": "2025-12-20T20:37:11.314810",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_meta_learning": {
+      "name": "tier1_meta_learning",
+      "status": "failed",
+      "gpu": 5,
+      "pid": 44512,
+      "start_time": "2025-12-20T21:07:43.843510",
+      "error": "Using the `Trainer` with `PyTorch` requires `accelerate>=0.26.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=0.26.0'`",
+      "retry_count": 1
+    },
+    "tier1_cross_domain_transfer": {
+      "name": "tier1_cross_domain_transfer",
+      "status": "completed",
+      "gpu": 5,
+      "pid": 61773,
+      "start_time": "2025-12-20T21:23:59.254106",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_prompt_based_retrieval": {
+      "name": "tier1_prompt_based_retrieval",
+      "status": "completed",
+      "gpu": 5,
+      "pid": 92618,
+      "start_time": "2025-12-20T22:01:38.264058",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_multi_turn_state_tracking_fixed": {
+      "name": "tier1_multi_turn_state_tracking_fixed",
+      "status": "running",
+      "gpu": 5,
+      "pid": 1350629,
+      "start_time": "2025-12-30T16:22:53.510665",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_learned_indices_fixed": {
+      "name": "tier1_learned_indices_fixed",
+      "status": "running",
+      "gpu": 1,
+      "pid": 1352757,
+      "start_time": "2025-12-30T16:23:54.462926",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_differentiable_retrieval_fixed": {
+      "name": "tier1_differentiable_retrieval_fixed",
+      "status": "failed",
+      "gpu": 2,
+      "pid": 1262888,
+      "start_time": "2025-12-30T15:15:32.466270",
+      "error": "Process died without completing",
+      "retry_count": 1
+    },
+    "tier1_foundation_distillation_fixed": {
+      "name": "tier1_foundation_distillation_fixed",
+      "status": "failed",
+      "gpu": 2,
+      "pid": 1339714,
+      "start_time": "2025-12-30T16:14:46.444323",
+      "error": "Process died without completing",
+      "retry_count": 1
+    },
+    "tier1_graph_enhanced_reranking_fixed": {
+      "name": "tier1_graph_enhanced_reranking_fixed",
+      "status": "failed",
+      "gpu": 3,
+      "pid": 1339715,
+      "start_time": "2025-12-30T16:14:46.447967",
+      "error": "Process died without completing",
+      "retry_count": 1
+    },
+    "tier1_enhanced_contrastive_improved": {
+      "name": "tier1_enhanced_contrastive_improved",
+      "status": "failed",
+      "gpu": 4,
+      "pid": 1331604,
+      "start_time": "2025-12-30T16:08:37.864240",
+      "error": "Process died without completing",
+      "retry_count": 1
+    },
+    "task_a_enhanced_multistage_llm_scoring": {
+      "name": "task_a_enhanced_multistage_llm_scoring",
+      "status": "failed",
+      "gpu": 3,
+      "pid": 1308159,
+      "start_time": "2025-12-30T15:48:09.140254",
+      "error": "Process died without completing",
+      "retry_count": 1
+    },
+    "task_a_advanced_contrastive_hierarchical": {
+      "name": "task_a_advanced_contrastive_hierarchical",
+      "status": "failed",
+      "gpu": 4,
+      "pid": 1339716,
+      "start_time": "2025-12-30T16:14:46.451588",
+      "error": "Process died without completing",
+      "retry_count": 1
+    },
+    "task_a_model_scaling_bge_v2": {
+      "name": "task_a_model_scaling_bge_v2",
+      "status": "failed",
+      "gpu": 5,
+      "pid": 1308161,
+      "start_time": "2025-12-30T15:48:09.146955",
+      "error": "Process died without completing",
+      "retry_count": 1
+    },
+    "task_a_specialized_ensemble_meta_learner": {
+      "name": "task_a_specialized_ensemble_meta_learner",
+      "status": "failed",
+      "gpu": 4,
+      "pid": 1338428,
+      "start_time": "2025-12-30T16:13:45.044434",
+      "error": "Process died without completing",
+      "retry_count": 1
+    },
+    "task_a_llm_query_expansion_constrained": {
+      "name": "task_a_llm_query_expansion_constrained",
+      "status": "failed",
+      "gpu": 5,
+      "pid": 1332611,
+      "start_time": "2025-12-30T16:09:39.209238",
+      "error": "Process died without completing",
+      "retry_count": 1
+    }
+  },
+  "last_updated": "2025-12-30T16:24:24.077018"
+}rror": null,
+      "retry_count": 0
+    },
+    "tier1_continual_learning": {
+      "name": "tier1_continual_learning",
+      "status": "completed",
+      "gpu": 5,
+      "pid": 4133027,
+      "start_time": "2025-12-20T19:19:12.547080",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_explainable_retrieval": {
+      "name": "tier1_explainable_retrieval",
+      "status": "completed",
+      "gpu": 5,
+      "pid": 4163228,
+      "start_time": "2025-12-20T19:54:43.144792",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_adversarial_robustness": {
+      "name": "tier1_adversarial_robustness",
+      "status": "completed",
+      "gpu": 4,
+      "pid": 4164271,
+      "start_time": "2025-12-20T19:55:43.996104",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_temporal_attention": {
+      "name": "tier1_temporal_attention",
+      "status": "completed",
+      "gpu": 5,
+      "pid": 4763,
+      "start_time": "2025-12-20T20:31:12.494320",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_rl_adaptive_retrieval": {
+      "name": "tier1_rl_adaptive_retrieval",
+      "status": "completed",
+      "gpu": 4,
+      "pid": 10664,
+      "start_time": "2025-12-20T20:36:15.747727",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_meta_learning": {
+      "name": "tier1_meta_learning",
+      "status": "failed",
+      "gpu": 5,
+      "pid": 1329953,
+      "start_time": "2025-12-21T18:58:46.440699",
+      "error": "CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 23.59 GiB of which 11.12 MiB is free. Process 434367 has 254.00 MiB memory in use. Process 1289779 has 17.06 GiB memory in use. Process 1320358 has 2.77 GiB memory in use. Including non-PyTorch memory, this process has 3.47 GiB memory in use. Of the allocated memory 3.06 GiB is allocated by PyTorch, and 119.77 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+      "retry_count": 1
+    },
+    "tier1_cross_domain_transfer": {
+      "name": "tier1_cross_domain_transfer",
+      "status": "completed",
+      "gpu": 5,
+      "pid": 61773,
+      "start_time": "2025-12-20T21:23:45.963503",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_prompt_based_retrieval": {
+      "name": "tier1_prompt_based_retrieval",
+      "status": "completed",
+      "gpu": 5,
+      "pid": 92618,
+      "start_time": "2025-12-20T22:01:11.242062",
+      "error": null,
+      "retry_count": 0
+    },
+    "tier1_multi_turn_state_tracking_fixed": {
+      "name": "tier1_multi_turn_state_tracking_fixed",
+      "status": "failed",
+      "gpu": 2,
+      "pid": 130351,
+      "start_time": "2025-12-20T22:47:40.784126",
+      "error": "Process died without completing",
+      "retry_count": 1
+    },
+    "tier1_learned_indices_fixed": {
+      "name": "tier1_learned_indices_fixed",
+      "status": "failed",
+      "gpu": 4,
+      "pid": 897190,
+      "start_time": "2025-12-21T11:07:58.536207",
+      "error": "Process died without completing",
+      "retry_count": 1
+    },
+    "tier1_differentiable_retrieval_fixed": {
+      "name": "tier1_differentiable_retrieval_fixed",
+      "status": "failed",
+      "gpu": 5,
+      "pid": 1246447,
+      "start_time": "2025-12-21T17:13:09.147399",
+      "error": "Process died without completing",
+      "retry_count": 1
+    },
+    "tier1_enhanced_contrastive_improved": {
+      "name": "tier1_enhanced_contrastive_improved",
+      "status": "failed",
+      "gpu": 3,
+      "pid": 1268201,
+      "start_time": "2025-12-30T15:20:47.175586",
+      "error": "Process died without completing",
+      "retry_count": 1
+    },
+    "task_a_enhanced_multistage_llm_scoring": {
+      "name": "task_a_enhanced_multistage_llm_scoring",
+      "status": "failed",
+      "gpu": 4,
+      "pid": 1268202,
+      "start_time": "2025-12-30T15:20:47.177647",
+      "error": "Process died without completing",
+      "retry_count": 1
+    },
+    "task_a_advanced_contrastive_hierarchical": {
+      "name": "task_a_advanced_contrastive_hierarchical",
+      "status": "failed",
+      "gpu": 5,
+      "pid": 1268203,
+      "start_time": "2025-12-30T15:20:47.179508",
+      "error": "Process died without completing",
+      "retry_count": 1
+    },
+    "tier1_foundation_distillation_fixed": {
+      "name": "tier1_foundation_distillation_fixed",
+      "status": "failed",
+      "gpu": 1,
+      "pid": 1283150,
+      "start_time": "2025-12-30T15:30:50.024158",
+      "error": "Process died without completing",
+      "retry_count": 1
+    },
+    "tier1_graph_enhanced_reranking_fixed": {
+      "name": "tier1_graph_enhanced_reranking_fixed",
+      "status": "failed",
+      "gpu": 2,
+      "pid": 1283151,
+      "start_time": "2025-12-30T15:30:50.025702",
+      "error": "Process died without completing",
+      "retry_count": 1
+    },
+    "task_a_model_scaling_bge_v2": {
+      "name": "task_a_model_scaling_bge_v2",
+      "status": "failed",
+      "gpu": 5,
+      "pid": 1308161,
+      "start_time": "2025-12-30T15:48:55.050762",
+      "error": "Process died without completing",
+      "retry_count": 1
+    }
+  },
+  "last_updated": "2025-12-30T16:24:24.076515"
+}

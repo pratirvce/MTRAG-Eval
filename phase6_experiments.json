@@ -1,0 +1,30 @@
+{
+  "max_gpus": 6,
+  "experiments": [
+    {
+      "name": "phase6_cross_encoder_finetuned_ensemble",
+      "script": "train_cross_encoder_finetuned.py",
+      "config": "experiments/retrieval/phase6_cross_encoder_finetuned_ensemble/config.json",
+      "priority": 1,
+      "resume": true,
+      "description": "Fine-tune cross-encoder on all domains - CRITICAL for nDCG improvement"
+    },
+    {
+      "name": "phase6_multistage_2stage",
+      "script": "train_multistage_retrieval.py",
+      "config": "experiments/retrieval/phase6_multistage_2stage/config.json",
+      "priority": 2,
+      "resume": true,
+      "description": "Multi-stage retrieval pipeline (dense + cross-encoder)"
+    },
+    {
+      "name": "phase6_llm_query_expansion_gpt4_multi",
+      "script": "train_llm_query_expansion.py",
+      "config": "experiments/retrieval/phase6_llm_query_expansion_gpt4_multi/config.json",
+      "priority": 3,
+      "resume": true,
+      "description": "LLM-based multi-query expansion using GPT-4"
+    }
+  ]
+}
+
