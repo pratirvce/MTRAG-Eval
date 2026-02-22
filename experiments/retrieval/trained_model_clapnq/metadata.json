@@ -1,0 +1,10 @@
+{
+  "num_experts": 4,
+  "expert_types": [
+    "early_conversation",
+    "mid_conversation",
+    "late_conversation",
+    "topic_shift"
+  ],
+  "hidden_dim": 768
+}
