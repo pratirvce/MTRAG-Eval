@@ -1,0 +1,6 @@
+{
+  "epoch": 3,
+  "step": 120,
+  "model_path": "models/tier1_cross_encoder_domain_specific_govt",
+  "timestamp": "2025-12-18T23:18:53.467374"
+}

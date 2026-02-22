@@ -1,0 +1,6 @@
+{
+  "epoch": 3,
+  "step": 0,
+  "model_path": "models/tier1_cross_encoder_finetuned",
+  "timestamp": "2025-12-19T08:19:25.287842"
+}
