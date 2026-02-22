@@ -1,0 +1,76 @@
+{
+  "experiments": {
+    "phase4_hard_negatives_cosine": {
+      "status": "failed",
+      "started_at": "2025-11-27T17:38:31.018988",
+      "completed_at": "2025-11-29T22:56:39.889956",
+      "log_file": "experiments/retrieval/phase4_hard_negatives_cosine/training.log",
+      "error": "Process exited with code -15",
+      "last_updated": "2025-11-29T22:56:39.889939",
+      "config_file": "experiments/retrieval/phase4_hard_negatives_cosine/config.json",
+      "return_code": -15
+    },
+    "phase4_hard_negatives_triplet": {
+      "status": "failed",
+      "started_at": "2025-11-29T22:56:39.890995",
+      "completed_at": "2025-12-03T03:39:01.273712",
+      "log_file": "experiments/retrieval/phase4_hard_negatives_triplet/training.log",
+      "error": "Process exited with code 1",
+      "last_updated": "2025-12-03T03:39:01.273698",
+      "config_file": "experiments/retrieval/phase4_hard_negatives_triplet/config.json",
+      "return_code": 1
+    },
+    "phase4_hard_negatives_5neg": {
+      "status": "failed",
+      "started_at": "2025-12-03T03:39:01.274348",
+      "completed_at": "2025-12-06T14:25:06.764132",
+      "log_file": "experiments/retrieval/phase4_hard_negatives_5neg/training.log",
+      "error": "Process exited with code 1",
+      "last_updated": "2025-12-06T14:25:06.764112",
+      "config_file": "experiments/retrieval/phase4_hard_negatives_5neg/config.json",
+      "return_code": 1
+    },
+    "phase4_bge_large": {
+      "status": "failed",
+      "started_at": "2025-12-06T14:25:06.765398",
+      "completed_at": "2025-12-16T15:50:26.648439",
+      "log_file": "experiments/retrieval/phase4_bge_large/training.log",
+      "error": "Process exited with code -11",
+      "last_updated": "2025-12-16T15:50:26.648420",
+      "config_file": "experiments/retrieval/phase4_bge_large/config.json",
+      "return_code": -11
+    },
+    "phase4_domain_specific_clapnq": {
+      "status": "completed",
+      "started_at": "2025-12-16T15:50:26.649699",
+      "completed_at": "2025-12-16T17:02:15.447158",
+      "log_file": "experiments/retrieval/phase4_domain_specific_clapnq/training.log",
+      "error": null,
+      "last_updated": "2025-12-16T17:02:15.447137",
+      "config_file": "experiments/retrieval/phase4_domain_specific_clapnq/config.json"
+    },
+    "phase4_domain_specific_fiqa": {
+      "status": "completed",
+      "started_at": "2025-12-16T17:02:15.448462",
+      "completed_at": "2025-12-16T17:30:48.682741",
+      "log_file": "experiments/retrieval/phase4_domain_specific_fiqa/training.log",
+      "error": null,
+      "last_updated": "2025-12-16T17:30:48.682725",
+      "config_file": "experiments/retrieval/phase4_domain_specific_fiqa/config.json"
+    },
+    "phase4_domain_specific_all": {
+      "status": "failed",
+      "started_at": "2025-12-16T17:30:48.683962",
+      "completed_at": "2025-12-16T17:30:53.487293",
+      "log_file": "experiments/retrieval/phase4_domain_specific_all/training.log",
+      "error": "Process exited with code 2",
+      "last_updated": "2025-12-16T17:30:53.487274",
+      "config_file": "experiments/retrieval/phase4_domain_specific_all/config.json",
+      "return_code": 2
+    }
+  },
+  "started_at": "2025-11-27T17:38:31.018495",
+  "last_updated": "2025-12-16T17:30:53.488794",
+  "current_experiment": "phase4_domain_specific_all",
+  "completed_at": "2025-12-16T17:30:53.488782"
+}

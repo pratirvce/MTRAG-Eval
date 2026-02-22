@@ -1,0 +1,15 @@
+{
+  "domain": "clapnq",
+  "base_model": "BAAI/bge-base-en-v1.5",
+  "epochs": 7,
+  "batch_size": 32,
+  "learning_rate": 1e-05,
+  "use_pretrained_multi_domain": true,
+  "pretrained_multi_domain_path": "./models/baseline_5_epochs",
+  "use_validation": true,
+  "use_data_splits": true,
+  "warmup_steps": 50,
+  "evaluation_steps": 200,
+  "save_best_model": true,
+  "seed": 42
+}

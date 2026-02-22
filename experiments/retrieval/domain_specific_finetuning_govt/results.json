@@ -1,0 +1,56 @@
+{
+  "experiment_name": "phase4_domain_specific_govt",
+  "model_path": "models/domain_specific_govt",
+  "config": {
+    "domain": "govt",
+    "base_model": "BAAI/bge-base-en-v1.5",
+    "epochs": 7,
+    "batch_size": 32,
+    "learning_rate": 1e-05,
+    "use_pretrained_multi_domain": true,
+    "pretrained_multi_domain_path": "./models/phase1_epochs5",
+    "use_validation": true,
+    "use_data_splits": true,
+    "warmup_steps": 50,
+    "evaluation_steps": 200,
+    "save_best_model": true,
+    "seed": 42,
+    "gpu_id": 2
+  },
+  "domain_results": {
+    "govt": {
+      "Recall@5": 0.44355,
+      "Recall@10": 0.55108,
+      "nDCG@5": 0.42098,
+      "nDCG@10": 0.4628
+    }
+  },
+  "averages": {
+    "Recall@5": 0.44355,
+    "Recall@10": 0.55108,
+    "nDCG@5": 0.42098,
+    "nDCG@10": 0.4628
+  },
+  "baseline_comparison": {
+    "Recall@5": {
+      "ours": 0.44355,
+      "baseline": 0.2944,
+      "improvement": 0.14915
+    },
+    "Recall@10": {
+      "ours": 0.55108,
+      "baseline": 0.3591,
+      "improvement": 0.19198000000000004
+    },
+    "nDCG@5": {
+      "ours": 0.42098,
+      "baseline": 0.2509,
+      "improvement": 0.17008
+    },
+    "nDCG@10": {
+      "ours": 0.4628,
+      "baseline": 0.281,
+      "improvement": 0.18179999999999996
+    }
+  }
+}

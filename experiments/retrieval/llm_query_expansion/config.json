@@ -1,0 +1,14 @@
+{
+  "output_dir": "experiments/retrieval/llm_query_expansion",
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true,
+  "llm_provider": "openai",
+  "num_variations": 3,
+  "top_k": 100,
+  "resume": true
+}

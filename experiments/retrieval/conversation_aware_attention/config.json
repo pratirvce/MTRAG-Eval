@@ -1,0 +1,13 @@
+{
+  "experiment_name": "conversation_aware_attention",
+  "model_path": "BAAI/bge-base-en-v1.5",
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true,
+  "use_attention": true,
+  "resume": true
+}

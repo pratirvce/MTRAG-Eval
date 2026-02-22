@@ -1,0 +1,13 @@
+{
+  "model_path": "BAAI/bge-base-en-v1.5",
+  "output_dir": "experiments/retrieval/llm_distillation",
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "top_k": 100,
+  "use_teacher_api": false,
+  "resume": true
+}

@@ -1,0 +1,13 @@
+{
+  "max_gpus": 6,
+  "experiments": [
+    {
+      "name": "phase7_conversation_aware_attention",
+      "script": "train_conversation_aware_retrieval.py",
+      "config": "experiments/retrieval/phase7_conversation_aware_attention/config.json",
+      "priority": 1,
+      "description": "Conversation-Aware Contextual Retrieval with Attention Mechanism - Highest priority novel experiment"
+    }
+  ]
+}
+

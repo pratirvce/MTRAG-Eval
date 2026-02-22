@@ -1,0 +1,56 @@
+{
+  "experiment_name": "phase4_domain_specific_fiqa",
+  "model_path": "models/domain_specific_fiqa",
+  "config": {
+    "domain": "fiqa",
+    "base_model": "BAAI/bge-base-en-v1.5",
+    "epochs": 7,
+    "batch_size": 32,
+    "learning_rate": 1e-05,
+    "use_pretrained_multi_domain": true,
+    "pretrained_multi_domain_path": "./models/phase1_epochs5",
+    "use_validation": true,
+    "use_data_splits": true,
+    "warmup_steps": 50,
+    "evaluation_steps": 200,
+    "save_best_model": true,
+    "seed": 42,
+    "gpu_id": 2
+  },
+  "domain_results": {
+    "fiqa": {
+      "Recall@5": 0.3869,
+      "Recall@10": 0.5119,
+      "nDCG@5": 0.34997,
+      "nDCG@10": 0.40259
+    }
+  },
+  "averages": {
+    "Recall@5": 0.3869,
+    "Recall@10": 0.5119,
+    "nDCG@5": 0.34997,
+    "nDCG@10": 0.40259
+  },
+  "baseline_comparison": {
+    "Recall@5": {
+      "ours": 0.3869,
+      "baseline": 0.2944,
+      "improvement": 0.09250000000000003
+    },
+    "Recall@10": {
+      "ours": 0.5119,
+      "baseline": 0.3591,
+      "improvement": 0.15280000000000005
+    },
+    "nDCG@5": {
+      "ours": 0.34997,
+      "baseline": 0.2509,
+      "improvement": 0.09906999999999999
+    },
+    "nDCG@10": {
+      "ours": 0.40259,
+      "baseline": 0.281,
+      "improvement": 0.12158999999999998
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "experiment_name": "cross_encoder_finetuned",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L-12-v2",
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true,
+  "epochs": 3,
+  "batch_size": 16,
+  "learning_rate": 2e-05,
+  "warmup_steps": 100,
+  "checkpoint_save_steps": 500,
+  "resume": true,
+  "seed": 42
+}

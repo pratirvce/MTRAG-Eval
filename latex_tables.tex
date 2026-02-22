@@ -1,0 +1,121 @@
+% Complete Experiments Table for Appendix
+\begin{longtable}{lccccc}
+\caption{Complete Experimental Results (All 102 Experiments)}
+\label{tab:all_experiments} \\
+\toprule
+\textbf{Method} & \textbf{Category} & \textbf{nDCG@10} & \textbf{R@10} & \textbf{nDCG@5} & \textbf{R@5} \\
+\midrule
+\endfirsthead
+\multicolumn{6}{c}{{Continued from previous page}} \\
+\toprule
+\textbf{Method} & \textbf{Category} & \textbf{nDCG@10} & \textbf{R@10} & \textbf{nDCG@5} & \textbf{R@5} \\
+\midrule
+\endhead
+\bottomrule
+\multicolumn{6}{r}{{Continued on next page}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+best\_paper\_large\_model\_finetuning & Best Paper & 0.5101 & 0.6221 & 0.4538 & 0.4891 \\
+best\_paper\_adversarial\_curriculum & Best Paper & 0.4464 & 0.5569 & 0.3901 & 0.4270 \\
+best\_paper\_meta\_learning\_fixed & Best Paper & 0.2800 & 0.3690 & 0.2371 & 0.2669 \\
+best\_paper\_meta\_learning & Best Paper & 0.2756 & 0.3629 & 0.2342 & 0.2648 \\
+best\_paper\_hierarchical\_routing & Best Paper & 0.2166 & 0.2743 & 0.1874 & 0.2066 \\
+best\_paper\_hierarchical\_routing\_f... & Best Paper & 0.2166 & 0.2743 & 0.1874 & 0.2066 \\
+best\_paper\_llm\_distillation & Best Paper & 0.2027 & 0.2668 & 0.1754 & 0.2019 \\
+best\_paper\_graph\_aware\_retrieval & Best Paper & 0.1830 & 0.2485 & 0.1547 & 0.1809 \\
+best\_paper\_learned\_rrf & Best Paper & 0.1799 & 0.2420 & 0.1541 & 0.1807 \\
+best\_paper\_rl\_adaptive\_retrieval\... & Best Paper & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+best\_paper\_rl\_adaptive\_retrieval & Best Paper & 0.1783 & 0.2407 & 0.1526 & 0.1795 \\
+best\_paper\_temporal\_memory & Best Paper & 0.1484 & 0.2010 & 0.1243 & 0.1433 \\
+best\_paper\_temporal\_memory\_fixed & Best Paper & 0.1484 & 0.2010 & 0.1243 & 0.1433 \\
+best\_paper\_multitask\_retrieval & Best Paper & 0.0261 & 0.0440 & 0.0170 & 0.0219 \\
+multistage\_retrieval & Other & 0.2480 & 0.3077 & 0.2177 & 0.2413 \\
+tier2\_multistage\_3stage & Other & 0.2480 & 0.3077 & 0.2177 & 0.2413 \\
+tier2\_ensemble\_advanced & Other & 0.2192 & 0.2743 & 0.1989 & 0.2272 \\
+phase1\_baseline & Phase 1 & 0.4576 & 0.5331 & 0.4092 & 0.4240 \\
+phase1\_epochs5 & Phase 1 & 0.3671 & 0.4693 & 0.3176 & 0.3522 \\
+phase1\_epochs3 & Phase 1 & 0.2709 & 0.3388 & 0.2462 & 0.2845 \\
+phase2\_augmentation & Phase 2 & 0.4098 & 0.5099 & 0.3588 & 0.3868 \\
+phase2\_lr5e5 & Phase 2 & 0.3331 & 0.4208 & 0.2854 & 0.3073 \\
+phase2\_lr1e5 & Phase 2 & 0.2605 & 0.3309 & 0.2337 & 0.2694 \\
+phase3\_reranking & Phase 3 & 0.2709 & 0.3388 & 0.2462 & 0.2845 \\
+phase3\_hybrid & Phase 3 & 0.2709 & 0.3388 & 0.2462 & 0.2845 \\
+phase3\_hybrid\_reranking & Phase 3 & 0.2709 & 0.3388 & 0.2462 & 0.2845 \\
+phase4\_domain\_specific\_clapnq & Phase 4 & 0.4981 & 0.6016 & 0.4399 & 0.4529 \\
+phase4\_domain\_specific\_govt & Phase 4 & 0.4628 & 0.5511 & 0.4210 & 0.4435 \\
+phase4\_domain\_specific\_cloud & Phase 4 & 0.4104 & 0.5293 & 0.3643 & 0.4293 \\
+phase4\_domain\_specific\_fiqa & Phase 4 & 0.4026 & 0.5119 & 0.3500 & 0.3869 \\
+phase4\_hard\_negatives\_5neg & Phase 4 & 0.1456 & 0.1713 & 0.1342 & 0.1465 \\
+phase4\_hard\_negatives\_cosine & Phase 4 & 0.1444 & 0.1627 & 0.1296 & 0.1250 \\
+phase5\_query\_expansion\_govt & Phase 5 & 0.4515 & 0.5317 & 0.4121 & 0.4436 \\
+phase5\_ensemble\_domain\_specific & Phase 5 & 0.4434 & 0.5355 & 0.3990 & 0.4324 \\
+phase5\_ensemble\_weighted & Phase 5 & 0.4370 & 0.5284 & 0.3898 & 0.4154 \\
+phase5\_query\_expansion\_clapnq & Phase 5 & 0.4186 & 0.4999 & 0.3773 & 0.3999 \\
+phase5\_query\_expansion\_multi & Phase 5 & 0.4098 & 0.5099 & 0.3588 & 0.3868 \\
+phase5\_reranking\_clapnq & Phase 5 & 0.3250 & 0.4319 & 0.2736 & 0.3170 \\
+phase5\_reranking\_govt & Phase 5 & 0.2896 & 0.3539 & 0.2635 & 0.2867 \\
+phase5\_reranking\_multi\_domain & Phase 5 & 0.2619 & 0.3365 & 0.2280 & 0.2646 \\
+phase5\_reranking\_cloud & Phase 5 & 0.2028 & 0.2776 & 0.1723 & 0.2063 \\
+phase6\_llm\_query\_expansion\_gpt4\_... & Phase 6 & 0.3787 & 0.4879 & 0.3270 & 0.3614 \\
+phase6\_multistage\_2stage\_finetuned & Phase 6 & 0.3339 & 0.4223 & 0.2955 & 0.3328 \\
+phase6\_cross\_encoder\_evaluation & Phase 6 & 0.2978 & 0.3639 & 0.2754 & 0.3164 \\
+phase6\_multistage\_2stage & Phase 6 & 0.2612 & 0.3365 & 0.2270 & 0.2626 \\
+phase7\_conversation\_aware\_attention & Phase 7 & 0.3657 & 0.4642 & 0.3188 & 0.3528 \\
+phase7\_iterative\_refinement & Phase 7 & 0.2231 & 0.2867 & 0.2018 & 0.2389 \\
+task\_a\_hybrid\_dynamic\_fusion & Task A & 0.2423 & 0.3280 & 0.2022 & 0.2356 \\
+task\_a\_multistage\_hierarchical\_re... & Task A & 0.2394 & 0.3115 & 0.1988 & 0.2192 \\
+task\_a\_cross\_encoder\_conversation... & Task A & 0.1949 & 0.2423 & 0.1700 & 0.1855 \\
+task\_a\_differentiable\_end\_to\_end & Task A & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_contrastive\_learning & Tier 1 & 0.4576 & 0.5331 & 0.4092 & 0.4240 \\
+tier1\_ensemble\_best\_methods & Tier 1 & 0.4576 & 0.5331 & 0.4092 & 0.4240 \\
+tier1\_meta\_learning & Tier 1 & 0.4494 & 0.5644 & 0.3907 & 0.4285 \\
+tier1\_adversarial\_curriculum & Tier 1 & 0.4442 & 0.5561 & 0.3906 & 0.4304 \\
+tier1\_cross\_encoder\_evaluation & Tier 1 & 0.2716 & 0.3413 & 0.2409 & 0.2702 \\
+tier1\_cross\_encoder\_large & Tier 1 & 0.2716 & 0.3413 & 0.2409 & 0.2702 \\
+tier1\_cross\_encoder\_domain\_specific & Tier 1 & 0.2559 & 0.3269 & 0.2246 & 0.2527 \\
+tier1\_hierarchical\_multigranularity & Tier 1 & 0.2289 & 0.3054 & 0.1972 & 0.2316 \\
+tier1\_iterative\_refinement\_improved & Tier 1 & 0.2231 & 0.2867 & 0.2018 & 0.2389 \\
+tier1\_cross\_attention\_fixed\_v3 & Tier 1 & 0.2200 & 0.2840 & 0.1903 & 0.2145 \\
+tier1\_cross\_attention & Tier 1 & 0.2200 & 0.2840 & 0.1903 & 0.2145 \\
+tier1\_cross\_attention\_query\_docum... & Tier 1 & 0.2200 & 0.2840 & 0.1903 & 0.2145 \\
+tier1\_cross\_attention\_query\_document & Tier 1 & 0.2200 & 0.2840 & 0.1903 & 0.2145 \\
+tier1\_cross\_attention\_rerun\_fixed... & Tier 1 & 0.2200 & 0.2840 & 0.1903 & 0.2145 \\
+tier1\_llm\_distillation & Tier 1 & 0.1986 & 0.2603 & 0.1720 & 0.1969 \\
+tier1\_learning\_to\_rank\_listwise\_... & Tier 1 & 0.1807 & 0.2420 & 0.1560 & 0.1832 \\
+tier1\_learning\_to\_rank\_listwise & Tier 1 & 0.1807 & 0.2420 & 0.1560 & 0.1832 \\
+tier1\_synthetic\_data & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_cross\_domain\_transfer & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_semantic\_drift & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_causal\_inference & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_explainable\_retrieval & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_counterfactual\_augmentation & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_memory\_augmented & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_learned\_indices & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_momentum\_contrastive & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_rlhf\_retrieval & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_temporal\_attention & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_adversarial\_robustness & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_prompt\_based\_retrieval & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_enhanced\_contrastive & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_differentiable\_retrieval & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_rl\_adaptive\_retrieval & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_nas\_retrieval & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_graph\_enhanced\_reranking & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_multi\_granularity & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_enhanced\_contrastive\_hardneg... & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_hybrid\_lexical\_semantic & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_uncertainty\_aware & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_foundation\_distillation & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_query\_decomposition & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_knowledge\_graph & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_curriculum\_contrastive & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_mixture\_experts & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_continual\_learning & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_retrieval\_as\_generation & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_multi\_turn\_state\_tracking & Tier 1 & 0.1796 & 0.2420 & 0.1538 & 0.1807 \\
+tier1\_graph\_aware\_retrieval & Tier 1 & 0.1738 & 0.2372 & 0.1466 & 0.1723 \\
+tier1\_pseudo\_relevance\_feedback & Tier 1 & 0.1674 & 0.2229 & 0.1453 & 0.1715 \\
+tier1\_qdit\_transformer & Tier 1 & 0.0301 & 0.0497 & 0.0195 & 0.0232 \\
+tier1\_multitask\_retrieval & Tier 1 & 0.0185 & 0.0261 & 0.0145 & 0.0165 \\
+\end{longtable}

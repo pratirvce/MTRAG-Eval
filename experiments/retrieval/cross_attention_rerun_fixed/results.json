@@ -1,0 +1,54 @@
+{
+  "average": {
+    "Recall@1": 0.0,
+    "Recall@3": 0.0,
+    "Recall@5": 0.0,
+    "Recall@10": 0.0,
+    "nDCG@1": 0.0,
+    "nDCG@3": 0.0,
+    "nDCG@5": 0.0,
+    "nDCG@10": 0.0
+  },
+  "domains": {
+    "clapnq": {
+      "Recall@1": 0.0,
+      "Recall@3": 0.0,
+      "Recall@5": 0.0,
+      "Recall@10": 0.0,
+      "nDCG@1": 0.0,
+      "nDCG@3": 0.0,
+      "nDCG@5": 0.0,
+      "nDCG@10": 0.0
+    },
+    "fiqa": {
+      "Recall@1": 0.0,
+      "Recall@3": 0.0,
+      "Recall@5": 0.0,
+      "Recall@10": 0.0,
+      "nDCG@1": 0.0,
+      "nDCG@3": 0.0,
+      "nDCG@5": 0.0,
+      "nDCG@10": 0.0
+    },
+    "govt": {
+      "Recall@1": 0.0,
+      "Recall@3": 0.0,
+      "Recall@5": 0.0,
+      "Recall@10": 0.0,
+      "nDCG@1": 0.0,
+      "nDCG@3": 0.0,
+      "nDCG@5": 0.0,
+      "nDCG@10": 0.0
+    },
+    "cloud": {
+      "Recall@1": 0.0,
+      "Recall@3": 0.0,
+      "Recall@5": 0.0,
+      "Recall@10": 0.0,
+      "nDCG@1": 0.0,
+      "nDCG@3": 0.0,
+      "nDCG@5": 0.0,
+      "nDCG@10": 0.0
+    }
+  }
+}

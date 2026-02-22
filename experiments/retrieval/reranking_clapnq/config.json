@@ -1,0 +1,11 @@
+{
+  "experiment_name": "reranking_clapnq",
+  "base_model_path": "./models/domain_specific_clapnq",
+  "cross_encoder_model": "cross-encoder/ms-marco-MiniLM-L-12-v2",
+  "top_k": 100,
+  "rerank_top_k": 20,
+  "domains": [
+    "clapnq"
+  ],
+  "use_data_splits": true
+}

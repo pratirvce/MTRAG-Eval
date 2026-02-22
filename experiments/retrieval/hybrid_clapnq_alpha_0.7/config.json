@@ -1,0 +1,12 @@
+{
+  "experiment_name": "hybrid_clapnq_alpha_0.7",
+  "model_path": "./models/domain_specific_clapnq",
+  "alpha": 0.7,
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true
+}

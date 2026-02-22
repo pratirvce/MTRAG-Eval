@@ -1,0 +1,13 @@
+{
+  "output_dir": "experiments/retrieval/learning_to_rank_listwise",
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true,
+  "model_path": "BAAI/bge-base-en-v1.5",
+  "top_k": 200,
+  "resume": false
+}

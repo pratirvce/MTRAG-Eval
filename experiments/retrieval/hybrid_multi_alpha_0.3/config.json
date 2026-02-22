@@ -1,0 +1,12 @@
+{
+  "experiment_name": "hybrid_multi_alpha_0.3",
+  "model_path": "./models/data_augmentation_retrieval",
+  "alpha": 0.3,
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true
+}

@@ -1,0 +1,6 @@
+{
+  "tier1_learning_to_rank_listwise": 0,
+  "tier1_pseudo_relevance_feedback": 1,
+  "tier1_cross_attention_query_document": 3,
+  "tier1_multistage_3stage_finetuned": 5
+}

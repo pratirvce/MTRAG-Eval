@@ -1,0 +1,14 @@
+{
+  "model_path": "models/cross_encoder_finetuned",
+  "output_dir": "experiments/retrieval/cross_encoder_large_model",
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true,
+  "top_k": 100,
+  "rerank_top_k": 10,
+  "resume": false
+}

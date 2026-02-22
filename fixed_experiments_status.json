@@ -1,0 +1,303 @@
+{
+  "timestamp": "2025-12-30T16:25:18.113678",
+  "experiments": {
+    "phase8_cross_attention_query_document_fixed": {
+      "name": "phase8_cross_attention_query_document_fixed",
+      "is_running": false,
+      "progress": {
+        "clapnq": {
+          "status": "in_progress"
+        },
+        "fiqa": {
+          "status": "in_progress"
+        },
+        "govt": {
+          "status": "in_progress"
+        },
+        "cloud": {
+          "status": "in_progress"
+        }
+      },
+      "last_update": "2025-12-18 20:06:20 - Domain cloud Results:",
+      "log_tail": [
+        "2025-12-18 20:06:20 -   Recall@5: 0.0000\n",
+        "2025-12-18 20:06:20 -   Recall@10: 0.0000\n",
+        "2025-12-18 20:06:20 -   nDCG@1: 0.0000\n",
+        "2025-12-18 20:06:20 -   nDCG@3: 0.0000\n",
+        "2025-12-18 20:06:20 -   nDCG@5: 0.0000\n",
+        "2025-12-18 20:06:20 -   nDCG@10: 0.0000\n",
+        "2025-12-18 20:06:20 - ============================================================\n",
+        "\n",
+        "2025-12-18 20:06:20 - \u2705 Final results saved to: experiments/retrieval/phase8_cross_attention_query_document_fixed/results.json\n",
+        "2025-12-18 20:06:20 - \u2705 Cross-attention experiment completed. Results: experiments/retrieval/phase8_cross_attention_query_document_fixed\n"
+      ],
+      "checkpoint": {
+        "clapnq": {
+          "domain": "clapnq",
+          "results": {
+            "Recall@1": 0.0,
+            "Recall@3": 0.0,
+            "Recall@5": 0.0,
+            "Recall@10": 0.0,
+            "nDCG@1": 0.0,
+            "nDCG@3": 0.0,
+            "nDCG@5": 0.0,
+            "nDCG@10": 0.0
+          },
+          "timestamp": "2025-12-18T19:43:49.738549"
+        },
+        "fiqa": {
+          "domain": "fiqa",
+          "results": {
+            "Recall@1": 0.0,
+            "Recall@3": 0.0,
+            "Recall@5": 0.0,
+            "Recall@10": 0.0,
+            "nDCG@1": 0.0,
+            "nDCG@3": 0.0,
+            "nDCG@5": 0.0,
+            "nDCG@10": 0.0
+          },
+          "timestamp": "2025-12-18T19:48:43.859132"
+        },
+        "govt": {
+          "domain": "govt",
+          "results": {
+            "Recall@1": 0.0,
+            "Recall@3": 0.0,
+            "Recall@5": 0.0,
+            "Recall@10": 0.0,
+            "nDCG@1": 0.0,
+            "nDCG@3": 0.0,
+            "nDCG@5": 0.0,
+            "nDCG@10": 0.0
+          },
+          "timestamp": "2025-12-18T19:55:54.995981"
+        },
+        "cloud": {
+          "domain": "cloud",
+          "results": {
+            "Recall@1": 0.0,
+            "Recall@3": 0.0,
+            "Recall@5": 0.0,
+            "Recall@10": 0.0,
+            "nDCG@1": 0.0,
+            "nDCG@3": 0.0,
+            "nDCG@5": 0.0,
+            "nDCG@10": 0.0
+          },
+          "timestamp": "2025-12-18T20:06:20.700553"
+        }
+      },
+      "completion": 0,
+      "results": {
+        "average": {
+          "Recall@1": 0.0,
+          "Recall@3": 0.0,
+          "Recall@5": 0.0,
+          "Recall@10": 0.0,
+          "nDCG@1": 0.0,
+          "nDCG@3": 0.0,
+          "nDCG@5": 0.0,
+          "nDCG@10": 0.0
+        },
+        "domains": {
+          "clapnq": {
+            "Recall@1": 0.0,
+            "Recall@3": 0.0,
+            "Recall@5": 0.0,
+            "Recall@10": 0.0,
+            "nDCG@1": 0.0,
+            "nDCG@3": 0.0,
+            "nDCG@5": 0.0,
+            "nDCG@10": 0.0
+          },
+          "fiqa": {
+            "Recall@1": 0.0,
+            "Recall@3": 0.0,
+            "Recall@5": 0.0,
+            "Recall@10": 0.0,
+            "nDCG@1": 0.0,
+            "nDCG@3": 0.0,
+            "nDCG@5": 0.0,
+            "nDCG@10": 0.0
+          },
+          "govt": {
+            "Recall@1": 0.0,
+            "Recall@3": 0.0,
+            "Recall@5": 0.0,
+            "Recall@10": 0.0,
+            "nDCG@1": 0.0,
+            "nDCG@3": 0.0,
+            "nDCG@5": 0.0,
+            "nDCG@10": 0.0
+          },
+          "cloud": {
+            "Recall@1": 0.0,
+            "Recall@3": 0.0,
+            "Recall@5": 0.0,
+            "Recall@10": 0.0,
+            "nDCG@1": 0.0,
+            "nDCG@3": 0.0,
+            "nDCG@5": 0.0,
+            "nDCG@10": 0.0
+          }
+        }
+      },
+      "is_complete": true,
+      "final_scores": {
+        "recall@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    },
+    "tier1_cross_attention_rerun_fixed": {
+      "name": "tier1_cross_attention_rerun_fixed",
+      "is_running": false,
+      "progress": {
+        "clapnq": {
+          "status": "in_progress"
+        },
+        "fiqa": {
+          "status": "in_progress"
+        },
+        "govt": {
+          "status": "in_progress"
+        },
+        "cloud": {
+          "status": "in_progress"
+        }
+      },
+      "last_update": "2025-12-18 20:05:42 - Domain cloud Results:",
+      "log_tail": [
+        "2025-12-18 20:05:42 -   Recall@5: 0.0000\n",
+        "2025-12-18 20:05:42 -   Recall@10: 0.0000\n",
+        "2025-12-18 20:05:42 -   nDCG@1: 0.0000\n",
+        "2025-12-18 20:05:42 -   nDCG@3: 0.0000\n",
+        "2025-12-18 20:05:42 -   nDCG@5: 0.0000\n",
+        "2025-12-18 20:05:42 -   nDCG@10: 0.0000\n",
+        "2025-12-18 20:05:42 - ============================================================\n",
+        "\n",
+        "2025-12-18 20:05:42 - \u2705 Final results saved to: experiments/retrieval/tier1_cross_attention_rerun_fixed/results.json\n",
+        "2025-12-18 20:05:43 - \u2705 Cross-attention experiment completed. Results: experiments/retrieval/tier1_cross_attention_rerun_fixed\n"
+      ],
+      "checkpoint": {
+        "clapnq": {
+          "domain": "clapnq",
+          "results": {
+            "Recall@1": 0.0,
+            "Recall@3": 0.0,
+            "Recall@5": 0.0,
+            "Recall@10": 0.0,
+            "nDCG@1": 0.0,
+            "nDCG@3": 0.0,
+            "nDCG@5": 0.0,
+            "nDCG@10": 0.0
+          },
+          "timestamp": "2025-12-18T19:43:34.898924"
+        },
+        "fiqa": {
+          "domain": "fiqa",
+          "results": {
+            "Recall@1": 0.0,
+            "Recall@3": 0.0,
+            "Recall@5": 0.0,
+            "Recall@10": 0.0,
+            "nDCG@1": 0.0,
+            "nDCG@3": 0.0,
+            "nDCG@5": 0.0,
+            "nDCG@10": 0.0
+          },
+          "timestamp": "2025-12-18T19:48:25.505036"
+        },
+        "govt": {
+          "domain": "govt",
+          "results": {
+            "Recall@1": 0.0,
+            "Recall@3": 0.0,
+            "Recall@5": 0.0,
+            "Recall@10": 0.0,
+            "nDCG@1": 0.0,
+            "nDCG@3": 0.0,
+            "nDCG@5": 0.0,
+            "nDCG@10": 0.0
+          },
+          "timestamp": "2025-12-18T19:55:26.175145"
+        },
+        "cloud": {
+          "domain": "cloud",
+          "results": {
+            "Recall@1": 0.0,
+            "Recall@3": 0.0,
+            "Recall@5": 0.0,
+            "Recall@10": 0.0,
+            "nDCG@1": 0.0,
+            "nDCG@3": 0.0,
+            "nDCG@5": 0.0,
+            "nDCG@10": 0.0
+          },
+          "timestamp": "2025-12-18T20:05:42.968654"
+        }
+      },
+      "completion": 0,
+      "results": {
+        "average": {
+          "Recall@1": 0.0,
+          "Recall@3": 0.0,
+          "Recall@5": 0.0,
+          "Recall@10": 0.0,
+          "nDCG@1": 0.0,
+          "nDCG@3": 0.0,
+          "nDCG@5": 0.0,
+          "nDCG@10": 0.0
+        },
+        "domains": {
+          "clapnq": {
+            "Recall@1": 0.0,
+            "Recall@3": 0.0,
+            "Recall@5": 0.0,
+            "Recall@10": 0.0,
+            "nDCG@1": 0.0,
+            "nDCG@3": 0.0,
+            "nDCG@5": 0.0,
+            "nDCG@10": 0.0
+          },
+          "fiqa": {
+            "Recall@1": 0.0,
+            "Recall@3": 0.0,
+            "Recall@5": 0.0,
+            "Recall@10": 0.0,
+            "nDCG@1": 0.0,
+            "nDCG@3": 0.0,
+            "nDCG@5": 0.0,
+            "nDCG@10": 0.0
+          },
+          "govt": {
+            "Recall@1": 0.0,
+            "Recall@3": 0.0,
+            "Recall@5": 0.0,
+            "Recall@10": 0.0,
+            "nDCG@1": 0.0,
+            "nDCG@3": 0.0,
+            "nDCG@5": 0.0,
+            "nDCG@10": 0.0
+          },
+          "cloud": {
+            "Recall@1": 0.0,
+            "Recall@3": 0.0,
+            "Recall@5": 0.0,
+            "Recall@10": 0.0,
+            "nDCG@1": 0.0,
+            "nDCG@3": 0.0,
+            "nDCG@5": 0.0,
+            "nDCG@10": 0.0
+          }
+        }
+      },
+      "is_complete": true,
+      "final_scores": {
+        "recall@10": 0.0,
+        "ndcg@10": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "last_domain": "clapnq",
+  "completed_domains": [
+    "clapnq"
+  ],
+  "results": {
+    "clapnq": {
+      "Recall@1": 0.06346,
+      "Recall@3": 0.1591,
+      "Recall@5": 0.23555,
+      "Recall@10": 0.32799,
+      "nDCG@1": 0.17308,
+      "nDCG@3": 0.16929,
+      "nDCG@5": 0.20222,
+      "nDCG@10": 0.24229
+    }
+  },
+  "timestamp": "2025-12-20T12:01:05.493085"
+}

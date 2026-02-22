@@ -1,0 +1,14 @@
+{
+  "experiment_name": "cross_encoder_evaluation",
+  "base_model_path": "BAAI/bge-base-en-v1.5",
+  "cross_encoder_model": "./models/cross_encoder_finetuned_ensemble",
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true,
+  "top_k": 100,
+  "rerank_top_k": 100
+}

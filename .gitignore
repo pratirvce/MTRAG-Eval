@@ -1,0 +1,54 @@
+# Large directories - datasets
+corpora/
+human/
+synthetic/
+data_splits/
+
+# Models and checkpoints
+models/
+checkpoints/
+bge-finetuned-all-domains/
+bge-finetuned-all-domains-checkpoints/
+backup-retrieval-1126/
+
+# Submissions
+submission/
+submissions/
+
+# Virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Large binary files (model weights, optimizer states)
+*.safetensors
+*.pt
+*.bin
+*.ckpt
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# Large log files
+*.log
+
+# Archives
+*.zip
+*.tar.gz
+*.tar
+*.gz
+
+# PID files
+*.pid
+
+# Misc
+=0.26.0
+
+# IDE
+.vscode/
+.idea/

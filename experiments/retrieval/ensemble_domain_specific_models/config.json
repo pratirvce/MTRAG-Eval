@@ -1,0 +1,16 @@
+{
+  "experiment_name": "ensemble_domain_specific_models",
+  "model_paths": [
+    "./models/domain_specific_clapnq",
+    "./models/domain_specific_govt",
+    "./models/domain_specific_cloud"
+  ],
+  "ensemble_method": "rrf",
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true
+}

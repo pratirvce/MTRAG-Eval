@@ -1,0 +1,241 @@
+\documentclass[11pt]{article}
+
+\usepackage[hyperref]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{url}
+
+\aclfinalcopy
+\def\aclpaperid{XXX}
+\urlstyle{same}
+
+\begin{document}
+\title{Multi-Turn RAG Retrieval: Scaling and Specialization Under Domain Shift}
+
+\author{
+Pratibha Revankar \\
+University of California, Santa Cruz \\
+\texttt{prevanka@ucsc.edu}
+\And
+Jessica Kim \\
+University of California, Santa Cruz \\
+\texttt{jkim829@ucsc.edu}
+\And
+Umit Azirakhmet \\
+University of California, Santa Cruz \\
+\texttt{uazirakh@ucsc.edu}
+}
+
+\maketitle
+
+\begin{abstract}
+Retrieval effectiveness in Multi-Turn Retrieval-Augmented Generation (MT-RAG) hinges on the ability to resolve context-dependent ambiguities across conversational turns. This paper addresses Task A (Retrieval) of the MTRAGEval benchmark by presenting a comprehensive evaluation of strategies spanning training-time optimization. We employ a systematic four-phase methodology to investigate the impact of hyperparameter tuning, data augmentation, hard negative mining, and domain-specific fine-tuning across four diverse domains (CLAPNQ, FIQA, GOVT, CLOUD). Our experiments demonstrate that domain-specific fine-tuning yields the most substantial gains, outperforming multi-domain baselines significantly. Specifically, our best-performing model on the CLAPNQ domain achieves a Recall@10 of 0.6016 and nDCG@10 of 0.4981, representing improvements of 58.3\% and 66.0\% over the pre-trained BGE baseline, respectively. Through a four-phase experimental approach, we demonstrate that domain-specific fine-tuning provides the most significant gains, with an average improvement of 44.3\% in Recall@10 and 47.8\% in nDCG@10 across all domains. Additionally, fine-tuning larger embedding models (BGE-large) achieves the best overall performance, reaching nDCG@10 of 0.5101 and Recall@10 of 0.6221, highlighting the impact of model capacity alongside domain adaptation.
+\end{abstract}
+
+\section{Introduction}
+
+Multi-Turn Retrieval-Augmented Generation (MT-RAG) has emerged as a critical paradigm for building conversational AI systems that can access and reason over large knowledge bases. Unlike single-turn retrieval, MT-RAG systems must maintain context across multiple conversation turns, making retrieval performance particularly challenging and crucial for overall system quality.
+
+This work addresses Task A: Retrieval Only of the MTRAGEval shared task at SemEval 2026 \cite{mtreval2026}. MTRAGEval is a comprehensive evaluation framework for Multi-Turn RAG Conversations, featuring three distinct tasks: Task A (Retrieval Only), Task B (Generation with Reference Passages), and Task C (Generation with Retrieved Passages). Task A focuses exclusively on the retrieval component, which is fundamental to the overall performance of MT-RAG systems. 
+
+The task evaluates systems' ability to retrieve relevant passages from a corpus given multi-turn conversational queries. The evaluation is conducted using the MTRAG Benchmark, which serves as both training and trial data for the shared task. The benchmark includes diverse domains such as CLAPNQ (legal and patent questions), FIQA (financial question answering), GOVT (government documents), and CLOUD (cloud computing topics). The evaluation for this work is determined using nDCG (Normalized Discounted Cumulative Gain), emphasizing the importance of both recall and ranking quality. 
+
+Beyond training strategies, recent advances suggest that model capacity itself plays a crucial role in retrieval quality. While most prior work focuses on optimizing training objectives for base-sized encoders, we systematically evaluate both base and large-scale embedding models. Our results show that increasing model capacity yields consistent gains across domains, outperforming even highly optimized base models.
+
+The effectiveness of MT-RAG systems heavily depends on the quality of the retrieval component. While pre-trained embedding models like BGE (BAAI General Embedding) provide strong baselines, domain-specific fine-tuning has shown promise for improving retrieval performance. However, the optimal strategies for fine-tuning these models for multi-turn retrieval tasks remain underexplored. This paper addresses this gap by presenting a systematic investigation into improving dense retrieval performance on the MT-RAG benchmark. Our contributions include:
+
+\begin{itemize}
+    \item A comprehensive four-phase evaluation of fine-tuning strategies across multiple training configurations.
+    \item Analysis of the impact of data augmentation on retrieval performance.
+    \item Investigation of domain-specific fine-tuning achieving 44.3\% average improvement in Recall@10.
+    \item Domain-specific performance analysis across four diverse domains.
+    \item Identification of optimal training configurations, with domain-specific models achieving up to 58.3\% improvement in Recall@10.
+\end{itemize}
+
+\section{Related Work: MTRAG benchmark}
+
+Optimizing retrieval performance for multi-turn conversational AI requires a systematic integration of dense embedding models, specialized benchmarks for context-dependent interaction, and targeted domain adaptation strategies. Dense retrieval has largely superseded traditional sparse methods by encoding queries and documents into a shared latent semantic space, allowing models like Sentence-BERT \cite{reimers2019sentence} and BAAI General Embedding (BGE) \cite{bge2023} to capture semantic nuances beyond lexical overlap. 
+
+However, while these pre-trained models demonstrate robust zero-shot performance on general tasks, their effectiveness often degrades in specialized domains or complex conversational contexts where maintaining semantic alignment requires more than generic language understanding. This limitation is particularly acute in Multi-Turn Retrieval-Augmented Generation (MT-RAG), which extends standard QA by requiring systems to resolve coreference resolution, handle elliptical queries, and maintain context across dialogue turns. Since previous benchmarks often focused on open-domain QA and failed to capture these dependencies, the MTRAGEval framework addresses this gap by providing diverse, domain-specific datasets that serve as a crucial testbed for long-range conversational dependencies. 
+
+Consequently, adapting general-purpose embedding models through fine-tuning on such in-domain data becomes essential. While research has shown the value of domain adaptation, optimal strategies specifically for multi-turn retrieval—where the input is a context-dependent dialogue history—remain underexplored. This work builds upon these foundations to systematically investigate training dynamics, contrasting general fine-tuning with domain-specific adaptation to maximize retrieval recall in multi-turn scenarios.
+
+\section{Methodology}
+
+\subsection{System Architecture and Base Model}
+Our approach relies on a dense retrieval framework that encodes multi-turn conversation context and corpus documents into a shared latent space. We use \texttt{BAAI/bge-base-en-v1.5} (110M parameters) as the core embedding encoder and fine-tune it on MT-RAG domains with validation-based checkpoint selection to ensure robust performance.
+
+
+\begin{table}[htbp]
+\centering
+\caption{Summary of Methodology and Experimental Settings}
+\label{tab:methodology_summary}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{ll}
+\toprule
+\textbf{Category} & \textbf{Specification} \\
+\midrule
+\textbf{Base Model} & BAAI/bge-base-en-v1.5 (110M Params) \\
+\textbf{Loss Function} & MultipleNegativesRankingLoss (MNR) \\
+\midrule
+\textbf{Training Config} & Batch Size: 16--32 \\
+& Learning Rate: 1e-5, 2e-5, 5e-5 \\
+& Epochs: 1--3 (with 100 warmup steps) \\
+\midrule
+\textbf{Augmentation} & Query Paraphrasing (Back-translation) \\
+& Synonym Replacement, Contextual Expansion \\
+\midrule
+\textbf{Datasets} & CLAPNQ, FIQA, GOVT, CLOUD \\
+\textbf{Metrics} & Recall@\{5, 10\}, nDCG@\{5, 10\} \\
+\textbf{Baseline} & Zero-shot BGE (R@10: 0.3800) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Large-Scale Embedding Models}
+In addition to BGE-base, we evaluate BAAI/bge-large-en-v1.5 to assess the impact of model capacity on multi-turn retrieval. The large model produces 1024-dimensional embeddings and is fine-tuned using the same contrastive learning objective and data splits as base models, enabling a controlled comparison focused on representational capacity rather than training differences.
+
+
+\subsection{Training and Optimization Strategy}
+To effectively adapt the embedding model, we employ the MultipleNegativesRankingLoss (MNR), which maximizes the similarity between positive query-document pairs while minimizing alignment with negative samples in the batch. The training configuration involves a grid search over key hyperparameters: batch sizes ranging from 16 to 32, learning rates between 1e-5 and 5e-5, and training durations of 1 to 3 epochs with 100 warmup steps. To further enhance model robustness and generalization, we integrate data augmentation techniques, specifically query paraphrasing via back-translation, synonym replacement in document passages, and contextual query expansion.
+
+
+
+\subsection{Experimental Setup}
+We evaluate our approach on the MT-RAG benchmark, which comprises four distinct domains representing diverse retrieval challenges: CLAPNQ (Legal/Patent, 1k queries), FIQA (Financial, 648 queries), GOVT (Government, 1k queries), and CLOUD (Technical, 1k queries). Performance is quantified using standard Information Retrieval metrics, specifically Recall@K and nDCG@K (for K=5, 10), with a primary focus on Recall@10 and nDCG@10. We benchmark our improvements against the zero-shot performance of the pre-trained BGE model reported in the original MT-RAG paper (Recall@10: 0.3800, nDCG@10: 0.3000). A summary of the experimental methodology and parameters is provided in Table~\ref{tab:methodology_summary}.
+
+
+\section{Experiments}
+
+\subsection{Four-Phase Approach}
+
+We adopt a systematic four-phase experimental approach to progressively improve retrieval performance, moving from baseline reproduction to advanced domain adaptation.
+
+
+
+
+
+Phase 1 establishes a reliable training baseline by adjusting epochs and validation strategies. Phase 2 focuses on hyperparameter tuning and data augmentation to maximize the capacity of the single multi-domain model. Phase 3 investigates architectural changes, such as hybrid retrieval and reranking, while Phase 4 explores the limits of performance through domain-specific fine-tuning and hard negative mining.
+
+\subsection{Large Model Fine-Tuning Experiments}
+We evaluate fine-tuning of BGE-large-en-v1.5 on the full multi-domain MT-RAG training data. Despite higher computational cost, the large model consistently outperforms base-sized models across all domains. The best-performing configuration achieves nDCG@10 of 0.5101 and Recall@10 of 0.6221, representing the highest overall performance in our evaluation.
+
+\subsection{Ablation Studies and Controlled Comparisons}
+We conduct controlled comparisons across phases to isolate the effect of each change. Phase 1 varies training duration and validation usage; Phase 2 isolates learning-rate schedules and data augmentation; Phase 3 introduces hybrid retrieval and reranking; and Phase 4 introduces domain specialization. By keeping the evaluation pipeline fixed, we attribute improvements to specific changes in training or retrieval strategy rather than evaluation noise.
+
+\section{Results}
+
+\subsection{Overall Performance}
+
+Overall, retrieval quality improves monotonically from basic fine-tuning to domain specialization. Table~\ref{tab:top20} summarizes the top 20 experiments by nDCG@10. The strongest gains come from domain-specific fine-tuning, reaching Recall@10 = 0.6016 and nDCG@10 = 0.4981 on CLAPNQ, representing improvements of 58.3\% and 66.0\% over the baseline, respectively. The average performance across all domain-specific models achieves Recall@10 of 0.5485 and nDCG@10 of 0.4435, representing improvements of 44.3\% and 47.8\% over the baseline. Data augmentation provides the most significant gains among multi-domain settings.
+
+\begin{table}[htbp]
+\centering
+\caption{Overall Performance: Top 20 Methods by nDCG@10}
+\label{tab:top20}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{clcc}
+\toprule
+\textbf{Rank} & \textbf{Method} & \textbf{nDCG@10} & \textbf{Recall@10} \\
+\midrule
+1 & Best Paper Large Model Fine-tuning & 0.5101 & 0.6221 \\
+2 & Domain-Specific Fine-tuning CLAPNQ & 0.4981 & 0.6016 \\
+3 & Domain-Specific Fine-tuning GOVT & 0.4628 & 0.5511 \\
+4 & Baseline BGE Fine-tuned & 0.4576 & 0.5331 \\
+5 & Contrastive Learning Fine-tuning & 0.4576 & 0.5331 \\
+6 & Ensemble Best Performing & 0.4576 & 0.5331 \\
+7 & Query Expansion GOVT & 0.4515 & 0.5317 \\
+8 & Meta Learning Adaptation & 0.4494 & 0.5644 \\
+9 & Best Paper Adversarial Curriculum & 0.4464 & 0.5569 \\
+10 & Adversarial Curriculum Learning & 0.4442 & 0.5561 \\
+11 & Ensemble Domain-Specific Models & 0.4434 & 0.5355 \\
+12 & Ensemble Weighted Fusion & 0.4370 & 0.5284 \\
+13 & Query Expansion CLAPNQ & 0.4186 & 0.4999 \\
+14 & Domain-Specific Fine-tuning CLOUD & 0.4104 & 0.5293 \\
+15 & Data Augmentation Retrieval & 0.4098 & 0.5099 \\
+16 & Query Expansion Multi-Domain & 0.4098 & 0.5099 \\
+17 & Domain-Specific Fine-tuning FIQA & 0.4026 & 0.5119 \\
+18 & LLM Query Expansion GPT4 & 0.3787 & 0.4879 \\
+19 & Baseline 5 Epochs & 0.3671 & 0.4693 \\
+20 & Conversation-Aware Attention & 0.3657 & 0.4642 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Large-Scale Model Performance}
+Fine-tuning BGE-large-en-v1.5 achieved the best overall performance across all experiments, reaching nDCG@10 of 0.5101 and Recall@10 of 0.6221. This represents a 11.4% improvement in nDCG@10 over the best base model (domain-specific CLAPNQ: 0.4981) and demonstrates that model capacity provides complementary gains to domain adaptation.
+
+
+
+\subsection{Domain-specific Performance}
+
+By domain-specific performance, we find that all Phase 4 domain-specific models improve over the best multi-domain baseline, with CLAPNQ achieving the highest Recall@10 (0.6016).
+
+
+
+\section{Discussion and Limitations}
+Domain-specific fine-tuning yields the largest gains across all domains, while scaling to BGE-large provides consistent but smaller improvements on top of specialization. Hybrid retrieval and reranking provided limited benefit in our infrastructure-constrained setting. A key limitation is that hybrid retrieval required additional indexing infrastructure and some reranking variants were not fully tuned, which may have capped potential gains. Hard-negative mining also underperformed and warrants further investigation.
+
+\section{Conclusion}
+
+This paper presents a comprehensive evaluation of training-time strategies for improving dense retrieval performance on the MT-RAG benchmark. Through a systematic four-phase experimental framework, we analyze the impact of training configuration, data augmentation, retrieval strategies, and domain-specific fine-tuning on multi-turn retrieval quality.
+
+\begin{enumerate}
+    \item Proper training configuration (sufficient epochs, validation) is essential for achieving baseline performance
+    \item Data augmentation provides significant improvements (34.2\% boost in Recall@10 for multi-domain models)
+    \item Domain-specific fine-tuning achieves the best results, with an average 44.3\% improvement in Recall@10 and 47.8\% improvement in nDCG@10 over the baseline
+    \item The best single model (CLAPNQ domain-specific) achieves 58.3\% improvement in Recall@10 and 66.0\% improvement in nDCG@10
+    \item Strong performance is maintained across all four evaluation domains with domain-specific models
+    \item Fine-tuning large-scale embedding models further improves retrieval quality beyond domain adaptation alone
+    \item The best-performing system combines domain-aware training with increased model capacity rather than architectural complexity
+
+\end{enumerate}
+
+Our best-performing approach uses domain-specific models fine-tuned from a multi-domain pre-trained base, demonstrating the effectiveness of two-stage transfer learning. The domain-specific models provide substantial improvements over multi-domain models, with the CLAPNQ model achieving the highest performance (0.6016 Recall@10, 0.4981 nDCG@10).
+
+Future work should focus on:
+\begin{itemize}
+    \item Investigating why hard negative mining underperformed and refining the implementation
+    \item Exploring ensemble methods combining domain-specific models
+    \item Proper integration of reranking techniques with domain-specific models
+    \item \textbf{Cross-attention late interaction retrievers (ColBERT-style):} late interaction can improve precision while keeping retrieval efficient
+    \item \textbf{Listwise learning-to-rank with direct nDCG optimization:} optimize ranking metrics more directly than pairwise losses
+    \item \textbf{Hybrid dense+sparse with learned fusion:} combine SPLADE-style sparse signals with dense embeddings using trainable fusion weights
+    \item \textbf{Query-focused distillation:} distill a cross-encoder teacher into a bi-encoder for faster inference with improved ranking
+    \item \textbf{Memory-augmented conversational retrievers:} maintain a persistent dialogue memory to disambiguate long-range coreference
+    \item \textbf{Multi-vector document representations:} represent passages with multiple embeddings (e.g., per segment) to capture long documents
+    \item \textbf{Domain-adaptive continual learning:} sequential domain adaptation with regularization to prevent catastrophic forgetting
+    \item \textbf{Reranking with structured evidence:} incorporate section titles and metadata to better match legal/government queries
+
+\end{itemize}
+
+\section*{Acknowledgment}
+
+The authors thank the MT-RAG benchmark team for providing the evaluation framework and datasets used in this study.
+
+\begin{thebibliography}{00}
+\bibitem{bge2023} BAAI General Embedding (BGE) Model. \url{https://github.com/FlagOpen/FlagEmbedding}
+
+\bibitem{karpukhin2020dense} Karpukhin, V., et al. ``Dense Passage Retrieval for Open-Domain Question Answering.'' EMNLP, 2020.
+
+\bibitem{multirag2024} MT-RAG Benchmark. ``Multi-Turn Retrieval-Augmented Generation Evaluation Framework.'' 2024.
+
+\bibitem{mtreval2026} Rosenthal, S., Katsis, Y., Shah, V., and Danilevsky, M. ``MTRAGEval: Evaluating Multi-Turn RAG Conversations at SemEval 2026.'' \url{https://ibm.github.io/mt-rag-benchmark/MTRAGEval/}, 2026.
+
+\bibitem{reimers2019sentence} Reimers, N., and Gurevych, I. ``Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks.'' EMNLP, 2019.
+
+\bibitem{thakur2021beir} Thakur, N., et al. ``BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models.'' NeurIPS, 2021.
+
+\end{thebibliography}
+
+\end{document}

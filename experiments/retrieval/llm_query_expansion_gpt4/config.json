@@ -1,0 +1,20 @@
+{
+  "experiment_name": "llm_query_expansion_gpt4",
+  "base_model": "./models/domain_specific_clapnq",
+  "use_ensemble": true,
+  "ensemble_models": [
+    "./models/domain_specific_clapnq",
+    "./models/domain_specific_govt",
+    "./models/domain_specific_cloud"
+  ],
+  "llm_type": "gpt4",
+  "num_variations": 3,
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true,
+  "resume": true
+}

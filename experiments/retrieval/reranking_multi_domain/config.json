@@ -1,0 +1,14 @@
+{
+  "experiment_name": "reranking_multi_domain",
+  "base_model_path": "./models/data_augmentation_retrieval",
+  "cross_encoder_model": "cross-encoder/ms-marco-MiniLM-L-12-v2",
+  "top_k": 100,
+  "rerank_top_k": 20,
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_name": "query_expansion_clapnq",
+  "model_path": "./models/domain_specific_clapnq",
+  "expansion_method": "synonym",
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true
+}

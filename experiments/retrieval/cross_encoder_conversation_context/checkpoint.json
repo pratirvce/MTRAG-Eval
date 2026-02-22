@@ -1,0 +1,30 @@
+{
+  "last_domain": "fiqa",
+  "completed_domains": [
+    "fiqa",
+    "clapnq"
+  ],
+  "results": {
+    "clapnq": {
+      "Recall@1": 0.07147,
+      "Recall@3": 0.17476,
+      "Recall@5": 0.21683,
+      "Recall@10": 0.3041,
+      "nDCG@1": 0.17788,
+      "nDCG@3": 0.18225,
+      "nDCG@5": 0.19767,
+      "nDCG@10": 0.23585
+    },
+    "fiqa": {
+      "Recall@1": 0.06389,
+      "Recall@3": 0.11574,
+      "Recall@5": 0.15417,
+      "Recall@10": 0.18056,
+      "nDCG@1": 0.14444,
+      "nDCG@3": 0.12513,
+      "nDCG@5": 0.14232,
+      "nDCG@10": 0.15394
+    }
+  },
+  "timestamp": "2025-12-20T12:02:30.532997"
+}

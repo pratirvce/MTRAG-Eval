@@ -1,0 +1,17 @@
+{
+  "output_dir": "experiments/retrieval/differentiable_end_to_end",
+  "model_path": "BAAI/bge-base-en-v1.5",
+  "epochs": 3,
+  "batch_size": 4,
+  "gradient_accumulation_steps": 2,
+  "use_fp16": true,
+  "use_data_splits": true,
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "resume": true,
+  "candidate_pool_size": 100
+}

@@ -1,0 +1,46 @@
+{
+  "cross_encoder_finetuned": {
+    "status": "completed",
+    "gpu": 0,
+    "pid": 2752263,
+    "start_time": "2025-12-17T08:32:33.527097",
+    "priority": 1,
+    "script": "train_cross_encoder_finetuned_tier1.py",
+    "end_time": "2025-12-17T09:14:38.849630"
+  },
+  "cross_attention_query_document": {
+    "status": "completed",
+    "gpu": 0,
+    "pid": 2753930,
+    "start_time": "2025-12-17T08:37:48.229157",
+    "priority": 2,
+    "script": "train_cross_attention_tier1.py",
+    "end_time": "2025-12-17T09:14:38.850385"
+  },
+  "hierarchical_multigranularity_retrieval": {
+    "status": "running",
+    "gpu": 1,
+    "pid": 2753994,
+    "start_time": "2025-12-17T08:37:48.377287",
+    "priority": 3,
+    "script": "train_hierarchical_multigranularity_tier1.py"
+  },
+  "iterative_refinement_improved": {
+    "status": "completed",
+    "gpu": 2,
+    "pid": 2754058,
+    "start_time": "2025-12-17T08:37:48.565767",
+    "priority": 4,
+    "script": "train_iterative_refinement_improved_tier1.py",
+    "end_time": "2025-12-17T09:40:38.871329"
+  },
+  "contrastive_learning_finetuning": {
+    "status": "completed",
+    "gpu": 3,
+    "pid": 2760704,
+    "start_time": "2025-12-17T09:14:38.847382",
+    "priority": 5,
+    "script": "train_contrastive_learning_tier1.py",
+    "end_time": "2025-12-17T09:15:38.851634"
+  }
+}

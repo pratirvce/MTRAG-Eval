@@ -1,0 +1,31 @@
+================================================================================
+Fixed Cross-Attention Experiments Monitoring
+Last Updated: 2025-12-18 20:15:00
+================================================================================
+
+📊 phase8_cross_attention_query_document_fixed
+--------------------------------------------------------------------------------
+  Status: ✅ COMPLETE
+  Final Recall@10: 0.0000
+  Final nDCG@10: 0.0000
+  Domain Progress:
+    clapnq: 🔄 In Progress
+    fiqa: 🔄 In Progress
+    govt: 🔄 In Progress
+    cloud: 🔄 In Progress
+  Last Activity: 2025-12-18 20:06:20 - Domain cloud Results:
+
+📊 tier1_cross_attention_rerun_fixed
+--------------------------------------------------------------------------------
+  Status: 🟢 RUNNING
+  PID: 3008817
+  CPU: 0.0%
+  Memory: 0.0%
+  Domain Progress:
+    clapnq: 🔄 In Progress
+    fiqa: 🔄 In Progress
+    govt: 🔄 In Progress
+    cloud: 🔄 In Progress
+  Last Activity: 2025-12-18 20:05:42 - Domain cloud Results:
+
+================================================================================

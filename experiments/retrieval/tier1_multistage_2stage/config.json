@@ -1,0 +1,17 @@
+{
+  "output_dir": "experiments/retrieval/tier1_multistage_2stage",
+  "domains": [
+    "clapnq",
+    "fiqa",
+    "govt",
+    "cloud"
+  ],
+  "use_data_splits": true,
+  "stage1_model": "BAAI/bge-base-en-v1.5",
+  "stage2_model": "cross-encoder/ms-marco-MiniLM-L-12-v2",
+  "stage3_model": null,
+  "stage1_top_k": 100,
+  "stage2_top_k": 10,
+  "stage3_top_k": null,
+  "resume": true
+}
